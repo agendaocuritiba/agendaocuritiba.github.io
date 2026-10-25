@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4c178a63b080@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T160000
+DTEND;TZID=America/Sao_Paulo:20261129T180000
+SUMMARY:Musiflex On Stage - Kids
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4c178a63b080.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e4c178a63b080.html
+END:VEVENT
+END:VCALENDAR

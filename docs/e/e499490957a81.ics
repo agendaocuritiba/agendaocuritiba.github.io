@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e499490957a81@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:Buffalo Tom
+LOCATION:Jokers em Curitiba\, Cine Joia em São Paulo\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e499490957a81.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e499490957a81.html
+END:VEVENT
+END:VCALENDAR

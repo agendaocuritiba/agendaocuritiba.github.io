@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e97e201cf4e78@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261111T190000
+DTEND;TZID=America/Sao_Paulo:20261111T210000
+SUMMARY:Invisíveis
+LOCATION:Teatro Paiol\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e97e201cf4e78.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e97e201cf4e78.html
+END:VEVENT
+END:VCALENDAR

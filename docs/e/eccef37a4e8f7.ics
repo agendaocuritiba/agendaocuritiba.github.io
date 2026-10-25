@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eccef37a4e8f7@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T230000
+DTEND;TZID=America/Sao_Paulo:20261122T010000
+SUMMARY:Vibe Apresenta: Local Sessions
+LOCATION:Club Vibe\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eccef37a4e8f7.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eccef37a4e8f7.html
+END:VEVENT
+END:VCALENDAR

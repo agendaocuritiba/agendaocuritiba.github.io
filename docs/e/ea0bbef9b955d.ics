@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea0bbef9b955d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Canto da Terra - O Show
+LOCATION:Teatro Paiol\, Curitiba - PR
+DESCRIPTION:O Coletivo Puxirum lança o álbum Canto da Terra em show de cerca de 50 minutos.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ea0bbef9b955d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea0bbef9b955d.html
+END:VEVENT
+END:VCALENDAR

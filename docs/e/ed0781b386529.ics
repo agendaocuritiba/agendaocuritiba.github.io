@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed0781b386529@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:XVI Reunião do Conselho Internacional Paraná 2026
+LOCATION:Memorial de Curitiba\, Rua Doutor Claudino dos Santos\, 79\, São Francisco\, Curitiba PR\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed0781b386529.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ed0781b386529.html
+END:VEVENT
+END:VCALENDAR

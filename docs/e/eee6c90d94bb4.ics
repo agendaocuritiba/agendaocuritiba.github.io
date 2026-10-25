@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eee6c90d94bb4@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261117T184500
+DTEND;TZID=America/Sao_Paulo:20261117T204500
+SUMMARY:Clube dos Canalhas
+LOCATION:Teatro Bom Jesus\, 24 De Maio 135 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eee6c90d94bb4.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eee6c90d94bb4.html
+END:VEVENT
+END:VCALENDAR

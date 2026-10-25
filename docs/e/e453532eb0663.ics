@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e453532eb0663@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:A Bela E A Fera
+LOCATION:Teatro José Maria Santos\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e453532eb0663.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e453532eb0663.html
+END:VEVENT
+END:VCALENDAR

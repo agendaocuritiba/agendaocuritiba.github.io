@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e81e05bc13cf2@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T220000
+DTEND;TZID=America/Sao_Paulo:20261122T000000
+SUMMARY:Projeto XY
+LOCATION:Espaço Central Festa & Eventos\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e81e05bc13cf2.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e81e05bc13cf2.html
+END:VEVENT
+END:VCALENDAR

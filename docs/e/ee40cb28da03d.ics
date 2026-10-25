@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee40cb28da03d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T210000
+DTEND;TZID=America/Sao_Paulo:20261209T230000
+SUMMARY:Caravana Alorino Show / Stand Up Comedy
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee40cb28da03d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ee40cb28da03d.html
+END:VEVENT
+END:VCALENDAR

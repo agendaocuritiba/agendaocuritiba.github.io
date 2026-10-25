@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3b59ed810cf7@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Parque Mikewood
+LOCATION:Parque Mikewood\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3b59ed810cf7.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e3b59ed810cf7.html
+END:VEVENT
+END:VCALENDAR

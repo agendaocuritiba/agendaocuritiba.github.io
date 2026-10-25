@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef8a16c2d7b8a@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T183000
+DTEND;TZID=America/Sao_Paulo:20261126T203000
+SUMMARY:Operação Bicho-Papão - Dreams Centro Cultural
+LOCATION:Teatro Sest Senat\, Salvador Ferrante 1440 Curitiba  Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef8a16c2d7b8a.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ef8a16c2d7b8a.html
+END:VEVENT
+END:VCALENDAR

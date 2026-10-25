@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7ec5f7c177af@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Baile de Gala Marista Paranaense 2026
+LOCATION:Clube Curitibano\, Avenida Presidente Getúlio Vargas\, 2857 - água Verde\, Curitiba\, Pr - 80240-040\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e7ec5f7c177af.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e7ec5f7c177af.html
+END:VEVENT
+END:VCALENDAR

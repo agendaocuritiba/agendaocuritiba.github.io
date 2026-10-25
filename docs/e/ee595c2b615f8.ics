@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee595c2b615f8@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Dinos Alive: Uma Experiência Imersiva
+LOCATION:Jockey Plaza Shopping\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee595c2b615f8.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ee595c2b615f8.html
+END:VEVENT
+END:VCALENDAR

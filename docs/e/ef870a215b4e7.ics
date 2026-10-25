@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef870a215b4e7@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Curityba - Mostra De Teatro Mpt
+LOCATION:Teatro SESI Centro\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef870a215b4e7.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ef870a215b4e7.html
+END:VEVENT
+END:VCALENDAR

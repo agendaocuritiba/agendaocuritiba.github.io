@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6dbb304761ab@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:2° Seminário IDT/PR - O Futuro Chegou: debates sobre a Reforma Tributária
+LOCATION:FIEP - Campus da Indústria\, Curitiba - PR
+DESCRIPTION:Dois dias de debates presenciais sobre a Reforma Tributária\, com especialistas de todo o país\, no auditório da FIEP.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e6dbb304761ab.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6dbb304761ab.html
+END:VEVENT
+END:VCALENDAR

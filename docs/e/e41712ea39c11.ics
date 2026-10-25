@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e41712ea39c11@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261105T190000
+DTEND;TZID=America/Sao_Paulo:20261105T210000
+SUMMARY:Ncv Global Live Tour We've In Brazil
+LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e41712ea39c11.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e41712ea39c11.html
+END:VEVENT
+END:VCALENDAR

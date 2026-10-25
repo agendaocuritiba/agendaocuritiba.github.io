@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9adf14707ef4@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Nataleluia 2026 "A maior história de todas"
+LOCATION:Primeira Igreja Batista de Curitiba\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e9adf14707ef4.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e9adf14707ef4.html
+END:VEVENT
+END:VCALENDAR

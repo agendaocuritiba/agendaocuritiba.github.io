@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14c1d45372a1@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Feijoadíssima Mabu
+LOCATION:Hotel Mabu Business - XV de Novembro\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e14c1d45372a1.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e14c1d45372a1.html
+END:VEVENT
+END:VCALENDAR

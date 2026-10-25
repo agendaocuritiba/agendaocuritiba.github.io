@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5710f73f1827@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:I Simpósio Latino-Americano de Gerontologia\, Geriatria e Gerontecnologia
+LOCATION:Memorial de Curitiba\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e5710f73f1827.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e5710f73f1827.html
+END:VEVENT
+END:VCALENDAR

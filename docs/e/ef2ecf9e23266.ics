@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef2ecf9e23266@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261216T203000
+DTEND;TZID=America/Sao_Paulo:20261216T223000
+SUMMARY:Cátia Damasceno | o Que Pode Dar Errado na Cama?
+LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef2ecf9e23266.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ef2ecf9e23266.html
+END:VEVENT
+END:VCALENDAR

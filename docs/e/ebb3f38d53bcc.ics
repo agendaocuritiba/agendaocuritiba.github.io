@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebb3f38d53bcc@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T203000
+DTEND;TZID=America/Sao_Paulo:20261031T223000
+SUMMARY:Halloween Morgenau - A festa mais animada da cidade
+LOCATION:Sede Social\, Curitiba - PR
+DESCRIPTION:Festa de Halloween para toda a família na sede do Morgenau\, com DJ e arrecadação solidária.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ebb3f38d53bcc.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ebb3f38d53bcc.html
+END:VEVENT
+END:VCALENDAR

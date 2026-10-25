@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec3127a50731a@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:29ª Conferência Espírita
+LOCATION:Teatro Positivo\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ec3127a50731a.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ec3127a50731a.html
+END:VEVENT
+END:VCALENDAR

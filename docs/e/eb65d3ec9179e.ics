@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb65d3ec9179e@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T230000
+DTEND;TZID=America/Sao_Paulo:20261114T010000
+SUMMARY:D-Nox & Beckers 20 Anos
+LOCATION:Club Vibe\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb65d3ec9179e.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eb65d3ec9179e.html
+END:VEVENT
+END:VCALENDAR

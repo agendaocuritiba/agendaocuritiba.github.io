@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed25dd6d93863@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261106T193000
+DTEND;TZID=America/Sao_Paulo:20261106T213000
+SUMMARY:Concerto Itália em Melodias
+LOCATION:Capela Santa Maria Espaço Cultural (Rua Conselheiro Laurindo\, 273 - Centro)\, Conselheiro Laurindo 273 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed25dd6d93863.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ed25dd6d93863.html
+END:VEVENT
+END:VCALENDAR

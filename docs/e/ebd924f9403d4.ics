@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebd924f9403d4@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Expo Motorhome 2026
+LOCATION:EXPOTRADE Convention Center - Pinhais/PR\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ebd924f9403d4.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ebd924f9403d4.html
+END:VEVENT
+END:VCALENDAR

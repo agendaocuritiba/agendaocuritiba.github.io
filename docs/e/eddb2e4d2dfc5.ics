@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eddb2e4d2dfc5@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Morte e Vida Severina - Um Auto de Natal Pernambucano
+LOCATION:TEATRO DA FEP\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eddb2e4d2dfc5.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eddb2e4d2dfc5.html
+END:VEVENT
+END:VCALENDAR

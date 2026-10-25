@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3fe635743c3a@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T200000
+DTEND;TZID=America/Sao_Paulo:20261127T220000
+SUMMARY:Ao Pé do Ouvido com Tom Ribeira
+LOCATION:Casa Bambuê\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3fe635743c3a.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e3fe635743c3a.html
+END:VEVENT
+END:VCALENDAR

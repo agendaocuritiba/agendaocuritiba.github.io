@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5da81d87ce71@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261101T180000
+DTEND;TZID=America/Sao_Paulo:20261101T200000
+SUMMARY:Ítallo França + Tori no Queroquero
+LOCATION:Queroquero Comida e Bar\, Curitiba - PR
+DESCRIPTION:Show duplo dos compositores Ítallo França e Tori\, cada um com seu repertório e momentos juntos no palco.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e5da81d87ce71.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e5da81d87ce71.html
+END:VEVENT
+END:VCALENDAR

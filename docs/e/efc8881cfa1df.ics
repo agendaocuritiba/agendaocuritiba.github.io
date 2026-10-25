@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efc8881cfa1df@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261106T200000
+DTEND;TZID=America/Sao_Paulo:20261106T220000
+SUMMARY:Mostra de Dança Primeiro Ato
+LOCATION:Auditório Antônio Carlos Kraide\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/efc8881cfa1df.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/efc8881cfa1df.html
+END:VEVENT
+END:VCALENDAR

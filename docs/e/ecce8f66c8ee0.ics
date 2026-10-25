@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecce8f66c8ee0@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Bride
+LOCATION:Basement Cultural\, Rua Des. Benvindo Valente\, 260 - São Francisco\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ecce8f66c8ee0.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ecce8f66c8ee0.html
+END:VEVENT
+END:VCALENDAR

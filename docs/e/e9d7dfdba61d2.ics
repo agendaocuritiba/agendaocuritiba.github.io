@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9d7dfdba61d2@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T230000
+DTEND;TZID=America/Sao_Paulo:20261108T010000
+SUMMARY:Nhot Techno Apr. Murphy
+LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e9d7dfdba61d2.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e9d7dfdba61d2.html
+END:VEVENT
+END:VCALENDAR

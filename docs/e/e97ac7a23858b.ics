@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e97ac7a23858b@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T180000
+DTEND;TZID=America/Sao_Paulo:20261129T200000
+SUMMARY:Espetáculo Bob Esponja
+LOCATION:SEST SENAT Curitiba/PR\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e97ac7a23858b.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e97ac7a23858b.html
+END:VEVENT
+END:VCALENDAR

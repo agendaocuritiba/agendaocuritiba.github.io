@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed72cf41a321f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T140000
+DTEND;TZID=America/Sao_Paulo:20261129T160000
+SUMMARY:Musiflex On Stage - Internacional
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed72cf41a321f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ed72cf41a321f.html
+END:VEVENT
+END:VCALENDAR

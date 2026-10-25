@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e62480799e13c@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T210000
+DTEND;TZID=America/Sao_Paulo:20261031T230000
+SUMMARY:Maurício Manieri
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot de Souza 5300 Curitiba PR\, Curitiba - PR
+DESCRIPTION:Maurício Manieri canta os românticos que marcaram sua carreira\, em show com histórias e conversa com a plateia.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e62480799e13c.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e62480799e13c.html
+END:VEVENT
+END:VCALENDAR

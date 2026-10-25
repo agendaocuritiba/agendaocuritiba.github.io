@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef791c1a3e46e@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T193000
+DTEND;TZID=America/Sao_Paulo:20261119T213000
+SUMMARY:Trio Amadeus Jornada Épica - do Clássico ao Rock
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef791c1a3e46e.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ef791c1a3e46e.html
+END:VEVENT
+END:VCALENDAR

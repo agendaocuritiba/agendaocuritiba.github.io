@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea543e55d3dcf@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261219T190000
+DTEND;TZID=America/Sao_Paulo:20261219T210000
+SUMMARY:Carol Delgado - Energia Feminina
+LOCATION:Teatro UP Experience - TUX\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea543e55d3dcf.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea543e55d3dcf.html
+END:VEVENT
+END:VCALENDAR

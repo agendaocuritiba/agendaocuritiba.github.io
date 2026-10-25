@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb9367544c590@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261231T200000
+DTEND;TZID=America/Sao_Paulo:20261231T220000
+SUMMARY:Réveillon Madá 2027
+LOCATION:Madá Pizza e Vinho - Centro\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb9367544c590.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eb9367544c590.html
+END:VEVENT
+END:VCALENDAR

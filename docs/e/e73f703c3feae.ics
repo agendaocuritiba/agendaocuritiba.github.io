@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e73f703c3feae@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Matuê e Brandão
+LOCATION:Live Curitiba\, R. Itajubá\, 143 - Novo Mundo\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e73f703c3feae.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e73f703c3feae.html
+END:VEVENT
+END:VCALENDAR

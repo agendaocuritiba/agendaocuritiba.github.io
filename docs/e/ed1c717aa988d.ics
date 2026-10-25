@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed1c717aa988d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T221500
+DTEND;TZID=America/Sao_Paulo:20261101T001500
+SUMMARY:Lgbtqueria+ - Claudio Gasques / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Rua Sete De Abril\, 835\, Curitiba - PR
+DESCRIPTION:Show de stand-up do humorista Claudio Gasques. Proibido para menores de 16 anos.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ed1c717aa988d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ed1c717aa988d.html
+END:VEVENT
+END:VCALENDAR

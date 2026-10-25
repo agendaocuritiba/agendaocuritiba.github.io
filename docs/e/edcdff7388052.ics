@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edcdff7388052@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T190000
+DTEND;TZID=America/Sao_Paulo:20261031T210000
+SUMMARY:Halloween Blood Rock Bar
+LOCATION:Blood Rock Bar\, Curitiba - PR
+DESCRIPTION:O tradicional Halloween rock do Blood Rock Bar\, com bandas de hard rock e covers de Ozzy e Kiss.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/edcdff7388052.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/edcdff7388052.html
+END:VEVENT
+END:VCALENDAR

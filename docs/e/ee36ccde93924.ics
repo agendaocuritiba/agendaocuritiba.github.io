@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee36ccde93924@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Índio Behn | Dra. Rosângela Em: Como Sobreviver a Mais Um Natal em Família
+LOCATION:Teatro Bom Jesus\, 24 De Maio 135 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee36ccde93924.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ee36ccde93924.html
+END:VEVENT
+END:VCALENDAR

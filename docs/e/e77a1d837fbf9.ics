@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e77a1d837fbf9@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261025T110000
+DTEND;TZID=America/Sao_Paulo:20261025T130000
+SUMMARY:Feira Vegana Veg&Tals Halloween
+LOCATION:Restaurante VIVA LA VEGAN - Rua Presidente Carlos Cavalcanti\, \, 566 - Centro\, Curitiba - PR
+DESCRIPTION:Edição de Halloween da feira Veg&Tals no restaurante Viva La Vegan\, com mais de 20 expositores de comida vegana\, bebidas e artesanato.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e77a1d837fbf9.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e77a1d837fbf9.html
+END:VEVENT
+END:VCALENDAR

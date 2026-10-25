@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eef65f8cfd466@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Candlelight: Coldplay & Imagine Dragons
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eef65f8cfd466.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eef65f8cfd466.html
+END:VEVENT
+END:VCALENDAR

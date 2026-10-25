@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea8017c336756@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Zimmer In Concert
+LOCATION:Teatro Torres Botânico\, Rua Pergentina Silva Soares\, 159 - Jardim Botânico\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea8017c336756.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea8017c336756.html
+END:VEVENT
+END:VCALENDAR

@@ -131,6 +131,9 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .ib { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 4px 2px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
 .ib svg { width: 16px; height: 16px; }
 .ib:hover { color: var(--fg); }
+.calmenu { position: absolute; top: calc(100% + 4px); left: 0; z-index: 20; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 6px; display: grid; min-width: 180px; box-shadow: 0 10px 30px rgb(0 0 0 / .18); }
+.calmenu a { padding: 8px 10px; border-radius: 8px; text-decoration: none; font-size: 14px; color: var(--fg); }
+.calmenu a:hover { background: var(--sel); }
 
 .fig { color: var(--kc); display: grid; justify-items: center; align-content: start; gap: 4px; text-align: center; }
 .fig .ic { width: 56px; height: 56px; border-radius: 13px; display: grid; place-items: center; background: color-mix(in srgb, var(--kc) 14%, transparent); }
@@ -387,15 +390,22 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     $('freeRow').replaceChildren(fr);
   }
 
-  function icsFor(e) {
-    const day = nextDate(e).replace(/-/g, ''), m = /^(\d{1,2})h(\d{2})?/.exec(e.h || '');
-    const esc = (s) => String(s || '').replace(/[\\,;]/g, (x) => '\\' + x).replace(/\n/g, ' ');
-    const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Agendao Curitiba//PT', 'BEGIN:VEVENT', 'UID:' + e.id + '@agendao-curitiba',
-      'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z'];
-    if (m) lines.push('DTSTART;TZID=America/Sao_Paulo:' + day + 'T' + String(m[1]).padStart(2, '0') + (m[2] || '00') + '00', 'DURATION:PT2H');
-    else lines.push('DTSTART;VALUE=DATE:' + day);
-    lines.push('SUMMARY:' + esc(e.t), 'LOCATION:' + esc([e.v, e.a].filter(Boolean).join(', ')), 'URL:' + (e.L[0] || [])[1], 'END:VEVENT', 'END:VCALENDAR');
-    return lines.join('\r\n');
+  // Links de agenda: Google e Outlook abrem já preenchidos; Apple/iOS usa o .ics estático do evento
+  function calTimes(e) {
+    const day = nextDate(e), m = /^(\d{1,2})h(\d{2})?/.exec(e.h || '');
+    if (!m) return { day, allDay: true };
+    const st = new Date(day + 'T' + String(m[1]).padStart(2, '0') + ':' + (m[2] || '00') + ':00Z'), en = new Date(st.getTime() + 2 * 36e5);
+    return { day, allDay: false, st: st.toISOString().slice(0, 19), en: en.toISOString().slice(0, 19) };
+  }
+  function calLinks(e) {
+    const t = calTimes(e), loc = [e.v, e.a, 'Curitiba - PR'].filter(Boolean).join(', '), link = eventLink(e);
+    const details = (e.r ? e.r + '\n\n' : '') + link, compact = (x) => x.replace(/[-:]/g, '');
+    const g = new URLSearchParams({ action: 'TEMPLATE', text: e.t, details, location: loc, ctz: 'America/Sao_Paulo',
+      dates: t.allDay ? compact(t.day) + '/' + compact(addDays(t.day, 1)) : compact(t.st) + '/' + compact(t.en) });
+    const o = new URLSearchParams({ path: '/calendar/action/compose', rru: 'addevent', subject: e.t, body: details, location: loc,
+      startdt: t.allDay ? t.day : t.st, enddt: t.allDay ? addDays(t.day, 1) : t.en, allday: String(t.allDay) });
+    return [['Google Agenda', 'https://calendar.google.com/calendar/render?' + g], ['Apple / iPhone', 'e/' + e.id + '.ics'],
+      ['Outlook', 'https://outlook.live.com/calendar/0/deeplink/compose?' + o]];
   }
   const eventLink = (e) => meta.siteUrl ? meta.siteUrl + 'e/' + e.id + '.html' : location.href.split('#')[0] + '#' + e.id;
 
@@ -420,18 +430,22 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const pubs = e.L.filter((l) => PUBLISHERS.includes(l[0]));
     const acts = el('div', 'acts');
     shuffle(pubs.length ? pubs : e.L).forEach(([src, url]) => { const a = el('a', 'go', src); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.title = 'Mais informações em ' + src; acts.append(a); });
-    const cal = el('button', 'ib'); cal.type = 'button'; cal.title = 'Adicionar à agenda'; cal.innerHTML = svg(UI.calAdd); cal.append(el('span', null, 'Adicionar à agenda'));
-    cal.addEventListener('click', () => {
-      try { const url = URL.createObjectURL(new Blob([icsFor(e)], { type: 'text/calendar' })); const a = document.createElement('a'); a.href = url; a.download = 'evento.ics'; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000); }
-      catch (err) { toast('Não foi possível criar o arquivo da agenda'); }
+    const cw = el('div', 'popwrap');
+    const cal = el('button', 'ib'); cal.type = 'button'; cal.title = 'Adicionar à agenda'; cal.setAttribute('aria-haspopup', 'true'); cal.setAttribute('aria-expanded', 'false');
+    cal.innerHTML = svg(UI.calAdd); cal.append(el('span', null, 'Adicionar à agenda'));
+    const cm = el('div', 'calmenu'); cm.hidden = true;
+    cal.addEventListener('click', (ev) => {
+      ev.stopPropagation(); const open = cm.hidden; closeMenus();
+      if (open) { cm.replaceChildren(...calLinks(e).map(([n, u]) => { const a = el('a', null, n); a.href = u; if (!u.endsWith('.ics')) { a.target = '_blank'; a.rel = 'noopener'; } return a; })); cm.hidden = false; cal.setAttribute('aria-expanded', 'true'); }
     });
+    cw.append(cal, cm);
     const sh = el('button', 'ib'); sh.type = 'button'; sh.title = 'Compartilhar'; sh.innerHTML = svg(UI.share); sh.append(el('span', null, 'Compartilhar'));
     sh.addEventListener('click', () => {
       const link = eventLink(e);
       if (navigator.share) { navigator.share({ title: e.t, url: link }).catch(() => {}); return; }
       try { navigator.clipboard.writeText(link).then(() => toast('Link copiado'), () => toast(link)); } catch (err) { toast(link); }
     });
-    acts.append(cal, sh); main.append(acts);
+    acts.append(cw, sh); main.append(acts);
     const fig = el('div', 'fig'); const ic = el('div', 'ic'); ic.innerHTML = catSvg(c); fig.append(ic, el('span', null, c.replace('/', '/​')));
     art.append(main, fig);
     return art;
@@ -454,6 +468,10 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     });
     $('more').hidden = list.length <= shown;
   }
+
+  function closeMenus() { document.querySelectorAll('.calmenu').forEach((m) => { m.hidden = true; m.previousSibling.setAttribute('aria-expanded', 'false'); }); }
+  document.addEventListener('click', closeMenus);
+  document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') closeMenus(); });
 
   let qT;
   $('q').addEventListener('input', () => { clearTimeout(qT); qT = setTimeout(() => { state.q = $('q').value.trim(); shown = PAGE; draw(); }, 150); });

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5adc943e9248@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Ncv Global Live Tour We've In Brazil
+LOCATION:Play Music Cwb\, R. Prof. Brandão 51 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e5adc943e9248.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e5adc943e9248.html
+END:VEVENT
+END:VCALENDAR

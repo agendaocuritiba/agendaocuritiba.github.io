@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1b572fafef14@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T140000
+DTEND;TZID=America/Sao_Paulo:20261126T160000
+SUMMARY:Encontro De Valor
+LOCATION:IEP INSTITUTO DE ENGENHARIA DO PARANÁ\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e1b572fafef14.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e1b572fafef14.html
+END:VEVENT
+END:VCALENDAR

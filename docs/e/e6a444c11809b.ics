@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6a444c11809b@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Carnaval 2027 - Familia Madalosso
+LOCATION:Família Madalosso\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e6a444c11809b.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6a444c11809b.html
+END:VEVENT
+END:VCALENDAR

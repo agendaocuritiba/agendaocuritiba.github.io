@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb6eb782be007@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T210000
+DTEND;TZID=America/Sao_Paulo:20261031T230000
+SUMMARY:Sábado 31/10 | Baile Dos Maduros Cwb Halloween Party
+LOCATION:Thermas CWB\, Curitiba - PR
+DESCRIPTION:Edição de Halloween do Baile dos Maduros\, festa com música e paquera no Thermas CWB.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/eb6eb782be007.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eb6eb782be007.html
+END:VEVENT
+END:VCALENDAR

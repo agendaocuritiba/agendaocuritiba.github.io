@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6c725de282a0@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261220T160000
+DTEND;TZID=America/Sao_Paulo:20261220T180000
+SUMMARY:Frozen - O despertar dos quatro poderes
+LOCATION:Teatro Bom Jesus\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e6c725de282a0.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6c725de282a0.html
+END:VEVENT
+END:VCALENDAR

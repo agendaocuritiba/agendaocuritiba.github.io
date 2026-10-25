@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ead18fd1018f3@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261106T220000
+DTEND;TZID=America/Sao_Paulo:20261107T000000
+SUMMARY:Circus
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ead18fd1018f3.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ead18fd1018f3.html
+END:VEVENT
+END:VCALENDAR

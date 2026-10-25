@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edf48e4c1f38f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Feira Empreendedores da Nossa Terra Restaurante Família Madalosso
+LOCATION:Restaurante Familia Madalosso - Salão Milano\, Curitiba - PR
+DESCRIPTION:Feira de Santa Felicidade\, há dez anos na região\, com artesanato\, presentes e decoração de empreendedores locais.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/edf48e4c1f38f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/edf48e4c1f38f.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e831b2095011f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261103T200000
+DTEND;TZID=America/Sao_Paulo:20261103T220000
+SUMMARY:As Forcas Caudinas
+LOCATION:Teatro Barracão Encena\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e831b2095011f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e831b2095011f.html
+END:VEVENT
+END:VCALENDAR

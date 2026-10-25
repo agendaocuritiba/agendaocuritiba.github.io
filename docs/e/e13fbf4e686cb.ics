@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e13fbf4e686cb@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T210000
+DTEND;TZID=America/Sao_Paulo:20261107T230000
+SUMMARY:Kasino @ Sebas Rock Bar 07.11.2026
+LOCATION:SEBAS ROCK BAR\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e13fbf4e686cb.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e13fbf4e686cb.html
+END:VEVENT
+END:VCALENDAR

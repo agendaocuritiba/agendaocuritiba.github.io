@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecb26981b3908@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T230000
+DTEND;TZID=America/Sao_Paulo:20261114T010000
+SUMMARY:NextWeen Curitiba Powered By RIOT
+LOCATION:PLAY MUSIC CWB\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ecb26981b3908.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ecb26981b3908.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaaf27d0d5b39@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T230000
+DTEND;TZID=America/Sao_Paulo:20261129T010000
+SUMMARY:Musafir Showcase
+LOCATION:Club Vibe\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eaaf27d0d5b39.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eaaf27d0d5b39.html
+END:VEVENT
+END:VCALENDAR

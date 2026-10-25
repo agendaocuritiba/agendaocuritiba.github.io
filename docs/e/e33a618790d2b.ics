@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e33a618790d2b@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T203000
+DTEND;TZID=America/Sao_Paulo:20261121T223000
+SUMMARY:O Baile de Máscaras
+LOCATION:Castelo do Batel\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e33a618790d2b.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e33a618790d2b.html
+END:VEVENT
+END:VCALENDAR

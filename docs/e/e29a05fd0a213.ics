@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e29a05fd0a213@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:The Symphony Of Zelda
+LOCATION:Teatro Torres Botânico\, Rua Pergentina Silva Soares\, 159 - Jardim Botânico\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e29a05fd0a213.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e29a05fd0a213.html
+END:VEVENT
+END:VCALENDAR

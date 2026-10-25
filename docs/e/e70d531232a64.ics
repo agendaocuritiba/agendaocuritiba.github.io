@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e70d531232a64@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T200000
+DTEND;TZID=America/Sao_Paulo:20261113T220000
+SUMMARY:Lobão - Luau Indoor
+LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e70d531232a64.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e70d531232a64.html
+END:VEVENT
+END:VCALENDAR

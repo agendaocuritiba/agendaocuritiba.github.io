@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea9702b790d94@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261112T200000
+DTEND;TZID=America/Sao_Paulo:20261112T220000
+SUMMARY:Roxette Uk
+LOCATION:Clay Highway Bar\, BR-116\, 17253- Capão Raso\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea9702b790d94.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea9702b790d94.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e74ebf2fe728d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:CARTOGRAFIA DA MEMÓRIA com o Balé Teatro Guaíra
+LOCATION:Guairão\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e74ebf2fe728d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e74ebf2fe728d.html
+END:VEVENT
+END:VCALENDAR

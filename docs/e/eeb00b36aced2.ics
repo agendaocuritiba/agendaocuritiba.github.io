@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeb00b36aced2@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261103T190000
+DTEND;TZID=America/Sao_Paulo:20261103T210000
+SUMMARY:Mão na Massa 5 - 03/11
+LOCATION:Av. Ver. Toaldo Túlio\, 1202\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eeb00b36aced2.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eeb00b36aced2.html
+END:VEVENT
+END:VCALENDAR

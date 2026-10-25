@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee4cac09f7989@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T200000
+DTEND;TZID=America/Sao_Paulo:20261113T220000
+SUMMARY:A Mariana e a Benzedeira da Ilha
+LOCATION:Espaço Fantástico\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee4cac09f7989.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ee4cac09f7989.html
+END:VEVENT
+END:VCALENDAR

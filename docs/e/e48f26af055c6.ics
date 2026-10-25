@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e48f26af055c6@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Terapia Infernal
+LOCATION:Teatro Fernanda Montenegro\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e48f26af055c6.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e48f26af055c6.html
+END:VEVENT
+END:VCALENDAR

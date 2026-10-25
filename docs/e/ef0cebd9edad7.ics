@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef0cebd9edad7@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T200000
+DTEND;TZID=America/Sao_Paulo:20261107T220000
+SUMMARY:MB Summit Brazil
+LOCATION:CRECI - PR\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef0cebd9edad7.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ef0cebd9edad7.html
+END:VEVENT
+END:VCALENDAR

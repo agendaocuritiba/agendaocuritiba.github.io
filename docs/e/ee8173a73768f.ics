@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee8173a73768f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Dixxxtrava Festival
+LOCATION:Live Curitiba\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee8173a73768f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ee8173a73768f.html
+END:VEVENT
+END:VCALENDAR

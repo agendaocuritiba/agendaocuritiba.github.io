@@ -23,3 +23,5 @@ h1 { font-family: var(--font-display); font-size: clamp(24px, 6vw, 32px); line-h
 .go::after { content: " ↗"; font-weight: 400; }
 .back { margin: 22px 0 0; font-weight: 600; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+.ca { font-size: 14px; font-weight: 600; text-decoration: none; padding: 6px 13px; border-radius: 999px; border: 1px solid var(--line); color: var(--fg); }
+.ca:hover { border-color: var(--accent); }

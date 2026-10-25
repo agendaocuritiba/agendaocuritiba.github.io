@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6a2eaf6ec37f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T210000
+DTEND;TZID=America/Sao_Paulo:20261114T230000
+SUMMARY:Sergio Mallandro em Os perrengues do Mallandro / Stand up Comedy
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e6a2eaf6ec37f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6a2eaf6ec37f.html
+END:VEVENT
+END:VCALENDAR

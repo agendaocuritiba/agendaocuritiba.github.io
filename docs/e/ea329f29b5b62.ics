@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea329f29b5b62@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Disney Celebra | Um Natal Inesquecível
+LOCATION:Centro de Eventos Positivo\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea329f29b5b62.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea329f29b5b62.html
+END:VEVENT
+END:VCALENDAR

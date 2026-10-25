@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14e067267b0c@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Mostra Namoskà Iii Edição
+LOCATION:Guaíra - Miniauditório\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e14e067267b0c.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e14e067267b0c.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e402abc946e88@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261030T220000
+DTEND;TZID=America/Sao_Paulo:20261031T000000
+SUMMARY:Capital Inicial
+LOCATION:Cine Lido\, Rua Desembargador Ermelino de Leão\, 160 - Centro\, Curitiba - PR
+DESCRIPTION:A banda de rock de Brasília\, com mais de 40 anos de estrada\, apresenta seus sucessos no Cine Lido.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e402abc946e88.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e402abc946e88.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4a2c0e916314@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261220T180000
+DTEND;TZID=America/Sao_Paulo:20261220T200000
+SUMMARY:Como nossos Pais - Afonso Padilha
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4a2c0e916314.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e4a2c0e916314.html
+END:VEVENT
+END:VCALENDAR

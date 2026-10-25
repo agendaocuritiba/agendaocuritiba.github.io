@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e57b96764c742@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261030T193000
+DTEND;TZID=America/Sao_Paulo:20261030T213000
+SUMMARY:Historieta|teatro SESI Cic
+LOCATION:Teatro Sesi CIC\, Curitiba - PR
+DESCRIPTION:Fábula sobre amizade e transformação\, com teatro de animação e jogo de luz e sombra inspirado em Tim Burton. Para crianças e adultos.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e57b96764c742.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e57b96764c742.html
+END:VEVENT
+END:VCALENDAR

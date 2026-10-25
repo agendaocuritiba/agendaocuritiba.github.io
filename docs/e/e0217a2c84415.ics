@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0217a2c84415@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T200000
+DTEND;TZID=America/Sao_Paulo:20261031T220000
+SUMMARY:Halloween 2K26
+LOCATION:Local a definir\, Curitiba - PR
+DESCRIPTION:Festa de Halloween à fantasia\, com funk e outros ritmos.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e0217a2c84415.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e0217a2c84415.html
+END:VEVENT
+END:VCALENDAR

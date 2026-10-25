@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5a2967c17607@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261030T223000
+DTEND;TZID=America/Sao_Paulo:20261031T003000
+SUMMARY:Os Folgados com Felipe Pansolin e Brow Malaquias / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Brow Malaquias e Felipe Pansolin em show de comédia com improviso e conversa com a plateia.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e5a2967c17607.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e5a2967c17607.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7aa6c08c7b9e@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:A Bela Adormecida - Petit Ballet
+LOCATION:Teatro Positivo\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e7aa6c08c7b9e.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e7aa6c08c7b9e.html
+END:VEVENT
+END:VCALENDAR

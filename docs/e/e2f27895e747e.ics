@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2f27895e747e@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261112T190000
+DTEND;TZID=America/Sao_Paulo:20261112T210000
+SUMMARY:Claudio Duarte - O Desafio da Felicidade em Meio ás Imperfeições
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2f27895e747e.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e2f27895e747e.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1b1db279c235@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261028T191000
+DTEND;TZID=America/Sao_Paulo:20261028T211000
+SUMMARY:Iron Maiden - Run For Your Lives World Tour 2026
+LOCATION:Arena da Baixada\, Curitiba - PR
+DESCRIPTION:A banda britânica toca na Arena da Baixada com repertório centrado nas músicas das primeiras décadas da carreira.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e1b1db279c235.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e1b1db279c235.html
+END:VEVENT
+END:VCALENDAR

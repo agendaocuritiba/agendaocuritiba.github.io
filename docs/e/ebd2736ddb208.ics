@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebd2736ddb208@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T200000
+DTEND;TZID=America/Sao_Paulo:20261031T220000
+SUMMARY:Show de Lançamento - Duo Nascente
+LOCATION:R. Alm. Gonçalves\, 2116\, Curitiba - PR
+DESCRIPTION:Clariô Silva e Pedro Ribeiro lançam seu duo\, com voz\, violão e percussão em músicas próprias e releituras.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ebd2736ddb208.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ebd2736ddb208.html
+END:VEVENT
+END:VCALENDAR

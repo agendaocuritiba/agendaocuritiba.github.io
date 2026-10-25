@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1cfff67ad53f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Histórias
+LOCATION:Arena da baixada - R. Buenos Aires\, 1260\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e1cfff67ad53f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e1cfff67ad53f.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec5fc243594fe@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T220000
+DTEND;TZID=America/Sao_Paulo:20261120T000000
+SUMMARY:Gilsons
+LOCATION:Cine Lido\, Rua Desembargador Ermelino de Leão\, 160 - Centro\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ec5fc243594fe.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ec5fc243594fe.html
+END:VEVENT
+END:VCALENDAR

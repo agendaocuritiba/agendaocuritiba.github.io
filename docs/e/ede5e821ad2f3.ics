@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ede5e821ad2f3@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270123T160000
+DTEND;TZID=America/Sao_Paulo:20270123T180000
+SUMMARY:Buguei meu estrela: O show
+LOCATION:Local a definir\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ede5e821ad2f3.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ede5e821ad2f3.html
+END:VEVENT
+END:VCALENDAR

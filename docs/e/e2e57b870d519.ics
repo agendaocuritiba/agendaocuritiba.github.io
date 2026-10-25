@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2e57b870d519@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261217T193000
+DTEND;TZID=America/Sao_Paulo:20261217T213000
+SUMMARY:Concerto Natalino
+LOCATION:Teatro Fernanda Montenegro\, Batel\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2e57b870d519.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e2e57b870d519.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8fa36510132e@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T221500
+DTEND;TZID=America/Sao_Paulo:20261115T001500
+SUMMARY:Abner Henrique / Stand Up Comedy
+LOCATION:GASLIGHT COMEDY CLUB\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e8fa36510132e.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e8fa36510132e.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3b4fcf99f08d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T160000
+DTEND;TZID=America/Sao_Paulo:20261129T180000
+SUMMARY:Palco 180Bpm
+LOCATION:Fun Stage\, R. Bpo. Dom José 2258 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3b4fcf99f08d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e3b4fcf99f08d.html
+END:VEVENT
+END:VCALENDAR

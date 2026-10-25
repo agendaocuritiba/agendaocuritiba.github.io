@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e38e91ed73dff@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Kreator
+LOCATION:Tork 'n' Roll\, Curitiba\, Brasil\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e38e91ed73dff.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e38e91ed73dff.html
+END:VEVENT
+END:VCALENDAR

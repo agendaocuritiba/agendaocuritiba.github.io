@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3950a6490e8f@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Opeth
+LOCATION:ópera De Arame\, R. João Gava\, 874 - Abranches\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3950a6490e8f.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e3950a6490e8f.html
+END:VEVENT
+END:VCALENDAR

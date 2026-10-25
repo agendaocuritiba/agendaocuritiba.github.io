@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec93051000029@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:The White Buffalo
+LOCATION:Tork N' Roll\, Av. Mal. Floriano Peixoto\, 1695\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ec93051000029.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ec93051000029.html
+END:VEVENT
+END:VCALENDAR

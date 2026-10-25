@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e44111dd84a5c@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T183000
+DTEND;TZID=America/Sao_Paulo:20261129T203000
+SUMMARY:FUNDO DO MAR - Colégios Parceiros
+LOCATION:R. Valério Haisi\, 262\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e44111dd84a5c.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e44111dd84a5c.html
+END:VEVENT
+END:VCALENDAR

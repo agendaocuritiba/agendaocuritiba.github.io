@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e416e316aaa88@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:A Pequena Loja Dos Horrores - Mostra De Teatro Mpt
+LOCATION:FESP - Fundação de Estudos Sociais do Paraná\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e416e316aaa88.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e416e316aaa88.html
+END:VEVENT
+END:VCALENDAR

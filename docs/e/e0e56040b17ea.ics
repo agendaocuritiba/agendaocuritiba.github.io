@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0e56040b17ea@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261027T193000
+DTEND;TZID=America/Sao_Paulo:20261027T213000
+SUMMARY:Arena EMPAFLO
+LOCATION:R. M.e Maria dos Anjos\, 1060\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e0e56040b17ea.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e0e56040b17ea.html
+END:VEVENT
+END:VCALENDAR

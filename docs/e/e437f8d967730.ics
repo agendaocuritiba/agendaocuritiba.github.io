@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e437f8d967730@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Pagodin do Deixa Acontecer
+LOCATION:Pico do Sol\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e437f8d967730.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e437f8d967730.html
+END:VEVENT
+END:VCALENDAR

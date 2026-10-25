@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e63603156b701@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T190000
+DTEND;TZID=America/Sao_Paulo:20261113T210000
+SUMMARY:Sul na Taça | Uma viagem pelos rótulos de vanguarda da Vinícola Aurora
+LOCATION:Aliança Francesa de Curitiba - Sede Prudente de Moraes\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e63603156b701.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e63603156b701.html
+END:VEVENT
+END:VCALENDAR

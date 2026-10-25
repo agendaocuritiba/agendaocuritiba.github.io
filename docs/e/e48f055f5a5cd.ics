@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e48f055f5a5cd@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261214T191500
+DTEND;TZID=America/Sao_Paulo:20261214T211500
+SUMMARY:Disney: Quando a Magia Atravessa Gerações\, Ela Dança para Sempre!
+LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e48f055f5a5cd.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e48f055f5a5cd.html
+END:VEVENT
+END:VCALENDAR

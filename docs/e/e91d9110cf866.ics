@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e91d9110cf866@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Hallowzot
+LOCATION:Jindagee Concept Bar\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e91d9110cf866.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e91d9110cf866.html
+END:VEVENT
+END:VCALENDAR

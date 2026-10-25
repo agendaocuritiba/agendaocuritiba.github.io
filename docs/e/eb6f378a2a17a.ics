@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb6f378a2a17a@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261124T190000
+DTEND;TZID=America/Sao_Paulo:20261124T210000
+SUMMARY:Tuyo
+LOCATION:Queroquero Comida e Bar\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb6f378a2a17a.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eb6f378a2a17a.html
+END:VEVENT
+END:VCALENDAR

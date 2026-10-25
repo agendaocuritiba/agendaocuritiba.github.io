@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea8d93ebb890d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Testament
+LOCATION:Tork N Roll\, Av. Mal. Floriano Peixoto\, 1695 - Rebouças\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea8d93ebb890d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea8d93ebb890d.html
+END:VEVENT
+END:VCALENDAR

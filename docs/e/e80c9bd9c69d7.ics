@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e80c9bd9c69d7@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261210T210000
+DTEND;TZID=America/Sao_Paulo:20261210T230000
+SUMMARY:Silvetty Montilla - Turnê & quot\; Tô Adorando & quot
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e80c9bd9c69d7.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e80c9bd9c69d7.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaf6ffb6a9705@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261219T220000
+DTEND;TZID=America/Sao_Paulo:20261220T000000
+SUMMARY:Seoul51 - Sua Festa K-Pop
+LOCATION:R. Prof. Brandão\, 51\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eaf6ffb6a9705.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eaf6ffb6a9705.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2293518f0426@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T230000
+DTEND;TZID=America/Sao_Paulo:20261212T010000
+SUMMARY:James Zabiela
+LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2293518f0426.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e2293518f0426.html
+END:VEVENT
+END:VCALENDAR

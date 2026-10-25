@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3453e449ae75@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T230000
+DTEND;TZID=America/Sao_Paulo:20261128T010000
+SUMMARY:Gabe
+LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3453e449ae75.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e3453e449ae75.html
+END:VEVENT
+END:VCALENDAR

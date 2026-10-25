@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6bdc3ca50886@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261116T200000
+DTEND;TZID=America/Sao_Paulo:20261116T220000
+SUMMARY:Azaleia Oriental - O Povo Yi e a Memória Viva da China
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot de Souza 5300 Curitiba PR\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e6bdc3ca50886.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6bdc3ca50886.html
+END:VEVENT
+END:VCALENDAR

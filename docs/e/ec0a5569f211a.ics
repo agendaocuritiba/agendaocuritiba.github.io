@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec0a5569f211a@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261231T180000
+DTEND;TZID=America/Sao_Paulo:20261231T200000
+SUMMARY:Bardo e Fada - PR
+LOCATION:Local a definir\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ec0a5569f211a.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ec0a5569f211a.html
+END:VEVENT
+END:VCALENDAR

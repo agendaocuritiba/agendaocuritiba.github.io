@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6721c9a822af@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T193000
+DTEND;TZID=America/Sao_Paulo:20261128T213000
+SUMMARY:Clássicos do Cinema
+LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e6721c9a822af.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6721c9a822af.html
+END:VEVENT
+END:VCALENDAR

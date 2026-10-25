@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edd00ce6a8ba7@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Festival de Felicidade
+LOCATION:Parque Barigui\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/edd00ce6a8ba7.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/edd00ce6a8ba7.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb4850b8247f5@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T210000
+DTEND;TZID=America/Sao_Paulo:20261107T230000
+SUMMARY:Halloween Party Afrolatinavibes
+LOCATION:STANBY MUISIC\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb4850b8247f5.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eb4850b8247f5.html
+END:VEVENT
+END:VCALENDAR

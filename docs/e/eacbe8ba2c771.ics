@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eacbe8ba2c771@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T203000
+DTEND;TZID=America/Sao_Paulo:20261119T223000
+SUMMARY:Bora Animar - Show De Humor Com Dunga Mesquita E Dênis Pimentinha /Stand Up Comedy
+LOCATION:GASLIGHT COMEDY CLUB\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eacbe8ba2c771.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eacbe8ba2c771.html
+END:VEVENT
+END:VCALENDAR

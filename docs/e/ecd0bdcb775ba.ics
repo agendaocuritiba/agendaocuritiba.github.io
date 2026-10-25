@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecd0bdcb775ba@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Experiencia Música e Natureza
+LOCATION:Parque Jaime Lerner\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ecd0bdcb775ba.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ecd0bdcb775ba.html
+END:VEVENT
+END:VCALENDAR

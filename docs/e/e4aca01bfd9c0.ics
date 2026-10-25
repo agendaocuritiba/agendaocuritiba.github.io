@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4aca01bfd9c0@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Luan Registro Histórico
+LOCATION:Estádio Major Antônio Couto Pereira\, Rua Ubaldino do Amaral\, 37\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4aca01bfd9c0.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e4aca01bfd9c0.html
+END:VEVENT
+END:VCALENDAR

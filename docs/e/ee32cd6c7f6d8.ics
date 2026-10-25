@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee32cd6c7f6d8@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261027T210000
+DTEND;TZID=America/Sao_Paulo:20261027T230000
+SUMMARY:Matteo Bocelli - Turnê Falling In Love
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot de Souza 5300 Curitiba PR\, Curitiba - PR
+DESCRIPTION:O cantor italiano Matteo Bocelli faz um show intimista e romântico da turnê Falling in Love.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ee32cd6c7f6d8.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ee32cd6c7f6d8.html
+END:VEVENT
+END:VCALENDAR

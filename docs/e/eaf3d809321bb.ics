@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaf3d809321bb@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261222T210000
+DTEND;TZID=America/Sao_Paulo:20261222T230000
+SUMMARY:Victor Sarro - O Rei da Quinta Série
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eaf3d809321bb.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eaf3d809321bb.html
+END:VEVENT
+END:VCALENDAR

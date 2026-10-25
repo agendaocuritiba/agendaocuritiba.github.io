@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e248098ec4cca@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261108T170000
+DTEND;TZID=America/Sao_Paulo:20261108T190000
+SUMMARY:Ms&d Moustache Sound And Dance
+LOCATION:Rodeo Curitiba\, Br-116 4100 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e248098ec4cca.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e248098ec4cca.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e022dca57dfdc@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Feijoada e Costela assada - PETFRIENDLY
+LOCATION:Restaurante Vila Brasil - Comida Caseira\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e022dca57dfdc.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e022dca57dfdc.html
+END:VEVENT
+END:VCALENDAR

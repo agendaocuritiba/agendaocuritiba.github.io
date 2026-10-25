@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea633e8a0da94@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261110T210000
+DTEND;TZID=America/Sao_Paulo:20261110T230000
+SUMMARY:Diogo Portugal em Impróprio para Políticos / Stand Up Comedy
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea633e8a0da94.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ea633e8a0da94.html
+END:VEVENT
+END:VCALENDAR

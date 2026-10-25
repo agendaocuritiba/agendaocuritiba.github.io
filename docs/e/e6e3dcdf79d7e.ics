@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6e3dcdf79d7e@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Gota D’Água
+LOCATION:CAIXA CULTURAL CURITIBA\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e6e3dcdf79d7e.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e6e3dcdf79d7e.html
+END:VEVENT
+END:VCALENDAR

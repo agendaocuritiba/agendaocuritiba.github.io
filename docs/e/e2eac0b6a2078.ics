@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2eac0b6a2078@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T120000
+DTEND;TZID=America/Sao_Paulo:20261107T140000
+SUMMARY:Feijuca e Pagode no BC Convida
+LOCATION:Arena Beach Club\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2eac0b6a2078.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/e2eac0b6a2078.html
+END:VEVENT
+END:VCALENDAR

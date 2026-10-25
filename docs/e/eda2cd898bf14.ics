@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eda2cd898bf14@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T180000
+DTEND;TZID=America/Sao_Paulo:20261206T200000
+SUMMARY:Gipsy Kings By Diego Baliardo C/ Participação Especial de Sidney Magal
+LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eda2cd898bf14.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/eda2cd898bf14.html
+END:VEVENT
+END:VCALENDAR

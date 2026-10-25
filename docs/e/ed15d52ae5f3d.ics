@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed15d52ae5f3d@agendao-curitiba
+DTSTAMP:20261025T090000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Fkay + Orochi
+LOCATION:Live Curitiba\, R. Itajubá\, 143 - Novo Mundo\, Curitiba - PR
+DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed15d52ae5f3d.html
+URL:https://dennymarcels.github.io/agendao-curitiba/e/ed15d52ae5f3d.html
+END:VEVENT
+END:VCALENDAR
