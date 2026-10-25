@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agendão Curitiba: todos os eventos da cidade em um só lugar</title>
+<meta name="description" content="Shows, teatro, festas, feiras, palestras e eventos gratuitos em Curitiba nos próximos seis meses, reunidos de dez sites e atualizados todo dia.">
+<link rel="canonical" href="https://dennymarcels.github.io/agendao-curitiba/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Agendão Curitiba">
+<meta property="og:title" content="Agendão Curitiba">
+<meta property="og:description" content="Todos os eventos de Curitiba nos próximos seis meses, reunidos de dez sites e atualizados todo dia.">
+<meta property="og:url" content="https://dennymarcels.github.io/agendao-curitiba/">
+<meta property="og:image" content="https://dennymarcels.github.io/agendao-curitiba/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f5d3f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: cabeçalho com o nome, barra de filtros, lista de eventos agrupada por dia; cada card leva a figura da categoria à direita. */
+:root {
+  --bg: #f3f5f2;          /* neblina de inverno curitibano */
+  --panel: #ffffff;
+  --fg: #17221c;
+  --muted: #56645b;
+  --line: #d8ded8;
+  --accent: #1f5d3f;      /* claro: verde araucária */
+  --accent-fg: #ffffff;
+  --accent2: #a3472a;     /* claro: marrom do pinhão (novo, destaque) */
+  --free: #11704a;
+  --chip: #e6ebe6;
+  --sel: color-mix(in srgb, var(--accent) 16%, transparent);
+  --k0:#2f6fb2; --k1:#9b3fb5; --k2:#b2433a; --k3:#7a5a1e; --k4:#c06a12; --k5:#3f6b52;
+  --k6:#c23b78; --k7:#5b4fc4; --k8:#16807a; --k9:#a7561c; --k10:#4b5b6e; --k11:#2e8a3c; --k12:#6b6f68;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --free:#7fd8a6; --chip:#271f36;
+  --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --free:#7fd8a6; --chip:#271f36;
+  --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
+  color-scheme: dark; }
+html { -webkit-text-size-adjust: 100%; }
+[hidden] { display: none !important; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.45; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 920px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+.top { padding-block: 28px 14px; display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
+.brand h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 6vw, 44px); line-height: 1; margin: 0; letter-spacing: -0.02em; }
+.brand h1 span { color: var(--accent); }
+.brand p { margin: 8px 0 0; color: var(--muted); }
+.brand p b { color: var(--fg); font-variant-numeric: tabular-nums; }
+.brand .intro { color: var(--fg); max-width: 60ch; margin-top: 10px; font-size: 15px; }
+.brand p b.hi { color: var(--accent2); }
+.theme { font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.theme:hover { color: var(--fg); border-color: var(--muted); }
+
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); }
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.row + .row { margin-top: 8px; }
+.search { flex: 1 1 220px; min-width: 0; font: inherit; padding: 8px 12px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); }
+.sel, .pick { font: inherit; font-size: 14px; padding: 8px 10px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); max-width: 100%; }
+.pick { cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.pick svg { width: 16px; height: 16px; color: var(--muted); }
+.pick.on { border-color: var(--accent); background: var(--sel); }
+.pick.on svg { color: var(--accent); }
+.sel.on { border-color: var(--accent); background: var(--sel); }
+.lbl { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.chip svg { width: 15px; height: 15px; }
+.chip[aria-pressed="true"] { background: var(--chip); color: var(--fg); border-color: var(--kc, var(--fg)); }
+.chip[aria-pressed="true"] svg { color: var(--kc); }
+.chip.all[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.chip.free { --kc: var(--free); }
+.chip .n { font-variant-numeric: tabular-nums; opacity: .7; }
+
+/* Seletor de período */
+.popwrap { position: relative; }
+.pop { position: absolute; top: calc(100% + 6px); left: 0; z-index: 30; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px; width: min(340px, calc(100vw - 32px)); box-shadow: 0 10px 30px rgb(0 0 0 / .18); display: grid; gap: 10px; }
+.pop.right { left: auto; right: 0; }
+.quick { display: flex; flex-wrap: wrap; gap: 6px; }
+.quick button { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer; }
+.quick button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+.cal-h { display: flex; align-items: center; justify-content: space-between; font-weight: 600; text-transform: capitalize; }
+.cal-h button { font: inherit; background: none; border: 1px solid var(--line); border-radius: 8px; width: 32px; height: 30px; color: var(--fg); cursor: pointer; }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; font-variant-numeric: tabular-nums; }
+.cal .w { font-size: 11px; color: var(--muted); padding-block: 4px; }
+.cal button { font: inherit; font-size: 13px; height: 34px; border: 0; border-radius: 8px; background: transparent; color: var(--fg); cursor: pointer; }
+.cal button:disabled { color: var(--line); cursor: default; }
+.cal button.in { background: var(--sel); border-radius: 0; }
+.cal button.end { background: var(--accent); color: var(--accent-fg); border-radius: 8px; }
+.cal button.today { box-shadow: inset 0 0 0 1px var(--accent2); }
+.pop-f { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+.pop-f button { font: inherit; font-size: 13px; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 4px; text-decoration: underline; text-underline-offset: 3px; }
+
+.summary { color: var(--muted); font-size: 14px; padding-block: 12px 0; }
+.day { font-family: var(--font-display); font-weight: 700; font-size: 19px; margin: 22px 0 8px; display: flex; align-items: baseline; gap: 10px; text-wrap: balance; }
+.day small { font-family: var(--font-body); font-weight: 500; font-size: 13px; color: var(--muted); }
+.list { display: grid; gap: 8px; }
+
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 12px; }
+.card:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.main { min-width: 0; display: grid; gap: 4px; align-content: start; }
+.title { font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1.2; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+.badge { font-family: var(--font-body); font-size: 10.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; border: 1px solid currentColor; border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: 2px; white-space: nowrap; }
+.badge.gr { color: var(--free); }
+.meta { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+.meta .t { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+.map { display: inline-flex; vertical-align: -3px; margin-left: 4px; color: var(--accent); }
+.map svg { width: 16px; height: 16px; }
+.desc { margin: 2px 0 0; font-size: 14px; max-width: 62ch; }
+.acts { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 6px; }
+.go { font-size: 13px; font-weight: 600; text-decoration: none; padding: 4px 10px; border-radius: 999px; background: var(--accent); color: var(--accent-fg); white-space: nowrap; }
+.go:hover { filter: brightness(1.08); }
+.go::after { content: " ↗"; font-weight: 400; }
+.ib { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 4px 2px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
+.ib svg { width: 16px; height: 16px; }
+.ib:hover { color: var(--fg); }
+
+.fig { color: var(--kc); display: grid; justify-items: center; align-content: start; gap: 4px; text-align: center; }
+.fig .ic { width: 56px; height: 56px; border-radius: 13px; display: grid; place-items: center; background: color-mix(in srgb, var(--kc) 14%, transparent); }
+.fig .ic svg { width: 28px; height: 28px; }
+.fig span { font-size: 10.5px; font-weight: 600; letter-spacing: .02em; line-height: 1.15; max-width: 100%; }
+
+.more { display: block; margin: 20px auto 0; font: inherit; font-weight: 600; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); cursor: pointer; }
+.empty { padding: 40px 0; text-align: center; color: var(--muted); }
+
+footer { margin-top: 48px; padding-block: 24px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+footer h2 { font-family: var(--font-display); color: var(--fg); font-size: 20px; margin: 0 0 8px; }
+footer p { max-width: 68ch; margin: 0 0 10px; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); padding: 8px 14px; border-radius: 999px; font-size: 14px; z-index: 40; max-width: calc(100vw - 32px); overflow-wrap: anywhere; }
+
+@media (max-width: 700px) { .bar { position: static; } .pop.right { left: 0; right: auto; } }
+@media (max-width: 520px) {
+  .card { grid-template-columns: minmax(0, 1fr) 60px; padding: 11px 12px; gap: 8px; }
+  .fig .ic { width: 46px; height: 46px; border-radius: 11px; }
+  .fig .ic svg { width: 24px; height: 24px; }
+  .fig span { font-size: 9.5px; letter-spacing: 0; }
+}
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Agendão <span>Curitiba</span></h1>
+      <p class="intro">Todos os eventos anunciados em Curitiba nos próximos seis meses, reunidos de dez sites. Escolha o período em que quer sair e, se quiser, filtre pela data de publicação para ver só o que entrou na agenda desde a sua última visita.</p>
+      <p id="stat">Carregando a agenda…</p>
+    </div>
+    <button class="theme" id="theme" type="button" aria-label="Mudar tema">Tema: automático</button>
+  </header>
+</div>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="row">
+      <input class="search" id="q" type="search" placeholder="Buscar evento, artista ou local" aria-label="Buscar">
+      <div class="popwrap"><button class="pick" id="whenBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop" id="whenPop" role="dialog" aria-label="Data do evento" hidden></div></div>
+      <div class="popwrap"><button class="pick" id="pubBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop right" id="pubPop" role="dialog" aria-label="Data de publicação" hidden></div></div>
+      <select class="sel" id="venue" aria-label="Local"><option value="">Todos os locais</option></select>
+    </div>
+    <div class="row"><div class="chips" id="cats" role="group" aria-label="Tipo de evento"></div></div>
+    <div class="row"><div class="chips" id="freeRow"></div></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="summary" id="summary"></div>
+  <div id="out"></div>
+  <button class="more" id="more" type="button" hidden>Mostrar mais eventos</button>
+</main>
+
+<footer class="wrap" id="sobre">
+  <h2>Sobre</h2>
+  <p>O Agendão Curitiba reúne em um só lugar os eventos anunciados em Curitiba nos próximos seis meses. Todo dia ele confere a agenda do Turismo Curitiba, do Evento ON e de sites de ingressos (Sympla, Disk Ingressos, Blueticket, Bilheteria Digital, Ticketmaster, Ingresse, Fever e Ingresso.com) e junta os anúncios repetidos do mesmo evento.</p>
+  <p>Cada evento leva ao site onde foi anunciado. Datas, horários, preços e a própria realização podem mudar: confira sempre a página oficial antes de sair de casa. Os resumos são escritos por nós a partir do anúncio; as marcas e textos pertencem a seus donos.</p>
+  <p>Este é um agregador independente, sem ligação com os sites citados. Encontrou um erro ou quer que um evento seja retirado? Abra um aviso na <a href="https://github.com/dennymarcels/agendao-curitiba/issues" rel="noopener">página de issues do projeto</a>.</p>
+  <p id="upd"></p>
+</footer>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function () {
+  'use strict';
+  const DATA_URL = 'data/events.json';
+  const PUBLISHERS = ['Turismo Curitiba', 'Evento ON'];
+  const PAGE = 60;
+  const ICONS = {
+    'Show': '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/>',
+    'Festa/Balada': '<circle cx="12" cy="13.5" r="7"/><path d="M12 2.5v4M5 13.5h14M12 6.5c-3 3.5-3 10.5 0 14M12 6.5c3 3.5 3 10.5 0 14M6.4 9.5h11.2M6.4 17.5h11.2"/>',
+    'Teatro': '<path d="M3.5 4.5h10v5.5a5 5 0 0 1-10 0z"/><path d="M6.5 8h.01M10.5 8h.01M6.8 11.3a2.2 2.2 0 0 0 3.4 0"/><path d="M13.5 9h7v5a5 5 0 0 1-8.6 3.5"/><path d="M15.5 12h.01M18.5 12h.01M15.6 15.6a2.2 2.2 0 0 1 2.8 0"/>',
+    'Concerto': '<path d="M9 18V5.5l11-2.2v12.5"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="15.8" r="3"/><path d="M9 9.5l11-2.2"/>',
+    'Stand-up': '<circle cx="12" cy="12" r="9"/><path d="M7.5 13.5a4.5 4.5 0 0 0 9 0z"/><path d="M8 9.2l1.5-1M16 9.2l-1.5-1"/>',
+    'Palestra': '<path d="M4 10.5h16M7 10.5l1.4 10h7.2l1.4-10"/><path d="M12 10.5V6.5"/><circle cx="12" cy="4.5" r="2"/>',
+    'Infantil': '<path d="M12 2.5a6 6 0 0 1 6 6c0 4.2-3 7.5-6 7.5s-6-3.3-6-7.5a6 6 0 0 1 6-6z"/><path d="M11 17.5h2l-1-1.5zM12 17.5c0 2-2 2.2-2 4"/><path d="M9.5 6.5a3 3 0 0 1 2-1.5"/>',
+    'Festival': '<path d="M2.5 5c6.3 3 12.7 3 19 0"/><path d="M5.5 6.3l1.8 5.7 1.6-5M10.7 7.4l1.3 5.8 1.4-5.8M15.3 7.2l1.7 5.2 1.6-5.9"/><path d="M4 21V12M20 21v-9"/>',
+    'Feira/Exposição': '<path d="M3 9.5l2-5h14l2 5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8.5h14V12M10 20.5v-5h4v5"/>',
+    'Gastronomia': '<path d="M7 3v7.5M4.5 3v5a2.5 2.5 0 0 0 5 0V3M7 10.5V21"/><path d="M17.5 3c-2.2 2-2.2 7 0 8.5V21"/>',
+    'Congresso': '<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6M15.5 14.4c3 .1 5.5 2.1 5.5 5.6"/>',
+    'Esporte': '<circle cx="12" cy="13.5" r="7.5"/><path d="M12 9.5v4l2.5 2M10 2.5h4M18.5 6l1.5-1.5"/>',
+    'Outros': '<path d="M12 3l2.6 5.6 6 .6-4.5 4 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.5-4 6-.6z"/>'
+  };
+  const UI = {
+    cal: '<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+    calAdd: '<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/>',
+    news: '<path d="M12 3l1.8 4.2 4.5.4-3.4 3 1 4.4L12 12.8 8.1 15l1-4.4-3.4-3 4.5-.4z"/><path d="M5 20h14"/>',
+    share: '<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/>',
+    pin: '<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
+    free: '<path d="M4 9.5V6.5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2.5 2.5 0 0 0 0 5v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2.5 2.5 0 0 0 0-5z"/><path d="M9 15l6-6"/>'
+  };
+  const ORDER = ['Show', 'Festa/Balada', 'Teatro', 'Concerto', 'Stand-up', 'Palestra', 'Infantil', 'Festival', 'Feira/Exposição', 'Gastronomia', 'Congresso', 'Esporte', 'Outros'];
+  const kc = (c) => 'var(--k' + ORDER.indexOf(ORDER.includes(c) ? c : 'Outros') + ')';
+  const svg = (paths) => '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + paths + '</svg>';
+  const catSvg = (c) => svg(ICONS[c] || ICONS.Outros);
+
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+
+  // Datas no fuso de Curitiba (UTC-3)
+  const todayIso = new Date(Date.now() - 3 * 36e5).toISOString().slice(0, 10);
+  const addDays = (iso, n) => { const d = new Date(iso + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+  const DOW = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+  const MON = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+  const MONL = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+  const dObj = (iso) => new Date(iso + 'T12:00:00Z');
+  const short = (iso) => { const d = dObj(iso); return d.getUTCDate() + ' ' + MON[d.getUTCMonth()]; };
+  const dayLabel = (iso) => {
+    const d = dObj(iso); const base = DOW[d.getUTCDay()] + ', ' + d.getUTCDate() + ' de ' + MON[d.getUTCMonth()];
+    if (iso === todayIso) return ['Hoje', base]; if (iso === addDays(todayIso, 1)) return ['Amanhã', base];
+    return [base.charAt(0).toUpperCase() + base.slice(1), ''];
+  };
+  const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const toast = (msg) => { const t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => { t.hidden = true; }, 2400); };
+
+  // Tema: automático → claro → escuro
+  const themes = ['auto', 'light', 'dark'], tName = { auto: 'automático', light: 'claro', dark: 'escuro' };
+  let theme = store.get('agc-theme') || 'auto';
+  const applyTheme = () => { if (theme === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', theme); $('theme').textContent = 'Tema: ' + tName[theme]; };
+  $('theme').addEventListener('click', () => { theme = themes[(themes.indexOf(theme) + 1) % 3]; store.set('agc-theme', theme); applyTheme(); });
+  applyTheme();
+
+  // Períodos
+  function weekendRange() {
+    const dow = dObj(todayIso).getUTCDay();
+    if (dow === 0) return [todayIso, todayIso];
+    if (dow === 6) return [todayIso, addDays(todayIso, 1)];
+    const fri = addDays(todayIso, 5 - dow); return [dow === 5 ? todayIso : fri, addDays(fri, 2)];
+  }
+  const WHEN_Q = [
+    ['all', 'Qualquer data', () => null], ['today', 'Hoje', () => [todayIso, todayIso]], ['tomorrow', 'Amanhã', () => [addDays(todayIso, 1), addDays(todayIso, 1)]],
+    ['weekend', 'Fim de semana', weekendRange], ['n7', 'Próximos 7 dias', () => [todayIso, addDays(todayIso, 7)]],
+    ['n15', 'Próximos 15 dias', () => [todayIso, addDays(todayIso, 15)]], ['n30', 'Próximos 30 dias', () => [todayIso, addDays(todayIso, 30)]]];
+  const PUB_Q = [
+    ['any', 'Data de publicação indefinida', () => null], ['d1', 'Último dia', () => [addDays(todayIso, -1), todayIso]], ['d3', 'Últimos 3 dias', () => [addDays(todayIso, -3), todayIso]],
+    ['d5', 'Últimos 5 dias', () => [addDays(todayIso, -5), todayIso]], ['d7', 'Últimos 7 dias', () => [addDays(todayIso, -7), todayIso]],
+    ['d15', 'Últimos 15 dias', () => [addDays(todayIso, -15), todayIso]], ['d30', 'Últimos 30 dias', () => [addDays(todayIso, -30), todayIso]]];
+  const rangeOf = (st, Q) => { if (st.mode === 'range') return [st.a, st.b]; const q = Q.find((x) => x[0] === st.mode); return q ? q[2]() : null; };
+  const rangeText = (a, b) => a === b ? short(a) : short(a) + ' – ' + short(b);
+
+  // Estado (guardado no navegador)
+  const DEF = { when: { mode: 'all' }, pub: { mode: 'any' }, venue: '', free: false, off: [] };
+  let saved = {}; try { saved = JSON.parse(store.get('agc-filters') || '{}') || {}; } catch (e) { saved = {}; }
+  const state = { q: '', when: saved.when || DEF.when, pub: saved.pub || DEF.pub, venue: saved.venue || '', free: !!saved.free, off: new Set(saved.off || []) };
+  if (state.when.mode === 'range' && state.when.b < todayIso) state.when = { mode: 'all' };
+  const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venue: state.venue, free: state.free, off: [...state.off] }));
+
+  let meta = {}, events = [], shown = PAGE;
+  const nextDate = (e) => { const ds = (e.d || []).filter((x) => x >= todayIso); return ds[0] || (e.s < todayIso ? todayIso : e.s); };
+  const occursIn = (e, a, b) => { if (e.d && e.d.length) return e.d.some((x) => x >= a && x <= b); return e.s <= b && e.e >= a; };
+  const pubRange = () => rangeOf(state.pub, PUB_Q);
+  const isNew = (e) => { const r = pubRange(); return !!r && !!e.f && e.f !== meta.firstRun && e.f >= r[0] && e.f <= r[1]; };
+
+  function match(e, skipCats) {
+    if (e.e < todayIso) return false;
+    if (!skipCats && state.off.has(e.c || 'Outros')) return false;
+    if (state.free && !e.g) return false;
+    if (state.pub.mode !== 'any' && !isNew(e)) return false;
+    if (state.venue && e.v !== state.venue) return false;
+    const w = rangeOf(state.when, WHEN_Q); if (w && !occursIn(e, w[0], w[1])) return false;
+    if (state.q) { const hay = e._h || (e._h = norm([e.t, e.v, e.a, e.c, e.r].join(' '))); if (!norm(state.q).split(/\s+/).every((x) => hay.includes(x))) return false; }
+    return true;
+  }
+
+  // Popover com atalhos + calendário de intervalo
+  function makePicker(btn, pop, key, Q, icon, emptyLabel, bounds) {
+    let view = null, pending = null;
+    const label = () => {
+      const st = state[key]; btn.innerHTML = svg(icon);
+      const pre = emptyLabel.split(':')[0] + ': '; let t = emptyLabel; if (st.mode === 'range') t = pre + rangeText(st.a, st.b); else { const q = Q.find((x) => x[0] === st.mode); if (q && q[0] !== Q[0][0]) t = pre + q[1].charAt(0).toLowerCase() + q[1].slice(1); }
+      btn.append(t); btn.classList.toggle('on', st.mode !== Q[0][0]);
+    };
+    const close = () => { pop.hidden = true; btn.setAttribute('aria-expanded', 'false'); pending = null; };
+    const render = () => {
+      pop.replaceChildren();
+      const st = state[key], r = rangeOf(st, Q);
+      const quick = el('div', 'quick');
+      Q.forEach(([m, t]) => { const b = el('button', null, t); b.type = 'button'; b.setAttribute('aria-pressed', st.mode === m); b.addEventListener('click', () => { state[key] = { mode: m }; done(); }); quick.append(b); });
+      const [lo, hi] = bounds();
+      if (!view) view = (r ? r[0] : todayIso).slice(0, 7);
+      const [y, mo] = view.split('-').map(Number);
+      const head = el('div', 'cal-h'); const prev = el('button', null, '‹'), next = el('button', null, '›'); prev.type = next.type = 'button';
+      prev.setAttribute('aria-label', 'Mês anterior'); next.setAttribute('aria-label', 'Próximo mês');
+      const shift = (n) => { const d = new Date(Date.UTC(y, mo - 1 + n, 1)); view = d.toISOString().slice(0, 7); render(); };
+      prev.addEventListener('click', () => shift(-1)); next.addEventListener('click', () => shift(1));
+      prev.disabled = view <= lo.slice(0, 7); next.disabled = view >= hi.slice(0, 7);
+      head.append(prev, el('span', null, MONL[mo - 1] + ' ' + y), next);
+      const cal = el('div', 'cal'); ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'].forEach((w) => cal.append(el('span', 'w', w)));
+      const first = new Date(Date.UTC(y, mo - 1, 1)), days = new Date(Date.UTC(y, mo, 0)).getUTCDate();
+      for (let i = 0; i < first.getUTCDay(); i++) cal.append(el('span'));
+      const sel = pending ? [pending, pending] : r;
+      for (let d = 1; d <= days; d++) {
+        const iso = view + '-' + String(d).padStart(2, '0'); const b = el('button', null, d); b.type = 'button';
+        if (iso < lo || iso > hi) b.disabled = true;
+        if (sel && iso >= sel[0] && iso <= sel[1]) b.classList.add(iso === sel[0] || iso === sel[1] ? 'end' : 'in');
+        if (iso === todayIso) b.classList.add('today');
+        b.addEventListener('click', () => {
+          if (!pending) { pending = iso; render(); return; }
+          const a = pending < iso ? pending : iso, z = pending < iso ? iso : pending; state[key] = { mode: 'range', a, b: z }; done();
+        });
+        cal.append(b);
+      }
+      const foot = el('div', 'pop-f'); foot.append(el('span', null, pending ? 'Escolha o último dia' : 'Toque no primeiro e no último dia'));
+      const clr = el('button', null, 'Limpar'); clr.type = 'button'; clr.addEventListener('click', () => { state[key] = { mode: Q[0][0] }; done(); }); foot.append(clr);
+      pop.append(quick, head, cal, foot);
+    };
+    const done = () => { save(); label(); close(); shown = PAGE; draw(); };
+    btn.addEventListener('click', (ev) => { ev.stopPropagation(); if (!pop.hidden) { close(); return; } document.querySelectorAll('.pop').forEach((p) => { p.hidden = true; }); view = null; pending = null; render(); pop.hidden = false; btn.setAttribute('aria-expanded', 'true'); });
+    pop.addEventListener('click', (ev) => ev.stopPropagation());
+    document.addEventListener('click', () => { if (!pop.hidden) close(); });
+    document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && !pop.hidden) { close(); btn.focus(); } });
+    label();
+  }
+  makePicker($('whenBtn'), $('whenPop'), 'when', WHEN_Q, UI.cal, 'Evento: qualquer data', () => [todayIso, meta.horizon || addDays(todayIso, 190)]);
+  makePicker($('pubBtn'), $('pubPop'), 'pub', PUB_Q, UI.news, 'Publicação: qualquer data', () => [meta.firstRun ? addDays(meta.firstRun, 1) : addDays(todayIso, -60), todayIso]);
+
+  function drawStat() {
+    const stat = $('stat'); stat.replaceChildren();
+    const live = events.filter((e) => e.e >= todayIso);
+    stat.append(el('b', null, live.length), ' eventos até ' + short(meta.horizon || todayIso));
+    const r = pubRange();
+    if (r) {
+      const n = live.filter(isNew).length; const q = PUB_Q.find((x) => x[0] === state.pub.mode);
+      const per = state.pub.mode === 'range' ? 'publicados entre ' + rangeText(r[0], r[1]) : (state.pub.mode === 'd1' ? 'publicados no último dia' : 'nos ' + q[1].toLowerCase());
+      stat.append(' · ', el('b', 'hi', n), (n === 1 ? ' novo ' : ' novos ') + per);
+    }
+  }
+
+  function drawCats(base) {
+    const counts = {}; base.forEach((e) => { const c = e.c || 'Outros'; counts[c] = (counts[c] || 0) + 1; });
+    const cats = ORDER.filter((c) => counts[c]).concat(Object.keys(counts).filter((c) => !ORDER.includes(c)));
+    const allOn = cats.every((c) => !state.off.has(c));
+    const box = $('cats'); box.replaceChildren();
+    const all = el('button', 'chip all', 'Todas'); all.type = 'button'; all.setAttribute('aria-pressed', allOn);
+    all.addEventListener('click', () => { state.off = allOn ? new Set(ORDER) : new Set(); save(); shown = PAGE; draw(); });
+    box.append(all);
+    cats.forEach((c) => {
+      const b = el('button', 'chip'); b.type = 'button'; b.style.setProperty('--kc', kc(c));
+      b.setAttribute('aria-pressed', !state.off.has(c));
+      b.innerHTML = catSvg(c); b.append(el('span', null, c), el('span', 'n', counts[c]));
+      b.addEventListener('click', () => { state.off.has(c) ? state.off.delete(c) : state.off.add(c); save(); shown = PAGE; draw(); });
+      box.append(b);
+    });
+    const nFree = base.filter((e) => e.g).length;
+    const fr = el('button', 'chip free'); fr.type = 'button'; fr.setAttribute('aria-pressed', state.free);
+    fr.innerHTML = svg(UI.free); fr.append(el('span', null, 'Só gratuitos'), el('span', 'n', nFree));
+    fr.addEventListener('click', () => { state.free = !state.free; save(); shown = PAGE; draw(); });
+    $('freeRow').replaceChildren(fr);
+  }
+
+  function icsFor(e) {
+    const day = nextDate(e).replace(/-/g, ''), m = /^(\d{1,2})h(\d{2})?/.exec(e.h || '');
+    const esc = (s) => String(s || '').replace(/[\\,;]/g, (x) => '\\' + x).replace(/\n/g, ' ');
+    const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Agendao Curitiba//PT', 'BEGIN:VEVENT', 'UID:' + e.id + '@agendao-curitiba',
+      'DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z'];
+    if (m) lines.push('DTSTART;TZID=America/Sao_Paulo:' + day + 'T' + String(m[1]).padStart(2, '0') + (m[2] || '00') + '00', 'DURATION:PT2H');
+    else lines.push('DTSTART;VALUE=DATE:' + day);
+    lines.push('SUMMARY:' + esc(e.t), 'LOCATION:' + esc([e.v, e.a].filter(Boolean).join(', ')), 'URL:' + (e.L[0] || [])[1], 'END:VEVENT', 'END:VCALENDAR');
+    return lines.join('\r\n');
+  }
+  const eventLink = (e) => meta.siteUrl ? meta.siteUrl + 'e/' + e.id + '.html' : location.href.split('#')[0] + '#' + e.id;
+
+  function card(e) {
+    const c = e.c || 'Outros';
+    const art = el('article', 'card'); art.id = e.id; art.style.setProperty('--kc', kc(c));
+    const main = el('div', 'main');
+    const h = el('h3', 'title', e.t);
+    if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
+    main.append(h);
+    const m = el('div', 'meta');
+    const when = e.s !== e.e ? (e.s <= todayIso ? 'Até ' + short(e.e) : short(e.s) + ' a ' + short(e.e)) : '';
+    if (e.h && /\d/.test(e.h)) m.append(el('span', 't', e.h));
+    [when, e.v].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
+    if (e.v && !/^local a definir$/i.test(e.v)) {
+      const a = el('a', 'map'); a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([e.v, e.a, 'Curitiba PR'].filter(Boolean).join(', '));
+      a.target = '_blank'; a.rel = 'noopener'; a.title = 'Ver no Google Maps'; a.setAttribute('aria-label', 'Ver ' + e.v + ' no Google Maps'); a.innerHTML = svg(UI.pin); m.append(a);
+    }
+    main.append(m);
+    if (e.r) main.append(el('p', 'desc', e.r));
+    // Links: só publicadores quando houver; ordem aleatória
+    const pubs = e.L.filter((l) => PUBLISHERS.includes(l[0]));
+    const acts = el('div', 'acts');
+    shuffle(pubs.length ? pubs : e.L).forEach(([src, url]) => { const a = el('a', 'go', src); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.title = 'Mais informações em ' + src; acts.append(a); });
+    const cal = el('button', 'ib'); cal.type = 'button'; cal.title = 'Adicionar à agenda'; cal.innerHTML = svg(UI.calAdd); cal.append(el('span', null, 'Adicionar à agenda'));
+    cal.addEventListener('click', () => {
+      try { const url = URL.createObjectURL(new Blob([icsFor(e)], { type: 'text/calendar' })); const a = document.createElement('a'); a.href = url; a.download = 'evento.ics'; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000); }
+      catch (err) { toast('Não foi possível criar o arquivo da agenda'); }
+    });
+    const sh = el('button', 'ib'); sh.type = 'button'; sh.title = 'Compartilhar'; sh.innerHTML = svg(UI.share); sh.append(el('span', null, 'Compartilhar'));
+    sh.addEventListener('click', () => {
+      const link = eventLink(e);
+      if (navigator.share) { navigator.share({ title: e.t, url: link }).catch(() => {}); return; }
+      try { navigator.clipboard.writeText(link).then(() => toast('Link copiado'), () => toast(link)); } catch (err) { toast(link); }
+    });
+    acts.append(cal, sh); main.append(acts);
+    const fig = el('div', 'fig'); const ic = el('div', 'ic'); ic.innerHTML = catSvg(c); fig.append(ic, el('span', null, c.replace('/', '/​')));
+    art.append(main, fig);
+    return art;
+  }
+
+  function draw() {
+    drawStat();
+    const base = events.filter((e) => match(e, true));
+    drawCats(base);
+    const list = base.filter((e) => !state.off.has(e.c || 'Outros'))
+      .map((e) => [nextDate(e), e]).sort((a, b) => a[0].localeCompare(b[0]) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
+    $('venue').classList.toggle('on', !!state.venue);
+    $('summary').textContent = list.length ? list.length + (list.length === 1 ? ' evento' : ' eventos') : '';
+    const out = $('out'); out.replaceChildren();
+    if (!list.length) { out.append(el('p', 'empty', 'Nenhum evento com esses filtros. Tente ampliar o período ou marcar mais categorias.')); $('more').hidden = true; return; }
+    let cur = null, box = null;
+    list.slice(0, shown).forEach(([d, e]) => {
+      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); box = el('div', 'list'); out.append(hh, box); }
+      box.append(card(e));
+    });
+    $('more').hidden = list.length <= shown;
+  }
+
+  let qT;
+  $('q').addEventListener('input', () => { clearTimeout(qT); qT = setTimeout(() => { state.q = $('q').value.trim(); shown = PAGE; draw(); }, 150); });
+  $('venue').addEventListener('change', () => { state.venue = $('venue').value; save(); shown = PAGE; draw(); });
+  $('more').addEventListener('click', () => { shown += PAGE; draw(); });
+
+  fetch(DATA_URL).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((j) => {
+    meta = j.meta || {}; events = (j.events || []).filter((e) => e.e >= todayIso);
+    if (meta.updated) $('upd').textContent = 'Atualizado em ' + dObj(meta.updated).toLocaleDateString('pt-BR', { timeZone: 'UTC' }) + '.';
+    const vc = {}; events.forEach((e) => { if (e.v) vc[e.v] = (vc[e.v] || 0) + 1; });
+    Object.keys(vc).filter((v) => vc[v] > 1).sort((a, b) => a.localeCompare(b, 'pt')).forEach((v) => $('venue').append(new Option(v + ' (' + vc[v] + ')', v)));
+    if (state.venue && !vc[state.venue]) state.venue = '';
+    $('venue').value = state.venue;
+    const h = location.hash.slice(1);
+    if (h && events.some((e) => e.id === h)) shown = events.length;
+    draw();
+    if (h) { const t = document.getElementById(h); if (t) t.scrollIntoView({ block: 'center' }); }
+  }).catch(() => { $('stat').textContent = 'Não foi possível carregar a agenda. Recarregue a página em alguns minutos.'; });
+})();
+</script>
+</body>
+</html>

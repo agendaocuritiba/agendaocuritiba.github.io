@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dennymarcels.github.io/agendao-curitiba/sitemap.xml
