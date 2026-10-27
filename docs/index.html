@@ -36,7 +36,8 @@
   --accent2: #8f6400;     /* claro: amarelo escurecido para ler no fundo claro (novo, destaque) */
   --free: #11704a;
   --chip: #ece8f4;
-  --go: #f5c84c; --go-fg: #1b1626;   /* badge do anúncio original: amarelo nos dois temas */
+  --go: #f5c84c; --go-fg: #1b1626;
+  --hero: color-mix(in srgb, var(--accent) 9%, var(--bg));   /* badge do anúncio original: amarelo nos dois temas */
   --sel: color-mix(in srgb, var(--accent) 16%, transparent);
   --k0:#2f6fb2; --k1:#9b3fb5; --k2:#b2433a; --k3:#7a5a1e; --k4:#c06a12; --k5:#3f6b52;
   --k6:#c23b78; --k7:#5b4fc4; --k8:#16807a; --k9:#a7561c; --k10:#4b5b6e; --k11:#2e8a3c; --k12:#6b6f68;
@@ -46,11 +47,11 @@
   --logo: var(--accent);   /* claro: contorno roxo; escuro: amarelo */
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36;
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36; --hero:#1d1630;
   --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
   color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36;
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36; --hero:#1d1630;
   --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
   color-scheme: dark; }
 html { -webkit-text-size-adjust: 100%; }
@@ -63,17 +64,20 @@ a { color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
-.top { padding-block: 28px 14px; display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
-.brand .name { display: flex; align-items: flex-end; gap: 14px; }
-.logo { flex: none; width: clamp(78px, 15vw, 112px); aspect-ratio: 608 / 388; background: var(--logo);
+/* Cabeçalho em destaque: faixa com tom da marca, conteúdo centralizado */
+.hero { background: var(--hero); border-bottom: 1px solid var(--line); }
+.hero .wrap { position: relative; padding-top: 58px; padding-bottom: 30px; }
+.brand { display: grid; justify-items: center; text-align: center; }
+.logo { width: clamp(120px, 26vw, 168px); aspect-ratio: 608 / 388; background: var(--logo);
   -webkit-mask: url(logo.png) center / contain no-repeat; mask: url(logo.png) center / contain no-repeat; }
-.brand h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 6vw, 44px); line-height: 1; margin: 0; letter-spacing: -0.02em; }
+.brand h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(36px, 8.5vw, 60px); line-height: 1; margin: 14px 0 0; letter-spacing: -0.025em; text-wrap: balance; }
 .brand h1 span { color: var(--logo); }
 .brand p { margin: 8px 0 0; color: var(--muted); }
 .brand p b { color: var(--fg); font-variant-numeric: tabular-nums; }
-.brand .intro { color: var(--fg); max-width: 60ch; margin-top: 10px; font-size: 15px; }
+.brand .intro { color: var(--fg); max-width: 58ch; margin-top: 22px; font-size: 16px; text-wrap: pretty; }
+.brand #stat { margin-top: 12px; }
 .brand p b.hi { color: var(--accent2); }
-.theme { font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.theme { position: absolute; top: 12px; right: max(16px, env(safe-area-inset-right, 0px)); font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
 .theme:hover { color: var(--fg); border-color: var(--muted); }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); }
@@ -167,16 +171,17 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 </head>
 <body>
 
-<div class="wrap">
-  <header class="top">
+<header class="hero">
+  <div class="wrap">
+    <button class="theme" id="theme" type="button" aria-label="Mudar tema">Tema: automático</button>
     <div class="brand">
-      <div class="name"><span class="logo" role="img" aria-label="Logo do Agendão Curitiba: Jardim Botânico, Torre Panorâmica e Museu Oscar Niemeyer"></span><h1>Agendão <span>Curitiba</span></h1></div>
+      <span class="logo" role="img" aria-label="Logo do Agendão Curitiba: Jardim Botânico, Torre Panorâmica e Museu Oscar Niemeyer"></span>
+      <h1>Agendão <span>Curitiba</span></h1>
       <p class="intro">Todos os eventos anunciados em Curitiba nos próximos seis meses, reunidos de dez sites. Escolha o período em que quer sair e, se quiser, filtre pela data de publicação para ver só o que entrou na agenda desde a sua última visita.</p>
       <p id="stat">Carregando a agenda…</p>
     </div>
-    <button class="theme" id="theme" type="button" aria-label="Mudar tema">Tema: automático</button>
-  </header>
-</div>
+  </div>
+</header>
 
 <div class="bar">
   <div class="wrap">
