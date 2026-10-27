@@ -16,7 +16,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#1f5d3f">
+<meta name="theme-color" content="#5b3fb5">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,23 +24,24 @@
 <style>
 /* Layout: cabeçalho com o nome, barra de filtros, lista de eventos agrupada por dia; cada card leva a figura da categoria à direita. */
 :root {
-  --bg: #f3f5f2;          /* neblina de inverno curitibano */
+  --bg: #f5f3f9;          /* lavanda clara */
   --panel: #ffffff;
-  --fg: #17221c;
-  --muted: #56645b;
-  --line: #d8ded8;
-  --accent: #1f5d3f;      /* claro: verde araucária */
+  --fg: #1b1626;
+  --muted: #5f5870;
+  --line: #ddd7e8;
+  --accent: #5b3fb5;      /* claro: roxo */
   --accent-fg: #ffffff;
-  --accent2: #a3472a;     /* claro: marrom do pinhão (novo, destaque) */
+  --accent2: #8f6400;     /* claro: amarelo escurecido para ler no fundo claro (novo, destaque) */
   --free: #11704a;
-  --chip: #e6ebe6;
+  --chip: #ece8f4;
+  --go: #f5c84c; --go-fg: #1b1626;   /* badge do anúncio original: amarelo nos dois temas */
   --sel: color-mix(in srgb, var(--accent) 16%, transparent);
   --k0:#2f6fb2; --k1:#9b3fb5; --k2:#b2433a; --k3:#7a5a1e; --k4:#c06a12; --k5:#3f6b52;
   --k6:#c23b78; --k7:#5b4fc4; --k8:#16807a; --k9:#a7561c; --k10:#4b5b6e; --k11:#2e8a3c; --k12:#6b6f68;
   --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --font-body: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   --r: 10px;
-  --logo: var(--accent);   /* claro: contorno verde; escuro: amarelo */
+  --logo: var(--accent);   /* claro: contorno roxo; escuro: amarelo */
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36;
@@ -129,7 +130,7 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .map svg { width: 16px; height: 16px; }
 .desc { margin: 2px 0 0; font-size: 14px; max-width: 62ch; }
 .acts { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 6px; }
-.go { font-size: 13px; font-weight: 600; text-decoration: none; padding: 4px 10px; border-radius: 999px; background: var(--accent); color: var(--accent-fg); white-space: nowrap; }
+.go { font-size: 13px; font-weight: 600; text-decoration: none; padding: 4px 10px; border-radius: 999px; background: var(--go); color: var(--go-fg); white-space: nowrap; }
 .go:hover { filter: brightness(1.08); }
 .go::after { content: " ↗"; font-weight: 400; }
 .ib { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 4px 2px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }

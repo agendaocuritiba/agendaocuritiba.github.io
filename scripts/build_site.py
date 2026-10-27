@@ -179,7 +179,7 @@ def event_page(d, img, run):
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{esc(image)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#1f5d3f">
+<meta name="theme-color" content="#5b3fb5">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../evento.css">
 <script type="application/ld+json">{ld_json}</script>

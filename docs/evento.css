@@ -1,5 +1,5 @@
 /* Página de um evento: mesma paleta do índice, layout de coluna única. */
-:root { --bg:#f3f5f2; --panel:#fff; --fg:#17221c; --muted:#56645b; --line:#d8ded8; --accent:#1f5d3f; --accent-fg:#fff; --free:#11704a; --logo:#1f5d3f;
+:root { --bg:#f5f3f9; --panel:#fff; --fg:#1b1626; --muted:#5f5870; --line:#ddd7e8; --accent:#5b3fb5; --accent-fg:#fff; --free:#11704a; --logo:#5b3fb5; --go:#f5c84c; --go-fg:#1b1626;
   --font-display:"Avenir Next","Segoe UI",system-ui,sans-serif; --font-body:"Segoe UI",system-ui,-apple-system,sans-serif; }
 @media (prefers-color-scheme: dark) { :root { --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --free:#7fd8a6; --logo:#f5c84c; color-scheme: dark; } }
 html { -webkit-text-size-adjust: 100%; }
@@ -20,7 +20,7 @@ h1 { font-family: var(--font-display); font-size: clamp(24px, 6vw, 32px); line-h
 .desc { margin: 14px 0 0; }
 .lbl { margin: 20px 0 8px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
 .acts { display: flex; flex-wrap: wrap; gap: 8px; }
-.go { font-size: 14px; font-weight: 600; text-decoration: none; padding: 7px 14px; border-radius: 999px; background: var(--accent); color: var(--accent-fg); }
+.go { font-size: 14px; font-weight: 600; text-decoration: none; padding: 7px 14px; border-radius: 999px; background: var(--go); color: var(--go-fg); }
 .go::after { content: " ↗"; font-weight: 400; }
 .back { margin: 22px 0 0; font-weight: 600; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
