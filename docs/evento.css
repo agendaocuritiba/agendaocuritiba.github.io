@@ -9,7 +9,7 @@ a { color: var(--accent); }
 .home { margin: 0 0 18px; font-family: var(--font-display); font-weight: 800; font-size: 22px; }
 .home a { color: var(--fg); text-decoration: none; display: inline-flex; align-items: flex-end; gap: 10px; }
 .logo { width: 52px; aspect-ratio: 608 / 388; background: var(--logo); -webkit-mask: url(logo.png) center / contain no-repeat; mask: url(logo.png) center / contain no-repeat; }
-.home span span { color: var(--accent); }
+.home span span { color: var(--logo); }
 .ev { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
 .cat { margin: 0; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
 .cat b { color: var(--free); }
