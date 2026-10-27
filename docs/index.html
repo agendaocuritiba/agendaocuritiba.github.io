@@ -77,8 +77,9 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .brand .intro { color: var(--fg); max-width: 58ch; margin-top: 22px; font-size: 16px; text-wrap: pretty; }
 .brand #stat { margin-top: 12px; }
 .brand p b.hi { color: var(--accent2); }
-.theme { position: absolute; top: 12px; right: max(16px, env(safe-area-inset-right, 0px)); font: inherit; font-size: 13px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
-.theme:hover { color: var(--fg); border-color: var(--muted); }
+.theme { position: absolute; top: 12px; right: max(16px, env(safe-area-inset-right, 0px)); width: 40px; height: 40px; display: grid; place-items: center; padding: 0; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
+.theme svg { width: 20px; height: 20px; }
+.theme:hover { border-color: var(--logo); color: var(--logo); }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
@@ -194,7 +195,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 
 <header class="hero" id="topo">
   <div class="wrap">
-    <button class="theme" id="theme" type="button" aria-label="Mudar tema">Tema: automático</button>
+    <button class="theme" id="theme" type="button" aria-label="Mudar para o tema escuro"></button>
     <div class="brand">
       <span class="logo" role="img" aria-label="Logo do Agendão Curitiba: Jardim Botânico, Torre Panorâmica e Museu Oscar Niemeyer"></span>
       <h1>Agendão <span>Curitiba</span></h1>
@@ -289,11 +290,19 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const toast = (msg) => { const t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => { t.hidden = true; }, 2400); };
 
-  // Tema: automático → claro → escuro
-  const themes = ['auto', 'light', 'dark'], tName = { auto: 'automático', light: 'claro', dark: 'escuro' };
-  let theme = store.get('agc-theme') || 'auto';
-  const applyTheme = () => { if (theme === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', theme); $('theme').textContent = 'Tema: ' + tName[theme]; };
-  $('theme').addEventListener('click', () => { theme = themes[(themes.indexOf(theme) + 1) % 3]; store.set('agc-theme', theme); applyTheme(); });
+  // Tema: segue o sistema até o primeiro clique; o botão mostra o tema para o qual vai mudar (sol = claro, lua = escuro)
+  const SUN = '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/>';
+  const MOON = '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>';
+  const sysDark = matchMedia('(prefers-color-scheme: dark)');
+  let theme = store.get('agc-theme'); if (theme !== 'light' && theme !== 'dark') theme = null;
+  const current = () => theme || (sysDark.matches ? 'dark' : 'light');
+  const applyTheme = () => {
+    if (theme) document.documentElement.setAttribute('data-theme', theme); else document.documentElement.removeAttribute('data-theme');
+    const dark = current() === 'dark', b = $('theme');
+    b.innerHTML = svg(dark ? SUN : MOON); b.setAttribute('aria-label', dark ? 'Mudar para o tema claro' : 'Mudar para o tema escuro'); b.title = b.getAttribute('aria-label');
+  };
+  $('theme').addEventListener('click', () => { theme = current() === 'dark' ? 'light' : 'dark'; store.set('agc-theme', theme); applyTheme(); });
+  sysDark.addEventListener('change', applyTheme);
   applyTheme();
 
   // Períodos
