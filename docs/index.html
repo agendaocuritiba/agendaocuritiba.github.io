@@ -40,13 +40,14 @@
   --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --font-body: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
   --r: 10px;
+  --logo: var(--accent);   /* claro: contorno verde; escuro: amarelo */
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --free:#7fd8a6; --chip:#271f36;
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36;
   --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
   color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --free:#7fd8a6; --chip:#271f36;
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36;
   --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
   color-scheme: dark; }
 html { -webkit-text-size-adjust: 100%; }
@@ -60,6 +61,9 @@ a { color: inherit; }
 svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
 .top { padding-block: 28px 14px; display: flex; gap: 16px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
+.brand .name { display: flex; align-items: flex-end; gap: 14px; }
+.logo { flex: none; width: clamp(78px, 15vw, 112px); aspect-ratio: 608 / 388; background: var(--logo);
+  -webkit-mask: url(logo.png) center / contain no-repeat; mask: url(logo.png) center / contain no-repeat; }
 .brand h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 6vw, 44px); line-height: 1; margin: 0; letter-spacing: -0.02em; }
 .brand h1 span { color: var(--accent); }
 .brand p { margin: 8px 0 0; color: var(--muted); }
@@ -163,7 +167,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 <div class="wrap">
   <header class="top">
     <div class="brand">
-      <h1>Agendão <span>Curitiba</span></h1>
+      <div class="name"><span class="logo" role="img" aria-label="Logo do Agendão Curitiba: Jardim Botânico, Torre Panorâmica e Museu Oscar Niemeyer"></span><h1>Agendão <span>Curitiba</span></h1></div>
       <p class="intro">Todos os eventos anunciados em Curitiba nos próximos seis meses, reunidos de dez sites. Escolha o período em que quer sair e, se quiser, filtre pela data de publicação para ver só o que entrou na agenda desde a sua última visita.</p>
       <p id="stat">Carregando a agenda…</p>
     </div>

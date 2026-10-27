@@ -1,14 +1,15 @@
 /* Página de um evento: mesma paleta do índice, layout de coluna única. */
-:root { --bg:#f3f5f2; --panel:#fff; --fg:#17221c; --muted:#56645b; --line:#d8ded8; --accent:#1f5d3f; --accent-fg:#fff; --free:#11704a;
+:root { --bg:#f3f5f2; --panel:#fff; --fg:#17221c; --muted:#56645b; --line:#d8ded8; --accent:#1f5d3f; --accent-fg:#fff; --free:#11704a; --logo:#1f5d3f;
   --font-display:"Avenir Next","Segoe UI",system-ui,sans-serif; --font-body:"Segoe UI",system-ui,-apple-system,sans-serif; }
-@media (prefers-color-scheme: dark) { :root { --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --free:#7fd8a6; color-scheme: dark; } }
+@media (prefers-color-scheme: dark) { :root { --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --free:#7fd8a6; --logo:#f5c84c; color-scheme: dark; } }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
 .wrap { max-width: 680px; margin: 0 auto; padding: 24px 16px 40px; }
 a { color: var(--accent); }
 .home { margin: 0 0 18px; font-family: var(--font-display); font-weight: 800; font-size: 22px; }
-.home a { color: var(--fg); text-decoration: none; }
-.home span { color: var(--accent); }
+.home a { color: var(--fg); text-decoration: none; display: inline-flex; align-items: flex-end; gap: 10px; }
+.logo { width: 52px; aspect-ratio: 608 / 388; background: var(--logo); -webkit-mask: url(logo.png) center / contain no-repeat; mask: url(logo.png) center / contain no-repeat; }
+.home span span { color: var(--accent); }
 .ev { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
 .cat { margin: 0; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
 .cat b { color: var(--free); }

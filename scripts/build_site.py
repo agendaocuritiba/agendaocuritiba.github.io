@@ -186,7 +186,7 @@ def event_page(d, img, run):
 </head>
 <body>
 <main class="wrap">
-  <p class="home"><a href="../">Agendão <span>Curitiba</span></a></p>
+  <p class="home"><a href="../"><span class="logo" aria-hidden="true"></span><span>Agendão <span>Curitiba</span></span></a></p>
   <article class="ev">
     <p class="cat">{esc(d['c'])}{' · <b>Gratuito</b>' if d.get('g') else ''}</p>
     <h1>{title}</h1>
