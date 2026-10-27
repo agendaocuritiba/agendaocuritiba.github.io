@@ -159,20 +159,25 @@ footer h2 { font-family: var(--font-display); color: var(--fg); font-size: 20px;
 footer p { max-width: 68ch; margin: 0 0 10px; }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); padding: 8px 14px; border-radius: 999px; font-size: 14px; z-index: 40; max-width: calc(100vw - 32px); overflow-wrap: anywhere; }
 
-/* Marca compacta: aparece quando o cabeçalho sai da tela.
-   Telas largas: no espaço vazio à esquerda da barra de busca. Médias: linha no topo da barra. Celular: faixa fixa no topo. */
-.mini { display: none; align-items: center; gap: 10px; text-decoration: none; color: var(--fg); font-family: var(--font-display); font-weight: 800; font-size: 18px; line-height: 1.05; letter-spacing: -0.01em; }
+/* Marca compacta: surge aos poucos depois que o nome do cabeçalho sai da tela (--p vai de 0 a 1 até a faixa sumir).
+   Telas largas: no espaço vazio à esquerda da barra de busca. Médias: abre espaço antes da busca. Celular: faixa fixa no topo. */
+.bar { --p: 0; }
+.mini { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--fg); font-family: var(--font-display); font-weight: 800; font-size: 18px; line-height: 1.05; letter-spacing: -0.01em;
+  opacity: var(--p); pointer-events: none; }
+.bar.stuck .mini { pointer-events: auto; }
 .mini span span { color: var(--logo); }
 .mlogo { flex: none; width: 52px; aspect-ratio: 608 / 388; background: var(--logo); -webkit-mask: url(logo.png) center / contain no-repeat; mask: url(logo.png) center / contain no-repeat; }
-.bar.stuck .mini { display: flex; }
-@media (min-width: 701px) and (max-width: 1339px) { .bar.stuck .mini { padding: 0 max(16px, env(safe-area-inset-left, 0px)) 8px; max-width: 920px; margin: 0 auto; } }
+@media (min-width: 701px) and (max-width: 1339px) {
+  .mini { flex: none; overflow: hidden; white-space: nowrap; max-width: calc(var(--p) * 200px); margin-right: calc((var(--p) - 1) * 8px); font-size: 16px; }
+  .mlogo { width: 46px; }
+}
 @media (min-width: 1340px) {
   .mini { position: absolute; top: 12px; right: calc(50% + 460px + 24px); flex-direction: column; align-items: flex-end; text-align: right; font-size: 22px; gap: 8px; }
   .mini span { display: block; }
   .mlogo { width: 84px; }
 }
 @media (max-width: 700px) {
-  .bar.stuck .mini { position: fixed; z-index: 20; top: env(safe-area-inset-top, 0px); left: 0; right: 0; padding: 8px 16px; background: var(--hero); border-bottom: 1px solid var(--line); font-size: 17px; }
+  .mini { position: fixed; z-index: 20; top: env(safe-area-inset-top, 0px); left: 0; right: 0; padding: 8px 16px; background: var(--hero); border-bottom: 1px solid var(--line); font-size: 17px; }
   .mlogo { width: 44px; }
 }
 @media (max-width: 700px) { .bar { position: static; } .pop.right { left: 0; right: auto; } }
@@ -200,9 +205,9 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 </header>
 
 <div class="bar">
-  <a class="mini" href="#topo" aria-label="Voltar ao topo"><span class="mlogo" aria-hidden="true"></span><span>Agendão <span>Curitiba</span></span></a>
   <div class="wrap">
     <div class="row">
+      <a class="mini" href="#topo" aria-label="Voltar ao topo" tabindex="-1"><span class="mlogo" aria-hidden="true"></span><span>Agendão <span>Curitiba</span></span></a>
       <input class="search" id="q" type="search" placeholder="Buscar evento, artista ou local" aria-label="Buscar">
       <div class="popwrap"><button class="pick" id="whenBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop" id="whenPop" role="dialog" aria-label="Data do evento" hidden></div></div>
       <div class="popwrap"><button class="pick" id="pubBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop right" id="pubPop" role="dialog" aria-label="Data de publicação" hidden></div></div>
@@ -502,8 +507,13 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   document.addEventListener('click', closeMenus);
   document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') closeMenus(); });
 
-  // Marca compacta na barra quando o cabeçalho sai da tela
-  if ('IntersectionObserver' in window) new IntersectionObserver(([en]) => document.querySelector('.bar').classList.toggle('stuck', !en.isIntersecting)).observe(document.querySelector('.hero'));
+  // Marca compacta: 0 até o nome do cabeçalho sair da tela, sobe junto com a rolagem e chega a 1 quando a faixa inteira some
+  const hero = document.querySelector('.hero'), name = hero.querySelector('h1'), bar = document.querySelector('.bar'), mini = bar.querySelector('.mini');
+  let pT = 0;
+  const onScroll = () => { pT = 0; const c = hero.getBoundingClientRect().bottom, a = name.getBoundingClientRect().bottom; const p = Math.min(1, Math.max(0, 1 - c / Math.max(1, c - a)));
+    bar.style.setProperty('--p', p.toFixed(3)); const on = p > 0.6; bar.classList.toggle('stuck', on); mini.tabIndex = on ? 0 : -1; };
+  addEventListener('scroll', () => { if (!pT) pT = requestAnimationFrame(onScroll); }, { passive: true });
+  addEventListener('resize', onScroll); onScroll();
 
   let qT;
   $('q').addEventListener('input', () => { clearTimeout(qT); qT = setTimeout(() => { state.q = $('q').value.trim(); shown = PAGE; draw(); }, 150); });
