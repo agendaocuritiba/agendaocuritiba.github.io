@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e536d76b48c33@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261114T220000
 DTEND;TZID=America/Sao_Paulo:20261115T000000
 SUMMARY:A Night To Remember - CURITIBA - 20 Anos de High School Musical - R. Mateus Leme\, 1719
-LOCATION:Versus Club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e536d76b48c33.html
 URL:https://agendaocuritiba.github.io/e/e536d76b48c33.html
 END:VEVENT

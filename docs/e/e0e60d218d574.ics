@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0e60d218d574@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261108T160000
+DTEND;TZID=America/Sao_Paulo:20261108T180000
+SUMMARY:Obelisco [Uy]
+LOCATION:Spunk Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0e60d218d574.html
+URL:https://agendaocuritiba.github.io/e/e0e60d218d574.html
+END:VEVENT
+END:VCALENDAR

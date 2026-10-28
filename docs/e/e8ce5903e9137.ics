@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e8ce5903e9137@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261105T200000
 DTEND;TZID=America/Sao_Paulo:20261105T220000
 SUMMARY:Novos Humoristas Com Matheus Donato / Stand Up Comedy
-LOCATION:Gaslight Comedy Club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e8ce5903e9137.html
 URL:https://agendaocuritiba.github.io/e/e8ce5903e9137.html
 END:VEVENT

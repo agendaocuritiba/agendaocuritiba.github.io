@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3f1f7743b569@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261212T200000
 DTEND;TZID=America/Sao_Paulo:20261212T220000
 SUMMARY:Festa à fantasia da Drikka Louca
-LOCATION:Distrito\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3f1f7743b569.html
 URL:https://agendaocuritiba.github.io/e/e3f1f7743b569.html
 END:VEVENT

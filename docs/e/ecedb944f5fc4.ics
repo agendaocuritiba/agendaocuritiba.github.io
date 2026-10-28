@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecedb944f5fc4@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261029T200000
+DTEND;TZID=America/Sao_Paulo:20261029T220000
+SUMMARY:Metefixa Halloween Da Máfia @ Tangie #80
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ecedb944f5fc4.html
+URL:https://agendaocuritiba.github.io/e/ecedb944f5fc4.html
+END:VEVENT
+END:VCALENDAR

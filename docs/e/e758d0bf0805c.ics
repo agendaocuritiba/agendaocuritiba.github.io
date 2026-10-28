@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e758d0bf0805c@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T210000
+DTEND;TZID=America/Sao_Paulo:20261208T230000
+SUMMARY:Teteu Severo em "O Multiverso do Guri de Apartamento"
+LOCATION:Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e758d0bf0805c.html
+URL:https://agendaocuritiba.github.io/e/e758d0bf0805c.html
+END:VEVENT
+END:VCALENDAR

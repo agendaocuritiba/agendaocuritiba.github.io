@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e7583caeb3a1a@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T200000
 DTEND;TZID=America/Sao_Paulo:20261031T220000
 SUMMARY:BurlesFreak Halloween - Edição: Purgatório
-LOCATION:Local a definir\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Noite de cabaré burlesco para maiores de idade\, com ingressos limitados.\n\nhttps://agendaocuritiba.github.io/e/e7583caeb3a1a.html
 URL:https://agendaocuritiba.github.io/e/e7583caeb3a1a.html
 END:VEVENT

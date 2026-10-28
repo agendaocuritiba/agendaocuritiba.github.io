@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0b7c42131a02@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T210000
+DTEND;TZID=America/Sao_Paulo:20261107T230000
+SUMMARY:Antiquario & Heineken
+LOCATION:Ponto Gin\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0b7c42131a02.html
+URL:https://agendaocuritiba.github.io/e/e0b7c42131a02.html
+END:VEVENT
+END:VCALENDAR

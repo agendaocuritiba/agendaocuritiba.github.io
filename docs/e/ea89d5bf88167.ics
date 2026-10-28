@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea89d5bf88167@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T210000
+DTEND;TZID=America/Sao_Paulo:20261127T230000
+SUMMARY:Terminal Guadalupe lança novo álbum no Jokers
+LOCATION:Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ea89d5bf88167.html
+URL:https://agendaocuritiba.github.io/e/ea89d5bf88167.html
+END:VEVENT
+END:VCALENDAR

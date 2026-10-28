@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed6edd3ad3467@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Abrace O Mundo | Escadarias Da Ufpr
+LOCATION:Praça Santos Andrade\, Centro\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed6edd3ad3467.html
+URL:https://agendaocuritiba.github.io/e/ed6edd3ad3467.html
+END:VEVENT
+END:VCALENDAR

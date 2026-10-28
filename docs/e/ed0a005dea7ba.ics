@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ed0a005dea7ba@agendao-curitiba
-DTSTAMP:20261025T090000Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261029T210000
+DTEND;TZID=America/Sao_Paulo:20261029T230000
 SUMMARY:Tarsila\, A Brasileira
 LOCATION:Teatro Guaíra\, R. Conselheiro Laurindo\, 175\, Centro\, Curitiba - PR
 DESCRIPTION:Espetáculo sobre a vida e a obra de Tarsila do Amaral\, autora do Abaporu e nome central do modernismo brasileiro.\n\nhttps://agendaocuritiba.github.io/e/ed0a005dea7ba.html

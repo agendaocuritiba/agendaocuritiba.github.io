@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e45b21b010fb9@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261220T183000
+DTEND;TZID=America/Sao_Paulo:20261220T203000
+SUMMARY:Espetáculo: o Quebra-Nozes - Uma Releitura Açucarada
+LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e45b21b010fb9.html
+URL:https://agendaocuritiba.github.io/e/e45b21b010fb9.html
+END:VEVENT
+END:VCALENDAR

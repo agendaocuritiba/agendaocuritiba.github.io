@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e57b96764c742@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261030T193000
 DTEND;TZID=America/Sao_Paulo:20261030T213000
 SUMMARY:Historieta|teatro SESI Cic
-LOCATION:Teatro Sesi CIC\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Fábula sobre amizade e transformação\, com teatro de animação e jogo de luz e sombra inspirado em Tim Burton. Para crianças e adultos.\n\nhttps://agendaocuritiba.github.io/e/e57b96764c742.html
 URL:https://agendaocuritiba.github.io/e/e57b96764c742.html
 END:VEVENT

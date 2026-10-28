@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5e63615d5cac@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270424T201500
+DTEND;TZID=America/Sao_Paulo:20270424T221500
+SUMMARY:Vice-Versa | Arnaldo Antunes e Adriana Calcanhotto
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e5e63615d5cac.html
+URL:https://agendaocuritiba.github.io/e/e5e63615d5cac.html
+END:VEVENT
+END:VCALENDAR

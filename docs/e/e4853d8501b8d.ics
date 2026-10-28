@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4853d8501b8d@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261104T190000
+DTEND;TZID=America/Sao_Paulo:20261104T210000
+SUMMARY:Felipe Vaqueiro
+LOCATION:Janaíno Vegan Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e4853d8501b8d.html
+URL:https://agendaocuritiba.github.io/e/e4853d8501b8d.html
+END:VEVENT
+END:VCALENDAR

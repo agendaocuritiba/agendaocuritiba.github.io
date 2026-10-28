@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed3980f0cbfcf@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T210000
+DTEND;TZID=America/Sao_Paulo:20261113T230000
+SUMMARY:Totô De Babalong - Deusi É Fiel Tour | Curitiba
+LOCATION:Camaleão Cultural\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed3980f0cbfcf.html
+URL:https://agendaocuritiba.github.io/e/ed3980f0cbfcf.html
+END:VEVENT
+END:VCALENDAR

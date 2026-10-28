@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ea5a180be5927@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261120T210000
 DTEND;TZID=America/Sao_Paulo:20261120T230000
 SUMMARY:MOMBOJÓ | Lançamento do álbum "Solar"
-LOCATION:Camaleão Cultural\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ea5a180be5927.html
 URL:https://agendaocuritiba.github.io/e/ea5a180be5927.html
 END:VEVENT

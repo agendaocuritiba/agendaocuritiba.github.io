@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee041e059ce7d@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T220000
+DTEND;TZID=America/Sao_Paulo:20261114T000000
+SUMMARY:Do You Wanna Funk: MC G15
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ee041e059ce7d.html
+URL:https://agendaocuritiba.github.io/e/ee041e059ce7d.html
+END:VEVENT
+END:VCALENDAR

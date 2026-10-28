@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3ad85a1cfa22@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261111T200000
+DTEND;TZID=America/Sao_Paulo:20261111T220000
+SUMMARY:Pupila
+LOCATION:Teatro Guaíra - Auditório Glauco\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3ad85a1cfa22.html
+URL:https://agendaocuritiba.github.io/e/e3ad85a1cfa22.html
+END:VEVENT
+END:VCALENDAR

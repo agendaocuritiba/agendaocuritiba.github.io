@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8341e3c1aba8@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T220000
+DTEND;TZID=America/Sao_Paulo:20261101T000000
+SUMMARY:Dante Halloween Com Davi Sabbag
+LOCATION:Dante Club\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e8341e3c1aba8.html
+URL:https://agendaocuritiba.github.io/e/e8341e3c1aba8.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef9f497a58aa2@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T140000
+DTEND;TZID=America/Sao_Paulo:20261107T160000
+SUMMARY:Crosstonic @ Fumaçônica
+LOCATION:Fumaçônica Brewery\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ef9f497a58aa2.html
+URL:https://agendaocuritiba.github.io/e/ef9f497a58aa2.html
+END:VEVENT
+END:VCALENDAR

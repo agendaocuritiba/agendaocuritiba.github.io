@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e18522c548e54@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261106T220000
 DTEND;TZID=America/Sao_Paulo:20261107T000000
 SUMMARY:Funk In The Mix
-LOCATION:New line club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e18522c548e54.html
 URL:https://agendaocuritiba.github.io/e/e18522c548e54.html
 END:VEVENT

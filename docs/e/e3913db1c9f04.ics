@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3913db1c9f04@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261224T220000
 DTEND;TZID=America/Sao_Paulo:20261225T000000
 SUMMARY:Natalzão Dos Nortistas 2 Edição
-LOCATION:R. Francisco Derosso\, 117\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3913db1c9f04.html
 URL:https://agendaocuritiba.github.io/e/e3913db1c9f04.html
 END:VEVENT

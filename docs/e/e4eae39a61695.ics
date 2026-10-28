@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e4eae39a61695@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T140000
 DTEND;TZID=America/Sao_Paulo:20261031T160000
 SUMMARY:31 De Outubro
-LOCATION:Pedreira Paulo Leminski\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e4eae39a61695.html
 URL:https://agendaocuritiba.github.io/e/e4eae39a61695.html
 END:VEVENT

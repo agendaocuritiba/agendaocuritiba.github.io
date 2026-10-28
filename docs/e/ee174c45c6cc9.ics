@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee174c45c6cc9@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T220000
+DTEND;TZID=America/Sao_Paulo:20261115T000000
+SUMMARY:Aniversário +55: Kevin o Chris
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ee174c45c6cc9.html
+URL:https://agendaocuritiba.github.io/e/ee174c45c6cc9.html
+END:VEVENT
+END:VCALENDAR

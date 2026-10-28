@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3e6ea3b406d3@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261107T193000
 DTEND;TZID=America/Sao_Paulo:20261107T213000
 SUMMARY:Vocal Curitibôcas: Só Sucessos 2026
-LOCATION:Teatro Regina Vogue\, Curitiba - PR
+LOCATION:Teatro Regina Vogue\, Av. Sete De Setembro  2775 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3e6ea3b406d3.html
 URL:https://agendaocuritiba.github.io/e/e3e6ea3b406d3.html
 END:VEVENT

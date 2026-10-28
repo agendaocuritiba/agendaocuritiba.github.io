@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e36e19568fd0d@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T220000
 DTEND;TZID=America/Sao_Paulo:20261101T000000
 SUMMARY:Balacobaco After Hours - After Não Oficial Solomun & Vintage Culture
-LOCATION:Soma Galeria\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:After não oficial para quem quer continuar dançando depois de Solomun e Vintage Culture.\n\nhttps://agendaocuritiba.github.io/e/e36e19568fd0d.html
 URL:https://agendaocuritiba.github.io/e/e36e19568fd0d.html
 END:VEVENT

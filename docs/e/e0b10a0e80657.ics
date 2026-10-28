@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0b10a0e80657@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T220000
+DTEND;TZID=America/Sao_Paulo:20261120T000000
+SUMMARY:Quadrado
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0b10a0e80657.html
+URL:https://agendaocuritiba.github.io/e/e0b10a0e80657.html
+END:VEVENT
+END:VCALENDAR

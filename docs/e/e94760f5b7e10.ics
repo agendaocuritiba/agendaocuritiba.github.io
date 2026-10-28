@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e94760f5b7e10@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261031T200000
+DTEND;TZID=America/Sao_Paulo:20261031T220000
+SUMMARY:Halloween Do Tangie
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e94760f5b7e10.html
+URL:https://agendaocuritiba.github.io/e/e94760f5b7e10.html
+END:VEVENT
+END:VCALENDAR

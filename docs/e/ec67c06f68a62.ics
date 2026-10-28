@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec67c06f68a62@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261118T210000
+DTEND;TZID=America/Sao_Paulo:20261118T230000
+SUMMARY:Rodrigo Barba | 25 Anos do Bloco do Eu Sozinho
+LOCATION:Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ec67c06f68a62.html
+URL:https://agendaocuritiba.github.io/e/ec67c06f68a62.html
+END:VEVENT
+END:VCALENDAR

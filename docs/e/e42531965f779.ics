@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e42531965f779@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T190000
 DTEND;TZID=America/Sao_Paulo:20261031T210000
 SUMMARY:Ao Pé do Ouvido com Giuliano Eriston
-LOCATION:Casa Bambuê\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Show intimista de Giuliano Eriston na série Ao Pé do Ouvido\, na Casa Bambuê.\n\nhttps://agendaocuritiba.github.io/e/e42531965f779.html
 URL:https://agendaocuritiba.github.io/e/e42531965f779.html
 END:VEVENT

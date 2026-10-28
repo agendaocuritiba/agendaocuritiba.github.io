@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e81e05bc13cf2@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261121T220000
 DTEND;TZID=America/Sao_Paulo:20261122T000000
 SUMMARY:Projeto XY
-LOCATION:Espaço Central Festa & Eventos\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e81e05bc13cf2.html
 URL:https://agendaocuritiba.github.io/e/e81e05bc13cf2.html
 END:VEVENT

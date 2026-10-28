@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e09f2ca16b549@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261128T150000
 DTEND;TZID=America/Sao_Paulo:20261128T170000
-SUMMARY:Moana O Musical
-LOCATION:Teatro Paulo Autran\, Curitiba - PR
+SUMMARY:Moana o Musical
+LOCATION:Teatro Paulo Autran\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e09f2ca16b549.html
 URL:https://agendaocuritiba.github.io/e/e09f2ca16b549.html
 END:VEVENT

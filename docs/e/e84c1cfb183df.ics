@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e84c1cfb183df@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261030T220000
+DTEND;TZID=America/Sao_Paulo:20261031T000000
+SUMMARY:Pop Basement Halloween: Festa A Fantasia
+LOCATION:VU Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e84c1cfb183df.html
+URL:https://agendaocuritiba.github.io/e/e84c1cfb183df.html
+END:VEVENT
+END:VCALENDAR

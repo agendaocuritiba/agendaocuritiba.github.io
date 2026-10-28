@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e7084ae8c276e@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261120T200000
 DTEND;TZID=America/Sao_Paulo:20261120T220000
 SUMMARY:DAZARANHA - Entre Cantos Tour
-LOCATION:D House\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e7084ae8c276e.html
 URL:https://agendaocuritiba.github.io/e/e7084ae8c276e.html
 END:VEVENT

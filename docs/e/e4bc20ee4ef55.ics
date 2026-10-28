@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e4bc20ee4ef55@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261128T200000
 DTEND;TZID=America/Sao_Paulo:20261128T220000
 SUMMARY:Danilo Gentili / Stand Up Comedy
-LOCATION:D House\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e4bc20ee4ef55.html
 URL:https://agendaocuritiba.github.io/e/e4bc20ee4ef55.html
 END:VEVENT

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ed2619f6cc262@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261115T180000
 DTEND;TZID=America/Sao_Paulo:20261115T200000
 SUMMARY:Marcus Cirillo - Show Novo
-LOCATION:D House\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ed2619f6cc262.html
 URL:https://agendaocuritiba.github.io/e/ed2619f6cc262.html
 END:VEVENT

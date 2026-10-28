@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eb9367544c590@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261231T200000
 DTEND;TZID=America/Sao_Paulo:20261231T220000
 SUMMARY:Réveillon Madá 2027
-LOCATION:Madá Pizza e Vinho - Centro\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eb9367544c590.html
 URL:https://agendaocuritiba.github.io/e/eb9367544c590.html
 END:VEVENT

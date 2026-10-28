@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e734d0a8254ce@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T190000
+DTEND;TZID=America/Sao_Paulo:20261120T210000
+SUMMARY:Entre a Cruz e a Bengala: Uma Aventura Nada Clara
+LOCATION:Teatro Guaíra - Auditório Glauco\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e734d0a8254ce.html
+URL:https://agendaocuritiba.github.io/e/e734d0a8254ce.html
+END:VEVENT
+END:VCALENDAR

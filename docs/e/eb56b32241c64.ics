@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eb56b32241c64@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261114T200000
 DTEND;TZID=America/Sao_Paulo:20261114T220000
-SUMMARY:Revelação & Xande de Pilares
-LOCATION:Complexo Durival de Britto\, Curitiba - PR
+SUMMARY:Grupo Revelação e Xande de Pilares
+LOCATION:Complexo Durival de Britto e Silva\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eb56b32241c64.html
 URL:https://agendaocuritiba.github.io/e/eb56b32241c64.html
 END:VEVENT

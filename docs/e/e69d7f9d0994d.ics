@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e69d7f9d0994d@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261103T210000
 DTEND;TZID=America/Sao_Paulo:20261103T230000
 SUMMARY:Matheus Ceará em "Desculpa ter vindo!" / Stand Up Comedy
-LOCATION:D House\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e69d7f9d0994d.html
 URL:https://agendaocuritiba.github.io/e/e69d7f9d0994d.html
 END:VEVENT

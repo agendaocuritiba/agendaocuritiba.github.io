@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e849bb3886901@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T220000
+DTEND;TZID=America/Sao_Paulo:20261108T000000
+SUMMARY:Revoada Especial: Luan Santana
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e849bb3886901.html
+URL:https://agendaocuritiba.github.io/e/e849bb3886901.html
+END:VEVENT
+END:VCALENDAR

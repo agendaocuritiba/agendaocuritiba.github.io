@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e1dbcb567eb5e@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261212T190000
 DTEND;TZID=America/Sao_Paulo:20261212T210000
 SUMMARY:Legião Urbana + Rappa + Raimundera + Dz6 Charlie Brown
-LOCATION:Clay Highway Bar\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e1dbcb567eb5e.html
 URL:https://agendaocuritiba.github.io/e/e1dbcb567eb5e.html
 END:VEVENT

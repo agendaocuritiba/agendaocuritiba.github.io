@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e06b9ca61e61f@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:O Vazio
+LOCATION:Guaíra - Miniauditório\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e06b9ca61e61f.html
+URL:https://agendaocuritiba.github.io/e/e06b9ca61e61f.html
+END:VEVENT
+END:VCALENDAR

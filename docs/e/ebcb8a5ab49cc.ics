@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ebcb8a5ab49cc@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T073000
 DTEND;TZID=America/Sao_Paulo:20261031T093000
 SUMMARY:1º Simpósio – Saúde Plena: Integração de Saberes e Novos Desafios
-LOCATION:Associação Médica do Paraná – Auditório Lysandro Santos Lima\, Curitiba - PR
+LOCATION:Associação Médica do Paraná\, Curitiba - PR
 DESCRIPTION:Simpósio sobre medicina e saúde integrativa\, com palestras\, painel e mesa-redonda e participação do Dr. Sérgio Felipe de Oliveira.\n\nhttps://agendaocuritiba.github.io/e/ebcb8a5ab49cc.html
 URL:https://agendaocuritiba.github.io/e/ebcb8a5ab49cc.html
 END:VEVENT

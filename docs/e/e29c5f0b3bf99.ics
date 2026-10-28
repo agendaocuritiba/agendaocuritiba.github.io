@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e29c5f0b3bf99@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T200000
+DTEND;TZID=America/Sao_Paulo:20261127T220000
+SUMMARY:Forró da Lua - 2026 - Lua Cheia de Novembro
+LOCATION:Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e29c5f0b3bf99.html
+URL:https://agendaocuritiba.github.io/e/e29c5f0b3bf99.html
+END:VEVENT
+END:VCALENDAR

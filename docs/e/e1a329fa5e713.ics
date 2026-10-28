@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e1a329fa5e713@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261029T193000
 DTEND;TZID=America/Sao_Paulo:20261029T213000
 SUMMARY:Historieta | Sesi Centro
-LOCATION:Centro Cultural Sesi Centro\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Fábula sobre amizade e transformação\, com teatro de animação e jogo de luz e sombra inspirado em Tim Burton. Para crianças e adultos.\n\nhttps://agendaocuritiba.github.io/e/e1a329fa5e713.html
 URL:https://agendaocuritiba.github.io/e/e1a329fa5e713.html
 END:VEVENT

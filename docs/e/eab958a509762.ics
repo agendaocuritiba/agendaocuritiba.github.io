@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eab958a509762@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T200000
+DTEND;TZID=America/Sao_Paulo:20261113T220000
+SUMMARY:Nossa Vida - Grupo Ensette
+LOCATION:Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/eab958a509762.html
+URL:https://agendaocuritiba.github.io/e/eab958a509762.html
+END:VEVENT
+END:VCALENDAR

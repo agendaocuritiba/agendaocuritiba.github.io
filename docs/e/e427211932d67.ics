@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e427211932d67@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261219T183000
+DTEND;TZID=America/Sao_Paulo:20261219T203000
+SUMMARY:O Ponto Final
+LOCATION:Teatro Paulo Autran\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e427211932d67.html
+URL:https://agendaocuritiba.github.io/e/e427211932d67.html
+END:VEVENT
+END:VCALENDAR

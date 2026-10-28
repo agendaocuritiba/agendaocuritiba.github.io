@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:effe7e06ac656@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Rebobina Show - Faichecleres
+LOCATION:Hard Rock Cafe Curitiba\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/effe7e06ac656.html
+URL:https://agendaocuritiba.github.io/e/effe7e06ac656.html
+END:VEVENT
+END:VCALENDAR

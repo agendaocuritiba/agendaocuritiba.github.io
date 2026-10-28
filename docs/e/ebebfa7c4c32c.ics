@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebebfa7c4c32c@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261030T200000
+DTEND;TZID=America/Sao_Paulo:20261030T220000
+SUMMARY:Baile Da Spena
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ebebfa7c4c32c.html
+URL:https://agendaocuritiba.github.io/e/ebebfa7c4c32c.html
+END:VEVENT
+END:VCALENDAR

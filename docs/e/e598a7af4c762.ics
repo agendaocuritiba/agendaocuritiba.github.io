@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e598a7af4c762@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Rua Iluminada Família Moletta
+LOCATION:Rua Nicola Pellanda\, 5962 ? Umbará\, Curitiba/PR\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e598a7af4c762.html
+URL:https://agendaocuritiba.github.io/e/e598a7af4c762.html
+END:VEVENT
+END:VCALENDAR

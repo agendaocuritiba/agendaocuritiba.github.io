@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e83598998a859@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T230000
+DTEND;TZID=America/Sao_Paulo:20261205T010000
+SUMMARY:Blazy
+LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e83598998a859.html
+URL:https://agendaocuritiba.github.io/e/e83598998a859.html
+END:VEVENT
+END:VCALENDAR

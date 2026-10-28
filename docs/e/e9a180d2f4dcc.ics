@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9a180d2f4dcc@agendao-curitiba
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261112T203000
+DTEND;TZID=America/Sao_Paulo:20261112T223000
+SUMMARY:Muito Barulho por Nada
+LOCATION:Guairinha - Salvador de Ferrante\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e9a180d2f4dcc.html
+URL:https://agendaocuritiba.github.io/e/e9a180d2f4dcc.html
+END:VEVENT
+END:VCALENDAR

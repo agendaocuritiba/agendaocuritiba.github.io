@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec0a5569f211a@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261231T180000
 DTEND;TZID=America/Sao_Paulo:20261231T200000
 SUMMARY:Bardo e Fada - PR
-LOCATION:Local a definir\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ec0a5569f211a.html
 URL:https://agendaocuritiba.github.io/e/ec0a5569f211a.html
 END:VEVENT

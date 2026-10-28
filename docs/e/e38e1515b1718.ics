@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e38e1515b1718@agendao-curitiba
-DTSTAMP:20261025T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261025T200000
-DTEND;TZID=America/Sao_Paulo:20261025T220000
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261028T200000
+DTEND;TZID=America/Sao_Paulo:20261028T220000
 SUMMARY:Circo Rhoney Espetacular - Sexta 20h00
-LOCATION:Circo Rhoney Espetacular no estacionamento do shopping Boulevard\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Circo no estacionamento do Shopping Boulevard\, com acrobacias\, música e globo da morte.\n\nhttps://agendaocuritiba.github.io/e/e38e1515b1718.html
 URL:https://agendaocuritiba.github.io/e/e38e1515b1718.html
 END:VEVENT

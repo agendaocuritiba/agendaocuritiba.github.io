@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e74ebf2fe728d@agendao-curitiba
-DTSTAMP:20261025T090000Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:CARTOGRAFIA DA MEMÓRIA com o Balé Teatro Guaíra
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T203000
+DTEND;TZID=America/Sao_Paulo:20261114T223000
+SUMMARY:Cartografia da Memória | Balé Teatro Guaíra
 LOCATION:Guairão\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e74ebf2fe728d.html
 URL:https://agendaocuritiba.github.io/e/e74ebf2fe728d.html

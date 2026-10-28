@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ef2a9332a16df@agendao-curitiba
-DTSTAMP:20261025T090000Z
+DTSTAMP:20261028T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261111T190000
 DTEND;TZID=America/Sao_Paulo:20261111T210000
 SUMMARY:Zé Tedesco apresenta show Zé Ninguém na Casa Kurí
-LOCATION:Casa Kurí - Restaurante e Café\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ef2a9332a16df.html
 URL:https://agendaocuritiba.github.io/e/ef2a9332a16df.html
 END:VEVENT
