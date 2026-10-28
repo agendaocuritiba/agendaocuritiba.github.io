@@ -462,7 +462,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const m = el('div', 'meta');
     const when = e.s !== e.e ? (e.s <= todayIso ? 'Até ' + short(e.e) : short(e.s) + ' a ' + short(e.e)) : '';
     if (e.h && /\d/.test(e.h)) m.append(el('span', 't', e.h));
-    [when, e.v].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
+    [when, e.v, e.p].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
     if (e.v && !/^local a definir$/i.test(e.v)) {
       const a = el('a', 'map'); a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([e.v, e.a, 'Curitiba PR'].filter(Boolean).join(', '));
       a.target = '_blank'; a.rel = 'noopener'; a.title = 'Ver no Google Maps'; a.setAttribute('aria-label', 'Ver ' + e.v + ' no Google Maps'); a.innerHTML = svg(UI.pin); m.append(a);

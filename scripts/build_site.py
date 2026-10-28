@@ -51,7 +51,10 @@ def slim(e):
         d["d"] = e["dates"]
     if e.get("address"):
         d["a"] = e["address"]
-    prices = " ".join([e.get("price", "")] + [o.get("price", "") for o in e["originals"]] + [e["title"]])
+    pt = (e.get("price_text") or "").strip()
+    if pt and not re.fullmatch(r"(?i)pago|consulte|-", pt):
+        d["p"] = pt
+    prices = " ".join([e.get("price", ""), pt] + [o.get("price", "") for o in e["originals"]] + [e["title"]])
     if e.get("free") or re.search(r"gratuit|entrada franca|gr[aá]tis|\bfree\b", prices, re.I):
         d["g"] = 1
     if e.get("summary"):
@@ -194,6 +197,7 @@ def event_page(d, img, run):
     <h1>{title}</h1>
     <p class="meta"><b>{esc(when[:1].upper() + when[1:])}</b>{' · ' + esc(hour) if hour else ''}</p>
     <p class="meta">{esc(d['v'] or 'Local a definir')}{(' · ' + esc(d['a'])) if d.get('a') else ''}{maps}</p>
+    {'<p class="meta">Ingresso: ' + esc(d['p']) + '</p>' if d.get('p') else ''}
     {dates}
     {'<p class="desc">' + esc(d['r']) + '</p>' if d.get('r') else ''}
     <p class="lbl">Mais informações e ingressos</p>
@@ -225,12 +229,15 @@ def main():
     out, run, site = sys.argv[1:4]
     first_run = sys.argv[4] if len(sys.argv) > 4 else ""
     events = [e for e in json.load(open(f"{out}/events.json")) if e["end"] >= run]
-    sp = f"{out}/summaries.json"
-    if os.path.exists(sp):  # resumos guardados por id de evento
-        sm = json.load(open(sp))
-        for e in events:
-            if not e.get("summary") and sm.get(e["id"]):
-                e["summary"] = sm[e["id"]]
+    # Resumos e preços guardados por id de evento em state/ (escritos pela coleta diária só para eventos novos)
+    state = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "state")
+    for name, field in (("summaries", "summary"), ("prices", "price_text")):
+        for sp in (f"{out}/{name}.json", f"{state}/{name}.json"):
+            if os.path.exists(sp):
+                sm = json.load(open(sp))
+                for e in events:
+                    if not e.get(field) and sm.get(e["id"]):
+                        e[field] = sm[e["id"]]
     stats = json.load(open(f"{out}/stats.json"))
     os.makedirs(f"{site}/data", exist_ok=True)
     slims = [slim(e) for e in events]

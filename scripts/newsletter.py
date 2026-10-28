@@ -37,7 +37,10 @@ def main():
     stats = json.load(open(f"{out}/stats.json"))
     n_sites = len([k for k, v in stats["bySource"].items() if v])
     horizon = date.fromisoformat(stats["horizon"])
-    new = sorted([e for e in events if e.get("firstSeen") == run], key=lambda e: e["start"])
+    # A coleta roda todo dia; a newsletter é semanal, então "novos" são os que entraram nos últimos 7 dias
+    since = (today - timedelta(days=6)).isoformat()
+    first = min((e.get("firstSeen") or run) for e in events) if events else run  # a primeira coleta não conta como "novos"
+    new = sorted([e for e in events if (e.get("firstSeen") or "") >= since and e.get("firstSeen") != first], key=lambda e: e["start"])
 
     subject = f"Agenda Curitiba — próximos 7 dias ({today.strftime('%d')} a {br(week_end)})"
     esc = html.escape
@@ -58,12 +61,12 @@ def main():
              '<div style="font-family:Arial,Helvetica,sans-serif;max-width:640px;margin:0 auto;color:#222">')
     H.append('<h1 style="margin:0 0 4px;font-size:24px">Agenda Curitiba</h1>')
     H.append(f'<p style="margin:0 0 12px;color:#666">{stats["events"]} eventos até {horizon.strftime("%d/%m/%Y")} · '
-             f'coleta de {today.strftime("%d/%m/%Y")} · {n_sites} sites · {stats["new"]} novos</p>')
+             f'coleta de {today.strftime("%d/%m/%Y")} · {n_sites} sites · {len(new)} novos na semana</p>')
     H.append(f'<p><a href="{DASH}" style="display:inline-block;background:#1a4fa0;color:#fff;padding:10px 18px;'
              f'border-radius:6px;text-decoration:none;font-weight:600">Abrir o dashboard completo</a></p>')
     H.append(f'<p style="font-size:12px;color:#888">Se o botão não aparecer: {DASH}</p>')
     T += ["Agenda Curitiba",
-          f"{stats['events']} eventos até {horizon.strftime('%d/%m/%Y')} · coleta de {today.strftime('%d/%m/%Y')} · {n_sites} sites · {stats['new']} novos",
+          f"{stats['events']} eventos até {horizon.strftime('%d/%m/%Y')} · coleta de {today.strftime('%d/%m/%Y')} · {n_sites} sites · {len(new)} novos na semana",
           f"Dashboard: {DASH}", ""]
 
     # Próximos 7 dias, agrupados por dia
@@ -92,8 +95,8 @@ def main():
         H.append("</ul>")
 
     # Novos nesta coleta
-    H.append(f'<h2>Novos nesta coleta ({len(new)})</h2>')
-    T.append(f"\nNOVOS NESTA COLETA ({len(new)})")
+    H.append(f'<h2>Novos na última semana ({len(new)})</h2>')
+    T.append(f"\nNOVOS NA ÚLTIMA SEMANA ({len(new)})")
     if new:
         H.append('<ul>')
         for ev in new[:MAX_NEW]:
