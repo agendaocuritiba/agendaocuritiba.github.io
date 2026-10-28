@@ -230,7 +230,6 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   <p>O Agendão Curitiba reúne em um só lugar os eventos anunciados em Curitiba nos próximos seis meses. Todo dia ele confere a agenda do Turismo Curitiba, do Evento ON e de sites de ingressos (Sympla, Disk Ingressos, Blueticket, Bilheteria Digital, Ticketmaster, Ingresse, Fever, Ingresso.com e Shotgun), além da programação do Teatro Guaíra, e junta os anúncios repetidos do mesmo evento.</p>
   <p>Cada evento leva ao site onde foi anunciado. Datas, horários, preços e a própria realização podem mudar: confira sempre a página oficial antes de sair de casa. Os resumos são escritos por nós a partir do anúncio; as marcas e textos pertencem a seus donos.</p>
   <p>Este é um agregador independente, sem ligação com os sites citados. Encontrou um erro ou quer que um evento seja retirado? Abra um aviso na <a href="https://github.com/agendaocuritiba/agendaocuritiba.github.io/issues" rel="noopener">página de issues do projeto</a>.</p>
-  <p id="upd"></p>
 </footer>
 
 <div class="toast" id="toast" role="status" hidden></div>
@@ -403,12 +402,9 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const stat = $('stat'); stat.replaceChildren();
     const live = events.filter((e) => e.e >= todayIso);
     stat.append(el('b', null, live.length), ' eventos até ' + short(meta.horizon || todayIso));
-    const r = pubRange();
-    if (r) {
-      const n = live.filter(isNew).length; const q = PUB_Q.find((x) => x[0] === state.pub.mode);
-      const per = state.pub.mode === 'range' ? 'publicados entre ' + rangeText(r[0], r[1]) : (state.pub.mode === 'd1' ? 'publicados no último dia' : 'nos ' + q[1].toLowerCase());
-      stat.append(' · ', el('b', 'hi', n), (n === 1 ? ' novo ' : ' novos ') + per);
-    }
+    const wk = addDays(todayIso, -7), n = live.filter((e) => e.f && e.f !== meta.firstRun && e.f > wk).length;
+    stat.append(' · ', el('b', 'hi', n), (n === 1 ? ' novo' : ' novos') + ' nos últimos 7 dias');
+    if (meta.updated) stat.append(' · Última atualização ' + dObj(meta.updated).toLocaleDateString('pt-BR', { timeZone: 'UTC' }));
   }
 
   function drawCats(base) {
@@ -532,7 +528,6 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 
   fetch(DATA_URL).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((j) => {
     meta = j.meta || {}; events = (j.events || []).filter((e) => e.e >= todayIso);
-    if (meta.updated) $('upd').textContent = 'Atualizado em ' + dObj(meta.updated).toLocaleDateString('pt-BR', { timeZone: 'UTC' }) + '.';
     const vc = {}; events.forEach((e) => { if (e.v) vc[e.v] = (vc[e.v] || 0) + 1; });
     Object.keys(vc).filter((v) => vc[v] > 1).sort((a, b) => a.localeCompare(b, 'pt')).forEach((v) => $('venue').append(new Option(v + ' (' + vc[v] + ')', v)));
     if (state.venue && !vc[state.venue]) state.venue = '';
