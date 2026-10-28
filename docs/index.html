@@ -227,7 +227,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 
 <footer class="wrap" id="sobre">
   <h2>Sobre</h2>
-  <p>O Agendão Curitiba reúne em um só lugar os eventos anunciados em Curitiba nos próximos seis meses. Todo dia ele confere a agenda do Turismo Curitiba, do Evento ON e de sites de ingressos (Sympla, Disk Ingressos, Blueticket, Bilheteria Digital, Ticketmaster, Ingresse, Fever e Ingresso.com) e junta os anúncios repetidos do mesmo evento.</p>
+  <p>O Agendão Curitiba reúne em um só lugar os eventos anunciados em Curitiba nos próximos seis meses. Todo dia ele confere a agenda do Turismo Curitiba, do Evento ON e de sites de ingressos (Sympla, Disk Ingressos, Blueticket, Bilheteria Digital, Ticketmaster, Ingresse, Fever, Ingresso.com e Shotgun), além da programação do Teatro Guaíra, e junta os anúncios repetidos do mesmo evento.</p>
   <p>Cada evento leva ao site onde foi anunciado. Datas, horários, preços e a própria realização podem mudar: confira sempre a página oficial antes de sair de casa. Os resumos são escritos por nós a partir do anúncio; as marcas e textos pertencem a seus donos.</p>
   <p>Este é um agregador independente, sem ligação com os sites citados. Encontrou um erro ou quer que um evento seja retirado? Abra um aviso na <a href="https://github.com/agendaocuritiba/agendaocuritiba.github.io/issues" rel="noopener">página de issues do projeto</a>.</p>
   <p id="upd"></p>
@@ -239,7 +239,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 (function () {
   'use strict';
   const DATA_URL = 'data/events.json';
-  const PUBLISHERS = ['Turismo Curitiba', 'Evento ON'];
+  const PUBLISHERS = ['Turismo Curitiba', 'Evento ON', 'Teatro Guaíra'];
   const PAGE = 60;
   const ICONS = {
     'Show': '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/>',
@@ -470,9 +470,10 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     main.append(m);
     if (e.r) main.append(el('p', 'desc', e.r));
     // Links: só publicadores quando houver; ordem aleatória
-    const pubs = e.L.filter((l) => PUBLISHERS.includes(l[0]));
+    // Sites que vendem o ingresso têm prioridade; sem eles, os divulgadores.
+    const sellers = e.L.filter((l) => !PUBLISHERS.includes(l[0]));
     const acts = el('div', 'acts');
-    shuffle(pubs.length ? pubs : e.L).forEach(([src, url]) => { const a = el('a', 'go', src); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.title = 'Mais informações em ' + src; acts.append(a); });
+    shuffle(sellers.length ? sellers : e.L).forEach(([src, url]) => { const a = el('a', 'go', src); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.title = 'Mais informações em ' + src; acts.append(a); });
     const cw = el('div', 'popwrap');
     const cal = el('button', 'ib'); cal.type = 'button'; cal.title = 'Adicionar à agenda'; cal.setAttribute('aria-haspopup', 'true'); cal.setAttribute('aria-expanded', 'false');
     cal.innerHTML = svg(UI.calAdd); cal.append(el('span', null, 'Adicionar à agenda'));

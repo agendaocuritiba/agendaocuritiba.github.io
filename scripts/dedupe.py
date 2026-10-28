@@ -30,9 +30,11 @@ SOURCES = {
     "ig": ("Ingresse", "https://www.ingresse.com/"),
     "tm": ("Ticketmaster", "https://www.ticketmaster.com.br/event/"),
     "ic": ("Ingresso.com", "https://www.ingresso.com/evento/"),
+    "sg": ("Shotgun", "https://shotgun.live/pt-br/events/"),
+    "tg": ("Teatro Guaíra", "https://www.teatroguaira.pr.gov.br/"),
 }
 SOURCE_ORDER = ["Turismo Curitiba", "Evento ON", "Disk Ingressos", "Sympla", "Blueticket",
-                "Bilheteria Digital", "Ticketmaster", "Ingresse", "Fever", "Ingresso.com"]
+                "Bilheteria Digital", "Ticketmaster", "Ingresse", "Fever", "Ingresso.com", "Shotgun", "Teatro Guaíra"]
 
 STOP = set("""a o as os e de da do das dos em no na nos nas com para por ao the and of in
 curitiba cwb pr brasil show shows turne tour live ao vivo esgotado sessao extra edicao

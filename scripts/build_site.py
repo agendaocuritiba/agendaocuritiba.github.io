@@ -11,7 +11,7 @@ from urllib.parse import quote, urlencode
 
 SITE_URL = "https://agendaocuritiba.github.io/"
 ISSUES_URL = "https://github.com/agendaocuritiba/agendaocuritiba.github.io/issues"
-PUBLISHERS = {"Turismo Curitiba", "Evento ON"}
+PUBLISHERS = {"Turismo Curitiba", "Evento ON", "Teatro Guaíra"}
 
 
 SMALL = {"a","o","as","os","e","de","da","do","das","dos","em","no","na","com","para","por","ao","um","uma"}
@@ -141,7 +141,8 @@ def event_page(d, img, run):
     line = " · ".join(x for x in [when, hour, d["v"]] if x)
     desc = clip(f"{line}. {d['r']}" if d.get("r") else f"{line}. {d['c']} em Curitiba.", 200)
     image = img if img and img.startswith("https://") else SITE_URL + "og.png"
-    pubs = [l for l in d["L"] if l[0] in PUBLISHERS] or d["L"]
+    # Sites que vendem o ingresso têm prioridade; sem eles, os divulgadores.
+    pubs = [l for l in d["L"] if l[0] not in PUBLISHERS] or d["L"]
     links = "\n".join(f'      <a class="go" href="{esc(u)}" target="_blank" rel="noopener">{esc(s)}</a>' for s, u in pubs)
     maps = ""
     if d["v"] and not re.match(r"(?i)^local a definir$", d["v"]):
