@@ -401,10 +401,15 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   function drawStat() {
     const stat = $('stat'); stat.replaceChildren();
     const live = events.filter((e) => e.e >= todayIso);
-    stat.append(el('b', null, live.length), ' eventos até ' + short(meta.horizon || todayIso));
-    const wk = addDays(todayIso, -7), n = live.filter((e) => e.f && e.f !== meta.firstRun && e.f > wk).length;
-    stat.append(' · ', el('b', 'hi', n), (n === 1 ? ' novo' : ' novos') + ' nos últimos 7 dias');
-    if (meta.updated) stat.append(' · Última atualização ' + dObj(meta.updated).toLocaleDateString('pt-BR', { timeZone: 'UTC' }));
+    const full = (iso) => dObj(iso).toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+    stat.append(el('b', null, live.length), ' eventos até ' + full(meta.horizon || todayIso));
+    const r = pubRange();
+    if (r) {
+      const n = live.filter(isNew).length; const q = PUB_Q.find((x) => x[0] === state.pub.mode);
+      const per = state.pub.mode === 'range' ? 'publicados entre ' + rangeText(r[0], r[1]) : (state.pub.mode === 'd1' ? 'publicados no último dia' : 'nos ' + q[1].toLowerCase());
+      stat.append(' · ', el('b', 'hi', n), (n === 1 ? ' novo ' : ' novos ') + per);
+    }
+    if (meta.updated) stat.append(' · Última atualização ' + full(meta.updated));
   }
 
   function drawCats(base) {
