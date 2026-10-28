@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261113T210000
 DTEND;TZID=America/Sao_Paulo:20261113T230000
 SUMMARY:Dia De Muertos / Fiesta Latina
 LOCATION:Czar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ebcda3a7da3f8.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ebcda3a7da3f8.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ebcda3a7da3f8.html
+URL:https://agendaocuritiba.github.io/e/ebcda3a7da3f8.html
 END:VEVENT
 END:VCALENDAR

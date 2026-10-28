@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T200000
 DTEND;TZID=America/Sao_Paulo:20261031T220000
 SUMMARY:Hell(oween) of Fame
 LOCATION:Changes\, Curitiba - PR
-DESCRIPTION:Festa de Halloween com desfile de fantasias e atrações no Changes.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e7333c7996e1b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e7333c7996e1b.html
+DESCRIPTION:Festa de Halloween com desfile de fantasias e atrações no Changes.\n\nhttps://agendaocuritiba.github.io/e/e7333c7996e1b.html
+URL:https://agendaocuritiba.github.io/e/e7333c7996e1b.html
 END:VEVENT
 END:VCALENDAR

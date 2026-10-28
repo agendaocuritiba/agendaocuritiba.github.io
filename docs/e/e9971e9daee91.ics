@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T210000
 DTEND;TZID=America/Sao_Paulo:20261107T230000
 SUMMARY:Paulo Ricardo
 LOCATION:Teatro Guaíra\, R. Conselheiro Laurindo\, 175\, Centro\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e9971e9daee91.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e9971e9daee91.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e9971e9daee91.html
+URL:https://agendaocuritiba.github.io/e/e9971e9daee91.html
 END:VEVENT
 END:VCALENDAR

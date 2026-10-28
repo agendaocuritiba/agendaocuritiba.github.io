@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261115T200000
 DTEND;TZID=America/Sao_Paulo:20261115T220000
 SUMMARY:A Princesa Turandot
 LOCATION:Guaíra - Miniauditório\, Rua Amintas De Barros S/n Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e07eff202c08f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e07eff202c08f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e07eff202c08f.html
+URL:https://agendaocuritiba.github.io/e/e07eff202c08f.html
 END:VEVENT
 END:VCALENDAR

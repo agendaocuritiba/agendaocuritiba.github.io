@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261120T200000
 DTEND;TZID=America/Sao_Paulo:20261120T220000
 SUMMARY:DAZARANHA - Entre Cantos Tour
 LOCATION:D House\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e7084ae8c276e.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e7084ae8c276e.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e7084ae8c276e.html
+URL:https://agendaocuritiba.github.io/e/e7084ae8c276e.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261106T220000
 DTEND;TZID=America/Sao_Paulo:20261107T000000
 SUMMARY:Funk In The Mix
 LOCATION:New line club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e18522c548e54.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e18522c548e54.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e18522c548e54.html
+URL:https://agendaocuritiba.github.io/e/e18522c548e54.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261217T230000
 DTEND;TZID=America/Sao_Paulo:20261218T010000
 SUMMARY:Caracal Apr. Osgemeos
 LOCATION:Club Vibe\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed892ab246d6a.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed892ab246d6a.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed892ab246d6a.html
+URL:https://agendaocuritiba.github.io/e/ed892ab246d6a.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261205T200000
 DTEND;TZID=America/Sao_Paulo:20261205T220000
 SUMMARY:Summer Eletrohits
 LOCATION:Clay Highway Bar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e42b569cc897f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e42b569cc897f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e42b569cc897f.html
+URL:https://agendaocuritiba.github.io/e/e42b569cc897f.html
 END:VEVENT
 END:VCALENDAR

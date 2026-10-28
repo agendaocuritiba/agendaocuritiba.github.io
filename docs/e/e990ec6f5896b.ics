@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261120T210000
 DTEND;TZID=America/Sao_Paulo:20261120T230000
 SUMMARY:ZZ Top
 LOCATION:Igloo Super Hall - Jockey Club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e990ec6f5896b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e990ec6f5896b.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e990ec6f5896b.html
+URL:https://agendaocuritiba.github.io/e/e990ec6f5896b.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261112T190000
 DTEND;TZID=America/Sao_Paulo:20261112T210000
 SUMMARY:Tranquilo Apresenta Jônatas Belgrande - Curitiba (Pr)
 LOCATION:Céu Curitiba\, Rua Desembargador Costa Carvalho\, 471\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e7b6258db395f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e7b6258db395f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e7b6258db395f.html
+URL:https://agendaocuritiba.github.io/e/e7b6258db395f.html
 END:VEVENT
 END:VCALENDAR

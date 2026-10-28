@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261121T230000
 DTEND;TZID=America/Sao_Paulo:20261122T010000
 SUMMARY:Vibe Apresenta: Local Sessions
 LOCATION:Club Vibe\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eccef37a4e8f7.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eccef37a4e8f7.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eccef37a4e8f7.html
+URL:https://agendaocuritiba.github.io/e/eccef37a4e8f7.html
 END:VEVENT
 END:VCALENDAR

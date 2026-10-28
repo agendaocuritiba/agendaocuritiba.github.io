@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261105T200000
 DTEND;TZID=America/Sao_Paulo:20261105T220000
 SUMMARY:Novos Humoristas Com Matheus Donato / Stand Up Comedy
 LOCATION:Gaslight Comedy Club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e8ce5903e9137.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e8ce5903e9137.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e8ce5903e9137.html
+URL:https://agendaocuritiba.github.io/e/e8ce5903e9137.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261106T190000
 DTEND;TZID=America/Sao_Paulo:20261106T210000
 SUMMARY:Peça Teatral | O Vendedor de Sonhos
 LOCATION:Teatro Fernanda Montenegro\, Coronel Dulcídio\, 517\, Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e836c0de0a40c.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e836c0de0a40c.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e836c0de0a40c.html
+URL:https://agendaocuritiba.github.io/e/e836c0de0a40c.html
 END:VEVENT
 END:VCALENDAR

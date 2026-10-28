@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261110T200000
 DTEND;TZID=America/Sao_Paulo:20261110T220000
 SUMMARY:A Cidade Que Parou De Sonhar
 LOCATION:Teatro Positivo\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e652eb96c4b1f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e652eb96c4b1f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e652eb96c4b1f.html
+URL:https://agendaocuritiba.github.io/e/e652eb96c4b1f.html
 END:VEVENT
 END:VCALENDAR

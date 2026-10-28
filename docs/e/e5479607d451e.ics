@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T150000
 DTEND;TZID=America/Sao_Paulo:20261107T170000
 SUMMARY:Feira de Vinhos Curitiba - Merci & Winiarski
 LOCATION:D House Curitiba\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e5479607d451e.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e5479607d451e.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e5479607d451e.html
+URL:https://agendaocuritiba.github.io/e/e5479607d451e.html
 END:VEVENT
 END:VCALENDAR

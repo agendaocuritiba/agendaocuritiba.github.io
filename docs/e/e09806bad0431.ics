@@ -10,7 +10,7 @@ DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Candlelight: Queen vs. ABBA
 LOCATION:Teatro da FEP\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e09806bad0431.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e09806bad0431.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e09806bad0431.html
+URL:https://agendaocuritiba.github.io/e/e09806bad0431.html
 END:VEVENT
 END:VCALENDAR

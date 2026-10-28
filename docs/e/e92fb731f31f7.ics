@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261118T190000
 DTEND;TZID=America/Sao_Paulo:20261118T210000
 SUMMARY:1º WINE EXPERIENCE | Comexhoje + Vixtra
 LOCATION:Restaurante Maria Eugênia\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e92fb731f31f7.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e92fb731f31f7.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e92fb731f31f7.html
+URL:https://agendaocuritiba.github.io/e/e92fb731f31f7.html
 END:VEVENT
 END:VCALENDAR

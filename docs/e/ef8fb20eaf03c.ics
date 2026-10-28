@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261104T190000
 DTEND;TZID=America/Sao_Paulo:20261104T210000
 SUMMARY:Chef Pour Un Jour | Choucroute Garnie
 LOCATION:Aliança Francesa de Curitiba - Sede Prudente de Moraes\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef8fb20eaf03c.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ef8fb20eaf03c.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ef8fb20eaf03c.html
+URL:https://agendaocuritiba.github.io/e/ef8fb20eaf03c.html
 END:VEVENT
 END:VCALENDAR

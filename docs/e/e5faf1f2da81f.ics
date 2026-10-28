@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T163000
 DTEND;TZID=America/Sao_Paulo:20261031T183000
 SUMMARY:Alice e a Verdadeira História do Natal
 LOCATION:Teatro Regina Vogue\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e5faf1f2da81f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e5faf1f2da81f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e5faf1f2da81f.html
+URL:https://agendaocuritiba.github.io/e/e5faf1f2da81f.html
 END:VEVENT
 END:VCALENDAR

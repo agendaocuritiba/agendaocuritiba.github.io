@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261119T200000
 DTEND;TZID=America/Sao_Paulo:20261119T220000
 SUMMARY:Dois Sóis
 LOCATION:Queroquero Comida e Bar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ec7e555d61298.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ec7e555d61298.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ec7e555d61298.html
+URL:https://agendaocuritiba.github.io/e/ec7e555d61298.html
 END:VEVENT
 END:VCALENDAR

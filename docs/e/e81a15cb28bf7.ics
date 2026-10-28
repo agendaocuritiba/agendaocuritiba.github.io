@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261030T200000
 DTEND;TZID=America/Sao_Paulo:20261030T220000
 SUMMARY:A História de João Ninguem
 LOCATION:Centro Estadual de Capacitação em Artes Guido Viaro\, Curitiba - PR
-DESCRIPTION:Rodrigo Vicente e Thaís Leal juntam teatro\, música e literatura no projeto Te Encontro no Guido.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e81a15cb28bf7.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e81a15cb28bf7.html
+DESCRIPTION:Rodrigo Vicente e Thaís Leal juntam teatro\, música e literatura no projeto Te Encontro no Guido.\n\nhttps://agendaocuritiba.github.io/e/e81a15cb28bf7.html
+URL:https://agendaocuritiba.github.io/e/e81a15cb28bf7.html
 END:VEVENT
 END:VCALENDAR

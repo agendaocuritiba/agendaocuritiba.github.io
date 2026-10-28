@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261219T190000
 DTEND;TZID=America/Sao_Paulo:20261219T210000
 SUMMARY:Carol Delgado - Energia Feminina
 LOCATION:Teatro UP Experience - TUX\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea543e55d3dcf.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ea543e55d3dcf.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ea543e55d3dcf.html
+URL:https://agendaocuritiba.github.io/e/ea543e55d3dcf.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T203000
 DTEND;TZID=America/Sao_Paulo:20261031T223000
 SUMMARY:Enquanto o Casamento Não Separe com Marco Zenni / Stand Up Comedy
 LOCATION:Gaslight Comedy Club\, Curitiba - PR
-DESCRIPTION:Marco Zenni faz humor sobre as manias e as delícias da vida a dois.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e9ef4861c4774.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e9ef4861c4774.html
+DESCRIPTION:Marco Zenni faz humor sobre as manias e as delícias da vida a dois.\n\nhttps://agendaocuritiba.github.io/e/e9ef4861c4774.html
+URL:https://agendaocuritiba.github.io/e/e9ef4861c4774.html
 END:VEVENT
 END:VCALENDAR

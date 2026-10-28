@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261129T180000
 DTEND;TZID=America/Sao_Paulo:20261129T200000
 SUMMARY:Tom na Fazenda
 LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e573e0944339e.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e573e0944339e.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e573e0944339e.html
+URL:https://agendaocuritiba.github.io/e/e573e0944339e.html
 END:VEVENT
 END:VCALENDAR

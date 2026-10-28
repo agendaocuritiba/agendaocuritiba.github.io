@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261212T190000
 DTEND;TZID=America/Sao_Paulo:20261212T210000
 SUMMARY:Legião Urbana + Rappa + Raimundera + Dz6 Charlie Brown
 LOCATION:Clay Highway Bar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e1dbcb567eb5e.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e1dbcb567eb5e.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e1dbcb567eb5e.html
+URL:https://agendaocuritiba.github.io/e/e1dbcb567eb5e.html
 END:VEVENT
 END:VCALENDAR

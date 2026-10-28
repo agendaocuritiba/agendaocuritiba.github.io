@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261114T190000
 DTEND;TZID=America/Sao_Paulo:20261114T210000
 SUMMARY:Ghost Cover Oficial (SP)
 LOCATION:Blood Rock Bar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4c887340eeb4.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4c887340eeb4.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e4c887340eeb4.html
+URL:https://agendaocuritiba.github.io/e/e4c887340eeb4.html
 END:VEVENT
 END:VCALENDAR

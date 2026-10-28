@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261121T190000
 DTEND;TZID=America/Sao_Paulo:20261121T210000
 SUMMARY:Candlelight: Os Clássicos do Rock
 LOCATION:Teatro da FEP\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e62dcdbad809f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e62dcdbad809f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e62dcdbad809f.html
+URL:https://agendaocuritiba.github.io/e/e62dcdbad809f.html
 END:VEVENT
 END:VCALENDAR

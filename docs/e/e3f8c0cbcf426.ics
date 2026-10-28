@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261125T200000
 DTEND;TZID=America/Sao_Paulo:20261125T220000
 SUMMARY:Um Sonho de Natal
 LOCATION:Teatro Fernanda Montenegro\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3f8c0cbcf426.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e3f8c0cbcf426.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html
+URL:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T200000
 DTEND;TZID=America/Sao_Paulo:20261107T220000
 SUMMARY:Zeca Pagodinho & Alcione & Jorge Aragão - O Maior Encontro do Samba
 LOCATION:Arena da Baixada\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e228a64acb093.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e228a64acb093.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e228a64acb093.html
+URL:https://agendaocuritiba.github.io/e/e228a64acb093.html
 END:VEVENT
 END:VCALENDAR

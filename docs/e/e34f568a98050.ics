@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261224T190000
 DTEND;TZID=America/Sao_Paulo:20261224T210000
 SUMMARY:Jantar de Natal - Grand Mercure Curitiba Rayon
 LOCATION:Hotel Grand Mercura Curitiba Rayon\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e34f568a98050.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e34f568a98050.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e34f568a98050.html
+URL:https://agendaocuritiba.github.io/e/e34f568a98050.html
 END:VEVENT
 END:VCALENDAR

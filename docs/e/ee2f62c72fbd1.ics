@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270130T193000
 DTEND;TZID=America/Sao_Paulo:20270130T213000
 SUMMARY:"embrulha Pra Viagem" ao Vivo
 LOCATION:Teatro Guaíra - Guairinha\, R. XV de Novembro\, 971 - Centro\, Curitiba - PR\, 80060-000\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee2f62c72fbd1.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ee2f62c72fbd1.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ee2f62c72fbd1.html
+URL:https://agendaocuritiba.github.io/e/ee2f62c72fbd1.html
 END:VEVENT
 END:VCALENDAR

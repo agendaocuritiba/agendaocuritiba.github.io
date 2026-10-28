@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261113T203000
 DTEND;TZID=America/Sao_Paulo:20261113T223000
 SUMMARY:Ato Falho com Mateus Caniceiro / Stand Up Comedy
 LOCATION:Gaslight Comedy Club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2ed5d7f79305.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e2ed5d7f79305.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e2ed5d7f79305.html
+URL:https://agendaocuritiba.github.io/e/e2ed5d7f79305.html
 END:VEVENT
 END:VCALENDAR

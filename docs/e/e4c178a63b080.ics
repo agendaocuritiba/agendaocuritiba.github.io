@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261129T160000
 DTEND;TZID=America/Sao_Paulo:20261129T180000
 SUMMARY:Musiflex On Stage - Kids
 LOCATION:D House\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4c178a63b080.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4c178a63b080.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e4c178a63b080.html
+URL:https://agendaocuritiba.github.io/e/e4c178a63b080.html
 END:VEVENT
 END:VCALENDAR

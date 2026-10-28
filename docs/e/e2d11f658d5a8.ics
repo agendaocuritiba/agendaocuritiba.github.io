@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270131T180000
 DTEND;TZID=America/Sao_Paulo:20270131T200000
 SUMMARY:Turnê Dominguinho - Curitiba
 LOCATION:Pedreira Paulo Leminski\, Rua João Gava\, 970\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2d11f658d5a8.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e2d11f658d5a8.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e2d11f658d5a8.html
+URL:https://agendaocuritiba.github.io/e/e2d11f658d5a8.html
 END:VEVENT
 END:VCALENDAR

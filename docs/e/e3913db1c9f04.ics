@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261224T220000
 DTEND;TZID=America/Sao_Paulo:20261225T000000
 SUMMARY:Natalzão Dos Nortistas 2 Edição
 LOCATION:R. Francisco Derosso\, 117\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3913db1c9f04.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e3913db1c9f04.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3913db1c9f04.html
+URL:https://agendaocuritiba.github.io/e/e3913db1c9f04.html
 END:VEVENT
 END:VCALENDAR

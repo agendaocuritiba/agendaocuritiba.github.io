@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261113T220000
 DTEND;TZID=America/Sao_Paulo:20261114T000000
 SUMMARY:Jeninho
 LOCATION:Rodeo Curitiba\, Br-116 4100 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef0bb1294ca7f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ef0bb1294ca7f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ef0bb1294ca7f.html
+URL:https://agendaocuritiba.github.io/e/ef0bb1294ca7f.html
 END:VEVENT
 END:VCALENDAR

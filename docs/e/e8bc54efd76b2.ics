@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270220T190000
 DTEND;TZID=America/Sao_Paulo:20270220T210000
 SUMMARY:Andrea Vermont - a Arte de Viver
 LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e8bc54efd76b2.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e8bc54efd76b2.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e8bc54efd76b2.html
+URL:https://agendaocuritiba.github.io/e/e8bc54efd76b2.html
 END:VEVENT
 END:VCALENDAR

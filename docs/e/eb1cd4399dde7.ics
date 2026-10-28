@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261213T220000
 DTEND;TZID=America/Sao_Paulo:20261214T000000
 SUMMARY:Lagum em Todo Lugar
 LOCATION:Cine Lido\, Rua Desembargador Ermelino de Leão\, 160 - Centro\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb1cd4399dde7.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb1cd4399dde7.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb1cd4399dde7.html
+URL:https://agendaocuritiba.github.io/e/eb1cd4399dde7.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T220000
 DTEND;TZID=America/Sao_Paulo:20261101T000000
 SUMMARY:Who We Are
 LOCATION:+55 Bar\, Avenida Vicente Machado\, 866- Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef37e69f0ce36.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ef37e69f0ce36.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ef37e69f0ce36.html
+URL:https://agendaocuritiba.github.io/e/ef37e69f0ce36.html
 END:VEVENT
 END:VCALENDAR

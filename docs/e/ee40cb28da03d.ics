@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261209T210000
 DTEND;TZID=America/Sao_Paulo:20261209T230000
 SUMMARY:Caravana Alorino Show / Stand Up Comedy
 LOCATION:D House\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee40cb28da03d.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ee40cb28da03d.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ee40cb28da03d.html
+URL:https://agendaocuritiba.github.io/e/ee40cb28da03d.html
 END:VEVENT
 END:VCALENDAR

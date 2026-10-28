@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261106T193000
 DTEND;TZID=America/Sao_Paulo:20261106T213000
 SUMMARY:Concerto Itália em Melodias
 LOCATION:Capela Santa Maria Espaço Cultural (Rua Conselheiro Laurindo\, 273 - Centro)\, Conselheiro Laurindo 273 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed25dd6d93863.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed25dd6d93863.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed25dd6d93863.html
+URL:https://agendaocuritiba.github.io/e/ed25dd6d93863.html
 END:VEVENT
 END:VCALENDAR

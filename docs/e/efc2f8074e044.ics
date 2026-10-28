@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T200000
 DTEND;TZID=America/Sao_Paulo:20261107T220000
 SUMMARY:Marina Lima
 LOCATION:Ópera de Arame - Rua João Gava\, 920 - Abranches\, Curitiba\, Rua João Gava 970 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/efc2f8074e044.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/efc2f8074e044.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/efc2f8074e044.html
+URL:https://agendaocuritiba.github.io/e/efc2f8074e044.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261101T143000
 DTEND;TZID=America/Sao_Paulo:20261101T163000
 SUMMARY:Degustação de vinhos - Vinícola Araucária
 LOCATION:Setor de Ciências Humanas\, Letras e Artes - UFPR\, Curitiba - PR
-DESCRIPTION:Degustação de vinhos e espumantes da Vinícola Araucária\, de São José dos Pinhais.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e84293064a7df.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e84293064a7df.html
+DESCRIPTION:Degustação de vinhos e espumantes da Vinícola Araucária\, de São José dos Pinhais.\n\nhttps://agendaocuritiba.github.io/e/e84293064a7df.html
+URL:https://agendaocuritiba.github.io/e/e84293064a7df.html
 END:VEVENT
 END:VCALENDAR

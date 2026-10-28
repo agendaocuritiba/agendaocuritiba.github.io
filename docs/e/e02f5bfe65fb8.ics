@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261208T183000
 DTEND;TZID=America/Sao_Paulo:20261208T203000
 SUMMARY:Espetáculo de Encerramento
 LOCATION:Teatro UP Experience - TUX\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e02f5bfe65fb8.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e02f5bfe65fb8.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e02f5bfe65fb8.html
+URL:https://agendaocuritiba.github.io/e/e02f5bfe65fb8.html
 END:VEVENT
 END:VCALENDAR

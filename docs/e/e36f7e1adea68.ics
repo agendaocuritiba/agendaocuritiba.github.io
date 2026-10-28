@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261119T230000
 DTEND;TZID=America/Sao_Paulo:20261120T010000
 SUMMARY:Trommel By All Means
 LOCATION:Club Vibe\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e36f7e1adea68.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e36f7e1adea68.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e36f7e1adea68.html
+URL:https://agendaocuritiba.github.io/e/e36f7e1adea68.html
 END:VEVENT
 END:VCALENDAR

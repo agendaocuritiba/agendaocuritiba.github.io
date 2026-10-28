@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261128T180000
 DTEND;TZID=America/Sao_Paulo:20261128T200000
 SUMMARY:Surf Center Celebration | Curitiba
 LOCATION:Surf Center\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eea110118fb7f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eea110118fb7f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eea110118fb7f.html
+URL:https://agendaocuritiba.github.io/e/eea110118fb7f.html
 END:VEVENT
 END:VCALENDAR

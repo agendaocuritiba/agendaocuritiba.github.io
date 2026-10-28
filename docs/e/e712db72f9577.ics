@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261231T210000
 DTEND;TZID=America/Sao_Paulo:20261231T230000
 SUMMARY:Virada Paradisíaca 2027
 LOCATION:Ópera de Arame\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e712db72f9577.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e712db72f9577.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e712db72f9577.html
+URL:https://agendaocuritiba.github.io/e/e712db72f9577.html
 END:VEVENT
 END:VCALENDAR

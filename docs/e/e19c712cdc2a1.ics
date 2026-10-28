@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T120000
 DTEND;TZID=America/Sao_Paulo:20261031T140000
 SUMMARY:Halloween Med Vet
 LOCATION:UniEnsino\, Curitiba - PR
-DESCRIPTION:Concurso de fantasias de Halloween dos estudantes de Medicina Veterinária.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e19c712cdc2a1.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e19c712cdc2a1.html
+DESCRIPTION:Concurso de fantasias de Halloween dos estudantes de Medicina Veterinária.\n\nhttps://agendaocuritiba.github.io/e/e19c712cdc2a1.html
+URL:https://agendaocuritiba.github.io/e/e19c712cdc2a1.html
 END:VEVENT
 END:VCALENDAR

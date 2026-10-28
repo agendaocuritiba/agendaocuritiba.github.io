@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270130T140000
 DTEND;TZID=America/Sao_Paulo:20270130T160000
 SUMMARY:Ensaios da Anitta 2027 - Curitiba
 LOCATION:Estádio Durival Britto e Silva\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef099fb783605.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ef099fb783605.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ef099fb783605.html
+URL:https://agendaocuritiba.github.io/e/ef099fb783605.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261113T190000
 DTEND;TZID=America/Sao_Paulo:20261113T210000
 SUMMARY:Sul na Taça | Uma viagem pelos rótulos de vanguarda da Vinícola Aurora
 LOCATION:Aliança Francesa de Curitiba - Sede Prudente de Moraes\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e63603156b701.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e63603156b701.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e63603156b701.html
+URL:https://agendaocuritiba.github.io/e/e63603156b701.html
 END:VEVENT
 END:VCALENDAR

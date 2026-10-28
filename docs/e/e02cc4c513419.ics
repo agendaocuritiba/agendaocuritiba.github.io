@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261030T230000
 DTEND;TZID=America/Sao_Paulo:20261031T010000
 SUMMARY:Illusionize By Trivø
 LOCATION:Club Vibe\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e02cc4c513419.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e02cc4c513419.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e02cc4c513419.html
+URL:https://agendaocuritiba.github.io/e/e02cc4c513419.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261219T230000
 DTEND;TZID=America/Sao_Paulo:20261220T010000
 SUMMARY:Eli Iwasa
 LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e7ba0fff0e1e8.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e7ba0fff0e1e8.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e7ba0fff0e1e8.html
+URL:https://agendaocuritiba.github.io/e/e7ba0fff0e1e8.html
 END:VEVENT
 END:VCALENDAR

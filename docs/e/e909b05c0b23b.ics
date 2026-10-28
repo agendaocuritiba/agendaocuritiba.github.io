@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261030T220000
 DTEND;TZID=America/Sao_Paulo:20261031T000000
 SUMMARY:+55 Apresenta: MC Luuky
 LOCATION:+55 Bar\, Avenida Vicente Machado\, 866- Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e909b05c0b23b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e909b05c0b23b.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e909b05c0b23b.html
+URL:https://agendaocuritiba.github.io/e/e909b05c0b23b.html
 END:VEVENT
 END:VCALENDAR

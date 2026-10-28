@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261108T190000
 DTEND;TZID=America/Sao_Paulo:20261108T210000
 SUMMARY:O.pop Coral
 LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e872adc7598f6.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e872adc7598f6.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e872adc7598f6.html
+URL:https://agendaocuritiba.github.io/e/e872adc7598f6.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261219T210000
 DTEND;TZID=America/Sao_Paulo:20261219T230000
 SUMMARY:Bk
 LOCATION:Igloo Super Hall - Jockey Club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e618b7f04727f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e618b7f04727f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e618b7f04727f.html
+URL:https://agendaocuritiba.github.io/e/e618b7f04727f.html
 END:VEVENT
 END:VCALENDAR

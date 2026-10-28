@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261211T230000
 DTEND;TZID=America/Sao_Paulo:20261212T010000
 SUMMARY:James Zabiela
 LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e2293518f0426.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e2293518f0426.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e2293518f0426.html
+URL:https://agendaocuritiba.github.io/e/e2293518f0426.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Candlelight: Clássicos de Natal
 LOCATION:Teatro da FEP\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ead7c3d9072bb.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ead7c3d9072bb.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ead7c3d9072bb.html
+URL:https://agendaocuritiba.github.io/e/ead7c3d9072bb.html
 END:VEVENT
 END:VCALENDAR

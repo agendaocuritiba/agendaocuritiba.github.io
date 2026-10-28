@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261205T200000
 DTEND;TZID=America/Sao_Paulo:20261205T220000
 SUMMARY:Barbie Kill December Rocks
 LOCATION:Purple Reis\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb079ecab8f04.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb079ecab8f04.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb079ecab8f04.html
+URL:https://agendaocuritiba.github.io/e/eb079ecab8f04.html
 END:VEVENT
 END:VCALENDAR

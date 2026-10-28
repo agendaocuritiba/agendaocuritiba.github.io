@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261113T200000
 DTEND;TZID=America/Sao_Paulo:20261113T220000
 SUMMARY:Syron//First Contact
 LOCATION:Poutz pub\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e79acf3893a81.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e79acf3893a81.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e79acf3893a81.html
+URL:https://agendaocuritiba.github.io/e/e79acf3893a81.html
 END:VEVENT
 END:VCALENDAR

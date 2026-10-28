@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T200000
 DTEND;TZID=America/Sao_Paulo:20261107T220000
 SUMMARY:MB Summit Brazil
 LOCATION:CRECI - PR\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ef0cebd9edad7.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ef0cebd9edad7.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ef0cebd9edad7.html
+URL:https://agendaocuritiba.github.io/e/ef0cebd9edad7.html
 END:VEVENT
 END:VCALENDAR

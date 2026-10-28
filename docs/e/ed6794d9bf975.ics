@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261030T200000
 DTEND;TZID=America/Sao_Paulo:20261030T220000
 SUMMARY:Sexta 30/10 | Hunter A Caça Aos Ursos Tá Liberada!
 LOCATION:Deep Lounge\, Curitiba - PR
-DESCRIPTION:Festa Hunter para o público urso\, com o DJ carioca Beto Rodrigues\, no Deep Lounge.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ed6794d9bf975.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed6794d9bf975.html
+DESCRIPTION:Festa Hunter para o público urso\, com o DJ carioca Beto Rodrigues\, no Deep Lounge.\n\nhttps://agendaocuritiba.github.io/e/ed6794d9bf975.html
+URL:https://agendaocuritiba.github.io/e/ed6794d9bf975.html
 END:VEVENT
 END:VCALENDAR

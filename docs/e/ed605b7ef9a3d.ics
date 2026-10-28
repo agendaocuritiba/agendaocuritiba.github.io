@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261101T220000
 DTEND;TZID=America/Sao_Paulo:20261102T000000
 SUMMARY:Victor & Leo
 LOCATION:Cine Lido\, Rua Desembargador Ermelino de Leão\, 160 - Centro\, Curitiba - PR
-DESCRIPTION:A dupla sertaneja revisita as canções sobre amor e saudade que marcaram os anos 2000.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ed605b7ef9a3d.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed605b7ef9a3d.html
+DESCRIPTION:A dupla sertaneja revisita as canções sobre amor e saudade que marcaram os anos 2000.\n\nhttps://agendaocuritiba.github.io/e/ed605b7ef9a3d.html
+URL:https://agendaocuritiba.github.io/e/ed605b7ef9a3d.html
 END:VEVENT
 END:VCALENDAR

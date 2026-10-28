@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T160000
 DTEND;TZID=America/Sao_Paulo:20261031T180000
 SUMMARY:Rádio Saltimbancos
 LOCATION:Teatro Guaíra\, Rua Xv De Novembro 971 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:Montagem da MRG Produções inspirada em Os Saltimbancos\, de Chico Buarque.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e0dbaf3920d78.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e0dbaf3920d78.html
+DESCRIPTION:Montagem da MRG Produções inspirada em Os Saltimbancos\, de Chico Buarque.\n\nhttps://agendaocuritiba.github.io/e/e0dbaf3920d78.html
+URL:https://agendaocuritiba.github.io/e/e0dbaf3920d78.html
 END:VEVENT
 END:VCALENDAR

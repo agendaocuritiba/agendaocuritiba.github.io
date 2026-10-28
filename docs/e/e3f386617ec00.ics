@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T080000
 DTEND;TZID=America/Sao_Paulo:20261031T100000
 SUMMARY:Festival CULTiva
 LOCATION:Spot105\, Curitiba - PR
-DESCRIPTION:Festival de um dia com práticas organizadas em trilhas\, feira e experiências no Spot 105\, em Santa Felicidade.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e3f386617ec00.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e3f386617ec00.html
+DESCRIPTION:Festival de um dia com práticas organizadas em trilhas\, feira e experiências no Spot 105\, em Santa Felicidade.\n\nhttps://agendaocuritiba.github.io/e/e3f386617ec00.html
+URL:https://agendaocuritiba.github.io/e/e3f386617ec00.html
 END:VEVENT
 END:VCALENDAR

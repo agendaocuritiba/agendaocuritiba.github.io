@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261128T220000
 DTEND;TZID=America/Sao_Paulo:20261129T000000
 SUMMARY:Escangalha: Lukão
 LOCATION:+55 Bar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e23419aab8277.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e23419aab8277.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e23419aab8277.html
+URL:https://agendaocuritiba.github.io/e/e23419aab8277.html
 END:VEVENT
 END:VCALENDAR

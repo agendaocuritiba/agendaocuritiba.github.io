@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261205T190000
 DTEND;TZID=America/Sao_Paulo:20261205T210000
 SUMMARY:Nossa História - Espetáculo Soul Tap Family
 LOCATION:Museu Oscar Niemeyer - Auditório Poty Lazzarotto\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e717740946dd9.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e717740946dd9.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e717740946dd9.html
+URL:https://agendaocuritiba.github.io/e/e717740946dd9.html
 END:VEVENT
 END:VCALENDAR

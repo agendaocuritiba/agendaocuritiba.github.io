@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261122T183000
 DTEND;TZID=America/Sao_Paulo:20261122T203000
 SUMMARY:Matilda - Dreams Centro Cultural
 LOCATION:Teatro Bom Jesus\, 24 De Maio 135 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed152a87e9aa4.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed152a87e9aa4.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed152a87e9aa4.html
+URL:https://agendaocuritiba.github.io/e/ed152a87e9aa4.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261030T200000
 DTEND;TZID=America/Sao_Paulo:20261030T220000
 SUMMARY:David Coelho em Tudo Vira MPB
 LOCATION:Teatro Regina Vogue\, Av. Sete de Setembro\, 2775 - 2004 - Rebouças\, Curitiba - PR
-DESCRIPTION:David Coelho canta clássicos da MPB no show Tudo Vira MPB.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e99b25d186f32.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e99b25d186f32.html
+DESCRIPTION:David Coelho canta clássicos da MPB no show Tudo Vira MPB.\n\nhttps://agendaocuritiba.github.io/e/e99b25d186f32.html
+URL:https://agendaocuritiba.github.io/e/e99b25d186f32.html
 END:VEVENT
 END:VCALENDAR

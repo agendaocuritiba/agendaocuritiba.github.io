@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T230000
 DTEND;TZID=America/Sao_Paulo:20261101T010000
 SUMMARY:After Hours - Gabss\, Solarce Brothers
 LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/edbd757b68f98.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/edbd757b68f98.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/edbd757b68f98.html
+URL:https://agendaocuritiba.github.io/e/edbd757b68f98.html
 END:VEVENT
 END:VCALENDAR

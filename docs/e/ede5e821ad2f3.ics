@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270123T160000
 DTEND;TZID=America/Sao_Paulo:20270123T180000
 SUMMARY:Buguei meu estrela: O show
 LOCATION:Local a definir\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ede5e821ad2f3.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ede5e821ad2f3.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ede5e821ad2f3.html
+URL:https://agendaocuritiba.github.io/e/ede5e821ad2f3.html
 END:VEVENT
 END:VCALENDAR

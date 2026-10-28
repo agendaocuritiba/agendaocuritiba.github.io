@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261219T160000
 DTEND;TZID=America/Sao_Paulo:20261219T180000
 SUMMARY:Alok | Áurea Tour
 LOCATION:Estádio Major Antônio Couto Pereira\, Rua Ubaldino do Amaral\, 63\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb75c0298e425.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb75c0298e425.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb75c0298e425.html
+URL:https://agendaocuritiba.github.io/e/eb75c0298e425.html
 END:VEVENT
 END:VCALENDAR

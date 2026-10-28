@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261129T140000
 DTEND;TZID=America/Sao_Paulo:20261129T160000
 SUMMARY:Musiflex On Stage - Internacional
 LOCATION:D House\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed72cf41a321f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed72cf41a321f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed72cf41a321f.html
+URL:https://agendaocuritiba.github.io/e/ed72cf41a321f.html
 END:VEVENT
 END:VCALENDAR

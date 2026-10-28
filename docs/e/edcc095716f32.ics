@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261030T214500
 DTEND;TZID=America/Sao_Paulo:20261030T234500
 SUMMARY:Rumberos de la ciudad de Curitiba
 LOCATION:New Line\, Curitiba - PR
-DESCRIPTION:Noite latina de Halloween no New Line\, com salsa e DJs convidados.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/edcc095716f32.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/edcc095716f32.html
+DESCRIPTION:Noite latina de Halloween no New Line\, com salsa e DJs convidados.\n\nhttps://agendaocuritiba.github.io/e/edcc095716f32.html
+URL:https://agendaocuritiba.github.io/e/edcc095716f32.html
 END:VEVENT
 END:VCALENDAR

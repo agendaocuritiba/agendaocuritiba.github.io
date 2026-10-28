@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261114T080000
 DTEND;TZID=America/Sao_Paulo:20261114T100000
 SUMMARY:IX Congresso Internacional de Felicidade
 LOCATION:Centro de Eventos Positivo\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed1e5aed21e6a.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed1e5aed21e6a.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed1e5aed21e6a.html
+URL:https://agendaocuritiba.github.io/e/ed1e5aed21e6a.html
 END:VEVENT
 END:VCALENDAR

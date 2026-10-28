@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T194500
 DTEND;TZID=America/Sao_Paulo:20261107T214500
 SUMMARY:Nada É Combinado
 LOCATION:Auditório João Luiz Fiani\, Alameda Dom Pedro Ii 255 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ee254a925dc82.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ee254a925dc82.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ee254a925dc82.html
+URL:https://agendaocuritiba.github.io/e/ee254a925dc82.html
 END:VEVENT
 END:VCALENDAR

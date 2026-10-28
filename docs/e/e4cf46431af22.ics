@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261101T170000
 DTEND;TZID=America/Sao_Paulo:20261101T190000
 SUMMARY:Prêmio Rasga Tv 2026
 LOCATION:VERSUS CLUB\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4cf46431af22.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4cf46431af22.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e4cf46431af22.html
+URL:https://agendaocuritiba.github.io/e/e4cf46431af22.html
 END:VEVENT
 END:VCALENDAR

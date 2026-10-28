@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261111T200000
 DTEND;TZID=America/Sao_Paulo:20261111T220000
 SUMMARY:7ª Mostra JS Studio
 LOCATION:Teatro Positivo\, Pedro Viriato Parigot de Souza 5300 Curitiba PR\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ec545b41ccebf.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ec545b41ccebf.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ec545b41ccebf.html
+URL:https://agendaocuritiba.github.io/e/ec545b41ccebf.html
 END:VEVENT
 END:VCALENDAR

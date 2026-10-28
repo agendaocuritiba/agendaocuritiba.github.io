@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261029T203000
 DTEND;TZID=America/Sao_Paulo:20261029T223000
 SUMMARY:Ah Ahluin com Gabi Giordano\, Sávia Aragão\, Luis Ferreiras e Jonas Reikdal /stand Up Comedy Curitiba
 LOCATION:Gaslight Comedy Club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e926c900e34a2.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e926c900e34a2.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e926c900e34a2.html
+URL:https://agendaocuritiba.github.io/e/e926c900e34a2.html
 END:VEVENT
 END:VCALENDAR

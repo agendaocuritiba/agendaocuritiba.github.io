@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261231T210000
 DTEND;TZID=America/Sao_Paulo:20261231T230000
 SUMMARY:Almanac Réveillon 2027
 LOCATION:Club Vibe\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb104a7ef5ac4.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb104a7ef5ac4.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb104a7ef5ac4.html
+URL:https://agendaocuritiba.github.io/e/eb104a7ef5ac4.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261025T203000
 DTEND;TZID=America/Sao_Paulo:20261025T223000
 SUMMARY:Baseado em Baseados Reais com Edu Fenix / Stand Up Comedy
 LOCATION:Gaslight Comedy Club\, Curitiba - PR
-DESCRIPTION:Show solo de stand-up de Edu Fenix\, com cerca de 70 minutos\, no Gaslight Comedy Club.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e2f43208079f6.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e2f43208079f6.html
+DESCRIPTION:Show solo de stand-up de Edu Fenix\, com cerca de 70 minutos\, no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e2f43208079f6.html
+URL:https://agendaocuritiba.github.io/e/e2f43208079f6.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T140000
 DTEND;TZID=America/Sao_Paulo:20261031T160000
 SUMMARY:31 De Outubro
 LOCATION:Pedreira Paulo Leminski\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4eae39a61695.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4eae39a61695.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e4eae39a61695.html
+URL:https://agendaocuritiba.github.io/e/e4eae39a61695.html
 END:VEVENT
 END:VCALENDAR

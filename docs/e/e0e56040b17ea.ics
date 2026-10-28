@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261027T193000
 DTEND;TZID=America/Sao_Paulo:20261027T213000
 SUMMARY:Arena EMPAFLO
 LOCATION:R. M.e Maria dos Anjos\, 1060\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e0e56040b17ea.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e0e56040b17ea.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0e56040b17ea.html
+URL:https://agendaocuritiba.github.io/e/e0e56040b17ea.html
 END:VEVENT
 END:VCALENDAR

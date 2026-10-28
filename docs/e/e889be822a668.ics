@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261114T210000
 DTEND;TZID=America/Sao_Paulo:20261114T230000
 SUMMARY:O Baile de Eleanor Rigby no Jokers · Curitiba · 14 de novembro
 LOCATION:Jokers\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e889be822a668.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e889be822a668.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e889be822a668.html
+URL:https://agendaocuritiba.github.io/e/e889be822a668.html
 END:VEVENT
 END:VCALENDAR

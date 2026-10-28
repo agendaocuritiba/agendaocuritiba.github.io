@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261114T230000
 DTEND;TZID=America/Sao_Paulo:20261115T010000
 SUMMARY:Field Showcase Apr. Flux One
 LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e70e9e2563941.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e70e9e2563941.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e70e9e2563941.html
+URL:https://agendaocuritiba.github.io/e/e70e9e2563941.html
 END:VEVENT
 END:VCALENDAR

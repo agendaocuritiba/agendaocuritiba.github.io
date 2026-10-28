@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261106T203000
 DTEND;TZID=America/Sao_Paulo:20261106T223000
 SUMMARY:Não Entendi Direito com Gabriel Lopes / Stand Up Comedy
 LOCATION:Gaslight Comedy Club\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e4ee4b8fabd44.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4ee4b8fabd44.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e4ee4b8fabd44.html
+URL:https://agendaocuritiba.github.io/e/e4ee4b8fabd44.html
 END:VEVENT
 END:VCALENDAR

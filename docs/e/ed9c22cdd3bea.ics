@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261119T140000
 DTEND;TZID=America/Sao_Paulo:20261119T160000
 SUMMARY:Espetáculo de Histórias Vivas Quilombolas
 LOCATION:Teatro Paiol\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed9c22cdd3bea.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed9c22cdd3bea.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed9c22cdd3bea.html
+URL:https://agendaocuritiba.github.io/e/ed9c22cdd3bea.html
 END:VEVENT
 END:VCALENDAR

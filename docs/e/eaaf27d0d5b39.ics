@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261128T230000
 DTEND;TZID=America/Sao_Paulo:20261129T010000
 SUMMARY:Musafir Showcase
 LOCATION:Club Vibe\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eaaf27d0d5b39.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eaaf27d0d5b39.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eaaf27d0d5b39.html
+URL:https://agendaocuritiba.github.io/e/eaaf27d0d5b39.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261108T093000
 DTEND;TZID=America/Sao_Paulo:20261108T113000
 SUMMARY:Mostra 2026 - "Sons Do Mundo"
 LOCATION:R. Ten. João Gomes da Silva\, 235\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e929d7bf48fbb.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e929d7bf48fbb.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e929d7bf48fbb.html
+URL:https://agendaocuritiba.github.io/e/e929d7bf48fbb.html
 END:VEVENT
 END:VCALENDAR

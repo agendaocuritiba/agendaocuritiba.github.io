@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261124T190000
 DTEND;TZID=America/Sao_Paulo:20261124T210000
 SUMMARY:Watch Party - Corridas das Blogueiras - Ano 8
 LOCATION:Teatro Positivo\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e96c0b358499e.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e96c0b358499e.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e96c0b358499e.html
+URL:https://agendaocuritiba.github.io/e/e96c0b358499e.html
 END:VEVENT
 END:VCALENDAR

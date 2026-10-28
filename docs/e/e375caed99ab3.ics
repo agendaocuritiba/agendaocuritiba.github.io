@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261112T210000
 DTEND;TZID=America/Sao_Paulo:20261112T230000
 SUMMARY:Cris Pereira em Meu nome não é Jorge / Stand up Comedy
 LOCATION:D House\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e375caed99ab3.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e375caed99ab3.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e375caed99ab3.html
+URL:https://agendaocuritiba.github.io/e/e375caed99ab3.html
 END:VEVENT
 END:VCALENDAR

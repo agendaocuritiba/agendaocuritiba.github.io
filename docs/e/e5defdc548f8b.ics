@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261217T203000
 DTEND;TZID=America/Sao_Paulo:20261217T223000
 SUMMARY:Padre Patrick
 LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e5defdc548f8b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e5defdc548f8b.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e5defdc548f8b.html
+URL:https://agendaocuritiba.github.io/e/e5defdc548f8b.html
 END:VEVENT
 END:VCALENDAR

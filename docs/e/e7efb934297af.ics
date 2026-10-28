@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261120T100000
 DTEND;TZID=America/Sao_Paulo:20261120T120000
 SUMMARY:Charm Show Curitiba
 LOCATION:Antigo Cassino Ahú\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e7efb934297af.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e7efb934297af.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e7efb934297af.html
+URL:https://agendaocuritiba.github.io/e/e7efb934297af.html
 END:VEVENT
 END:VCALENDAR

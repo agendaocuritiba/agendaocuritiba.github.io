@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261128T150000
 DTEND;TZID=America/Sao_Paulo:20261128T170000
 SUMMARY:Moana O Musical
 LOCATION:Teatro Paulo Autran\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e09f2ca16b549.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e09f2ca16b549.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e09f2ca16b549.html
+URL:https://agendaocuritiba.github.io/e/e09f2ca16b549.html
 END:VEVENT
 END:VCALENDAR

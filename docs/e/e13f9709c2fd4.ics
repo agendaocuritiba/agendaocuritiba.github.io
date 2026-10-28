@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261128T220000
 DTEND;TZID=America/Sao_Paulo:20261129T000000
 SUMMARY:Os Garotin
 LOCATION:Cine Lido\, Rua Desembargador Ermelino de Leão\, 160 - Centro\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e13f9709c2fd4.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e13f9709c2fd4.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e13f9709c2fd4.html
+URL:https://agendaocuritiba.github.io/e/e13f9709c2fd4.html
 END:VEVENT
 END:VCALENDAR

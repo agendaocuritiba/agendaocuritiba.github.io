@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261211T201500
 DTEND;TZID=America/Sao_Paulo:20261211T221500
 SUMMARY:Martinho da Vila e Mart'nália
 LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e32d095e161f7.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e32d095e161f7.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e32d095e161f7.html
+URL:https://agendaocuritiba.github.io/e/e32d095e161f7.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261028T193000
 DTEND;TZID=America/Sao_Paulo:20261028T213000
 SUMMARY:Diogo Almeida | Especial Mês dos Professores
 LOCATION:Teatro Positivo\, Curitiba - PR
-DESCRIPTION:Show de humor de Diogo Almeida sobre a vida em sala de aula e a disputa dos professores com o celular dos alunos.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ed87be7bd7715.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed87be7bd7715.html
+DESCRIPTION:Show de humor de Diogo Almeida sobre a vida em sala de aula e a disputa dos professores com o celular dos alunos.\n\nhttps://agendaocuritiba.github.io/e/ed87be7bd7715.html
+URL:https://agendaocuritiba.github.io/e/ed87be7bd7715.html
 END:VEVENT
 END:VCALENDAR

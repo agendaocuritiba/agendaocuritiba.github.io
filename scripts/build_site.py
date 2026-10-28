@@ -9,8 +9,8 @@ import json, sys, os, re, shutil, html
 from datetime import date, datetime, timedelta
 from urllib.parse import quote, urlencode
 
-SITE_URL = "https://dennymarcels.github.io/agendao-curitiba/"
-ISSUES_URL = "https://github.com/dennymarcels/agendao-curitiba/issues"
+SITE_URL = "https://agendaocuritiba.github.io/"
+ISSUES_URL = "https://github.com/agendaocuritiba/agendaocuritiba.github.io/issues"
 PUBLISHERS = {"Turismo Curitiba", "Evento ON"}
 
 

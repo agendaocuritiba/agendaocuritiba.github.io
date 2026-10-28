@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261127T210000
 DTEND;TZID=America/Sao_Paulo:20261127T230000
 SUMMARY:Tuany + Olivia Yells + Mariposa Alice @ 92 Graus (CWB)
 LOCATION:92 Graus\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e0b81d8694594.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e0b81d8694594.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0b81d8694594.html
+URL:https://agendaocuritiba.github.io/e/e0b81d8694594.html
 END:VEVENT
 END:VCALENDAR

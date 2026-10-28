@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261128T160000
 DTEND;TZID=America/Sao_Paulo:20261128T180000
 SUMMARY:Ballet of Lights: A Bela Adormecida em um espetáculo cintilante
 LOCATION:Teatro da FEP\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eec433a1c14bf.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eec433a1c14bf.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eec433a1c14bf.html
+URL:https://agendaocuritiba.github.io/e/eec433a1c14bf.html
 END:VEVENT
 END:VCALENDAR

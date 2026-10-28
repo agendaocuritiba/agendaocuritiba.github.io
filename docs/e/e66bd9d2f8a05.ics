@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T200000
 DTEND;TZID=America/Sao_Paulo:20261031T220000
 SUMMARY:Marrom\, O Musical
 LOCATION:Ópera de Arame - Rua João Gava 920 Curitiba\, Paraná\, Curitiba - PR
-DESCRIPTION:Musical de Miguel Falabella sobre a vida de Alcione\, a Marrom\, em nova montagem que chega a Curitiba.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e66bd9d2f8a05.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e66bd9d2f8a05.html
+DESCRIPTION:Musical de Miguel Falabella sobre a vida de Alcione\, a Marrom\, em nova montagem que chega a Curitiba.\n\nhttps://agendaocuritiba.github.io/e/e66bd9d2f8a05.html
+URL:https://agendaocuritiba.github.io/e/e66bd9d2f8a05.html
 END:VEVENT
 END:VCALENDAR

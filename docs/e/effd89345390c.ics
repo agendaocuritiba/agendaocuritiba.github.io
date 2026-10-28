@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270227T201500
 DTEND;TZID=America/Sao_Paulo:20270227T221500
 SUMMARY:Sérgio Reis
 LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/effd89345390c.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/effd89345390c.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/effd89345390c.html
+URL:https://agendaocuritiba.github.io/e/effd89345390c.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261204T100000
 DTEND;TZID=America/Sao_Paulo:20261204T120000
 SUMMARY:Twelve Beers
 LOCATION:Curitiba\, Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e0a5a300aa80a.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e0a5a300aa80a.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0a5a300aa80a.html
+URL:https://agendaocuritiba.github.io/e/e0a5a300aa80a.html
 END:VEVENT
 END:VCALENDAR

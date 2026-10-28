@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270320T201500
 DTEND;TZID=America/Sao_Paulo:20270320T221500
 SUMMARY:Paula Fernandes
 LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3d25aca7a28e.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e3d25aca7a28e.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3d25aca7a28e.html
+URL:https://agendaocuritiba.github.io/e/e3d25aca7a28e.html
 END:VEVENT
 END:VCALENDAR

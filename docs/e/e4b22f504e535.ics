@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261029T190000
 DTEND;TZID=America/Sao_Paulo:20261029T210000
 SUMMARY:Freaks on Mars
 LOCATION:Changes Bar\, Curitiba - PR
-DESCRIPTION:Festa de Halloween da escola Harmonia Espaço Musical\, com música ao vivo e fantasias.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e4b22f504e535.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4b22f504e535.html
+DESCRIPTION:Festa de Halloween da escola Harmonia Espaço Musical\, com música ao vivo e fantasias.\n\nhttps://agendaocuritiba.github.io/e/e4b22f504e535.html
+URL:https://agendaocuritiba.github.io/e/e4b22f504e535.html
 END:VEVENT
 END:VCALENDAR

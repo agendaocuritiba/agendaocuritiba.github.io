@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261205T180000
 DTEND;TZID=America/Sao_Paulo:20261205T200000
 SUMMARY:No Ritmo dos Bumbás
 LOCATION:Clube Social Paraná Clube\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/efa2630059377.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/efa2630059377.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/efa2630059377.html
+URL:https://agendaocuritiba.github.io/e/efa2630059377.html
 END:VEVENT
 END:VCALENDAR

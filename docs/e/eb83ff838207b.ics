@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261108T170000
 DTEND;TZID=America/Sao_Paulo:20261108T190000
 SUMMARY:Roda de Samba da FAP no Teatro Paiol
 LOCATION:Teatro Paiol\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb83ff838207b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb83ff838207b.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb83ff838207b.html
+URL:https://agendaocuritiba.github.io/e/eb83ff838207b.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261129T160000
 DTEND;TZID=America/Sao_Paulo:20261129T180000
 SUMMARY:Palco 180Bpm
 LOCATION:Fun Stage\, R. Bpo. Dom José 2258 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3b4fcf99f08d.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e3b4fcf99f08d.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3b4fcf99f08d.html
+URL:https://agendaocuritiba.github.io/e/e3b4fcf99f08d.html
 END:VEVENT
 END:VCALENDAR

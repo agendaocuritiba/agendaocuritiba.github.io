@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261112T203000
 DTEND;TZID=America/Sao_Paulo:20261112T223000
 SUMMARY:Fernando Pedrosa | Xaveca a Plateia e Bebe Vinho
 LOCATION:Teatro Fernanda Montenegro\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e023ce23a85c9.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e023ce23a85c9.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e023ce23a85c9.html
+URL:https://agendaocuritiba.github.io/e/e023ce23a85c9.html
 END:VEVENT
 END:VCALENDAR

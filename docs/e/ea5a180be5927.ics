@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261120T210000
 DTEND;TZID=America/Sao_Paulo:20261120T230000
 SUMMARY:MOMBOJÓ | Lançamento do álbum "Solar"
 LOCATION:Camaleão Cultural\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ea5a180be5927.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ea5a180be5927.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ea5a180be5927.html
+URL:https://agendaocuritiba.github.io/e/ea5a180be5927.html
 END:VEVENT
 END:VCALENDAR

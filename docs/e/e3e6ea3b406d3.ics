@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261107T193000
 DTEND;TZID=America/Sao_Paulo:20261107T213000
 SUMMARY:Vocal Curitibôcas: Só Sucessos 2026
 LOCATION:Teatro Regina Vogue\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e3e6ea3b406d3.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e3e6ea3b406d3.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3e6ea3b406d3.html
+URL:https://agendaocuritiba.github.io/e/e3e6ea3b406d3.html
 END:VEVENT
 END:VCALENDAR

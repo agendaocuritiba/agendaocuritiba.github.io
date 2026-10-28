@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261121T190000
 DTEND;TZID=America/Sao_Paulo:20261121T210000
 SUMMARY:Wotan Folk Festival
 LOCATION:Blood Rock Bar\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/ed3b48dd5827b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed3b48dd5827b.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/ed3b48dd5827b.html
+URL:https://agendaocuritiba.github.io/e/ed3b48dd5827b.html
 END:VEVENT
 END:VCALENDAR

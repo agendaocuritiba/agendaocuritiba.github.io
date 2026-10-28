@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261113T180000
 DTEND;TZID=America/Sao_Paulo:20261113T200000
 SUMMARY:Shibari Experience
 LOCATION:Ópera de Arame\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e594febdeb10a.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e594febdeb10a.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e594febdeb10a.html
+URL:https://agendaocuritiba.github.io/e/e594febdeb10a.html
 END:VEVENT
 END:VCALENDAR

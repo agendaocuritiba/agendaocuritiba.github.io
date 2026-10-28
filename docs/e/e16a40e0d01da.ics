@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270221T180000
 DTEND;TZID=America/Sao_Paulo:20270221T200000
 SUMMARY:Pelos 4 Elementos: Uma Jornada Musical Sobre a Vida
 LOCATION:Guairinha - Salvador De Ferrante\, Rua Xv De Novembro 971 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e16a40e0d01da.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e16a40e0d01da.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e16a40e0d01da.html
+URL:https://agendaocuritiba.github.io/e/e16a40e0d01da.html
 END:VEVENT
 END:VCALENDAR

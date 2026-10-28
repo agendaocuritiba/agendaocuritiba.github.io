@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261025T180000
 DTEND;TZID=America/Sao_Paulo:20261025T200000
 SUMMARY:Show de humor com Santo Fole- NOVO SHOW "DEUS QUE AJUDE'
 LOCATION:Teatro Bom Jesus\, Curitiba - PR
-DESCRIPTION:O gaiteiro e humorista Santo Fole mistura comédia e música no show Deus que Ajude.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e1f302f908991.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e1f302f908991.html
+DESCRIPTION:O gaiteiro e humorista Santo Fole mistura comédia e música no show Deus que Ajude.\n\nhttps://agendaocuritiba.github.io/e/e1f302f908991.html
+URL:https://agendaocuritiba.github.io/e/e1f302f908991.html
 END:VEVENT
 END:VCALENDAR

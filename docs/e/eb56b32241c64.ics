@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261114T200000
 DTEND;TZID=America/Sao_Paulo:20261114T220000
 SUMMARY:Revelação & Xande de Pilares
 LOCATION:Complexo Durival de Britto\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb56b32241c64.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb56b32241c64.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb56b32241c64.html
+URL:https://agendaocuritiba.github.io/e/eb56b32241c64.html
 END:VEVENT
 END:VCALENDAR

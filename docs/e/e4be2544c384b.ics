@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T203000
 DTEND;TZID=America/Sao_Paulo:20261031T223000
 SUMMARY:Smoke'n' Comedy Stand Up Comedy
 LOCATION:Smoke'n' Fire Gastrobar\, Rua Irmã Flávia Borlet\, 515\, Curitiba - PR
-DESCRIPTION:Noite de stand-up com comediantes pertinho do palco e piadas inéditas no Smoke'n Fire Gastrobar.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e4be2544c384b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e4be2544c384b.html
+DESCRIPTION:Noite de stand-up com comediantes pertinho do palco e piadas inéditas no Smoke'n Fire Gastrobar.\n\nhttps://agendaocuritiba.github.io/e/e4be2544c384b.html
+URL:https://agendaocuritiba.github.io/e/e4be2544c384b.html
 END:VEVENT
 END:VCALENDAR

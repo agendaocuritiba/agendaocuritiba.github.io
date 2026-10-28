@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261031T190000
 DTEND;TZID=America/Sao_Paulo:20261031T210000
 SUMMARY:Ao Pé do Ouvido com Giuliano Eriston
 LOCATION:Casa Bambuê\, Curitiba - PR
-DESCRIPTION:Show intimista de Giuliano Eriston na série Ao Pé do Ouvido\, na Casa Bambuê.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/e42531965f779.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e42531965f779.html
+DESCRIPTION:Show intimista de Giuliano Eriston na série Ao Pé do Ouvido\, na Casa Bambuê.\n\nhttps://agendaocuritiba.github.io/e/e42531965f779.html
+URL:https://agendaocuritiba.github.io/e/e42531965f779.html
 END:VEVENT
 END:VCALENDAR

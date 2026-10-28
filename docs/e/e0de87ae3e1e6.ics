@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261120T220000
 DTEND;TZID=America/Sao_Paulo:20261121T000000
 SUMMARY:Duda Bertelli
 LOCATION:Rodeo Curitiba\, Br-116 4100 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e0de87ae3e1e6.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e0de87ae3e1e6.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0de87ae3e1e6.html
+URL:https://agendaocuritiba.github.io/e/e0de87ae3e1e6.html
 END:VEVENT
 END:VCALENDAR

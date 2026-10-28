@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20270314T180000
 DTEND;TZID=America/Sao_Paulo:20270314T200000
 SUMMARY:Iron Maiden Symphonic
 LOCATION:ópera De Arame\, Rua João Gava 970 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e718011896414.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e718011896414.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e718011896414.html
+URL:https://agendaocuritiba.github.io/e/e718011896414.html
 END:VEVENT
 END:VCALENDAR

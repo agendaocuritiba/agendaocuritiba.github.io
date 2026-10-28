@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261115T160000
 DTEND;TZID=America/Sao_Paulo:20261115T180000
 SUMMARY:Tem Criança na Plateia com Tum Tu Tubos
 LOCATION:Casa Bambuê\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/eb78d14159fed.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/eb78d14159fed.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/eb78d14159fed.html
+URL:https://agendaocuritiba.github.io/e/eb78d14159fed.html
 END:VEVENT
 END:VCALENDAR

@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261106T193000
 DTEND;TZID=America/Sao_Paulo:20261106T213000
 SUMMARY:Vicentinos de Curitiba Celebram 110 Anos com Silvio Brito
 LOCATION:Teatro Bom Jesus\, 24 De Maio 135 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e93d8922ee26b.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e93d8922ee26b.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e93d8922ee26b.html
+URL:https://agendaocuritiba.github.io/e/e93d8922ee26b.html
 END:VEVENT
 END:VCALENDAR

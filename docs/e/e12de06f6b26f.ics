@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261127T201500
 DTEND;TZID=America/Sao_Paulo:20261127T221500
 SUMMARY:Maria Rita
 LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://dennymarcels.github.io/agendao-curitiba/e/e12de06f6b26f.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/e12de06f6b26f.html
+DESCRIPTION:https://agendaocuritiba.github.io/e/e12de06f6b26f.html
+URL:https://agendaocuritiba.github.io/e/e12de06f6b26f.html
 END:VEVENT
 END:VCALENDAR

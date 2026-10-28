@@ -10,7 +10,7 @@ DTSTART;TZID=America/Sao_Paulo:20261029T210000
 DTEND;TZID=America/Sao_Paulo:20261029T230000
 SUMMARY:Tatá Mendonça em "Uma Cega Visionária" / Stand up Comedy
 LOCATION:D House\, Curitiba - PR
-DESCRIPTION:Stand-up de Tatá Mendonça\, comediante cega\, sobre o dia a dia de quem não enxerga e o capacitismo.\n\nhttps://dennymarcels.github.io/agendao-curitiba/e/ed678e9cca63c.html
-URL:https://dennymarcels.github.io/agendao-curitiba/e/ed678e9cca63c.html
+DESCRIPTION:Stand-up de Tatá Mendonça\, comediante cega\, sobre o dia a dia de quem não enxerga e o capacitismo.\n\nhttps://agendaocuritiba.github.io/e/ed678e9cca63c.html
+URL:https://agendaocuritiba.github.io/e/ed678e9cca63c.html
 END:VEVENT
 END:VCALENDAR
