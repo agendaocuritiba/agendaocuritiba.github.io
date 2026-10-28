@@ -239,10 +239,15 @@ def main():
                 for e in events:
                     if not e.get(field) and sm.get(e["id"]):
                         e[field] = sm[e["id"]]
-    stats = json.load(open(f"{out}/stats.json"))
+    if os.path.exists(f"{out}/stats.json"):
+        horizon = json.load(open(f"{out}/stats.json"))["horizon"]
+    else:  # sem stats.json (publicação a partir do dashboard): hoje + 6 meses, como no dedupe.py
+        t = date.fromisoformat(run)
+        y, m = t.year + (t.month + 5) // 12, (t.month + 5) % 12 + 1
+        horizon = date(y, m, min(t.day, 28 if m == 2 else 30 if m in (4, 6, 9, 11) else 31)).isoformat()
     os.makedirs(f"{site}/data", exist_ok=True)
     slims = [slim(e) for e in events]
-    data = {"meta": {"updated": run, "horizon": stats["horizon"], "firstRun": first_run, "siteUrl": SITE_URL},
+    data = {"meta": {"updated": run, "horizon": horizon, "firstRun": first_run, "siteUrl": SITE_URL},
             "events": slims}
     json.dump(data, open(f"{site}/data/events.json", "w"), ensure_ascii=False, separators=(",", ":"))
     # Páginas de evento: recria a pasta para apagar as de eventos que já passaram
