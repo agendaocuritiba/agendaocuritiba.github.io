@@ -298,7 +298,45 @@ def ingressocom():
             and not re.search(r"(?i)cinema", (e.get("event_type") or {}).get("name") or "")]
 
 
-EXTRAS = {"dk": disk, "sy": sympla, "bt": blueticket, "bd": bilheteria, "ig": ingresse, "fv": fever, "ic": ingressocom}
+def guaira():
+    base = "https://www.teatroguaira.pr.gov.br"
+    links = {}
+    for p in range(0, 15):
+        d = soup(get(f"{base}/calendario-eventos" + (f"?page={p}" if p else "")).text)
+        novos = [a["href"].split("?")[0].split("#")[0] for a in d.find_all("a", href=True) if re.match(r"(/|https://www\.teatroguaira\.pr\.gov\.br/)Evento/", a["href"])]
+        novos = [h for h in novos if h not in links]
+        if not novos:
+            break
+        links.update(dict.fromkeys(novos))
+    out = []
+    for h in links:
+        u = requests.compat.urljoin(base, h)
+        path = u.replace(base + "/", "")
+        d = soup(get(u).text)
+        ev = next((j for j in ld_json(d) if is_type(j, "Event") and j.get("startDate")), None)
+        if ev:
+            a, b = local_iso(ev["startDate"]), local_iso(ev.get("endDate") or ev["startDate"])
+            loc = ev.get("location") or {}
+            loc = loc[0] if isinstance(loc, list) else loc
+            hr = "" if a[11:16] == "00:00" else a[11:16]
+            out.append([path, ev["name"].strip(), a[:10], max(a[:10], b[:10]), hr, loc.get("name") or "Teatro Guaíra", path, "Teatro"])
+            continue
+        tx = re.sub(r"\s+", " ", (d.find("main") or d.find("article") or d.body).get_text(" "))
+        ds = sorted("-".join(reversed(x.split("/"))) for x in re.findall(r"\d{2}/\d{2}/\d{4}", tx))
+        if not ds:
+            continue
+        og = d.find("meta", property="og:title")
+        t = og["content"] if og and og.get("content") else (text(d.find("h1")) or text(d.title))
+        t = re.sub(r"\s*[|–-]\s*Teatro Gua[ií]ra.*$", "", t, flags=re.I).strip()
+        hr = re.search(r"(\d{1,2})h(\d{2})?", tx)
+        sala = re.search(r"(Auditório [A-ZÁ-Úa-zá-ú ]+?|Guairinha|Guairão|Mini-?[Aa]uditório)(?=[ ,.\-])", tx)
+        out.append([path, t, ds[0], ds[-1], hr.group(0) if hr else "",
+                    f"Teatro Guaíra - {sala.group(1).strip()}" if sala else "Teatro Guaíra", path, "Teatro"])
+    return out
+
+
+EXTRAS = {"dk": disk, "sy": sympla, "bt": blueticket, "bd": bilheteria, "ig": ingresse, "fv": fever, "ic": ingressocom,
+          "tg": guaira}
 
 
 def main():

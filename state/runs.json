@@ -1,0 +1,70 @@
+[
+ {
+  "run": "2026-10-28",
+  "horizon": "2027-04-28",
+  "events": 367,
+  "originals": 559,
+  "merged": 113,
+  "new": 54,
+  "removed": 56,
+  "eventoon": 130,
+  "turismo": 51,
+  "bySource": {
+   "Evento ON": 130,
+   "Turismo Curitiba": 51,
+   "Disk Ingressos": 110,
+   "Sympla": 167,
+   "Blueticket": 31,
+   "Bilheteria Digital": 14,
+   "Ingresse": 9,
+   "Ticketmaster": 11,
+   "Fever": 8,
+   "Shotgun": 13,
+   "Teatro Guaíra": 15
+  }
+ },
+ {
+  "run": "2026-10-23",
+  "horizon": "2027-04-23",
+  "events": 369,
+  "originals": 552,
+  "merged": 115,
+  "new": 56,
+  "removed": 61,
+  "eventoon": 131,
+  "turismo": 63,
+  "bySource": {
+   "Evento ON": 131,
+   "Turismo Curitiba": 63,
+   "Disk Ingressos": 111,
+   "Sympla": 168,
+   "Blueticket": 29,
+   "Bilheteria Digital": 20,
+   "Ingresse": 9,
+   "Ticketmaster": 12,
+   "Fever": 9
+  }
+ },
+ {
+  "run": "2026-10-17",
+  "horizon": "2027-04-17",
+  "events": 374,
+  "originals": 562,
+  "merged": 123,
+  "removed": 0,
+  "eventoon": 146,
+  "turismo": 53,
+  "new": 0,
+  "bySource": {
+   "Evento ON": 146,
+   "Turismo Curitiba": 53,
+   "Disk Ingressos": 119,
+   "Fever": 9,
+   "Blueticket": 29,
+   "Bilheteria Digital": 18,
+   "Ingresse": 9,
+   "Ticketmaster": 12,
+   "Sympla": 167
+  }
+ }
+]

@@ -2,7 +2,7 @@
 """Agenda Curitiba — agrega eventos de vários sites, deduplica e compara com o cache.
 
 Uso:
-  python3 dedupe.py RAW_EVENTOON RAW_TURISMO RAW_EXTRAS PREV_EVENTS RUN_DATE OUT_DIR
+  python3 dedupe.py RAW_EVENTOON RAW_TURISMO RAW_EXTRAS PREV_EVENTS RUN_DATE OUT_DIR [SOURCES_STATUS]
 
 - RAW_EVENTOON: [[dd/mm/aaaa, título, local, endereço, slug, imagem], ...]
 - RAW_TURISMO:  [[slug/id, título, "dd/mm/aaaa[ a dd/mm/aaaa]", horário, local,
@@ -11,6 +11,8 @@ Uso:
                   caminho_url, dica_categoria], ...], ...}  — códigos em SOURCES abaixo
 - PREV_EVENTS:  lista de eventos da coleta anterior (ou [])
 - RUN_DATE:     data da coleta (aaaa-mm-dd)
+- SOURCES_STATUS: opcional, o sources.json do collect.py ({"<código>": n ou "erro: ..."}).
+  Os sites que deram erro hoje mantêm os registros da coleta anterior (que ainda não passaram).
 Gera OUT_DIR/events.json e OUT_DIR/stats.json.
 """
 import json, re, sys, hashlib, unicodedata
@@ -279,6 +281,14 @@ def main():
     load = lambda p, d: json.load(open(p)) if p and p != "-" else d
     origs = load_originals(load(eo_p, []), load(tc_p, []), load(ex_p, {}), today, horizon)
     prev = load(prev_p, [])
+    status = load(sys.argv[7] if len(sys.argv) > 7 else "-", {})
+    names = dict({"eo": "Evento ON", "tc": "Turismo Curitiba"}, **{c: v[0] for c, v in SOURCES.items()})
+    failed = {names[c] for c, v in status.items() if c in names and isinstance(v, str)}
+    carried = [dict(o) for p in prev for o in p.get("originals", [])
+               if o["source"] in failed and date.fromisoformat(o["end"]) >= today]
+    for o in carried:
+        o["start"] = max(o["start"], today.isoformat())
+    origs += carried
     prev_by_oid = {o["oid"]: p for p in prev for o in p.get("originals", [])}
     prev_orig = {o["oid"]: o for p in prev for o in p.get("originals", [])}
 
@@ -290,7 +300,9 @@ def main():
             ev["id"], ev["firstSeen"] = match["id"], match["firstSeen"]
         else:
             ev["id"] = "e" + hashlib.sha1("|".join(sorted(o["oid"] for o in g)).encode()).hexdigest()[:12]
-            ev["firstSeen"] = run
+            # grupo que só se reorganizou (todos os registros já vistos antes) não conta como novo
+            seen = [prev_orig[o["oid"]].get("firstSeen", run) for o in g if o["oid"] in prev_orig]
+            ev["firstSeen"] = min(seen) if len(seen) == len(g) else run
         used.add(ev["id"])
         for o in ev["originals"]:
             o["firstSeen"] = prev_orig.get(o["oid"], {}).get("firstSeen", run) if prev else run
@@ -307,6 +319,7 @@ def main():
         "merged": sum(1 for e in events if len(e["sources"]) > 1),
         "new": sum(1 for e in events if e["firstSeen"] == run) if prev else 0,
         "removed": sum(1 for p in prev if p["id"] not in ids), "bySource": by_src,
+        "failed": sorted(failed), "carried": len(carried),
         "eventoon": by_src.get("Evento ON", 0), "turismo": by_src.get("Turismo Curitiba", 0),
     }
     json.dump(events, open(f"{out}/events.json", "w"), ensure_ascii=False, indent=1)
