@@ -1,0 +1,12 @@
+name: Teste de acesso às fontes
+on:
+  push:
+    branches: [claude/project-thread-bgc18o]
+    paths: [scripts/probe_sources.py, .github/workflows/probe.yml]
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/probe_sources.py
