@@ -38,7 +38,8 @@ SOURCE_ORDER = ["Turismo Curitiba", "Evento ON", "Disk Ingressos", "Sympla", "Bl
 
 STOP = set("""a o as os e de da do das dos em no na nos nas com para por ao the and of in
 curitiba cwb pr brasil show shows turne tour live ao vivo esgotado sessao extra edicao
-apresenta apr club vibe 2026 2027 data venda geral banco stand up comedy""".split())
+apresenta apr club vibe 2026 2027 data venda geral banco stand up comedy
+segunda terca quarta quinta sexta sabado domingo 2x1""".split())
 ALIAS = {"jr": "junior"}
 VENUE_STOP = set("a o as os e de da do das dos em no na com the curitiba cwb pr teatro bar casa espaco centro cultural auditorio sala clube club hall local definir".split())
 
@@ -53,6 +54,8 @@ def tokens(title, stop=STOP):
     for w in re.findall(r"[a-z0-9]+", t):
         w = ALIAS.get(w, w)
         if w in stop or (len(w) < 2 and not w.isdigit()) or (w.isdigit() and len(w) <= 2):
+            continue
+        if stop is STOP and re.fullmatch(r"\d{1,2}h\d{0,2}", w):  # horário da sessão ("20h00")
             continue
         out.add(w)
     return out
@@ -184,7 +187,12 @@ def cluster(origs):
     groups = []
     for g in bykey.values():  # variações de título na mesma fonte (ex.: "Sessão extra", "| Banco do Brasil")
         for h in groups:
-            if h[0]["source"] == g[0]["source"] and venue_overlap(g, h) and group_score(g, h) >= 0.8:
+            if h[0]["source"] != g[0]["source"]:
+                continue
+            sc = group_score(g, h)
+            # mesmo local: título bem parecido, ou parecido + mesmas datas (sessões do mesmo espetáculo);
+            # sem local em comum: só título praticamente igual na mesma data
+            if (venue_overlap(g, h) and (sc >= 0.8 or (sc >= 0.7 and overlap(g, h)))) or (sc >= 0.99 and overlap(g, h)):
                 h.extend(g)
                 break
         else:
@@ -218,7 +226,7 @@ RULES = [
     ("Esporte", r"hardest run|corrida(?!s? das blogueiras)|maratona|futebol|campeonato|caminhada"),
     ("Stand-up", r"stand ?up|comedy|xaveca|piada|enterrado vivo|como nossos pais|afonso padilha|renato albani|ivangelica|indio behn|embrulha pra viagem|nada e combinado|leo lins|humor|improviso|bruna louise|diogo almeida|carol delgado|santo fole|danilo gentili|mallandro|silvetty montilla|victor sarro"),
     ("Palestra", r"palestra|claudio duarte|padre patrick|catia damasceno|andrea vermont|paua em seja livre|encontro de valor|adultecer|fazimentos texteis"),
-    ("Infantil", r"infantil|tum pa\b|aventura congelante|bicho-?papao|conto de fadas|poke fan fest|kids|crianca|bob esponja|megabolhas|vini pirata|tum tu tubos|parque mikewood|frozen|tres porquinhos"),
+    ("Infantil", r"infantil|tum pa\b|aventura congelante|bicho-?papao|conto de fadas|poke fan fest|kids|crianca|bob esponja|megabolhas|vini pirata|tum tu tubos|parque mikewood|frozen|tres porquinhos|caca aos doces|halloween encantado"),
     ("Concerto", r"concerto|orquestra|symphon|sinfoni|in concert|\bcoral\b|\btrio\b|ensemble|classicos do cinema|zelda|zimmer|turandot|candlelight"),
     ("Teatro", r"musical|espetaculo|\bpeca\b|teatro(?! paiol)|danca|gota d.agua|azaleia oriental|ballet|circo|nono paciente|improvavel|tarsila|misterio buffo|matilda|clube dos canalhas|antes que termine|no me kahlo|plantonistas|despertar da fenix|christmas dream|sonho de natal|disney|misterios s/?a|grande banquete|mostra|terapia infernal|baixa sociedade|kafka|madrugueiro|cidade de jornais|historieta|bela e a fera|morte e vida|capitulo xv|dois de nos|vendedor de sonhos|flamenca"),
     ("Festa/Balada", r"\bdj\b|all night|techno|after hours|solomun|vintage culture|\balok\b|\bbaile\b|garota sunset|five am|who we are|tranquilo apresenta|chemical surf|curitiba folia|moustache sound|bpm|\bclub vibe\b|\+55 bar|\bczar\b|ceu curitiba|eli iwasa|james zabiela|breaking beattz|showcase|\bgabe\b|\bliu\b|\bzac\b|\bvermont\b|halloween|hallowzot|festa|reveillon|virada|party|revoada|circus|escangalha|antiquario|carnaval|micareta|rumberos|k-pop|watch party"),
