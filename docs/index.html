@@ -435,14 +435,14 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   }
 
   // Links de agenda: Google e Outlook abrem já preenchidos; Apple/iOS usa o .ics estático do evento
-  function calTimes(e) {
-    const day = nextDate(e), m = /^(\d{1,2})h(\d{2})?/.exec(e.h || '');
+  function calTimes(e, day) {
+    const m = /^(\d{1,2})h(\d{2})?/.exec(e.h || '');
     if (!m) return { day, allDay: true };
     const st = new Date(day + 'T' + String(m[1]).padStart(2, '0') + ':' + (m[2] || '00') + ':00Z'), en = new Date(st.getTime() + 2 * 36e5);
     return { day, allDay: false, st: st.toISOString().slice(0, 19), en: en.toISOString().slice(0, 19) };
   }
-  function calLinks(e) {
-    const t = calTimes(e), loc = [e.v, e.a, 'Curitiba - PR'].filter(Boolean).join(', '), link = eventLink(e);
+  function calLinks(e, day) {
+    const t = calTimes(e, day), loc = [e.v, e.a, 'Curitiba - PR'].filter(Boolean).join(', '), link = eventLink(e);
     const details = (e.r ? e.r + '\n\n' : '') + link, compact = (x) => x.replace(/[-:]/g, '');
     const g = new URLSearchParams({ action: 'TEMPLATE', text: e.t, details, location: loc, ctz: 'America/Sao_Paulo',
       dates: t.allDay ? compact(t.day) + '/' + compact(addDays(t.day, 1)) : compact(t.st) + '/' + compact(t.en) });
@@ -453,15 +453,27 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   }
   const eventLink = (e) => meta.siteUrl ? meta.siteUrl + 'e/' + e.id + '.html' : location.href.split('#')[0] + '#' + e.id;
 
-  function card(e) {
+  // Datas da temporada no texto do card: "N datas, de X a Y" quando há lista de dias; "Até X" na temporada contínua
+  const seasonText = (e) => {
+    const ds = (e.d || []).filter((x) => x >= todayIso);
+    if (e.d && e.d.length) return ds.length > 1 ? ds.length + ' datas, de ' + short(ds[0]) + ' a ' + short(ds[ds.length - 1]) : '';
+    return e.s !== e.e ? (e.s <= todayIso ? 'Até ' + short(e.e) : short(e.s) + ' a ' + short(e.e)) : '';
+  };
+  // Um card por data: eventos com lista de dias aparecem em cada dia (dentro do período filtrado); temporada contínua, no próximo dia
+  const cardDays = (e, w) => {
+    if (!(e.d && e.d.length)) return [nextDate(e)];
+    return e.d.filter((x) => x >= todayIso && (!w || (x >= w[0] && x <= w[1])));
+  };
+
+  function card(e, day, first) {
     const c = e.c || 'Outros';
-    const art = el('article', 'card'); art.id = e.id; art.style.setProperty('--kc', kc(c));
+    const art = el('article', 'card'); if (first) art.id = e.id; art.style.setProperty('--kc', kc(c));
     const main = el('div', 'main');
     const h = el('h3', 'title', e.t);
     if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
     main.append(h);
     const m = el('div', 'meta');
-    const when = e.s !== e.e ? (e.s <= todayIso ? 'Até ' + short(e.e) : short(e.s) + ' a ' + short(e.e)) : '';
+    const when = seasonText(e);
     if (e.h && /\d/.test(e.h)) m.append(el('span', 't', e.h));
     [when, e.v, e.p].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
     if (e.v && !/^local a definir$/i.test(e.v)) {
@@ -481,7 +493,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const cm = el('div', 'calmenu'); cm.hidden = true;
     cal.addEventListener('click', (ev) => {
       ev.stopPropagation(); const open = cm.hidden; closeMenus();
-      if (open) { cm.replaceChildren(...calLinks(e).map(([n, u]) => { const a = el('a', null, n); a.href = u; if (!u.endsWith('.ics')) { a.target = '_blank'; a.rel = 'noopener'; } return a; })); cm.hidden = false; cal.setAttribute('aria-expanded', 'true'); }
+      if (open) { cm.replaceChildren(...calLinks(e, day).map(([n, u]) => { const a = el('a', null, n); a.href = u; if (!u.endsWith('.ics')) { a.target = '_blank'; a.rel = 'noopener'; } return a; })); cm.hidden = false; cal.setAttribute('aria-expanded', 'true'); }
     });
     cw.append(cal, cm);
     const sh = el('button', 'ib'); sh.type = 'button'; sh.title = 'Compartilhar'; sh.innerHTML = svg(UI.share); sh.append(el('span', null, 'Compartilhar'));
@@ -500,16 +512,18 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     drawStat();
     const base = events.filter((e) => match(e, true));
     drawCats(base);
+    const w = rangeOf(state.when, WHEN_Q);
     const list = base.filter((e) => !state.off.has(e.c || 'Outros'))
-      .map((e) => [nextDate(e), e]).sort((a, b) => a[0].localeCompare(b[0]) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
+      .flatMap((e) => cardDays(e, w).map((d) => [d, e])).sort((a, b) => a[0].localeCompare(b[0]) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
     $('venue').classList.toggle('on', !!state.venue);
-    $('summary').textContent = list.length ? list.length + (list.length === 1 ? ' evento' : ' eventos') : '';
+    const n = new Set(list.map((x) => x[1].id)).size;
+    $('summary').textContent = list.length ? n + (n === 1 ? ' evento' : ' eventos') + (list.length > n ? ' em ' + list.length + ' datas' : '') : '';
     const out = $('out'); out.replaceChildren();
     if (!list.length) { out.append(el('p', 'empty', 'Nenhum evento com esses filtros. Tente ampliar o período ou marcar mais categorias.')); $('more').hidden = true; return; }
-    let cur = null, box = null;
+    let cur = null, box = null; const seen = new Set();
     list.slice(0, shown).forEach(([d, e]) => {
       if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); box = el('div', 'list'); out.append(hh, box); }
-      box.append(card(e));
+      box.append(card(e, d, !seen.has(e.id))); seen.add(e.id);
     });
     $('more').hidden = list.length <= shown;
   }
@@ -538,7 +552,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     if (state.venue && !vc[state.venue]) state.venue = '';
     $('venue').value = state.venue;
     const h = location.hash.slice(1);
-    if (h && events.some((e) => e.id === h)) shown = events.length;
+    if (h && events.some((e) => e.id === h)) shown = Infinity;
     draw();
     if (h) { const t = document.getElementById(h); if (t) t.scrollIntoView({ block: 'center' }); }
   }).catch(() => { $('stat').textContent = 'Não foi possível carregar a agenda. Recarregue a página em alguns minutos.'; });
