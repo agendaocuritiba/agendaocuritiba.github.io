@@ -1,0 +1,1 @@
+const a=await fetch('https://api2-cdn.blueticket.com.br/events?city=Curitiba').then(r=>r.json());JSON.stringify(a.filter(e=>e.cityName==='Curitiba').map(e=>[e.id,e.name.trim(),e.date.slice(0,10),e.date.slice(0,10),e.date.slice(11,16),e.venue,e.id+'/'+e.slug,e.category||'']))

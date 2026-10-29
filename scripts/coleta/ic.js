@@ -1,0 +1,1 @@
+const j=await fetch('/api/events?event_type=&per_page=99999').then(r=>r.json());JSON.stringify(j.events.filter(e=>/Curitiba\/PR/.test(e.place?.full_address||'')&&!/cinema/i.test(e.event_type?.name||'')).map(e=>[e.id,e.title,e.start_date,e.end_date,'',e.place?.name||'',e.path,e.event_type?.name||'']))
