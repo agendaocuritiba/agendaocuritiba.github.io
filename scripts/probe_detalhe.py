@@ -18,6 +18,6 @@ for name, u in [('SHOTGUN', 'https://shotgun.live/pt-br/cities/curitiba'), ('TIC
     print(name, st, {k: v for k, v in h.items() if k.lower() in ('server', 'retry-after', 'cf-ray', 'x-vercel-mitigated', 'x-vercel-id', 'content-type', 'set-cookie')})
     print('   title', (re.search(r'<title>(.*?)</title>', s, re.S) or [0, ''])[1][:100], '| corpo', re.sub(r'\s+', ' ', s[:200]))
     if st == 429:
-        time.sleep(int(h.get('Retry-After', '60')) if h.get('Retry-After', '').isdigit() else 60)
+        print('   Retry-After:', h.get('Retry-After'), flush=True); time.sleep(60)
         st, h, s = get(u)
         print('   depois de esperar:', st, len(s))
