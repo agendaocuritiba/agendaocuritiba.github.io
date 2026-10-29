@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e05153e5ed0c7@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T190000
+DTEND;TZID=America/Sao_Paulo:20261114T210000
+SUMMARY:Ao Pé do Ouvido com Zé Luiz Mazziotti canta Tom Jobim
+LOCATION:Casa Bambuê\, Curitiba - PR
+DESCRIPTION:Zé Luiz Mazziotti canta Tom Jobim em show intimista da série Ao Pé do Ouvido\, na Casa Bambuê.\n\nhttps://agendaocuritiba.github.io/e/e05153e5ed0c7.html
+URL:https://agendaocuritiba.github.io/e/e05153e5ed0c7.html
+END:VEVENT
+END:VCALENDAR

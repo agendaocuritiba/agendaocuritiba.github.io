@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eef2dce50b03a@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261102T140000
 DTEND;TZID=America/Sao_Paulo:20261102T160000
 SUMMARY:Vini Pirata e a Concha Mágica
-LOCATION:Espaço da Criança\, Curitiba - PR
+LOCATION:Rua Domingos Strapasson\, 620 – Santa Felicidade\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eef2dce50b03a.html
 URL:https://agendaocuritiba.github.io/e/eef2dce50b03a.html
 END:VEVENT

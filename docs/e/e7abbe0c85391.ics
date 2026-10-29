@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7abbe0c85391@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T153000
+DTEND;TZID=America/Sao_Paulo:20261129T173000
+SUMMARY:Sarau Epifania 4ª Edição
+LOCATION:Tork n' Roll\, Curitiba - PR
+DESCRIPTION:Encerramento do ano do Epifania Centro de Arte e Movimento\, com dança\, canto\, batalhas e festa.\n\nhttps://agendaocuritiba.github.io/e/e7abbe0c85391.html
+URL:https://agendaocuritiba.github.io/e/e7abbe0c85391.html
+END:VEVENT
+END:VCALENDAR

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ed3b48dd5827b@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261121T190000
 DTEND;TZID=America/Sao_Paulo:20261121T210000
 SUMMARY:Wotan Folk Festival
-LOCATION:Curitiba - PR
+LOCATION:Blood Rock Bar\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ed3b48dd5827b.html
 URL:https://agendaocuritiba.github.io/e/ed3b48dd5827b.html
 END:VEVENT

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eca22289c2118@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261127T200000
 DTEND;TZID=America/Sao_Paulo:20261127T220000
 SUMMARY:Navaranda Do Branco- Curitiba
-LOCATION:Curitiba - PR
+LOCATION:Czar\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eca22289c2118.html
 URL:https://agendaocuritiba.github.io/e/eca22289c2118.html
 END:VEVENT

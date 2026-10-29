@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a58829beac0@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T190000
+DTEND;TZID=America/Sao_Paulo:20261107T210000
+SUMMARY:Ao Pé do Ouvido com Thaís Rolim e Matheus Braga
+LOCATION:Casa Bambuê\, Curitiba - PR
+DESCRIPTION:Thaís Rolim e Matheus Braga em show intimista da série Ao Pé do Ouvido\, na Casa Bambuê.\n\nhttps://agendaocuritiba.github.io/e/e0a58829beac0.html
+URL:https://agendaocuritiba.github.io/e/e0a58829beac0.html
+END:VEVENT
+END:VCALENDAR

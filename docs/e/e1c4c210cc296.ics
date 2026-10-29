@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1c4c210cc296@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261029T200000
+DTEND;TZID=America/Sao_Paulo:20261029T220000
+SUMMARY:Quinta Roots
+LOCATION:Nero Gastrobar\, Curitiba - PR
+DESCRIPTION:Noite de reggae ao vivo no Nero Gastrobar\, com bandas do gênero tocando clássicos e músicas autorais.\n\nhttps://agendaocuritiba.github.io/e/e1c4c210cc296.html
+URL:https://agendaocuritiba.github.io/e/e1c4c210cc296.html
+END:VEVENT
+END:VCALENDAR

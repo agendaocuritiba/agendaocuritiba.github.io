@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eda9930fe5846@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261111T210000
+DTEND;TZID=America/Sao_Paulo:20261111T230000
+SUMMARY:Rosa & Rosinha - O RETORNO
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:A dupla Rosa e Rosinha comemora 33 anos de carreira em show que mistura música e humor.\n\nhttps://agendaocuritiba.github.io/e/eda9930fe5846.html
+URL:https://agendaocuritiba.github.io/e/eda9930fe5846.html
+END:VEVENT
+END:VCALENDAR

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e92fb731f31f7@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261118T190000
 DTEND;TZID=America/Sao_Paulo:20261118T210000
 SUMMARY:1º WINE EXPERIENCE | Comexhoje + Vixtra
-LOCATION:Curitiba - PR
+LOCATION:Restaurante Maria Eugênia\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e92fb731f31f7.html
 URL:https://agendaocuritiba.github.io/e/e92fb731f31f7.html
 END:VEVENT

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ed678e9cca63c@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261029T210000
 DTEND;TZID=America/Sao_Paulo:20261029T230000
 SUMMARY:Tatá Mendonça em "Uma Cega Visionária" / Stand up Comedy
-LOCATION:Curitiba - PR
+LOCATION:D House\, Curitiba - PR
 DESCRIPTION:Stand-up de Tatá Mendonça\, comediante cega\, sobre o dia a dia de quem não enxerga e o capacitismo.\n\nhttps://agendaocuritiba.github.io/e/ed678e9cca63c.html
 URL:https://agendaocuritiba.github.io/e/ed678e9cca63c.html
 END:VEVENT

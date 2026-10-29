@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eca0f30dcacc5@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T210000
+DTEND;TZID=America/Sao_Paulo:20261121T230000
+SUMMARY:Amici - Reinterpretam os sucessos dos amigos
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:Cris Romagna e Guilherme Castel\, com banda\, revisitam em novos arranjos os sucessos do projeto Amigos.\n\nhttps://agendaocuritiba.github.io/e/eca0f30dcacc5.html
+URL:https://agendaocuritiba.github.io/e/eca0f30dcacc5.html
+END:VEVENT
+END:VCALENDAR

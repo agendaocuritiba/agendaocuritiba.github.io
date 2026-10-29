@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee06dcaa86012@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261105T200000
+DTEND;TZID=America/Sao_Paulo:20261105T220000
+SUMMARY:Em Casa - Jô Nunes canta Cartola
+LOCATION:R. Valdívia\, 365\, Curitiba - PR
+DESCRIPTION:Show intimista em que a cantora Jô Nunes interpreta canções de Cartola para um público reduzido.\n\nhttps://agendaocuritiba.github.io/e/ee06dcaa86012.html
+URL:https://agendaocuritiba.github.io/e/ee06dcaa86012.html
+END:VEVENT
+END:VCALENDAR

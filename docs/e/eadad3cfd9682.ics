@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eadad3cfd9682@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261108T190000
+DTEND;TZID=America/Sao_Paulo:20261108T210000
+SUMMARY:Rock Doido Festival
+LOCATION:PLAY MUSIC CWB\, Curitiba - PR
+DESCRIPTION:Noite de festival com Marcos FamoZinho e Victor Rock Doido\, mais pré-show com DJs no Play Music.\n\nhttps://agendaocuritiba.github.io/e/eadad3cfd9682.html
+URL:https://agendaocuritiba.github.io/e/eadad3cfd9682.html
+END:VEVENT
+END:VCALENDAR

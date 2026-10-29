@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3921cf00c66f@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:X Congresso Brasileiro de Fisioterapia Oncológica
+LOCATION:Teatro UP Experience\, Curitiba - PR
+DESCRIPTION:Congresso científico que reúne profissionais\, pesquisadores e estudantes de fisioterapia oncológica.\n\nhttps://agendaocuritiba.github.io/e/e3921cf00c66f.html
+URL:https://agendaocuritiba.github.io/e/e3921cf00c66f.html
+END:VEVENT
+END:VCALENDAR

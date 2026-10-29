@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5f4f3174287c@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Feira Vegana - Veg&Tals
+LOCATION:Agrupa Cultura\, Av. Jaime Reis\, 176 - Largo da Ordem\, Curitiba - PR
+DESCRIPTION:Feira de comida vegana\, artesanato e cuidados pessoais no Largo da Ordem\, com roda de conversa no Dia Mundial do Veganismo.\n\nhttps://agendaocuritiba.github.io/e/e5f4f3174287c.html
+URL:https://agendaocuritiba.github.io/e/e5f4f3174287c.html
+END:VEVENT
+END:VCALENDAR

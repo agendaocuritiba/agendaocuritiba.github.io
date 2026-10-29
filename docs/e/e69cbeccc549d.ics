@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e69cbeccc549d@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T230000
+DTEND;TZID=America/Sao_Paulo:20261219T010000
+SUMMARY:Fezzo By Trivø A Última Do Ano
+LOCATION:Club Vibe\, Curitiba - PR
+DESCRIPTION:O duo de tech house FEZZO fecha a temporada do selo Trivø no Club Vibe.\n\nhttps://agendaocuritiba.github.io/e/e69cbeccc549d.html
+URL:https://agendaocuritiba.github.io/e/e69cbeccc549d.html
+END:VEVENT
+END:VCALENDAR

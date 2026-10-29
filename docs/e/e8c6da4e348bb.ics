@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8c6da4e348bb@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Halloween Encantado | Copa Open Mall | 31/10 e 01/11 GRATUITO
+LOCATION:Copa Open Mall\, Curitiba - PR
+DESCRIPTION:Programação de Halloween para a família no Copa Open Mall\, com infláveis e recreação infantil.\n\nhttps://agendaocuritiba.github.io/e/e8c6da4e348bb.html
+URL:https://agendaocuritiba.github.io/e/e8c6da4e348bb.html
+END:VEVENT
+END:VCALENDAR

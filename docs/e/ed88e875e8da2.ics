@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ed88e875e8da2@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261211T210000
 DTEND;TZID=America/Sao_Paulo:20261211T230000
 SUMMARY:Rodrigo Marques - Stand up Comedy
-LOCATION:Curitiba - PR
+LOCATION:D House\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ed88e875e8da2.html
 URL:https://agendaocuritiba.github.io/e/ed88e875e8da2.html
 END:VEVENT

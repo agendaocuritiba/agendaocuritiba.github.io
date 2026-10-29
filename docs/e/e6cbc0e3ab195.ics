@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6cbc0e3ab195@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T130000
+DTEND;TZID=America/Sao_Paulo:20261129T150000
+SUMMARY:CWB Game Festival - 6ª Edição
+LOCATION:Clay Highway Bar\, Curitiba - PR
+DESCRIPTION:Dia dedicado à cultura gamer\, com painéis com convidados\, mesas de RPG e outras atividades.\n\nhttps://agendaocuritiba.github.io/e/e6cbc0e3ab195.html
+URL:https://agendaocuritiba.github.io/e/e6cbc0e3ab195.html
+END:VEVENT
+END:VCALENDAR

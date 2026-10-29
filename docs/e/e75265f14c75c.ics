@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e75265f14c75c@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261127T223000
 DTEND;TZID=America/Sao_Paulo:20261128T003000
 SUMMARY:Minha Vida É Massa com Edson Massa / Stand Up Comedy
-LOCATION:Curitiba - PR
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e75265f14c75c.html
 URL:https://agendaocuritiba.github.io/e/e75265f14c75c.html
 END:VEVENT

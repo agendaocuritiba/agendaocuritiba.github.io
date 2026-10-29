@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e4c887340eeb4@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261114T190000
 DTEND;TZID=America/Sao_Paulo:20261114T210000
 SUMMARY:Ghost Cover Oficial (SP)
-LOCATION:Curitiba - PR
+LOCATION:Blood Rock Bar\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e4c887340eeb4.html
 URL:https://agendaocuritiba.github.io/e/e4c887340eeb4.html
 END:VEVENT

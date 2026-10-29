@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ef870a215b4e7@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Curityba - Mostra De Teatro Mpt
-LOCATION:Curitiba - PR
+LOCATION:Teatro SESI Centro\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ef870a215b4e7.html
 URL:https://agendaocuritiba.github.io/e/ef870a215b4e7.html
 END:VEVENT

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a1452a29dbb@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261202T210000
+DTEND;TZID=America/Sao_Paulo:20261202T230000
+SUMMARY:Massa Pop Show - O Show Mais Massa Do Brasil
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:Show de humor interativo com música e quadros cômicos\, pensado para a família.\n\nhttps://agendaocuritiba.github.io/e/e0a1452a29dbb.html
+URL:https://agendaocuritiba.github.io/e/e0a1452a29dbb.html
+END:VEVENT
+END:VCALENDAR

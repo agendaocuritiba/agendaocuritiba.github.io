@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e5f83446afc93@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261104T203000
 DTEND;TZID=America/Sao_Paulo:20261104T223000
 SUMMARY:Quarta Do Improviso / Improviso E Humor
-LOCATION:Curitiba - PR
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e5f83446afc93.html
 URL:https://agendaocuritiba.github.io/e/e5f83446afc93.html
 END:VEVENT

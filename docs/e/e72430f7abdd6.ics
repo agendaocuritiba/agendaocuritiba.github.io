@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e72430f7abdd6@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T200000
+DTEND;TZID=America/Sao_Paulo:20261107T220000
+SUMMARY:Pedro Mizutani Trio
+LOCATION:Camaleão Cultural\, Curitiba - PR
+DESCRIPTION:Primeira apresentação de Pedro Mizutani em Curitiba\, em formato de power trio\, com indie e rock.\n\nhttps://agendaocuritiba.github.io/e/e72430f7abdd6.html
+URL:https://agendaocuritiba.github.io/e/e72430f7abdd6.html
+END:VEVENT
+END:VCALENDAR

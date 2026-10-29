@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e38179c593690@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261216T210000
+DTEND;TZID=America/Sao_Paulo:20261216T230000
+SUMMARY:Nathi Gaiteira & Carlos André em "Amor\, Humor e Modão"
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:Nathi Gaiteira e Carlos André juntam música regional\, gaita e humor sobre o cotidiano do casal.\n\nhttps://agendaocuritiba.github.io/e/e38179c593690.html
+URL:https://agendaocuritiba.github.io/e/e38179c593690.html
+END:VEVENT
+END:VCALENDAR

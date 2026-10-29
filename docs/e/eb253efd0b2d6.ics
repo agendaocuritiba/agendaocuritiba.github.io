@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eb253efd0b2d6@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Vultos - Diálogos com a Eternidade
-LOCATION:Curitiba - PR
+LOCATION:Teatro Barracão Encena\, Curitiba - PR
 DESCRIPTION:Peça espírita em que três personagens se reencontram em várias vidas\, sob o olhar de Allan Kardec\, Bezerra de Menezes e outros.\n\nhttps://agendaocuritiba.github.io/e/eb253efd0b2d6.html
 URL:https://agendaocuritiba.github.io/e/eb253efd0b2d6.html
 END:VEVENT

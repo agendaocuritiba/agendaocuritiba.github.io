@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e7efb934297af@agendao-curitiba
-DTSTAMP:20261028T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261120T100000
-DTEND;TZID=America/Sao_Paulo:20261120T120000
-SUMMARY:Charm Show Curitiba
-LOCATION:Antigo Cassino Ahú\, Curitiba - PR
+DTSTAMP:20261029T090000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Feira Charm Show Curitiba
+LOCATION:R. Brasilino Moura\, 474 - Ahú\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e7efb934297af.html
 URL:https://agendaocuritiba.github.io/e/e7efb934297af.html
 END:VEVENT

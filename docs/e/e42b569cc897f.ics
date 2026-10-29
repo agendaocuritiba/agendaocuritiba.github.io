@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e42b569cc897f@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261205T200000
 DTEND;TZID=America/Sao_Paulo:20261205T220000
 SUMMARY:Summer Eletrohits
-LOCATION:Curitiba - PR
+LOCATION:Clay Highway Bar\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e42b569cc897f.html
 URL:https://agendaocuritiba.github.io/e/e42b569cc897f.html
 END:VEVENT

@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e14e067267b0c@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261104T200000
 DTEND;TZID=America/Sao_Paulo:20261104T220000
-SUMMARY:Mostra Namoska 3ª Edição
+SUMMARY:Mostra NamosKÀ 3ª Edição
 LOCATION:Guaíra - Miniauditório\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e14e067267b0c.html
 URL:https://agendaocuritiba.github.io/e/e14e067267b0c.html

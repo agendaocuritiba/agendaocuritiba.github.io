@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e2f43208079f6@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261030T203000
 DTEND;TZID=America/Sao_Paulo:20261030T223000
 SUMMARY:Baseado em Baseados Reais com Edu Fenix / Stand Up Comedy
-LOCATION:Curitiba - PR
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
 DESCRIPTION:Show solo de stand-up de Edu Fenix\, com cerca de 70 minutos\, no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e2f43208079f6.html
 URL:https://agendaocuritiba.github.io/e/e2f43208079f6.html
 END:VEVENT

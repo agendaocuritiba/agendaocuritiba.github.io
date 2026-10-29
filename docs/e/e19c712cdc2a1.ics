@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e19c712cdc2a1@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T120000
 DTEND;TZID=America/Sao_Paulo:20261031T140000
 SUMMARY:Halloween Med Vet
-LOCATION:Curitiba - PR
+LOCATION:UniEnsino\, Curitiba - PR
 DESCRIPTION:Concurso de fantasias de Halloween dos estudantes de Medicina Veterinária.\n\nhttps://agendaocuritiba.github.io/e/e19c712cdc2a1.html
 URL:https://agendaocuritiba.github.io/e/e19c712cdc2a1.html
 END:VEVENT

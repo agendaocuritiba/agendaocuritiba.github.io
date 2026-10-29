@@ -5,12 +5,12 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ee3a82556d71f@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261129T193000
 DTEND;TZID=America/Sao_Paulo:20261129T213000
 SUMMARY:Noites no Memorial: Nando Reis Especial "sou Delas"
 LOCATION:ópera De Arame\, Rua João Gava 970 Curitiba Pr\, Curitiba - PR
-DESCRIPTION:https://agendaocuritiba.github.io/e/ee3a82556d71f.html
+DESCRIPTION:Nando Reis canta músicas suas que ficaram conhecidas nas vozes de cantoras como Marisa Monte e Cássia Eller.\n\nhttps://agendaocuritiba.github.io/e/ee3a82556d71f.html
 URL:https://agendaocuritiba.github.io/e/ee3a82556d71f.html
 END:VEVENT
 END:VCALENDAR

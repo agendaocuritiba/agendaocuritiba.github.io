@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:efe08b36a1e1d@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261206T100000
 DTEND;TZID=America/Sao_Paulo:20261206T120000
 SUMMARY:Sou Fest
-LOCATION:Curitiba - PR
+LOCATION:Chácara Terracota - Eventos em meio à natureza\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/efe08b36a1e1d.html
 URL:https://agendaocuritiba.github.io/e/efe08b36a1e1d.html
 END:VEVENT

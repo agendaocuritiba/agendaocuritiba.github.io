@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e646ac4444bec@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261123T200000
+DTEND;TZID=America/Sao_Paulo:20261123T220000
+SUMMARY:Clubão Remember 2026
+LOCATION:Igreja INA\, Curitiba - PR
+DESCRIPTION:Musical gospel com banda\, testemunhos e lembranças dos anos 80 e 90\, na Igreja INA.\n\nhttps://agendaocuritiba.github.io/e/e646ac4444bec.html
+URL:https://agendaocuritiba.github.io/e/e646ac4444bec.html
+END:VEVENT
+END:VCALENDAR

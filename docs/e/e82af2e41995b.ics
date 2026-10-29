@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e82af2e41995b@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261212T223000
 DTEND;TZID=America/Sao_Paulo:20261213T003000
 SUMMARY:Rumo a Vila Capanema - Stand Up Comedy com Matheus Donato / Stand Up Comedy
-LOCATION:Curitiba - PR
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e82af2e41995b.html
 URL:https://agendaocuritiba.github.io/e/e82af2e41995b.html
 END:VEVENT

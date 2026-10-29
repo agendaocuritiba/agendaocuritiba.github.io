@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e585191668bce@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270219T210000
+DTEND;TZID=America/Sao_Paulo:20270219T230000
+SUMMARY:Candlelight: O Senhor dos Anéis
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:Quarteto de cordas à luz de velas toca as trilhas da trilogia O Senhor dos Anéis.\n\nhttps://agendaocuritiba.github.io/e/e585191668bce.html
+URL:https://agendaocuritiba.github.io/e/e585191668bce.html
+END:VEVENT
+END:VCALENDAR

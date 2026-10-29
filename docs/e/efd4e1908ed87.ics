@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:efd4e1908ed87@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261101T200000
 DTEND;TZID=America/Sao_Paulo:20261101T220000
 SUMMARY:Domingou - Stand Up Comedy 2026 / Stand Up Comedy
-LOCATION:Curitiba - PR
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/efd4e1908ed87.html
 URL:https://agendaocuritiba.github.io/e/efd4e1908ed87.html
 END:VEVENT

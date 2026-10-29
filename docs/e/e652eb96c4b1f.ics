@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e652eb96c4b1f@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261110T200000
 DTEND;TZID=America/Sao_Paulo:20261110T220000
 SUMMARY:A Cidade Que Parou De Sonhar
-LOCATION:Curitiba - PR
+LOCATION:Teatro Positivo\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e652eb96c4b1f.html
 URL:https://agendaocuritiba.github.io/e/e652eb96c4b1f.html
 END:VEVENT

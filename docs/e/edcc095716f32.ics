@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:edcc095716f32@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261030T214500
 DTEND;TZID=America/Sao_Paulo:20261030T234500
 SUMMARY:Rumberos de la ciudad de Curitiba
-LOCATION:Curitiba - PR
+LOCATION:New Line\, Curitiba - PR
 DESCRIPTION:Noite latina de Halloween no New Line\, com salsa e DJs convidados.\n\nhttps://agendaocuritiba.github.io/e/edcc095716f32.html
 URL:https://agendaocuritiba.github.io/e/edcc095716f32.html
 END:VEVENT

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e2ab6104e7675@agendao-curitiba
-DTSTAMP:20261028T090000Z
+DTSTAMP:20261029T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261231T203000
 DTEND;TZID=America/Sao_Paulo:20261231T223000
 SUMMARY:Réveillon Carlo 2027
-LOCATION:Curitiba - PR
+LOCATION:Carlo Ristorante\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e2ab6104e7675.html
 URL:https://agendaocuritiba.github.io/e/e2ab6104e7675.html
 END:VEVENT
