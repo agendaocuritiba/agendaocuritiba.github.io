@@ -39,6 +39,47 @@ def fix_caps(t):
     return " ".join(out)
 
 
+FREE = re.compile(r"gratuit|entrada (franca|livre)|gr[aá]tis", re.I)
+# "gratuito para crianças até 5 anos", "meia-entrada": gratuidade parcial não faz o evento gratuito
+PARTIAL = re.compile(r"(gratuit[oa]s?|gr[aá]tis)\s+(para|p/|at[eé])\b|crian[cç]as?\b.{0,40}(gratuit|gr[aá]tis)|(gratuit|gr[aá]tis).{0,40}crian[cç]a|\bat[eé] \d+ anos", re.I)
+PAID = re.compile(r"R\$\s*0*[1-9]|a partir de|\bmeia\b|\blotes?\b|\bpago\b|\bvalor(es)?\b", re.I)
+# Sites que só vendem ingresso: anúncio ali é pago, salvo se o próprio título disser que é gratuito
+SELLERS = {"Disk Ingressos", "Blueticket", "Bilheteria Digital", "Ticketmaster", "Ingresse", "Fever", "Ingresso.com", "Shotgun"}
+SELLER_SITES = re.compile(r"ticketmaster|eventim|diskingressos|blueticket|bilheteriadigital|ingresse|feverup|ingresso\.com|shotgun|uhuu|ingressorapido|tickets?\b|bilheteria", re.I)
+
+
+def load_paid():
+    """state/pagos.json: {id: motivo} de eventos que as fontes marcam como gratuitos por engano."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "state", "pagos.json")
+    return json.load(open(p)) if os.path.exists(p) else {}
+
+
+PAID_IDS = load_paid()
+
+
+def is_free(e, pt):
+    """Gratuito só com afirmação explícita e nenhum sinal de cobrança.
+
+    O preço lido na página do evento (state/prices.json) manda; sem ele, valem o campo
+    "Ingresso" do Turismo Curitiba e o título, mas um vendedor de ingressos entre as fontes,
+    ou um link de compra no Turismo, desmente o "Gratuito"."""
+    if e["id"] in PAID_IDS:
+        return False
+    ok = lambda t: bool(FREE.search(t)) and not PARTIAL.search(t) and not PAID.search(t)
+    if pt:
+        return ok(pt)
+    prices = [e.get("price", "")] + [o.get("price", "") for o in e["originals"]]
+    if any(PAID.search(t) for t in prices):
+        return False
+    if ok(e["title"]):
+        return True
+    if {o["source"] for o in e["originals"]} & SELLERS:
+        return False
+    if any(SELLER_SITES.search(o.get("site", "")) for o in e["originals"]):
+        return False
+    return any(ok(t) for t in prices)
+
+
 def slim(e):
     links, seen = [], set()
     for o in sorted(e["originals"], key=lambda o: o["start"]):
@@ -54,8 +95,7 @@ def slim(e):
     pt = (e.get("price_text") or "").strip()
     if pt and not re.fullmatch(r"(?i)pago|consulte|-", pt):
         d["p"] = pt
-    prices = " ".join([e.get("price", ""), pt] + [o.get("price", "") for o in e["originals"]] + [e["title"]])
-    if e.get("free") or re.search(r"gratuit|entrada franca|gr[aá]tis|\bfree\b", prices, re.I):
+    if e.get("free") or is_free(e, pt):
         d["g"] = 1
     if e.get("summary"):
         d["r"] = e["summary"]
