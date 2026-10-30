@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9229ae535373@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261104T190000
+DTEND;TZID=America/Sao_Paulo:20261104T210000
+SUMMARY:Guaíra para Todos: Orquestra Sinfônica do Paraná na Lapa
+LOCATION:Teatro Guaíra\, Curitiba - PR
+DESCRIPTION:A Orquestra Sinfônica do Paraná\, regida por Alexandre Brasolim\, toca Beethoven\, Brahms\, Bach e outros no Santuário São Benedito\, na Lapa.\n\nhttps://agendaocuritiba.github.io/e/e9229ae535373.html
+URL:https://agendaocuritiba.github.io/e/e9229ae535373.html
+END:VEVENT
+END:VCALENDAR

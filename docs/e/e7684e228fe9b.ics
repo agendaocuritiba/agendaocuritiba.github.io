@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7684e228fe9b@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261202T235900
+DTEND;TZID=America/Sao_Paulo:20261203T015900
+SUMMARY:Formatura Feras Bj Lourdes 2026 - Worldwide Tour
+LOCATION:Clube Curitibano - Sede Barão do Serro Azul\, Curitiba - PR
+DESCRIPTION:Festa de formatura dos alunos do Bom Jesus Lourdes\, com tema de turnê mundial\, no Clube Curitibano.\n\nhttps://agendaocuritiba.github.io/e/e7684e228fe9b.html
+URL:https://agendaocuritiba.github.io/e/e7684e228fe9b.html
+END:VEVENT
+END:VCALENDAR

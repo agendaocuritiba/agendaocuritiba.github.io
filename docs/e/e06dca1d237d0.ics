@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e06dca1d237d0@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T200000
+DTEND;TZID=America/Sao_Paulo:20261126T220000
+SUMMARY:Bafafá com Mari Bernini - Exclusivo para Mulheres
+LOCATION:D House Curitiba\, Curitiba - PR
+DESCRIPTION:Segunda edição do Bafafá da Mari\, noite só para mulheres com dança\, palco aberto e humor de Mari Bernini.\n\nhttps://agendaocuritiba.github.io/e/e06dca1d237d0.html
+URL:https://agendaocuritiba.github.io/e/e06dca1d237d0.html
+END:VEVENT
+END:VCALENDAR

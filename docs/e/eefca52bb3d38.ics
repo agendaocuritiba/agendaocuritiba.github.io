@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eefca52bb3d38@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Conexões que Decolam
+LOCATION:Aeroporto Internacional de Curitiba - Afonso Pena\, Curitiba - PR
+DESCRIPTION:Encontro do Curitiba Convention no Aeroporto Afonso Pena sobre aviação\, conectividade e inteligência artificial em eventos.\n\nhttps://agendaocuritiba.github.io/e/eefca52bb3d38.html
+URL:https://agendaocuritiba.github.io/e/eefca52bb3d38.html
+END:VEVENT
+END:VCALENDAR

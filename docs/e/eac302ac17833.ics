@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eac302ac17833@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T170000
+DTEND;TZID=America/Sao_Paulo:20261120T190000
+SUMMARY:Morada - 20/11 - Teatro Regina Vogue
+LOCATION:Teatro Regina Vogue\, Curitiba - PR
+DESCRIPTION:Espetáculo infantil autoral de Saulo Soull e do Soull Studio de Teatro sobre sonhos\, lembranças e medos.\n\nhttps://agendaocuritiba.github.io/e/eac302ac17833.html
+URL:https://agendaocuritiba.github.io/e/eac302ac17833.html
+END:VEVENT
+END:VCALENDAR

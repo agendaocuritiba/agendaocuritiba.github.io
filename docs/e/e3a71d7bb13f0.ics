@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3a71d7bb13f0@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261108T150000
+DTEND;TZID=America/Sao_Paulo:20261108T170000
+SUMMARY:Aulão Fitdance Festival 2026
+LOCATION:Sociedade Morgenau - Sede Social\, Curitiba - PR
+DESCRIPTION:Festival da comunidade FitDance em que alunos dançam no palco ao lado dos instrutores.\n\nhttps://agendaocuritiba.github.io/e/e3a71d7bb13f0.html
+URL:https://agendaocuritiba.github.io/e/e3a71d7bb13f0.html
+END:VEVENT
+END:VCALENDAR

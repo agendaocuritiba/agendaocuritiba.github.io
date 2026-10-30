@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e8ae3dc432191@agendao-curitiba
 DTSTAMP:20261029T090000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTART;TZID=America/Sao_Paulo:20261203T190000
+DTEND;TZID=America/Sao_Paulo:20261203T210000
 SUMMARY:1º Festival Dante | Espetáculos
 LOCATION:Espaço Excêntrico Mauro Zanatta\, Curitiba - PR
 DESCRIPTION:Festival do núcleo BAUS com espetáculos de dança-teatro\, incluindo trabalhos do Grupo DANO.\n\nhttps://agendaocuritiba.github.io/e/e8ae3dc432191.html

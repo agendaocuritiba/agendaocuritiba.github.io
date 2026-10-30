@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3a6197beff4c@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261101T120000
+DTEND;TZID=America/Sao_Paulo:20261101T140000
+SUMMARY:Watch Party - VCT GAME CHANGERS
+LOCATION:Station Curitiba - Shopping Estação ( Piso L2 )\, Curitiba - PR
+DESCRIPTION:Transmissão da final do VCT Game Changers\, mundial inclusivo de Valorant\, com quiz e campeonato de duplas no Station Curitiba.\n\nhttps://agendaocuritiba.github.io/e/e3a6197beff4c.html
+URL:https://agendaocuritiba.github.io/e/e3a6197beff4c.html
+END:VEVENT
+END:VCALENDAR

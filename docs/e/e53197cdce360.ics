@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e53197cdce360@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T103000
+DTEND;TZID=America/Sao_Paulo:20261107T123000
+SUMMARY:Aulão Funk Com K
+LOCATION:Nosso Espaço Arte Cultura e Lazer\, Curitiba - PR
+DESCRIPTION:Aulão de dança do Funk com K para comemorar 7 anos do projeto\, com treino de funk e DJ set.\n\nhttps://agendaocuritiba.github.io/e/e53197cdce360.html
+URL:https://agendaocuritiba.github.io/e/e53197cdce360.html
+END:VEVENT
+END:VCALENDAR

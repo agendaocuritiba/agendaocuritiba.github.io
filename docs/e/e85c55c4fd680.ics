@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e85c55c4fd680@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261103T090000
+DTEND;TZID=America/Sao_Paulo:20261103T110000
+SUMMARY:Esquenta Feira de Imóveis da ADEMI-PR | 2026
+LOCATION:CRECI-PR - Conselho Regional de Corretores - 6ª Região\, Curitiba - PR
+DESCRIPTION:Encontro de incorporadoras com corretores para apresentar os empreendimentos da Feira de Imóveis da ADEMI-PR.\n\nhttps://agendaocuritiba.github.io/e/e85c55c4fd680.html
+URL:https://agendaocuritiba.github.io/e/e85c55c4fd680.html
+END:VEVENT
+END:VCALENDAR

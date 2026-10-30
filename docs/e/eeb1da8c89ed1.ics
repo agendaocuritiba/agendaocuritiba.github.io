@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeb1da8c89ed1@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261029T190000
+DTEND;TZID=America/Sao_Paulo:20261029T210000
+SUMMARY:Show de Encerramento | Semanas Acadêmicas FESP
+LOCATION:FESP - Fundação de Estudos Sociais do Paraná\, Curitiba - PR
+DESCRIPTION:A dupla Willian & Renan faz o show que encerra as semanas acadêmicas da FESP\, no auditório da faculdade.\n\nhttps://agendaocuritiba.github.io/e/eeb1da8c89ed1.html
+URL:https://agendaocuritiba.github.io/e/eeb1da8c89ed1.html
+END:VEVENT
+END:VCALENDAR

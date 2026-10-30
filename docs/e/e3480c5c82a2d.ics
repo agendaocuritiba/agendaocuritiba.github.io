@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3480c5c82a2d@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T110000
+DTEND;TZID=America/Sao_Paulo:20261121T130000
+SUMMARY:Autora Karol S. Paiva na Off Bienal Curitiba (dia 1)
+LOCATION:Gran Faculdade Curitiba\, Curitiba - PR
+DESCRIPTION:A autora Karol S. Paiva participa da Off Bienal Curitiba\, encontro literário independente entre autores\, influenciadores e leitores.\n\nhttps://agendaocuritiba.github.io/e/e3480c5c82a2d.html
+URL:https://agendaocuritiba.github.io/e/e3480c5c82a2d.html
+END:VEVENT
+END:VCALENDAR
