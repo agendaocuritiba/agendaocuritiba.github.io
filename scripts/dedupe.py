@@ -89,16 +89,31 @@ def norm_time(s):
     return s
 
 
+# Vendedores de ingresso anunciam uma sessão por página: fim no dia seguinte a uma sessão que
+# começa à tarde ou à noite é a madrugada da mesma festa, não um segundo dia de evento.
+SINGLE_SESSION = {"Sympla", "Shotgun", "Ticketmaster", "Fever", "Blueticket", "Ingresse", "Ingresso.com"}
+
+
+def overnight(o, st, en):
+    if o["source"] not in SINGLE_SESSION or en - st != timedelta(days=1):
+        return False
+    m = re.match(r"(\d{1,2})h", o["time"])
+    # o Ticketmaster nem sempre mostra o horário, mas a página é sempre de um show só
+    return int(m.group(1)) >= 17 if m else o["source"] == "Ticketmaster"
+
+
 def load_originals(eo_raw, tc_raw, extras, today, horizon):
     origs = []
 
     def add(o):
         st, en = date.fromisoformat(o["start"]), date.fromisoformat(o["end"])
+        o["time"] = norm_time(o.get("time"))
+        if overnight(o, st, en):
+            en = st; o["end"] = o["start"]
         if en < today or st > horizon:
             return
         if st < today:
             o["start"] = today.isoformat()
-        o["time"] = norm_time(o.get("time"))
         origs.append(o)
 
     for d, t, v, a, slug, img in eo_raw:
@@ -116,7 +131,8 @@ def load_originals(eo_raw, tc_raw, extras, today, horizon):
         add({"oid": "tc:" + slug.split("/")[-1], "source": "Turismo Curitiba", "title": t.strip(),
              "url": TC_BASE + slug, "start": st.isoformat(), "end": en.isoformat(),
              "time": hr.strip(), "venue": venue.strip().rstrip("."), "address": addr.strip().rstrip("."),
-             "image": TC_IMG.format(img) if img else "", "category": cat, "price": ing.strip().rstrip(".")})
+             "image": TC_IMG.format(img) if img else "", "category": cat, "price": ing.strip().rstrip("."),
+             "site": site.strip()})
     for code, rows in (extras or {}).items():
         if code not in SOURCES:
             continue
