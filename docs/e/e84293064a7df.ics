@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e84293064a7df@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T143000
 DTEND;TZID=America/Sao_Paulo:20261031T163000
 SUMMARY:Degustação de vinhos - Vinícola Araucária
-LOCATION:Setor de Ciências Humanas\, Letras e Artes - UFPR\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Degustação de vinhos e espumantes da Vinícola Araucária\, de São José dos Pinhais.\n\nhttps://agendaocuritiba.github.io/e/e84293064a7df.html
 URL:https://agendaocuritiba.github.io/e/e84293064a7df.html
 END:VEVENT

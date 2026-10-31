@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ea2dfa75bf97e@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261114T180000
 DTEND;TZID=America/Sao_Paulo:20261114T200000
 SUMMARY:Baile dos Sonhos
-LOCATION:Salão Nobre da Associação Beneficente Recreativa Tribunal de Contas (ABRTC)\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ea2dfa75bf97e.html
 URL:https://agendaocuritiba.github.io/e/ea2dfa75bf97e.html
 END:VEVENT

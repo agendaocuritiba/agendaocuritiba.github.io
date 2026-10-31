@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ef8fb20eaf03c@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261104T190000
 DTEND;TZID=America/Sao_Paulo:20261104T210000
 SUMMARY:Chef Pour Un Jour | Choucroute Garnie
-LOCATION:Aliança Francesa de Curitiba - Sede Prudente de Moraes\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ef8fb20eaf03c.html
 URL:https://agendaocuritiba.github.io/e/ef8fb20eaf03c.html
 END:VEVENT

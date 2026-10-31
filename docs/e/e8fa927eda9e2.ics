@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e8fa927eda9e2@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T200000
 DTEND;TZID=America/Sao_Paulo:20261031T220000
 SUMMARY:THE EURODANCE TOUR internacional
-LOCATION:Clay Highway Bar\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Taleesa\, Nicki French e Gottsha\, vozes do eurodance dos anos 90\, cantam seus sucessos no Clay Highway Bar.\n\nhttps://agendaocuritiba.github.io/e/e8fa927eda9e2.html
 URL:https://agendaocuritiba.github.io/e/e8fa927eda9e2.html
 END:VEVENT

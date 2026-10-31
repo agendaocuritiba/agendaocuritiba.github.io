@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e4ee4b8fabd44@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261106T203000
 DTEND;TZID=America/Sao_Paulo:20261106T223000
 SUMMARY:Não Entendi Direito com Gabriel Lopes / Stand Up Comedy
-LOCATION:Gaslight Comedy Club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e4ee4b8fabd44.html
 URL:https://agendaocuritiba.github.io/e/e4ee4b8fabd44.html
 END:VEVENT

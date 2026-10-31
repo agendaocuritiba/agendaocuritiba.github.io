@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eb079ecab8f04@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261205T200000
 DTEND;TZID=America/Sao_Paulo:20261205T220000
 SUMMARY:Barbie Kill December Rocks
-LOCATION:Purple Reis\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eb079ecab8f04.html
 URL:https://agendaocuritiba.github.io/e/eb079ecab8f04.html
 END:VEVENT

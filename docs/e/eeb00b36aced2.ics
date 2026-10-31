@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eeb00b36aced2@agendao-curitiba
-DTSTAMP:20261029T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261029T190000
-DTEND;TZID=America/Sao_Paulo:20261029T210000
-SUMMARY:Mão na Massa 4 - 29/10
-LOCATION:Av. Ver. Toaldo Túlio\, 1202\, Curitiba - PR
+DTSTAMP:20261030T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261103T190000
+DTEND;TZID=America/Sao_Paulo:20261103T210000
+SUMMARY:Mão na Massa 5 - 03/11
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eeb00b36aced2.html
 URL:https://agendaocuritiba.github.io/e/eeb00b36aced2.html
 END:VEVENT

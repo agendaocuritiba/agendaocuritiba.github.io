@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eac96191d238b@agendao-curitiba
+DTSTAMP:20261030T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261231T190000
+DTEND;TZID=America/Sao_Paulo:20261231T210000
+SUMMARY:Antes da Virada: Jantar de Réveillon no Grand Mercure Curitiba Rayon
+LOCATION:Curitiba - PR
+DESCRIPTION:Jantar de Réveillon em buffet com receitas autorais do chef no Restaurante Garbo\, do hotel Grand Mercure Curitiba Rayon\, encerrando às 22h.\n\nhttps://agendaocuritiba.github.io/e/eac96191d238b.html
+URL:https://agendaocuritiba.github.io/e/eac96191d238b.html
+END:VEVENT
+END:VCALENDAR

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e416e316aaa88@agendao-curitiba
-DTSTAMP:20261029T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261110T200000
-DTEND;TZID=America/Sao_Paulo:20261110T220000
+DTSTAMP:20261030T090000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
 SUMMARY:A Pequena Loja Dos Horrores - Mostra De Teatro Mpt
-LOCATION:FESP - Fundação de Estudos Sociais do Paraná\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e416e316aaa88.html
 URL:https://agendaocuritiba.github.io/e/e416e316aaa88.html
 END:VEVENT

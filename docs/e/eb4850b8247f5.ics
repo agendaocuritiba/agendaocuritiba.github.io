@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eb4850b8247f5@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261107T210000
 DTEND;TZID=America/Sao_Paulo:20261107T230000
 SUMMARY:Halloween Party Afrolatinavibes
-LOCATION:STANBY MUISIC\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eb4850b8247f5.html
 URL:https://agendaocuritiba.github.io/e/eb4850b8247f5.html
 END:VEVENT

@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ebd8fb687c0dc@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261211T223000
 DTEND;TZID=America/Sao_Paulo:20261212T003000
 SUMMARY:Vários Lados - Ricardo Berguer\,Evandro Faria\,João Gilgerto E Alexandre Nadolny/ Stand Up
-LOCATION:Gaslight Comedy Club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ebd8fb687c0dc.html
 URL:https://agendaocuritiba.github.io/e/ebd8fb687c0dc.html
 END:VEVENT

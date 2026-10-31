@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ef8b52c493e48@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261106T200000
 DTEND;TZID=America/Sao_Paulo:20261106T220000
 SUMMARY:Encontro de Corais do Guido
-LOCATION:Centro Estadual de Capacitação em Artes Guido Viaro\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ef8b52c493e48.html
 URL:https://agendaocuritiba.github.io/e/ef8b52c493e48.html
 END:VEVENT

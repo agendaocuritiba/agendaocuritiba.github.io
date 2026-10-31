@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eaf6ffb6a9705@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261219T220000
 DTEND;TZID=America/Sao_Paulo:20261220T000000
 SUMMARY:Seoul51 - Sua Festa K-Pop
-LOCATION:R. Prof. Brandão\, 51\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eaf6ffb6a9705.html
 URL:https://agendaocuritiba.github.io/e/eaf6ffb6a9705.html
 END:VEVENT

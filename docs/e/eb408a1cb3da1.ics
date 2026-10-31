@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eb408a1cb3da1@agendao-curitiba
-DTSTAMP:20261029T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261029T202500
-DTEND;TZID=America/Sao_Paulo:20261029T222500
+DTSTAMP:20261030T090000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
 SUMMARY:Invasão Alien (Curitiba)
-LOCATION:Jockey Plaza Shopping\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Labirinto totalmente no escuro\, cheio de surpresas\, no 2º piso do Shopping Jockey Plaza.\n\nhttps://agendaocuritiba.github.io/e/eb408a1cb3da1.html
 URL:https://agendaocuritiba.github.io/e/eb408a1cb3da1.html
 END:VEVENT

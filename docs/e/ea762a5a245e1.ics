@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ea762a5a245e1@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261107T160000
 DTEND;TZID=America/Sao_Paulo:20261107T180000
 SUMMARY:Festival Vozes Da Indústria |Etapa Regional Ctba/Rmc - Curitiba
-LOCATION:Teatro Sesi CIC\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Etapa regional do festival de música do Sesi\, em que trabalhadores da indústria cantam músicas autorais ou releituras.\n\nhttps://agendaocuritiba.github.io/e/ea762a5a245e1.html
 URL:https://agendaocuritiba.github.io/e/ea762a5a245e1.html
 END:VEVENT

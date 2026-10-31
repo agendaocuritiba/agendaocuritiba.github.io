@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e44111dd84a5c@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261129T183000
 DTEND;TZID=America/Sao_Paulo:20261129T203000
 SUMMARY:FUNDO DO MAR - Colégios Parceiros
-LOCATION:R. Valério Haisi\, 262\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e44111dd84a5c.html
 URL:https://agendaocuritiba.github.io/e/e44111dd84a5c.html
 END:VEVENT

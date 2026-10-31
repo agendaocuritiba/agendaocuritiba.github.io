@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e79acf3893a81@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261113T200000
 DTEND;TZID=America/Sao_Paulo:20261113T220000
 SUMMARY:Syron//First Contact
-LOCATION:Poutz pub\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e79acf3893a81.html
 URL:https://agendaocuritiba.github.io/e/e79acf3893a81.html
 END:VEVENT

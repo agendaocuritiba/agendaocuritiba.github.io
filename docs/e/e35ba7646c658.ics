@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e35ba7646c658@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
-SUMMARY:Só Pagode - Belo E Thiaguinho
-LOCATION:PEDREIRA PAULO LEMINSKI\, Curitiba - PR
+SUMMARY:Só Pagode - Belo e Thiaguinho
+LOCATION:Pedreira Paulo Leminski\, Rua João Gava\, 970\, Curitiba - PR
 DESCRIPTION:Belo e Thiaguinho dividem o palco da Pedreira Paulo Leminski numa tarde de sucessos do pagode.\n\nhttps://agendaocuritiba.github.io/e/e35ba7646c658.html
 URL:https://agendaocuritiba.github.io/e/e35ba7646c658.html
 END:VEVENT

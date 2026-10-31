@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eea110118fb7f@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261128T180000
 DTEND;TZID=America/Sao_Paulo:20261128T200000
 SUMMARY:Surf Center Celebration | Curitiba
-LOCATION:Surf Center\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eea110118fb7f.html
 URL:https://agendaocuritiba.github.io/e/eea110118fb7f.html
 END:VEVENT

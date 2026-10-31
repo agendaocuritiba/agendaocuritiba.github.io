@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eae0c5b1fca88@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261212T073000
 DTEND;TZID=America/Sao_Paulo:20261212T093000
-SUMMARY:Kemet Festival Internacional Encantos Egípcios - Aulas e Workshops
+SUMMARY:Kemet Festival Internacional Encantos Egípcios
 LOCATION:Hotel Golden Park Curitiba By Nacional Inn\, Rua Mariano Torres\, 951\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eae0c5b1fca88.html
 URL:https://agendaocuritiba.github.io/e/eae0c5b1fca88.html

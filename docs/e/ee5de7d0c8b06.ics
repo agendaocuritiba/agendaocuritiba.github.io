@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ee5de7d0c8b06@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261120T203000
 DTEND;TZID=America/Sao_Paulo:20261120T223000
 SUMMARY:1 Casado e 1 Cansado com Jt Fontoura e Ali Grau/ Stand Up Comedy
-LOCATION:Gaslight Comedy Club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ee5de7d0c8b06.html
 URL:https://agendaocuritiba.github.io/e/ee5de7d0c8b06.html
 END:VEVENT

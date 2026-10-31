@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:edfc4992991ef@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261120T200000
 DTEND;TZID=America/Sao_Paulo:20261120T220000
 SUMMARY:Global Party - Breezy Bieber
-LOCATION:41 Brooklyn Bar\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/edfc4992991ef.html
 URL:https://agendaocuritiba.github.io/e/edfc4992991ef.html
 END:VEVENT

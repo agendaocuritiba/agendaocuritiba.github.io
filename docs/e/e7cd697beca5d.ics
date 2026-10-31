@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7cd697beca5d@agendao-curitiba
+DTSTAMP:20261030T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261118T190000
+DTEND;TZID=America/Sao_Paulo:20261118T210000
+SUMMARY:Shotgun Apresenta: Escuta X Troi By Trommel- Special Edition
+LOCATION:Honey Vox\, Curitiba - PR
+DESCRIPTION:Encontro Escuta com a plataforma britânica Trommel: conversa e música eletrônica com Andres Dayer\, Francesco Farfa\, Isis Salvaterra e Magda.\n\nhttps://agendaocuritiba.github.io/e/e7cd697beca5d.html
+URL:https://agendaocuritiba.github.io/e/e7cd697beca5d.html
+END:VEVENT
+END:VCALENDAR

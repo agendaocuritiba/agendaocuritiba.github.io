@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e81e0ed98171d@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261205T150000
 DTEND;TZID=America/Sao_Paulo:20261205T170000
 SUMMARY:Uma tarde no Vindouro
-LOCATION:Vindouro\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e81e0ed98171d.html
 URL:https://agendaocuritiba.github.io/e/e81e0ed98171d.html
 END:VEVENT

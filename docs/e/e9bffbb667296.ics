@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e9bffbb667296@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261113T230000
 DTEND;TZID=America/Sao_Paulo:20261114T010000
 SUMMARY:Festa do Michael Jackson - Sexta-feira 13 - R. Mateus Leme\, 1719 (VSE Entretenimento)
-LOCATION:VSE ENTRETENIMENTO\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e9bffbb667296.html
 URL:https://agendaocuritiba.github.io/e/e9bffbb667296.html
 END:VEVENT

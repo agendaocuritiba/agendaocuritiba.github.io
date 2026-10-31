@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:efa79793e1be0@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261125T210000
 DTEND;TZID=America/Sao_Paulo:20261125T230000
 SUMMARY:Santo Fole em "Deus que Ajude"
-LOCATION:D House\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:O gaiteiro e humorista Santo Fole mistura comédia\, música e interação com a plateia no show Deus que Ajude.\n\nhttps://agendaocuritiba.github.io/e/efa79793e1be0.html
 URL:https://agendaocuritiba.github.io/e/efa79793e1be0.html
 END:VEVENT

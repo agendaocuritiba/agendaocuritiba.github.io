@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e32c2832cb422@agendao-curitiba
+DTSTAMP:20261030T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261106T190000
+DTEND;TZID=America/Sao_Paulo:20261106T210000
+SUMMARY:Fanmeeting - Nchive - Pacotes Extras
+LOCATION:Curitiba - PR
+DESCRIPTION:Encontro de fãs com o grupo sul-coreano de K-pop NCHIVE\, com show e pacotes extras de interação com os integrantes\, na Play Music.\n\nhttps://agendaocuritiba.github.io/e/e32c2832cb422.html
+URL:https://agendaocuritiba.github.io/e/e32c2832cb422.html
+END:VEVENT
+END:VCALENDAR

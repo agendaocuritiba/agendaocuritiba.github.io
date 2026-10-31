@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e765b397dade0@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261030T200000
 DTEND;TZID=America/Sao_Paulo:20261030T220000
 SUMMARY:NOITE DE REGGAE (Armandinho\, Natiruts\, Maneva\, O Rappa e muitos outros sucessos)
-LOCATION:Clay Highway Bar\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Noite de reggae no Clay\, com tributo ao Natiruts e show da Banda Castanheira.\n\nhttps://agendaocuritiba.github.io/e/e765b397dade0.html
 URL:https://agendaocuritiba.github.io/e/e765b397dade0.html
 END:VEVENT

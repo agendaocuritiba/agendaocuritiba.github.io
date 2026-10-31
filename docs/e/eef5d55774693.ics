@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eef5d55774693@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261106T223000
 DTEND;TZID=America/Sao_Paulo:20261107T003000
 SUMMARY:Boku no Comedian com Gabriel Ozaki e Jerval Machado / Stand Up Comedy
-LOCATION:Gaslight Comedy Club\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eef5d55774693.html
 URL:https://agendaocuritiba.github.io/e/eef5d55774693.html
 END:VEVENT

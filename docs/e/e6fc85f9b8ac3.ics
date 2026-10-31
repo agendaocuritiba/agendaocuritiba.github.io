@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6fc85f9b8ac3@agendao-curitiba
+DTSTAMP:20261030T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T200000
+DTEND;TZID=America/Sao_Paulo:20261113T220000
+SUMMARY:TAMBORERÊ - Batuque na escola!
+LOCATION:Curitiba - PR
+DESCRIPTION:O projeto de percussão Tamborerê celebra 17 anos com convidados e arranjos inspirados nos ritmos da cultura popular brasileira.\n\nhttps://agendaocuritiba.github.io/e/e6fc85f9b8ac3.html
+URL:https://agendaocuritiba.github.io/e/e6fc85f9b8ac3.html
+END:VEVENT
+END:VCALENDAR

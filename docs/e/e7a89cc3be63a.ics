@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7a89cc3be63a@agendao-curitiba
+DTSTAMP:20261030T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T203000
+DTEND;TZID=America/Sao_Paulo:20261127T223000
+SUMMARY:A Compás
+LOCATION:Curitiba - PR
+DESCRIPTION:Tablao flamenco com música e dança ao vivo\, com o guitarrista João la Furia\, percussão e bailaores do estúdio de Tati Barcellos.\n\nhttps://agendaocuritiba.github.io/e/e7a89cc3be63a.html
+URL:https://agendaocuritiba.github.io/e/e7a89cc3be63a.html
+END:VEVENT
+END:VCALENDAR

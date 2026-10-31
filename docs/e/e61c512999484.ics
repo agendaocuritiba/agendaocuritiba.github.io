@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e61c512999484@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T130000
 DTEND;TZID=America/Sao_Paulo:20261031T150000
 SUMMARY:Caça aos Doces de Halloween | Flow Open Mall - 31 de outubro
-LOCATION:Flow Open Mall\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Caça aos doces de Halloween para crianças pelas lojas do Flow Open Mall\, com balões e pintura facial.\n\nhttps://agendaocuritiba.github.io/e/e61c512999484.html
 URL:https://agendaocuritiba.github.io/e/e61c512999484.html
 END:VEVENT

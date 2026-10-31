@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e0f8180585614@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261110T213000
 DTEND;TZID=America/Sao_Paulo:20261110T233000
 SUMMARY:STOP STOP - Party-Rock da Inglaterra - 92 Graus\, Curitiba
-LOCATION:92 Graus\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e0f8180585614.html
 URL:https://agendaocuritiba.github.io/e/e0f8180585614.html
 END:VEVENT

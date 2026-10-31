@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec3118e278bfb@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261205T100000
 DTEND;TZID=America/Sao_Paulo:20261205T120000
 SUMMARY:Costelada da Win Líder 2026
-LOCATION:Win Líder Extintores\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ec3118e278bfb.html
 URL:https://agendaocuritiba.github.io/e/ec3118e278bfb.html
 END:VEVENT

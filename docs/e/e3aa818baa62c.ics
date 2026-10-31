@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3aa818baa62c@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261117T200000
 DTEND;TZID=America/Sao_Paulo:20261117T220000
 SUMMARY:17/11 - Espetáculo Capítulo XV
-LOCATION:Regina Vogue\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3aa818baa62c.html
 URL:https://agendaocuritiba.github.io/e/e3aa818baa62c.html
 END:VEVENT

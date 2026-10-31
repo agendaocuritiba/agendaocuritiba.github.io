@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e7333c7996e1b@agendao-curitiba
-DTSTAMP:20261029T090000Z
+DTSTAMP:20261030T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261031T200000
 DTEND;TZID=America/Sao_Paulo:20261031T220000
 SUMMARY:Hell(oween) of Fame
-LOCATION:Changes\, Curitiba - PR
+LOCATION:Curitiba - PR
 DESCRIPTION:Festa de Halloween com desfile de fantasias e atrações no Changes.\n\nhttps://agendaocuritiba.github.io/e/e7333c7996e1b.html
 URL:https://agendaocuritiba.github.io/e/e7333c7996e1b.html
 END:VEVENT
