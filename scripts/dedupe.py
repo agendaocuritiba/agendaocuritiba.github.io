@@ -102,6 +102,19 @@ def overnight(o, st, en):
     return int(m.group(1)) >= 17 if m else o["source"] == "Ticketmaster"
 
 
+# Sem data definida: vendedores que ainda não marcaram o dia anunciam o mês inteiro (do dia 1 ao
+# último dia; a Sympla manda o fim à meia-noite, que no horário de Brasília cai na véspera).
+# O evento fica só no dia 1 (ou hoje, se o mês já começou) e ganha o selo "Data a definir".
+VAGUE_SOURCES = SINGLE_SESSION | {"Disk Ingressos", "Bilheteria Digital"}
+
+
+def month_only(o, st, en):
+    if o["source"] not in VAGUE_SOURCES or st.day != 1:
+        return False
+    nxt = date(st.year + st.month // 12, st.month % 12 + 1, 1)
+    return nxt - timedelta(days=2) <= en <= nxt
+
+
 def load_originals(eo_raw, tc_raw, extras, today, horizon):
     origs = []
 
@@ -114,6 +127,9 @@ def load_originals(eo_raw, tc_raw, extras, today, horizon):
             return
         if st < today:
             o["start"] = today.isoformat()
+        if month_only(o, st, en):
+            # "until" guarda o mês anunciado, para juntar com as outras fontes do mesmo evento
+            o["tbd"], o["until"], o["end"] = st.isoformat()[:7], o["end"], o["start"]
         origs.append(o)
 
     for d, t, v, a, slug, img in eo_raw:
@@ -148,7 +164,7 @@ def load_originals(eo_raw, tc_raw, extras, today, horizon):
 
 
 def span(g):
-    return (min(date.fromisoformat(o["start"]) for o in g), max(date.fromisoformat(o["end"]) for o in g))
+    return (min(date.fromisoformat(o["start"]) for o in g), max(date.fromisoformat(o.get("until") or o["end"]) for o in g))
 
 
 def overlap(a, b, tol=0):
@@ -277,22 +293,32 @@ def build_event(g):
     title = tc[0]["title"] if tc else min((clean_title(o["title"]) for o in g), key=len)
     if title.isupper() and len(title) > 6:
         title = title.title()
+    # Fonte com só o mês: se outra fonte traz um dia de verdade (que não seja o dia 1 do mesmo
+    # mês, data padrão de quem também não sabe), valem as outras; senão o evento fica sem data definida.
+    vague = [o for o in g if o.get("tbd")]
+    firsts = {o["start"] for o in vague}
+    real = [o for o in g if not o.get("tbd") and not (o["start"] == o["end"] and o["start"] in firsts)]
+    tbd = vague[0]["tbd"] if vague and not real else ""
+    dated = g if tbd or not vague else [o for o in g if not o.get("tbd")]
     dates = set()
-    for o in g:
+    for o in dated:
         d = date.fromisoformat(o["start"]); e = date.fromisoformat(o["end"])
         while d <= e and len(dates) <= 120:
             dates.add(d.isoformat()); d += timedelta(days=1)
     first = lambda f: next((o[f] for o in g if o.get(f)), "")
     venue = next((o["venue"] for o in g if len(o.get("venue", "")) >= 4 and not re.match(r"(?i)local a definir|curitiba$", o["venue"])), first("venue"))
-    return {
+    ev = {
         "title": title, "category": classify(g),
-        "start": min(o["start"] for o in g), "end": max(o["end"] for o in g),
+        "start": min(o["start"] for o in dated), "end": max(o["end"] for o in dated),
         "dates": sorted(dates) if len(dates) <= 60 else [],
         "time": next((o["time"] for o in g if o.get("time") and re.search(r"\d", o["time"])), first("time")),
         "venue": venue, "address": first("address"), "image": first("image"), "price": first("price"),
         "sources": sorted({o["source"] for o in g}, key=lambda s: SOURCE_ORDER.index(s) if s in SOURCE_ORDER else 99),
         "originals": g,
     }
+    if tbd:
+        ev["tbd"] = tbd  # "aaaa-mm": mês anunciado, dia ainda não definido
+    return ev
 
 
 def main():

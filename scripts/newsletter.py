@@ -51,6 +51,8 @@ def main():
         when = f"{DOW[d.weekday()]} {br(d)}" if show_date else ""
         if show_date and ev["end"] != ev["start"]:
             when += f" a {br(date.fromisoformat(ev['end']))}"
+        if ev.get("tbd"):  # só o mês é conhecido (dedupe.py)
+            when = "data a definir"
         meta = " · ".join(x for x in [when, ev.get("time", ""), ev.get("venue", ""), ", ".join(ev["sources"])] if x)
         H.append(f'<li><a href="{esc(link(ev))}">{esc(ev["title"])}</a> <i>{esc(ev["category"])}</i><br><small>{esc(meta)}</small></li>')
         T.append(f"- {ev['title']} [{ev['category']}] — {meta} — {link(ev)}")

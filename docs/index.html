@@ -131,6 +131,7 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .title { font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1.2; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
 .badge { font-family: var(--font-body); font-size: 10.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; border: 1px solid currentColor; border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: 2px; white-space: nowrap; }
 .badge.gr { color: var(--free); }
+.badge.tbd { color: var(--accent2); }
 .meta { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
 .meta .t { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
 .map { display: inline-flex; vertical-align: -3px; margin-left: 4px; color: var(--accent); }
@@ -481,6 +482,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const main = el('div', 'main');
     const h = el('h3', 'title', e.t);
     if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
+    if (e.x) { const b = el('span', 'badge tbd', 'Data a definir'); b.title = 'A fonte só informa o mês'; h.append(b); }
     const when = seasonText(e);
     if (repeats) {
       const on = collapsed.has(e.id), rb = el('button', 'rep'); rb.type = 'button'; rb.innerHTML = svg(UI.repeat);
