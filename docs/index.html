@@ -135,6 +135,10 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .meta .t { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
 .map { display: inline-flex; vertical-align: -3px; margin-left: 4px; color: var(--accent); }
 .map svg { width: 16px; height: 16px; }
+.rep { font: inherit; display: inline-flex; vertical-align: 1px; margin-left: 6px; padding: 2px; border: 1px solid transparent; border-radius: 999px; background: none; color: var(--accent); cursor: pointer; }
+.rep svg { width: 15px; height: 15px; }
+.rep:hover { border-color: currentColor; }
+.rep[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
 .desc { margin: 2px 0 0; font-size: 14px; max-width: 62ch; }
 .acts { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 6px; }
 .go { font-size: 13px; font-weight: 600; text-decoration: none; padding: 4px 10px; border-radius: 999px; background: var(--go); color: var(--go-fg); white-space: nowrap; }
@@ -261,6 +265,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     news: '<path d="M12 3l1.8 4.2 4.5.4-3.4 3 1 4.4L12 12.8 8.1 15l1-4.4-3.4-3 4.5-.4z"/><path d="M5 20h14"/>',
     share: '<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/>',
     pin: '<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
+    repeat: '<path d="M17 2.5l3 3-3 3"/><path d="M4 11.5v-1a5 5 0 0 1 5-5h11"/><path d="M7 21.5l-3-3 3-3"/><path d="M20 12.5v1a5 5 0 0 1-5 5H4"/>',
     free: '<path d="M4 9.5V6.5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2.5 2.5 0 0 0 0 5v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2.5 2.5 0 0 0 0-5z"/><path d="M9 15l6-6"/>'
   };
   const ORDER = ['Show', 'Festa/Balada', 'Teatro', 'Concerto', 'Stand-up', 'Palestra', 'Infantil', 'Festival', 'Feira/Exposição', 'Gastronomia', 'Congresso', 'Esporte', 'Outros'];
@@ -330,6 +335,8 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venue: state.venue, free: state.free, off: [...state.off] }));
 
   let meta = {}, events = [], shown = PAGE;
+  // Eventos que se repetem em vários dias e o usuário colapsou: mostram só a primeira data que os filtros deixam visível
+  const collapsed = new Set();
   const nextDate = (e) => { const ds = (e.d || []).filter((x) => x >= todayIso); return ds[0] || (e.s < todayIso ? todayIso : e.s); };
   const occursIn = (e, a, b) => { if (e.d && e.d.length) return e.d.some((x) => x >= a && x <= b); return e.s <= b && e.e >= a; };
   const pubRange = () => rangeOf(state.pub, PUB_Q);
@@ -465,12 +472,20 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     return e.d.filter((x) => x >= todayIso && (!w || (x >= w[0] && x <= w[1])));
   };
 
-  function card(e, day, first) {
+  function card(e, day, first, repeats) {
     const c = e.c || 'Outros';
-    const art = el('article', 'card'); if (first) art.id = e.id; art.style.setProperty('--kc', kc(c));
+    const art = el('article', 'card'); if (first) art.id = e.id; art.dataset.eid = e.id; art.style.setProperty('--kc', kc(c));
     const main = el('div', 'main');
     const h = el('h3', 'title', e.t);
     if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
+    if (repeats) {
+      const on = collapsed.has(e.id), rb = el('button', 'rep'); rb.type = 'button'; rb.innerHTML = svg(UI.repeat);
+      rb.title = 'Evento em ' + repeats + ' datas: clique para ' + (on ? 'expandir' : 'colapsar');
+      rb.setAttribute('aria-label', on ? 'Mostrar todas as ' + repeats + ' datas deste evento' : 'Mostrar este evento só uma vez');
+      rb.setAttribute('aria-pressed', on);
+      rb.addEventListener('click', () => toggleRepeat(e.id, art));
+      h.append(rb);
+    }
     main.append(h);
     const m = el('div', 'meta');
     const when = seasonText(e);
@@ -513,8 +528,12 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const base = events.filter((e) => match(e, true));
     drawCats(base);
     const w = rangeOf(state.when, WHEN_Q);
-    const list = base.filter((e) => !state.off.has(e.c || 'Outros'))
+    const all = base.filter((e) => !state.off.has(e.c || 'Outros'))
       .flatMap((e) => cardDays(e, w).map((d) => [d, e])).sort((a, b) => a[0].localeCompare(b[0]) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
+    // Quantas datas cada evento tem com os filtros atuais; colapsado, fica só a primeira
+    const reps = {}; all.forEach(([, e]) => { reps[e.id] = (reps[e.id] || 0) + 1; });
+    const kept = new Set();
+    const list = all.filter(([, e]) => !collapsed.has(e.id) || (!kept.has(e.id) && kept.add(e.id)));
     $('venue').classList.toggle('on', !!state.venue);
     const n = new Set(list.map((x) => x[1].id)).size;
     $('summary').textContent = list.length ? n + (n === 1 ? ' evento' : ' eventos') + (list.length > n ? ' em ' + list.length + ' datas' : '') : '';
@@ -523,9 +542,18 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     let cur = null, box = null; const seen = new Set();
     list.slice(0, shown).forEach(([d, e]) => {
       if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); box = el('div', 'list'); out.append(hh, box); }
-      box.append(card(e, d, !seen.has(e.id))); seen.add(e.id);
+      box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
     });
     $('more').hidden = list.length <= shown;
+  }
+
+  // Colapsa/expande as datas de um evento sem mover o card clicado (ou o que sobra dele) na tela
+  function toggleRepeat(id, art) {
+    const top = art.getBoundingClientRect().top;
+    collapsed.has(id) ? collapsed.delete(id) : collapsed.add(id);
+    draw();
+    const keep = document.querySelector('.card[data-eid="' + id + '"]');
+    if (keep) { scrollBy(0, keep.getBoundingClientRect().top - top); const b = keep.querySelector('.rep'); if (b) b.focus({ preventScroll: true }); }
   }
 
   function closeMenus() { document.querySelectorAll('.calmenu').forEach((m) => { m.hidden = true; m.previousSibling.setAttribute('aria-expanded', 'false'); }); }
