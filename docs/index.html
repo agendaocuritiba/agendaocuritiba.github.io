@@ -132,6 +132,7 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .badge { font-family: var(--font-body); font-size: 10.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; border: 1px solid currentColor; border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: 2px; white-space: nowrap; }
 .badge.gr { color: var(--free); }
 .badge.tbd { color: var(--accent2); }
+.meta .badge { margin-left: 0; vertical-align: 1px; }
 .meta { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
 .meta .t { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
 .map { display: inline-flex; vertical-align: -3px; margin-left: 4px; color: var(--accent); }
@@ -482,7 +483,6 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const main = el('div', 'main');
     const h = el('h3', 'title', e.t);
     if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
-    if (e.x) { const b = el('span', 'badge tbd', 'Data a definir'); b.title = 'A fonte só informa o mês'; h.append(b); }
     const when = seasonText(e);
     let rw = null;
     if (repeats) {
@@ -494,15 +494,22 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       rw = el('span', 'repw'); rw.append(rb); if (when) rw.append(el('span', 'seas', when));
     }
     main.append(h);
+    // Linha de baixo, nesta ordem: data (ícone e "N datas, de X a Y" dos repetidos, selo de data a definir
+    // ou o período da temporada), horário, local (com o mapa) e preço
     const m = el('div', 'meta');
-    // Eventos repetidos: ícone de colapsar e "N datas, de X a Y" abrem a linha, antes do horário e do local
+    const sep = () => { if (m.childNodes.length) m.append(' · '); };
     if (rw) m.append(rw);
-    if (e.h && /\d/.test(e.h)) { if (m.childNodes.length) m.append(' · '); m.append(el('span', 't', e.h)); }
-    [repeats ? '' : when, e.v, e.p].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
-    if (e.v && !/^local a definir$/i.test(e.v)) {
-      const a = el('a', 'map'); a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([e.v, e.a, 'Curitiba PR'].filter(Boolean).join(', '));
-      a.target = '_blank'; a.rel = 'noopener'; a.title = 'Ver no Google Maps'; a.setAttribute('aria-label', 'Ver ' + e.v + ' no Google Maps'); a.innerHTML = svg(UI.pin); m.append(a);
+    if (e.x) { sep(); const b = el('span', 'badge tbd', 'Data a definir'); b.title = 'A fonte só informa o mês'; m.append(b); }
+    if (!repeats && when) { sep(); m.append(when); }
+    if (e.h && /\d/.test(e.h)) { sep(); m.append(el('span', 't', e.h)); }
+    if (e.v) {
+      sep(); m.append(e.v);
+      if (!/^local a definir$/i.test(e.v)) {
+        const a = el('a', 'map'); a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([e.v, e.a, 'Curitiba PR'].filter(Boolean).join(', '));
+        a.target = '_blank'; a.rel = 'noopener'; a.title = 'Ver no Google Maps'; a.setAttribute('aria-label', 'Ver ' + e.v + ' no Google Maps'); a.innerHTML = svg(UI.pin); m.append(a);
+      }
     }
+    if (e.p) { sep(); m.append(e.p); }
     main.append(m);
     if (e.r) main.append(el('p', 'desc', e.r));
     // Links: só publicadores quando houver; ordem aleatória
