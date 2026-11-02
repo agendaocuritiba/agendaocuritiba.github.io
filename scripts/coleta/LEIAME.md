@@ -7,7 +7,7 @@ Evento ON e Turismo Curitiba vão cada um para o seu arquivo. Os outros devolvem
 - `eventoon.js`: Evento ON → https://www.eventoon.com.br/cidade/curitiba-pr → salve em work/raw/raw_eventoon.json
 - `turismo.js`: Turismo Curitiba → https://turismo.curitiba.pr.gov.br/eventos/ → salve em work/raw/raw_turismo.json (antes de rodar, troque DD-MM-AAAA no script pela data de hoje)
 - `dk.js`: Disk Ingressos → https://www.diskingressos.com.br/
-- `sy.js`: Sympla → https://www.sympla.com.br/eventos/curitiba-pr (demora ~30 s; se a ferramenta expirar, espere e leia window.__sy; os cartões às vezes mostram só "Curitiba, PR" sem o local, e o script aceita os dois formatos)
+- `sy.js`: Sympla → https://www.sympla.com.br/eventos/curitiba-pr (usa a API do próprio site, `/api/discovery-bff/search/category-type`, com as coleções 17 Festas e shows, 10 Arte/cinema/lazer, 1 Gastronomia e 12 Games/geek; costuma levar uns 10 s; se a ferramenta expirar, espere e leia window.__sy)
 - `bt.js`: Blueticket → https://www.blueticket.com.br/
 - `bd.js`: Bilheteria Digital → https://www.bilheteriadigital.com/
 - `ig.js`: Ingresse → https://www.ingresse.com/
