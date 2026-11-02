@@ -135,14 +135,11 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .meta .badge { margin-left: 0; vertical-align: 1px; }
 .meta { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
 .meta .t { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
-.mrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 10px; }
-.mrow .meta { flex: 1 1 150px; min-width: 0; }
-/* Mini calendário da semana (domingo a sábado) à direita da linha de baixo: a data do card em destaque, as outras datas do mesmo evento com contorno */
-.wk { flex: none; margin-left: auto; display: grid; grid-template-columns: repeat(7, 19px); gap: 1px 3px; text-align: center; font-variant-numeric: tabular-nums; line-height: 1; user-select: none; }
+/* Mini calendário da semana (domingo a sábado) à direita do cabeçalho de cada dia, com o dia do grupo em destaque */
+.wk { flex: none; margin-left: auto; align-self: center; font-family: var(--font-body); display: grid; grid-template-columns: repeat(7, 19px); gap: 1px 3px; text-align: center; font-variant-numeric: tabular-nums; line-height: 1; user-select: none; }
 .wk i { font-style: normal; font-size: 9px; font-weight: 600; color: var(--muted); padding-bottom: 2px; }
 .wk b { font-weight: 500; font-size: 10.5px; height: 19px; display: grid; place-items: center; border-radius: 4px; border: 1px solid var(--line); color: var(--fg); background: var(--panel); }
 .wk b.past { color: var(--muted); opacity: .6; }
-.wk b.also { border-color: var(--accent); color: var(--accent); }
 .wk b.on { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); font-weight: 700; }
 .map { display: inline-flex; vertical-align: -3px; margin-left: 4px; color: var(--accent); }
 .map svg { width: 16px; height: 16px; }
@@ -205,8 +202,6 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   .fig .ic { width: 46px; height: 46px; border-radius: 11px; }
   .fig .ic svg { width: 24px; height: 24px; }
   .fig span { font-size: 9.5px; letter-spacing: 0; }
-  /* Celular: o calendário fica na linha do texto quando ele cabe inteiro ao lado; senão, desce para a linha seguinte, à direita */
-  .mrow .meta { flex-basis: auto; }
   .wk { grid-template-columns: repeat(7, 17px); gap: 1px 2px; }
   .wk b { height: 17px; font-size: 10px; }
 }
@@ -490,16 +485,16 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     return e.d.filter((x) => x >= todayIso && (!w || (x >= w[0] && x <= w[1])));
   };
 
-  // Semana de domingo a sábado que contém a data do card
+  // Semana de domingo a sábado que contém o dia do grupo
   const WKD = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
-  function weekCal(e, day) {
-    const sun = addDays(day, -dObj(day).getUTCDay()), ds = new Set(e.d || []);
+  function weekCal(day) {
+    const sun = addDays(day, -dObj(day).getUTCDay());
     const wk = el('div', 'wk'); wk.setAttribute('aria-hidden', 'true');
     wk.title = 'Semana de ' + short(sun) + ' a ' + short(addDays(sun, 6));
     WKD.forEach((w) => wk.append(el('i', null, w)));
     for (let i = 0; i < 7; i++) {
       const d = addDays(sun, i), b = el('b', null, dObj(d).getUTCDate());
-      if (d === day) b.className = 'on'; else if (ds.has(d) && d >= todayIso) b.className = 'also'; else if (d < todayIso) b.className = 'past';
+      if (d === day) b.className = 'on'; else if (d < todayIso) b.className = 'past';
       wk.append(b);
     }
     return wk;
@@ -538,9 +533,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       }
     }
     if (e.p) { sep(); m.append(e.p); }
-    // Mini calendário à direita; não aparece com data a definir, porque o dia 1 do mês não é a data real
-    if (e.x) main.append(m);
-    else { const mr = el('div', 'mrow'); mr.append(m, weekCal(e, day)); main.append(mr); }
+    main.append(m);
     if (e.r) main.append(el('p', 'desc', e.r));
     // Links: só publicadores quando houver; ordem aleatória
     // Sites que vendem o ingresso têm prioridade; sem eles, os divulgadores.
@@ -586,7 +579,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     if (!list.length) { out.append(el('p', 'empty', 'Nenhum evento com esses filtros. Tente ampliar o período ou marcar mais categorias.')); $('more').hidden = true; return; }
     let cur = null, box = null; const seen = new Set();
     list.slice(0, shown).forEach(([d, e]) => {
-      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); box = el('div', 'list'); out.append(hh, box); }
+      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); out.append(hh, box); }
       box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
     });
     $('more').hidden = list.length <= shown;
