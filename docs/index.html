@@ -135,8 +135,8 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .meta .t { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
 .map { display: inline-flex; vertical-align: -3px; margin-left: 4px; color: var(--accent); }
 .map svg { width: 16px; height: 16px; }
-.rep { font: inherit; display: inline-flex; vertical-align: 1px; margin-left: 6px; padding: 2px; border: 1px solid transparent; border-radius: 999px; background: none; color: var(--accent); cursor: pointer; }
-.rep svg { width: 15px; height: 15px; }
+.rep { font-family: var(--font-body); font-size: 13px; font-weight: 500; line-height: 1.2; white-space: nowrap; display: inline-flex; align-items: center; gap: 5px; vertical-align: 1px; margin-left: 6px; padding: 2px 8px 2px 4px; border: 1px solid transparent; border-radius: 999px; background: none; color: var(--accent); cursor: pointer; }
+.rep svg { width: 15px; height: 15px; flex: none; }
 .rep:hover { border-color: currentColor; }
 .rep[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
 .desc { margin: 2px 0 0; font-size: 14px; max-width: 62ch; }
@@ -478,9 +478,11 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const main = el('div', 'main');
     const h = el('h3', 'title', e.t);
     if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
+    const when = seasonText(e);
     if (repeats) {
       const on = collapsed.has(e.id), rb = el('button', 'rep'); rb.type = 'button'; rb.innerHTML = svg(UI.repeat);
-      rb.title = 'Evento em ' + repeats + ' datas: clique para ' + (on ? 'expandir' : 'colapsar');
+      if (when) rb.append(when);
+      rb.title = 'Clique para ' + (on ? 'expandir' : 'colapsar');
       rb.setAttribute('aria-label', on ? 'Mostrar todas as ' + repeats + ' datas deste evento' : 'Mostrar este evento só uma vez');
       rb.setAttribute('aria-pressed', on);
       rb.addEventListener('click', () => toggleRepeat(e.id, art));
@@ -488,9 +490,8 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     }
     main.append(h);
     const m = el('div', 'meta');
-    const when = seasonText(e);
     if (e.h && /\d/.test(e.h)) m.append(el('span', 't', e.h));
-    [when, e.v, e.p].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
+    [repeats ? '' : when, e.v, e.p].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
     if (e.v && !/^local a definir$/i.test(e.v)) {
       const a = el('a', 'map'); a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([e.v, e.a, 'Curitiba PR'].filter(Boolean).join(', '));
       a.target = '_blank'; a.rel = 'noopener'; a.title = 'Ver no Google Maps'; a.setAttribute('aria-label', 'Ver ' + e.v + ' no Google Maps'); a.innerHTML = svg(UI.pin); m.append(a);
