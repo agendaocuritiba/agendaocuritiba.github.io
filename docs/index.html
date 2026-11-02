@@ -484,17 +484,20 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     if (e.g) h.append(el('span', 'badge gr', 'Gratuito'));
     if (e.x) { const b = el('span', 'badge tbd', 'Data a definir'); b.title = 'A fonte só informa o mês'; h.append(b); }
     const when = seasonText(e);
+    let rw = null;
     if (repeats) {
       const on = collapsed.has(e.id), rb = el('button', 'rep'); rb.type = 'button'; rb.innerHTML = svg(UI.repeat);
       rb.title = 'Clique para ' + (on ? 'expandir' : 'colapsar');
       rb.setAttribute('aria-label', on ? 'Mostrar todas as ' + repeats + ' datas deste evento' : 'Mostrar este evento só uma vez');
       rb.setAttribute('aria-pressed', on);
       rb.addEventListener('click', () => toggleRepeat(e.id, art));
-      const rw = el('span', 'repw'); rw.append(rb); if (when) rw.append(el('span', 'seas', when)); h.append(' ', rw);
+      rw = el('span', 'repw'); rw.append(rb); if (when) rw.append(el('span', 'seas', when));
     }
     main.append(h);
     const m = el('div', 'meta');
-    if (e.h && /\d/.test(e.h)) m.append(el('span', 't', e.h));
+    // Eventos repetidos: ícone de colapsar e "N datas, de X a Y" abrem a linha, antes do horário e do local
+    if (rw) m.append(rw);
+    if (e.h && /\d/.test(e.h)) { if (m.childNodes.length) m.append(' · '); m.append(el('span', 't', e.h)); }
     [repeats ? '' : when, e.v, e.p].filter(Boolean).forEach((x) => { if (m.childNodes.length) m.append(' · '); m.append(x); });
     if (e.v && !/^local a definir$/i.test(e.v)) {
       const a = el('a', 'map'); a.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([e.v, e.a, 'Curitiba PR'].filter(Boolean).join(', '));
