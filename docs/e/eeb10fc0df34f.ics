@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeb10fc0df34f@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T220000
+DTEND;TZID=America/Sao_Paulo:20261205T000000
+SUMMARY:Fricassé C/ Adrien Calvet
+LOCATION:Alameda Doutor Muricy\, 949 - Centro\, Curitiba - PR\, 80020-040\, Brasil\, Curitiba - PR
+DESCRIPTION:Festa de house music da Fricassé com o DJ francês Adrien Calvet\, em sua primeira vinda ao Brasil\, e artistas locais.\n\nhttps://agendaocuritiba.github.io/e/eeb10fc0df34f.html
+URL:https://agendaocuritiba.github.io/e/eeb10fc0df34f.html
+END:VEVENT
+END:VCALENDAR

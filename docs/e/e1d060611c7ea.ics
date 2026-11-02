@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1d060611c7ea@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261107T183000
+DTEND;TZID=America/Sao_Paulo:20261107T203000
+SUMMARY:Convite Oficial | Cerimônia de Abertura 7ª Mostra Paraná de Teatro de Bonecos (2026)
+LOCATION:Solar da Cultura - Sede da Fundação Cultural de Curitiba\, Curitiba - PR
+DESCRIPTION:Cerimônia de abertura da 7ª Mostra Paraná de Teatro de Bonecos\, com recepção e atrações no Solar da Cultura\, no Largo da Ordem.\n\nhttps://agendaocuritiba.github.io/e/e1d060611c7ea.html
+URL:https://agendaocuritiba.github.io/e/e1d060611c7ea.html
+END:VEVENT
+END:VCALENDAR

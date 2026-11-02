@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7782861c8dde@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T210000
+DTEND;TZID=America/Sao_Paulo:20261119T230000
+SUMMARY:No Reply (18 Anos
+LOCATION:+92 Graus\, Curitiba - PR
+DESCRIPTION:A banda No Reply comemora 18 anos de estrada com noite de hardcore no 92 Graus\, ao lado de Dinamo\, Vamonos e Nanquim.\n\nhttps://agendaocuritiba.github.io/e/e7782861c8dde.html
+URL:https://agendaocuritiba.github.io/e/e7782861c8dde.html
+END:VEVENT
+END:VCALENDAR

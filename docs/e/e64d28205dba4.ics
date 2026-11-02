@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e64d28205dba4@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T080000
+DTEND;TZID=America/Sao_Paulo:20261212T100000
+SUMMARY:Pulso Experience
+LOCATION:Pahragon Beach Tennis\, Curitiba - PR
+DESCRIPTION:Manhã de esporte e bem-estar com torneio de beach tennis\, aulas e gastronomia na Pahragon Beach Tennis.\n\nhttps://agendaocuritiba.github.io/e/e64d28205dba4.html
+URL:https://agendaocuritiba.github.io/e/e64d28205dba4.html
+END:VEVENT
+END:VCALENDAR

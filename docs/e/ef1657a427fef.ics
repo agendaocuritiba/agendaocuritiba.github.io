@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef1657a427fef@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T090000
+DTEND;TZID=America/Sao_Paulo:20261114T110000
+SUMMARY:Ecoar 2026
+LOCATION:Colégio Senhora de Fátima\, Curitiba - PR
+DESCRIPTION:Encerramento e celebração do projeto ECOAR 2026\, com apresentações que relembram as atividades realizadas ao longo do ano.\n\nhttps://agendaocuritiba.github.io/e/ef1657a427fef.html
+URL:https://agendaocuritiba.github.io/e/ef1657a427fef.html
+END:VEVENT
+END:VCALENDAR

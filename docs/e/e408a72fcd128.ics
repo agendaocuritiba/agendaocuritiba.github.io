@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e408a72fcd128@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T190000
+DTEND;TZID=America/Sao_Paulo:20261205T210000
+SUMMARY:Trapézio Voador - Michael Jackson
+LOCATION:R. Valério Haisi\, 262\, Curitiba - PR
+DESCRIPTION:Espetáculo de trapézio e artes circenses do Trapézio Voador com tema inspirado em Michael Jackson.\n\nhttps://agendaocuritiba.github.io/e/e408a72fcd128.html
+URL:https://agendaocuritiba.github.io/e/e408a72fcd128.html
+END:VEVENT
+END:VCALENDAR

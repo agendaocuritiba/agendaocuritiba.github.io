@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea826d2047c51@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Festival Coolritiba 2027
+LOCATION:R. João Gava\, 970\, Rua João Gava\, 970\, Curitiba - PR
+DESCRIPTION:Venda antecipada para a 10ª edição do festival de música Coolritiba\, em 2027\, na Pedreira Paulo Leminski.\n\nhttps://agendaocuritiba.github.io/e/ea826d2047c51.html
+URL:https://agendaocuritiba.github.io/e/ea826d2047c51.html
+END:VEVENT
+END:VCALENDAR

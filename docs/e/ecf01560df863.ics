@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecf01560df863@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T200000
+DTEND;TZID=America/Sao_Paulo:20261120T220000
+SUMMARY:Zumbi e Dandara: Herança dos Palmares
+LOCATION:Teatro Guaíra - Auditório Bento\, Curitiba - PR
+DESCRIPTION:Espetáculo de teatro musical que conta a história de Zumbi e Dandara e a herança do Quilombo dos Palmares\, no Guairão.\n\nhttps://agendaocuritiba.github.io/e/ecf01560df863.html
+URL:https://agendaocuritiba.github.io/e/ecf01560df863.html
+END:VEVENT
+END:VCALENDAR

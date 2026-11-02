@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e59800956f714@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T200000
+DTEND;TZID=America/Sao_Paulo:20261121T220000
+SUMMARY:Festival Mia Cara 11° Edição
+LOCATION:Teatro Guaíra\, Curitiba - PR
+DESCRIPTION:Festival de teatro em sua 11ª edição\, com espetáculos para todas as idades no Teatro José Maria Santos.\n\nhttps://agendaocuritiba.github.io/e/e59800956f714.html
+URL:https://agendaocuritiba.github.io/e/e59800956f714.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8e3402767fa1@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T190000
+DTEND;TZID=America/Sao_Paulo:20261211T210000
+SUMMARY:Festa - Dia Internacional da Montanha + Confraternização Soul Outdoor
+LOCATION:Refúgio AltaMontanha Pub\, Curitiba - PR
+DESCRIPTION:Festa de confraternização da comunidade outdoor para celebrar o Dia Internacional da Montanha no Refúgio AltaMontanha Pub.\n\nhttps://agendaocuritiba.github.io/e/e8e3402767fa1.html
+URL:https://agendaocuritiba.github.io/e/e8e3402767fa1.html
+END:VEVENT
+END:VCALENDAR

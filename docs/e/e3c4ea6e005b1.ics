@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3c4ea6e005b1@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T150000
+DTEND;TZID=America/Sao_Paulo:20261205T170000
+SUMMARY:Pagode do Fú - Festa do Branco
+LOCATION:DBRCK\, Curitiba - PR
+DESCRIPTION:Pagode do Fú em edição especial Festa do Branco\, com roda de samba e pagode no DBRCK.\n\nhttps://agendaocuritiba.github.io/e/e3c4ea6e005b1.html
+URL:https://agendaocuritiba.github.io/e/e3c4ea6e005b1.html
+END:VEVENT
+END:VCALENDAR

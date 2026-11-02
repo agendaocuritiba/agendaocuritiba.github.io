@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e265bacfbeb2b@agendao-curitiba
+DTSTAMP:20261101T090000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Rock Vs Polio Festival 2026
+LOCATION:Clay Highway Bar\, Curitiba - PR
+DESCRIPTION:Festival beneficente do Rotaract contra a poliomielite\, com bandas de rock nacional e baterias universitárias no Clay Highway Bar.\n\nhttps://agendaocuritiba.github.io/e/e265bacfbeb2b.html
+URL:https://agendaocuritiba.github.io/e/e265bacfbeb2b.html
+END:VEVENT
+END:VCALENDAR
