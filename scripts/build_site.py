@@ -57,6 +57,21 @@ def load_paid():
 PAID_IDS = load_paid()
 
 
+def load_tbd():
+    """state/sem_data.json: {id: motivo} de eventos cuja fonte dá um dia que não é o real (só o mês é conhecido)."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "state", "sem_data.json")
+    return json.load(open(p)) if os.path.exists(p) else {}
+
+
+TBD_IDS = load_tbd()
+MONTHS = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+
+def month_name(ym):
+    y, m = ym.split("-")[:2]
+    return f"{MONTHS[int(m) - 1]} de {y}"
+
+
 def is_free(e, pt):
     """Gratuito só com afirmação explícita e nenhum sinal de cobrança.
 
@@ -88,7 +103,11 @@ def slim(e):
         seen.add(o["source"]); links.append([o["source"], o["url"]])
     d = {"id": e["id"], "t": fix_caps(e["title"]), "c": e["category"], "s": e["start"], "e": e["end"],
          "h": e.get("time", ""), "v": (e.get("venue") or "").strip().rstrip("."), "f": e.get("firstSeen", ""), "L": links}
-    if e.get("dates") and len(e["dates"]) > 1:
+    tbd = e.get("tbd") or (e["start"][:7] if e["id"] in TBD_IDS else "")
+    if tbd:
+        # Data a definir: um card só, no primeiro dia (o dia 1 do mês, ou hoje se o mês já começou)
+        d["e"] = d["s"]; d["x"] = tbd
+    elif e.get("dates") and len(e["dates"]) > 1:
         d["d"] = e["dates"]
     if e.get("address"):
         d["a"] = e["address"]
@@ -110,7 +129,9 @@ def short(iso):
 
 
 def when_text(d, run):
-    """Texto de data para a prévia: 'sáb, 25 out', '25 out a 2 nov', 'até 2 nov'."""
+    """Texto de data para a prévia: 'sáb, 25 out', '25 out a 2 nov', 'até 2 nov', 'data a definir (maio de 2027)'."""
+    if d.get("x"):
+        return f"data a definir ({month_name(d['x'])})"
     if d.get("d"):
         nxt = [x for x in d["d"] if x >= run]
         if len(nxt) > 1:
@@ -234,7 +255,7 @@ def event_page(d, img, run):
 <main class="wrap">
   <p class="home"><a href="../"><span class="logo" aria-hidden="true"></span><span>Agendão <span>Curitiba</span></span></a></p>
   <article class="ev">
-    <p class="cat">{esc(d['c'])}{' · <b>Gratuito</b>' if d.get('g') else ''}</p>
+    <p class="cat">{esc(d['c'])}{' · <b>Gratuito</b>' if d.get('g') else ''}{' · <b class="tbd">Data a definir</b>' if d.get('x') else ''}</p>
     <h1>{title}</h1>
     <p class="meta"><b>{esc(when[:1].upper() + when[1:])}</b>{' · ' + esc(hour) if hour else ''}</p>
     <p class="meta">{esc(d['v'] or 'Local a definir')}{(' · ' + esc(d['a'])) if d.get('a') else ''}{maps}</p>
