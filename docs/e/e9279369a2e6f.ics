@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9279369a2e6f@agendao-curitiba
+DTSTAMP:20261102T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T210000
+DTEND;TZID=America/Sao_Paulo:20261114T230000
+SUMMARY:14 De Novembro\, Sábado\, A Partir Das 21H | 7 Anos Do Baile Dos Maduros
+LOCATION:Thermas CWB\, Curitiba - PR
+DESCRIPTION:Festa de 7 anos do Baile dos Maduros\, voltada a ursos\, maduros e admiradores\, com os DJs Adriano\, Dino e Beto Rodrigues.\n\nhttps://agendaocuritiba.github.io/e/e9279369a2e6f.html
+URL:https://agendaocuritiba.github.io/e/e9279369a2e6f.html
+END:VEVENT
+END:VCALENDAR
