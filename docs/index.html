@@ -86,12 +86,14 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .row + .row { margin-top: 8px; }
-.search { flex: 1 1 220px; min-width: 0; font: inherit; padding: 8px 12px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); }
+.search { flex: 1 1 150px; min-width: 0; font: inherit; padding: 8px 12px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); }
 .sel, .pick { font: inherit; font-size: 14px; padding: 8px 10px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); max-width: 100%; }
 .pick { cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .pick svg { width: 16px; height: 16px; color: var(--muted); }
 .pick.on { border-color: var(--accent); background: var(--sel); }
 .pick.on svg { color: var(--accent); }
+/* Busca, local e as duas datas numa linha só: o local fica estreito e corta o nome comprido com reticências */
+#venue { flex: 0 1 170px; width: 170px; min-width: 0; text-overflow: ellipsis; }
 .sel.on { border-color: var(--accent); background: var(--sel); }
 .lbl { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -100,7 +102,7 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .chip[aria-pressed="true"] { background: var(--chip); color: var(--fg); border-color: var(--kc, var(--fg)); }
 .chip[aria-pressed="true"] svg { color: var(--kc); }
 .chip.all[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-.chip.free { --kc: var(--free); }
+.chip.free { --kc: var(--free); margin-left: auto; }   /* na última linha das categorias, encostado à direita */
 .chip .n { font-variant-numeric: tabular-nums; opacity: .7; }
 
 /* Seletor de período */
@@ -209,6 +211,8 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 }
 @media (max-width: 700px) { .bar { position: static; } .pop.right { left: 0; right: auto; } }
 @media (max-width: 520px) {
+  .search { flex-basis: 100%; }   /* celular: busca inteira em cima; local divide a linha com a data do evento */
+  #venue { flex: 1 1 120px; width: auto; }
   .card { grid-template-columns: minmax(0, 1fr) 60px; padding: 11px 12px; gap: 8px; }
   .fig .ic { width: 46px; height: 46px; border-radius: 11px; }
   .fig .ic svg { width: 24px; height: 24px; }
@@ -238,12 +242,11 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     <div class="row">
       <a class="mini" href="#topo" aria-label="Voltar ao topo" tabindex="-1"><span class="mlogo" aria-hidden="true"></span><span>Agendão <span>Curitiba</span></span></a>
       <input class="search" id="q" type="search" placeholder="Buscar evento, artista ou local" aria-label="Buscar">
+      <select class="sel" id="venue" aria-label="Local"><option value="">Todos os locais</option></select>
       <div class="popwrap"><button class="pick" id="whenBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop" id="whenPop" role="dialog" aria-label="Data do evento" hidden></div></div>
       <div class="popwrap"><button class="pick" id="pubBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop right" id="pubPop" role="dialog" aria-label="Data de publicação" hidden></div></div>
-      <select class="sel" id="venue" aria-label="Local"><option value="">Todos os locais</option></select>
     </div>
     <div class="row"><div class="chips" id="cats" role="group" aria-label="Tipo de evento"></div></div>
-    <div class="row"><div class="chips" id="freeRow"></div></div>
   </div>
 </div>
 
@@ -462,7 +465,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const fr = el('button', 'chip free'); fr.type = 'button'; fr.setAttribute('aria-pressed', state.free);
     fr.innerHTML = svg(UI.free); fr.append(el('span', null, 'Só gratuitos'), el('span', 'n', nFree));
     fr.addEventListener('click', () => { state.free = !state.free; save(); shown = PAGE; draw(); });
-    $('freeRow').replaceChildren(fr);
+    box.append(fr);
   }
 
   // Links de agenda: Google e Outlook abrem já preenchidos; Apple/iOS usa o .ics estático do evento
