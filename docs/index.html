@@ -110,6 +110,7 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .vnone { color: var(--muted); font-size: 14px; padding: 8px; }
 .lbl { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+#cats { flex: 1 1 100%; }   /* ocupa a linha toda, para o "Só gratuitos" encostar à direita mesmo com poucas categorias */
 .chip { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .chip svg { width: 15px; height: 15px; }
 .chip[aria-pressed="true"] { background: var(--chip); color: var(--fg); border-color: var(--kc, var(--fg)); }
