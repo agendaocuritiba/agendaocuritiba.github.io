@@ -61,6 +61,20 @@ def tokens(title, stop=STOP):
     return out
 
 
+# Título que é só a sessão ("Sábado| 16h - 18h ou 20h30", "Estreia sexta 20h30"): alguns produtores
+# na Sympla criam uma página por dia e põem o horário no lugar do nome do espetáculo.
+SCHEDULE_WORDS = set("""segunda terca quarta quinta sexta sabado domingo feira seg ter qua qui sex sab dom
+estreia sessao sessoes horario horarios dia dias hoje amanha noite tarde manha matine fim semana
+feriado extra ou e a as o os de do da das dos ao partir em
+janeiro fevereiro marco abril maio junho julho agosto setembro outubro novembro dezembro
+jan fev mar abr mai jun jul ago set out nov dez""".split())
+
+
+def schedule_only(t):
+    words = re.findall(r"[a-z0-9]+", strip_acc(t.lower()))
+    return bool(words) and all(w in SCHEDULE_WORDS or re.fullmatch(r"\d{1,4}(h\d{0,2})?", w) for w in words)
+
+
 def pdate(s):
     d, m, y = s.strip().split("/")
     return date(int(y), int(m), int(d))
@@ -196,6 +210,8 @@ def group_score(g1, g2):
     best = 0
     for x in g1:
         for y in g2:
+            if schedule_only(x["title"]) or schedule_only(y["title"]):
+                continue  # sem nome não dá para comparar título
             best = max(best, title_score(clean_title(x["title"]), clean_title(y["title"])))
     if best == 0.7 and not venue_overlap(g1, g2):  # título de uma palavra curta: exige mesmo local
         return 0
@@ -213,7 +229,9 @@ def cluster(origs):
     # 1) mesma fonte: mesmo título + mesmo local = sessões do mesmo evento
     bykey = {}
     for o in sorted(origs, key=lambda x: x["start"]):
-        k = (o["source"], " ".join(sorted(tokens(clean_title(o["title"])))),
+        # títulos que são só a sessão: na mesma fonte e no mesmo local, são o mesmo espetáculo
+        tk = "~sessao" if schedule_only(o["title"]) else " ".join(sorted(tokens(clean_title(o["title"]))))
+        k = (o["source"], tk,
              " ".join(sorted(tokens(o["venue"], VENUE_STOP)))[:60])
         bykey.setdefault(k, []).append(o)
     groups = []
@@ -290,7 +308,9 @@ def classify(g):
 def build_event(g):
     g = sorted(g, key=lambda o: (SOURCE_ORDER.index(o["source"]) if o["source"] in SOURCE_ORDER else 99, o["start"]))
     tc = [o for o in g if o["source"] == "Turismo Curitiba"]
-    title = tc[0]["title"] if tc else min((clean_title(o["title"]) for o in g), key=len)
+    named = [o for o in g if not schedule_only(o["title"])]
+    tc = [o for o in tc if o in named]
+    title = tc[0]["title"] if tc else min((clean_title(o["title"]) for o in named or g), key=len)
     if title.isupper() and len(title) > 6:
         title = title.title()
     # Fonte com só o mês: se outra fonte traz um dia de verdade (que não seja o dia 1 do mesmo
@@ -316,6 +336,8 @@ def build_event(g):
         "sources": sorted({o["source"] for o in g}, key=lambda s: SOURCE_ORDER.index(s) if s in SOURCE_ORDER else 99),
         "originals": g,
     }
+    if not named:
+        ev["badTitle"] = True  # título é só dia/horário: a coleta troca pelo nome real (PASSO 5)
     if tbd:
         ev["tbd"] = tbd  # "aaaa-mm": mês anunciado, dia ainda não definido
     return ev
@@ -338,6 +360,9 @@ def main():
         match = next((prev_by_oid[o["oid"]] for o in g if o["oid"] in prev_by_oid and prev_by_oid[o["oid"]]["id"] not in used), None)
         if match:
             ev["id"], ev["firstSeen"] = match["id"], match["firstSeen"]
+            if ev.get("badTitle") and not schedule_only(match["title"]):
+                ev["title"] = match["title"]  # nome real escrito numa coleta anterior
+                del ev["badTitle"]
         else:
             ev["id"] = "e" + hashlib.sha1("|".join(sorted(o["oid"] for o in g)).encode()).hexdigest()[:12]
             ev["firstSeen"] = run
