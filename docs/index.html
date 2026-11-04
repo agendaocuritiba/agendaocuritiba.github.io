@@ -87,14 +87,27 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .row + .row { margin-top: 8px; }
 .search { flex: 1 1 150px; min-width: 0; font: inherit; padding: 8px 12px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); }
-.sel, .pick { font: inherit; font-size: 14px; padding: 8px 10px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); max-width: 100%; }
+.pick { font: inherit; font-size: 14px; padding: 8px 10px; border-radius: var(--r); border: 1px solid var(--line); background: var(--panel); color: var(--fg); max-width: 100%; }
 .pick { cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .pick svg { width: 16px; height: 16px; color: var(--muted); }
 .pick.on { border-color: var(--accent); background: var(--sel); }
 .pick.on svg { color: var(--accent); }
 /* Busca, local e as duas datas numa linha só: o local fica estreito e corta o nome comprido com reticências */
-#venue { flex: 0 1 170px; width: 170px; min-width: 0; text-overflow: ellipsis; }
-.sel.on { border-color: var(--accent); background: var(--sel); }
+.vwrap { flex: 0 1 170px; width: 170px; min-width: 0; }
+#venueBtn { width: 100%; }
+#venueBtn .vt { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+#venueBtn .car { width: 14px; height: 14px; flex: none; }
+/* Lista de locais com várias escolhas: busca no topo, caixas de marcar e a contagem com os outros filtros */
+.vpop { padding: 10px; gap: 8px; }
+.vq { font: inherit; font-size: 14px; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); width: 100%; }
+.vlist { max-height: min(340px, 55vh); overflow-y: auto; overscroll-behavior: contain; display: grid; align-content: start; margin-inline: -4px; }
+.vopt { display: flex; align-items: center; gap: 9px; padding: 7px 8px; border-radius: 8px; cursor: pointer; font-size: 14px; color: var(--fg); }
+.vopt:hover { background: var(--chip); }
+.vopt input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; flex: none; }
+.vopt .vn { flex: 1; min-width: 0; overflow-wrap: anywhere; line-height: 1.25; }
+.vopt .n { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+.vopt:has(input:checked) { background: var(--sel); }
+.vnone { color: var(--muted); font-size: 14px; padding: 8px; }
 .lbl { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
@@ -212,7 +225,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 @media (max-width: 700px) { .bar { position: static; } .pop.right { left: 0; right: auto; } }
 @media (max-width: 520px) {
   .search { flex-basis: 100%; }   /* celular: busca inteira em cima; local divide a linha com a data do evento */
-  #venue { flex: 1 1 120px; width: auto; }
+  .vwrap { flex: 1 1 120px; width: auto; }
   .card { grid-template-columns: minmax(0, 1fr) 60px; padding: 11px 12px; gap: 8px; }
   .fig .ic { width: 46px; height: 46px; border-radius: 11px; }
   .fig .ic svg { width: 24px; height: 24px; }
@@ -242,7 +255,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     <div class="row">
       <a class="mini" href="#topo" aria-label="Voltar ao topo" tabindex="-1"><span class="mlogo" aria-hidden="true"></span><span>Agendão <span>Curitiba</span></span></a>
       <input class="search" id="q" type="search" placeholder="Buscar evento, artista ou local" aria-label="Buscar">
-      <select class="sel" id="venue" aria-label="Local"><option value="">Todos os locais</option></select>
+      <div class="popwrap vwrap"><button class="pick" id="venueBtn" type="button" aria-haspopup="dialog" aria-expanded="false"><span class="vt">Todos os locais</span></button><div class="pop vpop" id="venuePop" role="dialog" aria-label="Locais" hidden><input class="vq" id="vq" type="search" placeholder="Filtrar locais" aria-label="Filtrar locais" autocomplete="off"><div class="vlist" id="vlist" role="group" aria-label="Locais"></div><div class="pop-f"><span id="vsel"></span><button type="button" id="vclr">Limpar</button></div></div></div>
       <div class="popwrap"><button class="pick" id="whenBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop" id="whenPop" role="dialog" aria-label="Data do evento" hidden></div></div>
       <div class="popwrap"><button class="pick" id="pubBtn" type="button" aria-haspopup="dialog" aria-expanded="false"></button><div class="pop right" id="pubPop" role="dialog" aria-label="Data de publicação" hidden></div></div>
     </div>
@@ -355,11 +368,11 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const rangeText = (a, b) => a === b ? short(a) : short(a) + ' – ' + short(b);
 
   // Estado (guardado no navegador)
-  const DEF = { when: { mode: 'all' }, pub: { mode: 'any' }, venue: '', free: false, off: [] };
+  const DEF = { when: { mode: 'all' }, pub: { mode: 'any' }, venues: [], free: false, off: [] };
   let saved = {}; try { saved = JSON.parse(store.get('agc-filters') || '{}') || {}; } catch (e) { saved = {}; }
-  const state = { q: '', when: saved.when || DEF.when, pub: saved.pub || DEF.pub, venue: saved.venue || '', free: !!saved.free, off: new Set(saved.off || []) };
+  const state = { q: '', when: saved.when || DEF.when, pub: saved.pub || DEF.pub, venues: new Set(saved.venues || (saved.venue ? [saved.venue] : [])), free: !!saved.free, off: new Set(saved.off || []) };
   if (state.when.mode === 'range' && state.when.b < todayIso) state.when = { mode: 'all' };
-  const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venue: state.venue, free: state.free, off: [...state.off] }));
+  const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venues: [...state.venues], free: state.free, off: [...state.off] }));
 
   let meta = {}, events = [], shown = PAGE;
   // Eventos que se repetem em vários dias e o usuário colapsou: mostram só a primeira data que os filtros deixam visível
@@ -369,12 +382,12 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const pubRange = () => rangeOf(state.pub, PUB_Q);
   const isNew = (e) => { const r = pubRange(); return !!r && !!e.f && e.f !== meta.firstRun && e.f >= r[0] && e.f <= r[1]; };
 
-  function match(e, skipCats) {
+  function match(e, skipCats, skipVenue) {
     if (e.e < todayIso) return false;
     if (!skipCats && state.off.has(e.c || 'Outros')) return false;
     if (state.free && !e.g) return false;
     if (state.pub.mode !== 'any' && !isNew(e)) return false;
-    if (state.venue && e.v !== state.venue) return false;
+    if (!skipVenue && state.venues.size && !state.venues.has(e.v)) return false;
     const w = rangeOf(state.when, WHEN_Q); if (w && !occursIn(e, w[0], w[1])) return false;
     if (state.q) { const hay = e._h || (e._h = norm([e.t, e.v, e.a, e.c, e.r].join(' '))); if (!norm(state.q).split(/\s+/).every((x) => hay.includes(x))) return false; }
     return true;
@@ -607,7 +620,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const reps = {}; all.forEach(([, e]) => { reps[e.id] = (reps[e.id] || 0) + 1; });
     const kept = new Set();
     const list = all.filter(([, e]) => !collapsed.has(e.id) || (!kept.has(e.id) && kept.add(e.id)));
-    $('venue').classList.toggle('on', !!state.venue);
+    drawVenues();
     const n = new Set(list.map((x) => x[1].id)).size;
     $('summary').textContent = list.length ? n + (n === 1 ? ' evento' : ' eventos') + (list.length > n ? ' em ' + list.length + ' datas' : '') : '';
     const out = $('out'); out.replaceChildren();
@@ -656,15 +669,57 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
 
   let qT;
   $('q').addEventListener('input', () => { clearTimeout(qT); qT = setTimeout(() => { state.q = $('q').value.trim(); shown = PAGE; draw(); }, 150); });
-  $('venue').addEventListener('change', () => { state.venue = $('venue').value; save(); shown = PAGE; draw(); });
+
+  // Locais: botão com a lista em popover; marcar um local não fecha a lista, e a contagem segue os outros filtros
+  const vBtn = $('venueBtn'), vPop = $('venuePop'), vList = $('vlist'), vQ = $('vq');
+  let vItems = [];
+  function buildVenues(names) {
+    vList.replaceChildren();
+    vItems = names.map((v) => {
+      const lab = el('label', 'vopt'), cb = el('input'); cb.type = 'checkbox'; cb.value = v;
+      const n = el('span', 'n'); lab.append(cb, el('span', 'vn', v), n); vList.append(lab);
+      cb.addEventListener('change', () => { cb.checked ? state.venues.add(v) : state.venues.delete(v); save(); shown = PAGE; draw(); });
+      return { v, lab, cb, n, h: norm(v) };
+    });
+    vList.append(el('p', 'vnone', 'Nenhum local com esses filtros.'));
+  }
+  function drawVenues() {
+    const vc = {}; events.forEach((e) => { if (e.v && match(e, false, true)) vc[e.v] = (vc[e.v] || 0) + 1; });
+    const q = norm(vQ.value.trim()); let any = false;
+    vItems.forEach((it) => {
+      const on = state.venues.has(it.v), c = vc[it.v] || 0;
+      it.cb.checked = on; it.n.textContent = c;
+      it.lab.hidden = !(on || c) || (q && !q.split(/\s+/).every((x) => it.h.includes(x)));
+      if (!it.lab.hidden) any = true;
+    });
+    vList.lastChild.hidden = any;
+    const sel = vItems.filter((it) => state.venues.has(it.v)), k = sel.length;
+    const t = k === 0 ? 'Todos os locais' : k === 1 ? sel[0].v : k + ' locais';
+    vBtn.innerHTML = svg(UI.pin); vBtn.append(el('span', 'vt', t)); vBtn.insertAdjacentHTML('beforeend', '<svg class="i car" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>');
+    vBtn.classList.toggle('on', k > 0); vBtn.title = k ? sel.map((it) => it.v).join(', ') : '';
+    vBtn.setAttribute('aria-label', 'Local: ' + (k ? sel.map((it) => it.v).join(', ') : 'todos'));
+    $('vsel').textContent = k ? (k === 1 ? '1 selecionado' : k + ' selecionados') : 'Marque um ou mais locais';
+    $('vclr').hidden = !k;
+  }
+  const vClose = () => { vPop.hidden = true; vBtn.setAttribute('aria-expanded', 'false'); };
+  vBtn.addEventListener('click', (ev) => {
+    ev.stopPropagation(); if (!vPop.hidden) { vClose(); return; }
+    document.querySelectorAll('.pop').forEach((p) => { p.hidden = true; }); document.querySelectorAll('.pick[aria-expanded]').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+    vQ.value = ''; drawVenues(); vPop.hidden = false; vBtn.setAttribute('aria-expanded', 'true'); vList.scrollTop = 0;
+    if (matchMedia('(hover: hover)').matches) vQ.focus();   // no celular, não abre o teclado sozinho
+  });
+  vPop.addEventListener('click', (ev) => ev.stopPropagation());
+  document.addEventListener('click', () => { if (!vPop.hidden) vClose(); });
+  document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && !vPop.hidden) { vClose(); vBtn.focus(); } });
+  vQ.addEventListener('input', drawVenues);
+  $('vclr').addEventListener('click', () => { state.venues.clear(); save(); shown = PAGE; draw(); });
   $('more').addEventListener('click', () => { shown += PAGE; draw(); });
 
   fetch(DATA_URL).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((j) => {
     meta = j.meta || {}; events = (j.events || []).filter((e) => e.e >= todayIso);
     const vc = {}; events.forEach((e) => { if (e.v) vc[e.v] = (vc[e.v] || 0) + 1; });
-    Object.keys(vc).filter((v) => vc[v] > 1).sort((a, b) => a.localeCompare(b, 'pt')).forEach((v) => $('venue').append(new Option(v + ' (' + vc[v] + ')', v)));
-    if (state.venue && !vc[state.venue]) state.venue = '';
-    $('venue').value = state.venue;
+    buildVenues(Object.keys(vc).filter((v) => vc[v] > 1).sort((a, b) => a.localeCompare(b, 'pt')));
+    [...state.venues].forEach((v) => { if (!(vc[v] > 1)) state.venues.delete(v); });
     const h = location.hash.slice(1);
     if (h && events.some((e) => e.id === h)) shown = Infinity;
     draw();
