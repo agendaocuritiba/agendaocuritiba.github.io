@@ -123,7 +123,12 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .pop-f button { font: inherit; font-size: 13px; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 4px; text-decoration: underline; text-underline-offset: 3px; }
 
 .summary { color: var(--muted); font-size: 14px; padding-block: 12px 0; }
-.day { font-family: var(--font-display); font-weight: 700; font-size: 19px; margin: 22px 0 8px; display: flex; align-items: baseline; gap: 10px; text-wrap: balance; }
+/* Linha da data: fica travada logo abaixo da barra de filtros (ou da faixa da marca, no celular) até a próxima data empurrá-la.
+   --stick-h é a altura do que fica fixo no topo, medida no script. O fundo e o padding cobrem os cards que passam por baixo. */
+.day { font-family: var(--font-display); font-weight: 700; font-size: 19px; margin: 14px 0 0; padding-block: 8px; display: flex; align-items: baseline; gap: 10px; text-wrap: balance;
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--stick-h, 0px)); z-index: 3; background: var(--bg); }
+.day.pin { border-bottom: 1px solid var(--line); margin-bottom: -1px; }
+.card { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + var(--stick-h, 0px) + 64px); }
 .day small { font-family: var(--font-body); font-weight: 500; font-size: 13px; color: var(--muted); }
 .list { display: grid; gap: 8px; }
 
@@ -606,10 +611,11 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     if (!list.length) { out.append(el('p', 'empty', 'Nenhum evento com esses filtros. Tente ampliar o período ou marcar mais categorias.')); $('more').hidden = true; return; }
     let cur = null, box = null; const seen = new Set();
     list.slice(0, shown).forEach(([d, e]) => {
-      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); out.append(hh, box); }
+      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
       box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
     });
     $('more').hidden = list.length <= shown;
+    requestAnimationFrame(pinDay);
   }
 
   // Colapsa/expande as datas de um evento sem mover o card clicado (ou o que sobra dele) na tela
@@ -629,9 +635,21 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const hero = document.querySelector('.hero'), name = hero.querySelector('h1'), bar = document.querySelector('.bar'), mini = bar.querySelector('.mini');
   let pT = 0;
   const onScroll = () => { pT = 0; const c = hero.getBoundingClientRect().bottom, a = name.getBoundingClientRect().bottom; const p = Math.min(1, Math.max(0, 1 - c / Math.max(1, c - a)));
-    bar.style.setProperty('--p', p.toFixed(3)); const on = p > 0.6; bar.classList.toggle('stuck', on); mini.tabIndex = on ? 0 : -1; };
+    bar.style.setProperty('--p', p.toFixed(3)); const on = p > 0.6; bar.classList.toggle('stuck', on); mini.tabIndex = on ? 0 : -1; pinDay(); };
   addEventListener('scroll', () => { if (!pT) pT = requestAnimationFrame(onScroll); }, { passive: true });
-  addEventListener('resize', onScroll); onScroll();
+
+  // Linha da data travada: mede o que fica fixo no topo (a barra de filtros; no celular, a faixa da marca) e marca com uma linha a data que está travada
+  const narrow = matchMedia('(max-width: 700px)');
+  let stickH = 0;
+  function measureStick() { stickH = narrow.matches ? mini.offsetHeight : bar.offsetHeight; document.documentElement.style.setProperty('--stick-h', stickH + 'px'); }
+  function pinDay() {
+    const hs = document.querySelectorAll('#out .day'); if (!hs.length) return;
+    const lim = narrow.matches ? mini.getBoundingClientRect().bottom : bar.getBoundingClientRect().bottom;
+    // Travada = parada no limite e fora da posição natural; quando a próxima data a empurra, a linha some
+    hs.forEach((h) => { const r = h.getBoundingClientRect(); h.classList.toggle('pin', Math.abs(r.top - lim) < 1.5 && h.parentNode.getBoundingClientRect().top < r.top - 1); });
+  }
+  new ResizeObserver(() => { measureStick(); pinDay(); }).observe(bar);
+  addEventListener('resize', () => { measureStick(); onScroll(); }); measureStick(); onScroll();
 
   let qT;
   $('q').addEventListener('input', () => { clearTimeout(qT); qT = setTimeout(() => { state.q = $('q').value.trim(); shown = PAGE; draw(); }, 150); });
