@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee00c88714544@agendao-curitiba
+DTSTAMP:20261103T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T193000
+DTEND;TZID=America/Sao_Paulo:20261209T213000
+SUMMARY:DRUM GOSPEL DAY CWB | JC Batera e Eliade Batera
+LOCATION:Loja Drum Shop\, Curitiba - PR
+DESCRIPTION:Encontro de bateria gospel com os bateristas JC Batera e Eliade Batera\, na loja Drum Shop\, no Centro.\n\nhttps://agendaocuritiba.github.io/e/ee00c88714544.html
+URL:https://agendaocuritiba.github.io/e/ee00c88714544.html
+END:VEVENT
+END:VCALENDAR

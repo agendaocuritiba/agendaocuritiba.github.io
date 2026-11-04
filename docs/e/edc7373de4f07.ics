@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edc7373de4f07@agendao-curitiba
+DTSTAMP:20261103T090000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:25ª edição | Festival de Pão com Bolinho
+LOCATION:Estabelecimentos participantes\, Curitiba - PR
+DESCRIPTION:25ª edição do festival em que bares e restaurantes servem versões próprias do sanduíche de pão com bolinho\, de porco defumado a eisbein e bolinho árabe.\n\nhttps://agendaocuritiba.github.io/e/edc7373de4f07.html
+URL:https://agendaocuritiba.github.io/e/edc7373de4f07.html
+END:VEVENT
+END:VCALENDAR

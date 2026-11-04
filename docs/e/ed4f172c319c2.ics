@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed4f172c319c2@agendao-curitiba
+DTSTAMP:20261103T090000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:9º Pitch Day Experience 2026 | UFPR
+LOCATION:Auditório do Setor de Tecnologia\, Centro Politécnico da UFPR\; Bodebrown\, Curitiba - PR
+DESCRIPTION:Semana de ciência\, inovação e empreendedorismo da UFPR\, com palestras\, apresentação de startups\, hackathon e desafios de robótica.\n\nhttps://agendaocuritiba.github.io/e/ed4f172c319c2.html
+URL:https://agendaocuritiba.github.io/e/ed4f172c319c2.html
+END:VEVENT
+END:VCALENDAR

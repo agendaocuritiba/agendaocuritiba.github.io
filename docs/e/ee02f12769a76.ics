@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ee02f12769a76@agendao-curitiba
-DTSTAMP:20261102T090000Z
+DTSTAMP:20261103T090000Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Veigh
-LOCATION:Live Curitiba\, Curitiba - PR
+LOCATION:Live Curitiba\, R. Itajubá\, 143 - Novo Mundo\, Curitiba - PR
 DESCRIPTION:Show de Veigh na Live Curitiba\, com setores de pista\, pista premium\, área VIP e camarotes\; para maiores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/ee02f12769a76.html
 URL:https://agendaocuritiba.github.io/e/ee02f12769a76.html
 END:VEVENT

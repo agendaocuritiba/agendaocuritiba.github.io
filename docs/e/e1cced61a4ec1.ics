@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1cced61a4ec1@agendao-curitiba
+DTSTAMP:20261103T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T190000
+DTEND;TZID=America/Sao_Paulo:20261212T210000
+SUMMARY:Festival Vozes Da Indústria | Etapa Final - Curitiba
+LOCATION:Campus da Indústria - Sistema Fiep | Auditório Mário De Mari\, Curitiba - PR
+DESCRIPTION:Final do festival de música do Sesi\, em que trabalhadores da indústria apresentam canções autorais e interpretações.\n\nhttps://agendaocuritiba.github.io/e/e1cced61a4ec1.html
+URL:https://agendaocuritiba.github.io/e/e1cced61a4ec1.html
+END:VEVENT
+END:VCALENDAR

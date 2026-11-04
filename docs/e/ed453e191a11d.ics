@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed453e191a11d@agendao-curitiba
+DTSTAMP:20261103T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T221500
+DTEND;TZID=America/Sao_Paulo:20261129T001500
+SUMMARY:Cada um com Seus Problemas com Gabi Giordano e Luiz Ferreira/ Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Gabi Giordano e Luiz Ferreira fazem stand-up sobre encontros desastrosos\, perrengues da vida adulta e os altos e baixos do amor.\n\nhttps://agendaocuritiba.github.io/e/ed453e191a11d.html
+URL:https://agendaocuritiba.github.io/e/ed453e191a11d.html
+END:VEVENT
+END:VCALENDAR

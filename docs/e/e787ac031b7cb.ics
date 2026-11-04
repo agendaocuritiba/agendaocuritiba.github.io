@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e787ac031b7cb@agendao-curitiba
-DTSTAMP:20261102T090000Z
+DTSTAMP:20261103T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261122T143000
 DTEND;TZID=America/Sao_Paulo:20261122T163000
-SUMMARY:Spidey e seus amigos Vingadores
-LOCATION:Teatro Fernanda Montenegro\, Curitiba - PR
+SUMMARY:Spidey e Seus Amigos Vingadores
+LOCATION:Teatro Fernanda Montenegro\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:Peça infantil em que Spidey se junta a Gwen\, Miles\, Hulk e Homem de Ferro contra o Duende Verde e o Rei do Crime\, com músicas e interação.\n\nhttps://agendaocuritiba.github.io/e/e787ac031b7cb.html
 URL:https://agendaocuritiba.github.io/e/e787ac031b7cb.html
 END:VEVENT

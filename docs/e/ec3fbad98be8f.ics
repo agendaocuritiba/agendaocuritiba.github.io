@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec3fbad98be8f@agendao-curitiba
+DTSTAMP:20261103T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261106T203000
+DTEND;TZID=America/Sao_Paulo:20261106T223000
+SUMMARY:Estreia sexta 20h30
+LOCATION:No estacionamento do Toscana Restaurante show\, Curitiba - PR
+DESCRIPTION:Estreia do Circo Las Vegas em Curitiba\, espetáculo para a família com acrobacias e magia\, montado no estacionamento do Toscana.\n\nhttps://agendaocuritiba.github.io/e/ec3fbad98be8f.html
+URL:https://agendaocuritiba.github.io/e/ec3fbad98be8f.html
+END:VEVENT
+END:VCALENDAR
