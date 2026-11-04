@@ -64,6 +64,15 @@ def load_tbd():
 
 
 TBD_IDS = load_tbd()
+
+
+def load_titles():
+    """state/titulos.json: {id: nome real} de eventos cujo título na fonte é só o dia/horário da sessão."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "state", "titulos.json")
+    return json.load(open(p)) if os.path.exists(p) else {}
+
+
+TITLE_IDS = load_titles()
 MONTHS = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
 
@@ -101,7 +110,7 @@ def slim(e):
         if o["source"] in seen or not o.get("url"):
             continue
         seen.add(o["source"]); links.append([o["source"], o["url"]])
-    d = {"id": e["id"], "t": fix_caps(e["title"]), "c": e["category"], "s": e["start"], "e": e["end"],
+    d = {"id": e["id"], "t": TITLE_IDS.get(e["id"]) or fix_caps(e["title"]), "c": e["category"], "s": e["start"], "e": e["end"],
          "h": e.get("time", ""), "v": (e.get("venue") or "").strip().rstrip("."), "f": e.get("firstSeen", ""), "L": links}
     tbd = e.get("tbd") or (e["start"][:7] if e["id"] in TBD_IDS else "")
     if tbd:
