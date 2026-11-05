@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee913e08bf5e0@agendao-curitiba
+DTSTAMP:20261104T090000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:The Symphony Of Expedition 33
+LOCATION:Teatro Torres Botânico\, Rua Pergentina Silva Soares\, 159 - Jardim Botânico\, Curitiba - PR
+DESCRIPTION:Concerto-tributo com arranjos orquestrais da trilha de Lorien Testard para o RPG Clair Obscur: Expedition 33.\n\nhttps://agendaocuritiba.github.io/e/ee913e08bf5e0.html
+URL:https://agendaocuritiba.github.io/e/ee913e08bf5e0.html
+END:VEVENT
+END:VCALENDAR

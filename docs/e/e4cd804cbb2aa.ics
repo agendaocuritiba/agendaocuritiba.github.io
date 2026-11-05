@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4cd804cbb2aa@agendao-curitiba
+DTSTAMP:20261104T090000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Festa das Nações
+LOCATION:greja Batista Shalon\, R. David Tows\, 208\, Xaxim\, Curitiba/PR. CEP 81830-270\, Curitiba - PR
+DESCRIPTION:Festa beneficente na Igreja Batista Shalon com comidas típicas de vários países e brinquedos\; a renda vai para escolas em Guiné-Bissau.\n\nhttps://agendaocuritiba.github.io/e/e4cd804cbb2aa.html
+URL:https://agendaocuritiba.github.io/e/e4cd804cbb2aa.html
+END:VEVENT
+END:VCALENDAR

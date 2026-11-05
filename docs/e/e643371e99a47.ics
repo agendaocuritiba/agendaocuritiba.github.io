@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e643371e99a47@agendao-curitiba
-DTSTAMP:20261103T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261108T170000
-DTEND;TZID=America/Sao_Paulo:20261108T190000
-SUMMARY:Jovens Tardes\, com Wanderlea & The Originals
-LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
+DTSTAMP:20261104T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261108T180000
+DTEND;TZID=America/Sao_Paulo:20261108T200000
+SUMMARY:Jovens Tardes com Wanderléa e The Originals
+LOCATION:Teatro Guaíra\, R. Conselheiro Laurindo\, 175\, Centro\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e643371e99a47.html
 URL:https://agendaocuritiba.github.io/e/e643371e99a47.html
 END:VEVENT

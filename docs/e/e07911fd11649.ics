@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e07911fd11649@agendao-curitiba
+DTSTAMP:20261104T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T163000
+DTEND;TZID=America/Sao_Paulo:20261122T183000
+SUMMARY:Natal Mágico das Irmãs Gabby e Doozie
+LOCATION:Teatro Fernanda Montenegro\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:Peça infantil de Natal em que Gabby recebe a irmã Doozie e\, com os gatos da Casa Mágica\, as duas vivem uma aventura.\n\nhttps://agendaocuritiba.github.io/e/e07911fd11649.html
+URL:https://agendaocuritiba.github.io/e/e07911fd11649.html
+END:VEVENT
+END:VCALENDAR

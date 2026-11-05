@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef3a06b31e186@agendao-curitiba
+DTSTAMP:20261104T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T193000
+DTEND;TZID=America/Sao_Paulo:20261218T213000
+SUMMARY:Musical de Natal | ESSÊNCIA
+LOCATION:Igreja Batista Shalon\, Rua David Tows\, 208\, Xaxim\, Curitiba/PR. CEP 81830-270\, Curitiba - PR
+DESCRIPTION:Musical natalino com música\, dança e teatro sobre uma jovem em busca de sentido\, com reflexão sobre fé\, família e propósito.\n\nhttps://agendaocuritiba.github.io/e/ef3a06b31e186.html
+URL:https://agendaocuritiba.github.io/e/ef3a06b31e186.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e27e44e5e1db3@agendao-curitiba
+DTSTAMP:20261104T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261112T190000
+DTEND;TZID=America/Sao_Paulo:20261112T210000
+SUMMARY:Afterwork W/ Dj Tree (Ita)
+LOCATION:R. Comendador Araújo\, 534 - Centro\, Curitiba - PR\, 80420-000\, Brazil\, Curitiba - PR
+DESCRIPTION:Afterwork no Speaker com set do DJ italiano Tree\, ligado à cena eletrônica de Berlim\, entre cafés\, drinques e cozinha de autor.\n\nhttps://agendaocuritiba.github.io/e/e27e44e5e1db3.html
+URL:https://agendaocuritiba.github.io/e/e27e44e5e1db3.html
+END:VEVENT
+END:VCALENDAR

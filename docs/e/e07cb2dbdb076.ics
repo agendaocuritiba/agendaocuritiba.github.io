@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e07cb2dbdb076@agendao-curitiba
+DTSTAMP:20261104T090000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Clubinho de Histórias
+LOCATION:Teatro José Maria Santos\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e07cb2dbdb076.html
+URL:https://agendaocuritiba.github.io/e/e07cb2dbdb076.html
+END:VEVENT
+END:VCALENDAR

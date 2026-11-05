@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ee5af5416b5cb@agendao-curitiba
-DTSTAMP:20261103T090000Z
+DTSTAMP:20261104T090000Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
-SUMMARY:Arqueologias Do Futuro
-LOCATION:CAIXA CULTURAL CURITIBA\, Curitiba - PR
+SUMMARY:Arqueologias do Futuro
+LOCATION:Caixa Cultural Curitiba\, Rua Conselheiro Laurindo nº 280\, Centro\, Curitiba - PR
 DESCRIPTION:Peça-performance de Mauricio Lima\, premiada com o Shell de direção\, sobre memória\, corpo e juventude negra a partir do Complexo do Alemão.\n\nhttps://agendaocuritiba.github.io/e/ee5af5416b5cb.html
 URL:https://agendaocuritiba.github.io/e/ee5af5416b5cb.html
 END:VEVENT
