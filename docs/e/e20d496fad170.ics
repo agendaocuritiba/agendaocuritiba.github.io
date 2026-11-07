@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e20d496fad170@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261111T200000
+DTEND;TZID=America/Sao_Paulo:20261111T220000
+SUMMARY:O Santo
+LOCATION:Instituto Cultural Gabriela Valentina\, Rua XV de Novembro\, 266 - 9º andar\, Curitiba - PR
+DESCRIPTION:Peça da Cia. Contemporânea do Fim do Mundo no Instituto Cultural Gabriela Valentina\, com entrada mediante reserva.\n\nhttps://agendaocuritiba.github.io/e/e20d496fad170.html
+URL:https://agendaocuritiba.github.io/e/e20d496fad170.html
+END:VEVENT
+END:VCALENDAR

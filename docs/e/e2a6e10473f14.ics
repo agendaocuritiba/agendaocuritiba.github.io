@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2a6e10473f14@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261203T235900
+DTEND;TZID=America/Sao_Paulo:20261204T015900
+SUMMARY:Formatura Feras Bj Divina 2026 - Welcome To Miami
+LOCATION:Bosco Gastronomia e Eventos\, Curitiba - PR
+DESCRIPTION:Baile de formatura Feras BJ Divina com tema Miami\; ingressos extras para convidados após a meia-noite.\n\nhttps://agendaocuritiba.github.io/e/e2a6e10473f14.html
+URL:https://agendaocuritiba.github.io/e/e2a6e10473f14.html
+END:VEVENT
+END:VCALENDAR

@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ef9cc25bf9c0d@agendao-curitiba
-DTSTAMP:20261104T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261107T210000
-DTEND;TZID=America/Sao_Paulo:20261107T230000
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T210000
+DTEND;TZID=America/Sao_Paulo:20261114T230000
 SUMMARY:Especial com GERSON CONRAD
 LOCATION:AKASA Arte e Consciência\, Curitiba - PR
 DESCRIPTION:Show intimista de Gerson Conrad\, ex-integrante do Secos e Molhados\, revisitando canções da carreira como Rosa de Hiroshima.\n\nhttps://agendaocuritiba.github.io/e/ef9cc25bf9c0d.html

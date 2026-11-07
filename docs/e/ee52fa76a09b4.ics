@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee52fa76a09b4@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Carol Delgado - Energia Feminina
+LOCATION:Teatro UP Experience - TUX\, Curitiba - PR
+DESCRIPTION:Carol Delgado apresenta o espetáculo Energia Feminina no Teatro UP Experience.\n\nhttps://agendaocuritiba.github.io/e/ee52fa76a09b4.html
+URL:https://agendaocuritiba.github.io/e/ee52fa76a09b4.html
+END:VEVENT
+END:VCALENDAR

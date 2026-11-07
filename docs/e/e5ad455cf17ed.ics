@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5ad455cf17ed@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T200000
+DTEND;TZID=America/Sao_Paulo:20261121T220000
+SUMMARY:Smokefest
+LOCATION:Bar da irai ( atrás do lava car dois irmãos)\, Curitiba - PR
+DESCRIPTION:Noite de rock pesado com as bandas Stygian\, Bestiary e Fumantes.inc.\n\nhttps://agendaocuritiba.github.io/e/e5ad455cf17ed.html
+URL:https://agendaocuritiba.github.io/e/e5ad455cf17ed.html
+END:VEVENT
+END:VCALENDAR

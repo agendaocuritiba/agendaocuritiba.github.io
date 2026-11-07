@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e96beba8cda6f@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T235900
+DTEND;TZID=America/Sao_Paulo:20261205T015900
+SUMMARY:Formatura Medianeira Khora 2026
+LOCATION:Clube Curitibano - Sede Barão do Serro Azul\, Curitiba - PR
+DESCRIPTION:Baile de formatura do Colégio Medianeira\, turma Khora\; ingressos extras para convidados após a meia-noite.\n\nhttps://agendaocuritiba.github.io/e/e96beba8cda6f.html
+URL:https://agendaocuritiba.github.io/e/e96beba8cda6f.html
+END:VEVENT
+END:VCALENDAR

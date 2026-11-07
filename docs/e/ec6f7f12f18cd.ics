@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec6f7f12f18cd@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T140000
+DTEND;TZID=America/Sao_Paulo:20261205T160000
+SUMMARY:14h Fábrica de Biscoitos Natalinos | Shopping AguaVerde & Chef Gourmet
+LOCATION:Shopping AguaVerde\, Curitiba - PR
+DESCRIPTION:Oficina para crianças decorarem biscoitos de Natal\, em parceria com a escola Chef Gourmet\, no Shopping AguaVerde.\n\nhttps://agendaocuritiba.github.io/e/ec6f7f12f18cd.html
+URL:https://agendaocuritiba.github.io/e/ec6f7f12f18cd.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea4f21dfafe1c@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T200000
+DTEND;TZID=America/Sao_Paulo:20261113T220000
+SUMMARY:3 Anos A Que Funk Chegamos?
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:Festa de funk que comemora três anos do projeto A Que Funk Chegamos?\, no Tangie Under Club.\n\nhttps://agendaocuritiba.github.io/e/ea4f21dfafe1c.html
+URL:https://agendaocuritiba.github.io/e/ea4f21dfafe1c.html
+END:VEVENT
+END:VCALENDAR

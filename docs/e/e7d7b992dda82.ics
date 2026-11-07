@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7d7b992dda82@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T190000
+DTEND;TZID=America/Sao_Paulo:20261126T210000
+SUMMARY:Bouillabaisse & Moqueca – Semelhanças e Diferenças | CHEF POUR UN JOUR
+LOCATION:Aliança Francesa de Curitiba - Sede Prudente de Moraes\, Curitiba - PR
+DESCRIPTION:Encontro culinário do Chef pour un jour na Aliança Francesa\, comparando bouillabaisse e moqueca\, com degustação.\n\nhttps://agendaocuritiba.github.io/e/e7d7b992dda82.html
+URL:https://agendaocuritiba.github.io/e/e7d7b992dda82.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e675968e596e6@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:A Compás - Tati Barcellos + João La Furia + Mauro Castilhos
+LOCATION:Casa Abierta Y Tablao Flamenco Tati Barcellos\, Rua Carlos De Laet\, 4405\, Curitiba - PR
+DESCRIPTION:Tablao flamenco com o guitarrista João la Furia\, percussão de Mauro Castillos e baile de Tati Barcellos e alunos.\n\nhttps://agendaocuritiba.github.io/e/e675968e596e6.html
+URL:https://agendaocuritiba.github.io/e/e675968e596e6.html
+END:VEVENT
+END:VCALENDAR

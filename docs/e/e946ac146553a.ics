@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e946ac146553a@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Jon Secada & Marina Elali | Curitiba
+LOCATION:TEATRO GUAÍRA\, Curitiba - PR
+DESCRIPTION:O cantor cubano-americano Jon Secada divide o palco com a cantora Marina Elali no Teatro Guaíra.\n\nhttps://agendaocuritiba.github.io/e/e946ac146553a.html
+URL:https://agendaocuritiba.github.io/e/e946ac146553a.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee323f2344bc1@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261203T180000
+DTEND;TZID=America/Sao_Paulo:20261203T200000
+SUMMARY:Fragmentos do Infinito
+LOCATION:Teatro Positivo\, Curitiba - PR
+DESCRIPTION:Espetáculo de dança dos alunos da Offbeat Dance Studio sobre um astronauta perdido no multiverso\, com K-pop\, hip hop e vogue.\n\nhttps://agendaocuritiba.github.io/e/ee323f2344bc1.html
+URL:https://agendaocuritiba.github.io/e/ee323f2344bc1.html
+END:VEVENT
+END:VCALENDAR

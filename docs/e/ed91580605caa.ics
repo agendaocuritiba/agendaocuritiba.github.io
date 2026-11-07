@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed91580605caa@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270305T193000
+DTEND;TZID=America/Sao_Paulo:20270305T213000
+SUMMARY:Pauã em Seja Livre para Ser
+LOCATION:Teatro Bom Jesus\, Curitiba - PR
+DESCRIPTION:Pauã apresenta Seja Livre para Ser\, show de música medicina voltado à reflexão\; data remarcada de novembro.\n\nhttps://agendaocuritiba.github.io/e/ed91580605caa.html
+URL:https://agendaocuritiba.github.io/e/ed91580605caa.html
+END:VEVENT
+END:VCALENDAR

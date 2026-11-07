@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb0ce2be805e6@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T140000
+DTEND;TZID=America/Sao_Paulo:20261206T160000
+SUMMARY:Pool Party
+LOCATION:Soma Galeria\, Curitiba - PR
+DESCRIPTION:Festa de fim de ano da escola Harmonia na Soma Galeria\, com apresentações de alunos\, palco livre e piscina.\n\nhttps://agendaocuritiba.github.io/e/eb0ce2be805e6.html
+URL:https://agendaocuritiba.github.io/e/eb0ce2be805e6.html
+END:VEVENT
+END:VCALENDAR

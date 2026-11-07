@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebed53be7a4c5@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270321T140000
+DTEND;TZID=America/Sao_Paulo:20270321T160000
+SUMMARY:Classicos Encantados - O Musical In Concert
+LOCATION:Teatro Positivo\, Curitiba - PR
+DESCRIPTION:Musical que reúne canções de clássicos infantis como A Pequena Sereia\, Cinderella e Aladdin\, cantadas ao vivo.\n\nhttps://agendaocuritiba.github.io/e/ebed53be7a4c5.html
+URL:https://agendaocuritiba.github.io/e/ebed53be7a4c5.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e616ab5d27282@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Toy Story
+LOCATION:Teatro Bom Jesus\, Curitiba - PR
+DESCRIPTION:Espetáculo baseado em Toy Story no Teatro Bom Jesus.\n\nhttps://agendaocuritiba.github.io/e/e616ab5d27282.html
+URL:https://agendaocuritiba.github.io/e/e616ab5d27282.html
+END:VEVENT
+END:VCALENDAR

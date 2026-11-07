@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea1590b5bb01f@agendao-curitiba
+DTSTAMP:20261107T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T223000
+DTEND;TZID=America/Sao_Paulo:20261121T003000
+SUMMARY:Vamo Vê Se o Show É Bom? com Lucas Alves / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Lucas Alves\, conhecido pelos vídeos de humor sobre carros\, traz seu show de stand-up ao Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/ea1590b5bb01f.html
+URL:https://agendaocuritiba.github.io/e/ea1590b5bb01f.html
+END:VEVENT
+END:VCALENDAR
