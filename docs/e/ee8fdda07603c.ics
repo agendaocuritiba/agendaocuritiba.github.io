@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee8fdda07603c@agendao-curitiba
+DTSTAMP:20261108T090000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Circo & Cheer: Uma Viagem no Tempo
+LOCATION:Teatro Marista Santa Maria\, R. Prof. Joaquim De Matos Barreto\, 98\, Curitiba - PR
+DESCRIPTION:Espetáculo teatral que une circo e cheer numa narrativa sobre uma viagem no tempo.\n\nhttps://agendaocuritiba.github.io/e/ee8fdda07603c.html
+URL:https://agendaocuritiba.github.io/e/ee8fdda07603c.html
+END:VEVENT
+END:VCALENDAR

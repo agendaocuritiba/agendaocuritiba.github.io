@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0af63f0cffac@agendao-curitiba
+DTSTAMP:20261108T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T200000
+DTEND;TZID=America/Sao_Paulo:20261114T220000
+SUMMARY:Jujubass - 14/11
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:Noite de funk e ritmados no Tangie Under Club com os DJs Chrisl\, Gabb\, Mari Silva e Jujuba.\n\nhttps://agendaocuritiba.github.io/e/e0af63f0cffac.html
+URL:https://agendaocuritiba.github.io/e/e0af63f0cffac.html
+END:VEVENT
+END:VCALENDAR

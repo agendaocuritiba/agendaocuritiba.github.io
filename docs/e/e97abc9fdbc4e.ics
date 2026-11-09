@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e97abc9fdbc4e@agendao-curitiba
+DTSTAMP:20261108T090000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Gota d'água
+LOCATION:Av. João Gualberto\, 250\, Curitiba - PR
+DESCRIPTION:Montagem de Gota d'Água pela Cia (Dê)Lírios\, turma de teatro do Colégio Estadual do Paraná\, com direção de Ana Cristina.\n\nhttps://agendaocuritiba.github.io/e/e97abc9fdbc4e.html
+URL:https://agendaocuritiba.github.io/e/e97abc9fdbc4e.html
+END:VEVENT
+END:VCALENDAR

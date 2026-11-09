@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec3fbad98be8f@agendao-curitiba
-DTSTAMP:20261107T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261108T203000
-DTEND;TZID=America/Sao_Paulo:20261108T223000
+DTSTAMP:20261108T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261109T203000
+DTEND;TZID=America/Sao_Paulo:20261109T223000
 SUMMARY:Circo Las Vegas
 LOCATION:No estacionamento do Toscana Restaurante show\, Curitiba - PR
 DESCRIPTION:Estreia do Circo Las Vegas em Curitiba\, espetáculo para a família com acrobacias e magia\, montado no estacionamento do Toscana.\n\nhttps://agendaocuritiba.github.io/e/ec3fbad98be8f.html
