@@ -282,6 +282,8 @@ RULES = [
     ("Festa/Balada", r"\bdj\b|all night|techno|after hours|solomun|vintage culture|\balok\b|\bbaile\b|garota sunset|five am|who we are|tranquilo apresenta|chemical surf|curitiba folia|moustache sound|bpm|\bclub vibe\b|\+55 bar|\bczar\b|ceu curitiba|eli iwasa|james zabiela|breaking beattz|showcase|\bgabe\b|\bliu\b|\bzac\b|\bvermont\b|halloween|hallowzot|festa|reveillon|virada|party|revoada|circus|escangalha|antiquario|carnaval|micareta|rumberos|k-pop|watch party|formatura"),
     ("Festival", r"festival|fest\b|kemet"),
 ]
+# shows de palco vendidos em sites de balada (ex.: Shotgun): o título manda, antes da dica do site
+SHOW_RULES = [("Show", r"ze ibarra|sob ruido")]
 HINT_RULES = [("Festa/Balada", r"balada|eletr[oô]nica"), ("Stand-up", r"stand ?up|com[eé]dia")]
 
 
@@ -293,6 +295,9 @@ def classify(g):
     venues = strip_acc(" ".join(o["venue"] for o in g).lower())
     hints = strip_acc(" ".join(o["category"] for o in g if o["source"] != "Turismo Curitiba").lower())
     for cat, rx in RULES[:5]:  # congresso, gastronomia, feira, esporte, stand-up: o título manda
+        if re.search(rx, text):
+            return cat
+    for cat, rx in SHOW_RULES:
         if re.search(rx, text):
             return cat
     for cat, rx in HINT_RULES:
