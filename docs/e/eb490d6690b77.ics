@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb490d6690b77@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261125T200000
+DTEND;TZID=America/Sao_Paulo:20261125T220000
+SUMMARY:Catedral de Luz 2026
+LOCATION:Catedral Basílica de Nossa Senhora da Luz dos Pinhais\, Curitiba - PR
+DESCRIPTION:Espetáculo de Natal na Catedral de Curitiba com projeção mapeada e música ao vivo da Orquestra e Coro Anima Musicale\, dirigido por Dirceu Saggin.\n\nhttps://agendaocuritiba.github.io/e/eb490d6690b77.html
+URL:https://agendaocuritiba.github.io/e/eb490d6690b77.html
+END:VEVENT
+END:VCALENDAR

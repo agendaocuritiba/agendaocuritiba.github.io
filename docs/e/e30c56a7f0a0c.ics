@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e30c56a7f0a0c@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T200000
+DTEND;TZID=America/Sao_Paulo:20261126T220000
+SUMMARY:Festival Homero Curitiba 2026
+LOCATION:Teatro Guaíra\, Curitiba - PR
+DESCRIPTION:Espetáculo teatral de 90 minutos\, indicado para maiores de 12 anos\, em cartaz no Teatro José Maria Santos.\n\nhttps://agendaocuritiba.github.io/e/e30c56a7f0a0c.html
+URL:https://agendaocuritiba.github.io/e/e30c56a7f0a0c.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e05d79edfc072@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T210000
+DTEND;TZID=America/Sao_Paulo:20261113T230000
+SUMMARY:Wine Down Cwb
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:Estreia da festa Wine Down em Curitiba\, com funk\, dancehall\, Miami bass e hip hop nos sets das DJs Maudita\, Polly e Kansha e do DJ Meliante.\n\nhttps://agendaocuritiba.github.io/e/e05d79edfc072.html
+URL:https://agendaocuritiba.github.io/e/e05d79edfc072.html
+END:VEVENT
+END:VCALENDAR

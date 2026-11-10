@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2ae8dcc406a7@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Glitch - O Bug Do Multiverso
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça em que o Dragão Jack quebra um projetor e personagens de filmes e séries caem no mundo real\, com texto e direção de Kellyn Bethania.\n\nhttps://agendaocuritiba.github.io/e/e2ae8dcc406a7.html
+URL:https://agendaocuritiba.github.io/e/e2ae8dcc406a7.html
+END:VEVENT
+END:VCALENDAR

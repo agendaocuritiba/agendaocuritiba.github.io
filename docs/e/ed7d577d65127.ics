@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed7d577d65127@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:O Mistério Do Cristal Mágico
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça em que alunos de uma escola de magia precisam quebrar um feitiço lançado por um vilão atrapalhado\, com texto e direção de Kellyn Bethania.\n\nhttps://agendaocuritiba.github.io/e/ed7d577d65127.html
+URL:https://agendaocuritiba.github.io/e/ed7d577d65127.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e84f473e81529@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:O Reino Das Águas Claras
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça inspirada no Sítio do Picapau Amarelo em que Narizinho e Pedrinho visitam o reino do Príncipe Escamado\, com direção de Miho Wakizaka.\n\nhttps://agendaocuritiba.github.io/e/e84f473e81529.html
+URL:https://agendaocuritiba.github.io/e/e84f473e81529.html
+END:VEVENT
+END:VCALENDAR

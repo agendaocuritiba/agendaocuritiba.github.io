@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e38859dc37d4a@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T190000
+DTEND;TZID=America/Sao_Paulo:20261212T210000
+SUMMARY:Rucin$Ki X Rocha Ao Vivo
+LOCATION:Espaço Central\, Curitiba - PR
+DESCRIPTION:Show de trap que reúne os artistas Rucin$ki e Rocha no palco do Espaço Central.\n\nhttps://agendaocuritiba.github.io/e/e38859dc37d4a.html
+URL:https://agendaocuritiba.github.io/e/e38859dc37d4a.html
+END:VEVENT
+END:VCALENDAR

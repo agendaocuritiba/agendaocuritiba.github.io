@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e16d39ea5a866@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T103000
+DTEND;TZID=America/Sao_Paulo:20261122T123000
+SUMMARY:Concerto da Orquestra Sinfônica do Paraná
+LOCATION:Teatro Guaíra - Auditório Bento\, Curitiba - PR
+DESCRIPTION:A Orquestra Sinfônica do Paraná toca Brahms\, Mozart\, Villa-Lobos e Stravinsky\, com Ricardo Castro como regente e solista ao piano.\n\nhttps://agendaocuritiba.github.io/e/e16d39ea5a866.html
+URL:https://agendaocuritiba.github.io/e/e16d39ea5a866.html
+END:VEVENT
+END:VCALENDAR

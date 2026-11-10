@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e43e4002d8141@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T200000
+DTEND;TZID=America/Sao_Paulo:20261121T220000
+SUMMARY:PERLA FLAMENCA TABLAO - Segunda Sessão 21-11-2026\, 20h
+LOCATION:Perla Flamenca Arte em Movimento\, Curitiba - PR
+DESCRIPTION:Tablao de flamenco do Perla Flamenca\, com bailaores\, cantaor e guitarrista se apresentando em duas sessões perto do público.\n\nhttps://agendaocuritiba.github.io/e/e43e4002d8141.html
+URL:https://agendaocuritiba.github.io/e/e43e4002d8141.html
+END:VEVENT
+END:VCALENDAR

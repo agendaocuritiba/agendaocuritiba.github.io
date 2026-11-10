@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6be4643abc0b@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T200000
+DTEND;TZID=America/Sao_Paulo:20261119T220000
+SUMMARY:Forró Pé de Serra: Quinta Roots Especial Véspera de Feriado
+LOCATION:Sociedade Operária Beneficente 13 de Maio\, Curitiba - PR
+DESCRIPTION:Noite de forró pé de serra na véspera de feriado com os trios curitibanos Iara Trio e Bombaião.\n\nhttps://agendaocuritiba.github.io/e/e6be4643abc0b.html
+URL:https://agendaocuritiba.github.io/e/e6be4643abc0b.html
+END:VEVENT
+END:VCALENDAR

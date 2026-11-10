@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e296e6a45c940@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T150000
+DTEND;TZID=America/Sao_Paulo:20261121T170000
+SUMMARY:Bruma Livre
+LOCATION:Ninho do Largo\, Curitiba - PR
+DESCRIPTION:Festa de tarde com house music feita junto com o Ninho do Largo\, com sets de Non-compliance\, FLP\, D'lyrio\, RGL e Á La Tina.\n\nhttps://agendaocuritiba.github.io/e/e296e6a45c940.html
+URL:https://agendaocuritiba.github.io/e/e296e6a45c940.html
+END:VEVENT
+END:VCALENDAR

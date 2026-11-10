@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2ca17623d2d4@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T220000
+DTEND;TZID=America/Sao_Paulo:20261121T000000
+SUMMARY:Ácida / Club
+LOCATION:Alameda Doutor Muricy\, 949 - Centro\, Curitiba - PR\, 80020-040\, Brasil\, Curitiba - PR
+DESCRIPTION:Edição club da festa Ácida\, que vara a madrugada com sets de Sacii OJ\, Itramaro\, Mendez e Dj Minki.\n\nhttps://agendaocuritiba.github.io/e/e2ca17623d2d4.html
+URL:https://agendaocuritiba.github.io/e/e2ca17623d2d4.html
+END:VEVENT
+END:VCALENDAR

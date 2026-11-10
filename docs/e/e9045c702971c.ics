@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9045c702971c@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261118T200000
+DTEND;TZID=America/Sao_Paulo:20261118T220000
+SUMMARY:The Singer Show 2026 | Grande Final
+LOCATION:D House Curitiba\, Curitiba - PR
+DESCRIPTION:Final da 4ª temporada do The Singer Show\, competição de cantores em que os 10 finalistas se apresentam pela última vez na D House.\n\nhttps://agendaocuritiba.github.io/e/e9045c702971c.html
+URL:https://agendaocuritiba.github.io/e/e9045c702971c.html
+END:VEVENT
+END:VCALENDAR

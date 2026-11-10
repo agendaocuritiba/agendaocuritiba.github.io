@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7c1aab0b4366@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Onde Mora O Essencial
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça sobre uma turma de pequenos aventureiros que viaja pelo universo das emoções para descobrir o que realmente importa levar na vida.\n\nhttps://agendaocuritiba.github.io/e/e7c1aab0b4366.html
+URL:https://agendaocuritiba.github.io/e/e7c1aab0b4366.html
+END:VEVENT
+END:VCALENDAR

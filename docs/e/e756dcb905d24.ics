@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e756dcb905d24@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261112T213000
+DTEND;TZID=America/Sao_Paulo:20261112T233000
+SUMMARY:Quintou - Stand Up Comedy 2026 / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Noite de stand-up com vários humoristas\, entre eles JT Fontoura\, Edison Massa\, PH Saraiva\, Claudio Gasques e Marco Soares\, no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e756dcb905d24.html
+URL:https://agendaocuritiba.github.io/e/e756dcb905d24.html
+END:VEVENT
+END:VCALENDAR

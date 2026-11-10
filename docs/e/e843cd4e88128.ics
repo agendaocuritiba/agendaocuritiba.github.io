@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e843cd4e88128@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T210000
+DTEND;TZID=America/Sao_Paulo:20261114T230000
+SUMMARY:Antiquario
+LOCATION:Ponto Gin\, Curitiba - PR
+DESCRIPTION:Festa de reabertura do Antiquário no Ponto Gin\, no Bigorrilho\, para maiores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/e843cd4e88128.html
+URL:https://agendaocuritiba.github.io/e/e843cd4e88128.html
+END:VEVENT
+END:VCALENDAR
