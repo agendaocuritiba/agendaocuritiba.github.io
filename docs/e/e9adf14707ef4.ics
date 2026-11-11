@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e9adf14707ef4@agendao-curitiba
-DTSTAMP:20261109T090000Z
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261219
-SUMMARY:Nataleluia 2026 "A maior história de todas"
-LOCATION:Primeira Igreja Batista de Curitiba\, Curitiba - PR
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T200000
+DTEND;TZID=America/Sao_Paulo:20261218T220000
+SUMMARY:Nataleluia - A Maior História de Todas
+LOCATION:R. Bento Viana\, 1200 (Primeira Igreja Batista de Curitiba)\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e9adf14707ef4.html
 URL:https://agendaocuritiba.github.io/e/e9adf14707ef4.html
 END:VEVENT

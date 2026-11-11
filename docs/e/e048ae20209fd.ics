@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e048ae20209fd@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T193000
+DTEND;TZID=America/Sao_Paulo:20261204T213000
+SUMMARY:DIGESTÃO EMOCIOINAL DO ANO 2026 - Contos da Vida Real
+LOCATION:Casa João de Barro\, Curitiba - PR
+DESCRIPTION:Espetáculo de improviso que encena histórias reais contadas pela plateia sobre os momentos marcantes do ano que termina.\n\nhttps://agendaocuritiba.github.io/e/e048ae20209fd.html
+URL:https://agendaocuritiba.github.io/e/e048ae20209fd.html
+END:VEVENT
+END:VCALENDAR

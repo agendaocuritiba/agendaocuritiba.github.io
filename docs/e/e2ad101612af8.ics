@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2ad101612af8@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T190000
+DTEND;TZID=America/Sao_Paulo:20261205T210000
+SUMMARY:Ao Pé do Ouvido com AVEDUO - Encantadoras Cantos Sagrados
+LOCATION:Casa Bambuê\, Curitiba - PR
+DESCRIPTION:Show intimista do AVEduo\, de Andréa Bernardini e Viviana Mena\, com o espetáculo Encantadoras\, de cantos ligados a tradições ancestrais.\n\nhttps://agendaocuritiba.github.io/e/e2ad101612af8.html
+URL:https://agendaocuritiba.github.io/e/e2ad101612af8.html
+END:VEVENT
+END:VCALENDAR

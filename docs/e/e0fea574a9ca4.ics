@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0fea574a9ca4@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T160000
+DTEND;TZID=America/Sao_Paulo:20261128T180000
+SUMMARY:Merci Empório Batel Pintura em Taças
+LOCATION:R. Des. Costa Carvalho\, 255\, Curitiba - PR
+DESCRIPTION:Tarde de pintura em taças de cristal no Merci Empório Batel\, conduzida pela artista plástica Fabiana Pelissari\, com vinho.\n\nhttps://agendaocuritiba.github.io/e/e0fea574a9ca4.html
+URL:https://agendaocuritiba.github.io/e/e0fea574a9ca4.html
+END:VEVENT
+END:VCALENDAR

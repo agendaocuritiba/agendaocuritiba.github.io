@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efea64669d3b4@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:A Mansão Dos Esquecidos
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Comédia sobre oito amigos de épocas diferentes que vivem numa mansão antiga e\, ao investigar um mistério\, descobrem que todos são fantasmas.\n\nhttps://agendaocuritiba.github.io/e/efea64669d3b4.html
+URL:https://agendaocuritiba.github.io/e/efea64669d3b4.html
+END:VEVENT
+END:VCALENDAR

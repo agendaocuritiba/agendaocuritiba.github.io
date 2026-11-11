@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7b78fb5f9c42@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T203000
+DTEND;TZID=America/Sao_Paulo:20261204T223000
+SUMMARY:A Vida É uma Só com Fernando Semmer / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Show de stand-up comedy de Fernando Semmer no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e7b78fb5f9c42.html
+URL:https://agendaocuritiba.github.io/e/e7b78fb5f9c42.html
+END:VEVENT
+END:VCALENDAR

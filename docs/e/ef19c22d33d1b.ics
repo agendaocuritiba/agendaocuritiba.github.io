@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef19c22d33d1b@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Natal Vegan Curitiba
+LOCATION:Ventura Shopping\, Curitiba - PR
+DESCRIPTION:Feira natalina do O Mundo Vegano no Ventura Shopping\, com comida\, presentes e decoração veganos\; aberta a pets.\n\nhttps://agendaocuritiba.github.io/e/ef19c22d33d1b.html
+URL:https://agendaocuritiba.github.io/e/ef19c22d33d1b.html
+END:VEVENT
+END:VCALENDAR

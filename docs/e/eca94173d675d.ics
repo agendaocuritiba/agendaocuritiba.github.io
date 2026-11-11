@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eca94173d675d@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T180000
+DTEND;TZID=America/Sao_Paulo:20261121T200000
+SUMMARY:Era Uma Vez... os Contos Infantis! 24° Espetáculo da Escola Arte da Dança
+LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:Espetáculo de fim de ano da Escola Arte da Dança\, com coreografias inspiradas em contos infantis clássicos.\n\nhttps://agendaocuritiba.github.io/e/eca94173d675d.html
+URL:https://agendaocuritiba.github.io/e/eca94173d675d.html
+END:VEVENT
+END:VCALENDAR

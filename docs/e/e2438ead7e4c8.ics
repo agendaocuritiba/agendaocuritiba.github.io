@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e2438ead7e4c8@agendao-curitiba
-DTSTAMP:20261109T090000Z
+DTSTAMP:20261110T090000Z
 DTSTART;TZID=America/Sao_Paulo:20270321T194500
 DTEND;TZID=America/Sao_Paulo:20270321T214500
 SUMMARY:Pink Floyd Experience In Concert
-LOCATION:Teatro Positivo\, Curitiba - PR
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:Tributo ao Pink Floyd com banda\, vozes e orquestra ao vivo\, projeções em mapping 3D e direção de Bruno Rizzo.\n\nhttps://agendaocuritiba.github.io/e/e2438ead7e4c8.html
 URL:https://agendaocuritiba.github.io/e/e2438ead7e4c8.html
 END:VEVENT

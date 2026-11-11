@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:efa6b427d034a@agendao-curitiba
-DTSTAMP:20261109T090000Z
+DTSTAMP:20261110T090000Z
 DTSTART;TZID=America/Sao_Paulo:20270321T170000
 DTEND;TZID=America/Sao_Paulo:20270321T190000
-SUMMARY:Grease Highlights - O Musical In Concert
-LOCATION:Teatro Positivo\, Curitiba - PR
+SUMMARY:Grease Highlights - o Musical In Concert
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:Versão compacta do musical Grease\, com canções cantadas ao vivo e orquestra.\n\nhttps://agendaocuritiba.github.io/e/efa6b427d034a.html
 URL:https://agendaocuritiba.github.io/e/efa6b427d034a.html
 END:VEVENT

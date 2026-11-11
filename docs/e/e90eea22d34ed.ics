@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e90eea22d34ed@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T210000
+DTEND;TZID=America/Sao_Paulo:20261114T230000
+SUMMARY:SABADÃO LATINO com SoulLatino
+LOCATION:Foxy Bar Curitiba\, Curitiba - PR
+DESCRIPTION:Noite latina no Foxy Bar para dançar salsa\, cumbia\, merengue\, bachata e reggaeton com o grupo SoulLatino tocando ao vivo.\n\nhttps://agendaocuritiba.github.io/e/e90eea22d34ed.html
+URL:https://agendaocuritiba.github.io/e/e90eea22d34ed.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4a0acabafc83@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Curta Comum 2ª edição - Mostra de Audiovisual Comunitário
+LOCATION:Auditório do Setor de Artes\, Comunicação e Design da UFPR\, Curitiba - PR
+DESCRIPTION:Mostra de curtas produzidos por comunidades e estudantes\, organizada por alunos de Produção Cultural da UFPR.\n\nhttps://agendaocuritiba.github.io/e/e4a0acabafc83.html
+URL:https://agendaocuritiba.github.io/e/e4a0acabafc83.html
+END:VEVENT
+END:VCALENDAR

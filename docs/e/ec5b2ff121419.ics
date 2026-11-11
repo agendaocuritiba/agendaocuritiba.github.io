@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec5b2ff121419@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T130000
+DTEND;TZID=America/Sao_Paulo:20261121T150000
+SUMMARY:Harmonização Café e Chocolates de Origem
+LOCATION:Museu Oscar Niemeyer | MON - COZINHA MODELO ELECTROLUX\, Curitiba - PR
+DESCRIPTION:Degustação que harmoniza cafés especiais e chocolates de origem\, na cozinha modelo do festival Origem\, no Museu Oscar Niemeyer.\n\nhttps://agendaocuritiba.github.io/e/ec5b2ff121419.html
+URL:https://agendaocuritiba.github.io/e/ec5b2ff121419.html
+END:VEVENT
+END:VCALENDAR

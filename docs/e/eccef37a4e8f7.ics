@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eccef37a4e8f7@agendao-curitiba
-DTSTAMP:20261109T090000Z
+DTSTAMP:20261110T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261121T230000
 DTEND;TZID=America/Sao_Paulo:20261122T010000
-SUMMARY:VIBE apr. Kaká Franco\, Renan Mendes e Soundmanpako
+SUMMARY:Vibe Apr. Kaká Franco\, Renan Mendes e Soundmanpako
 LOCATION:Club Vibe\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eccef37a4e8f7.html
 URL:https://agendaocuritiba.github.io/e/eccef37a4e8f7.html

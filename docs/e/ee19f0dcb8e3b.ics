@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee19f0dcb8e3b@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T140000
+DTEND;TZID=America/Sao_Paulo:20261120T160000
+SUMMARY:Introdução à Cafés Especiais
+LOCATION:Museu Oscar Niemeyer | MON - COZINHA MODELO ELECTROLUX\, Curitiba - PR
+DESCRIPTION:Atividade de introdução aos cafés especiais na cozinha modelo do festival Origem\, no Museu Oscar Niemeyer.\n\nhttps://agendaocuritiba.github.io/e/ee19f0dcb8e3b.html
+URL:https://agendaocuritiba.github.io/e/ee19f0dcb8e3b.html
+END:VEVENT
+END:VCALENDAR

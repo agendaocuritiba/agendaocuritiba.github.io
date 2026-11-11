@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e508e7a109606@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261118T203000
+DTEND;TZID=America/Sao_Paulo:20261118T223000
+SUMMARY:Quarta Do Improviso / Improviso E Humor
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Noite de comédia de improviso no Gaslight Comedy Club\, com cenas criadas na hora a partir das sugestões da plateia.\n\nhttps://agendaocuritiba.github.io/e/e508e7a109606.html
+URL:https://agendaocuritiba.github.io/e/e508e7a109606.html
+END:VEVENT
+END:VCALENDAR

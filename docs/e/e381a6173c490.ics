@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e381a6173c490@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T110000
+DTEND;TZID=America/Sao_Paulo:20261120T130000
+SUMMARY:O Match Perfeito: Qual Café Combina com Você? Natural\, lavado ou fermentado?
+LOCATION:Museu Oscar Niemeyer | MON - COZINHA MODELO ELECTROLUX\, Curitiba - PR
+DESCRIPTION:Degustação guiada de 40 minutos no festival Origem\, no MON\, comparando cafés naturais\, lavados e fermentados\; vagas para apenas 10 pessoas.\n\nhttps://agendaocuritiba.github.io/e/e381a6173c490.html
+URL:https://agendaocuritiba.github.io/e/e381a6173c490.html
+END:VEVENT
+END:VCALENDAR

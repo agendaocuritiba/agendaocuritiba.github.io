@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5213ad113b36@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:A Inesquecível Fábrica de Emoções
+LOCATION:R. Conselheiro Laurindo em frente ao Teatro Guaíra\, Centro\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino gratuito em frente ao Teatro Guaíra\, com música\, ópera e balé em releituras do painel de Poty Lazzarotto para reacender a magia do Natal.\n\nhttps://agendaocuritiba.github.io/e/e5213ad113b36.html
+URL:https://agendaocuritiba.github.io/e/e5213ad113b36.html
+END:VEVENT
+END:VCALENDAR

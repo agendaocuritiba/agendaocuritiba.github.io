@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e78f649ca6c46@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:O Mundo Das Maravilhas
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça que retoma Alice anos depois no País das Maravilhas: acusada pela Rainha Vermelha de causar a desordem do reino\, ela parte numa nova jornada.\n\nhttps://agendaocuritiba.github.io/e/e78f649ca6c46.html
+URL:https://agendaocuritiba.github.io/e/e78f649ca6c46.html
+END:VEVENT
+END:VCALENDAR

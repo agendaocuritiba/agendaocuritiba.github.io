@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea9a017f3d3fa@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T193000
+DTEND;TZID=America/Sao_Paulo:20261206T213000
+SUMMARY:Show Especial 10 anos do álbum RAIZ FORTE - ANA PAULA DA SILVA TRIO
+LOCATION:Estúdio Brasil Nativo Multi Produções\, Curitiba - PR
+DESCRIPTION:Ana Paula da Silva\, cantora e violonista catarinense\, celebra com seu trio os 10 anos do álbum autoral Raiz Forte.\n\nhttps://agendaocuritiba.github.io/e/ea9a017f3d3fa.html
+URL:https://agendaocuritiba.github.io/e/ea9a017f3d3fa.html
+END:VEVENT
+END:VCALENDAR

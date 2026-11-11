@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1bced40d0838@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Herdeiros Do Bem E Do Mal
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça em que filhos de heróis e vilões\, num grande baile\, sofrem uma troca de corpos e descobrem que podem escolher o próprio caminho.\n\nhttps://agendaocuritiba.github.io/e/e1bced40d0838.html
+URL:https://agendaocuritiba.github.io/e/e1bced40d0838.html
+END:VEVENT
+END:VCALENDAR

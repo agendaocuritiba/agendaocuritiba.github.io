@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaecb865b246a@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:A Lona Dos Sonhos
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça sobre artistas muito diferentes que se juntam para criar um circo nada convencional\, com mágicos\, palhaços e contorcionistas.\n\nhttps://agendaocuritiba.github.io/e/eaecb865b246a.html
+URL:https://agendaocuritiba.github.io/e/eaecb865b246a.html
+END:VEVENT
+END:VCALENDAR

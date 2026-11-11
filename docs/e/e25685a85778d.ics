@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e25685a85778d@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Abrace o Mundo - Escadarias UFPR
+LOCATION:Praça Santos Andrade\, Centro\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino gratuito nas escadarias da UFPR sobre um menino que quer saber como o Papai Noel entrega presentes ao mundo inteiro numa noite.\n\nhttps://agendaocuritiba.github.io/e/e25685a85778d.html
+URL:https://agendaocuritiba.github.io/e/e25685a85778d.html
+END:VEVENT
+END:VCALENDAR

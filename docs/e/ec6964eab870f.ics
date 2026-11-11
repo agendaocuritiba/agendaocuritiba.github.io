@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec6964eab870f@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Familia Madrigal E O Sumiço Da Vela
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça inspirada na família Madrigal: na Noite das Velas\, uma confusão troca os dons mágicos e a família precisa descobrir o que houve com a vela.\n\nhttps://agendaocuritiba.github.io/e/ec6964eab870f.html
+URL:https://agendaocuritiba.github.io/e/ec6964eab870f.html
+END:VEVENT
+END:VCALENDAR

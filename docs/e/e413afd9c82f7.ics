@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e413afd9c82f7@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261120T123000
+DTEND;TZID=America/Sao_Paulo:20261120T143000
+SUMMARY:Do feed para a mesa: redes sociais na gastronomia
+LOCATION:Museu Oscar Niemeyer | MON - PALCO ORIGEM\, Curitiba - PR
+DESCRIPTION:Bate-papo no palco do festival Origem\, no MON\, sobre o uso das redes sociais na divulgação da gastronomia.\n\nhttps://agendaocuritiba.github.io/e/e413afd9c82f7.html
+URL:https://agendaocuritiba.github.io/e/e413afd9c82f7.html
+END:VEVENT
+END:VCALENDAR

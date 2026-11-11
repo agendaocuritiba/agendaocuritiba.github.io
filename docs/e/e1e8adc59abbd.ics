@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1e8adc59abbd@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T203000
+DTEND;TZID=America/Sao_Paulo:20261127T223000
+SUMMARY:O Último Especial de Natal com Jonathan Nemer
+LOCATION:Teatro Guaíra - Guairão\, Curitiba - PR
+DESCRIPTION:Jonathan Nemer se despede do seu especial de Natal\, show de stand-up sobre as situações típicas das festas de fim de ano.\n\nhttps://agendaocuritiba.github.io/e/e1e8adc59abbd.html
+URL:https://agendaocuritiba.github.io/e/e1e8adc59abbd.html
+END:VEVENT
+END:VCALENDAR

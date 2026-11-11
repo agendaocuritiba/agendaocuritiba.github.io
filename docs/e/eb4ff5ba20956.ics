@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb4ff5ba20956@agendao-curitiba
+DTSTAMP:20261110T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261216T210000
+DTEND;TZID=America/Sao_Paulo:20261216T230000
+SUMMARY:Era Uma Vez | Festa À Fantasia Barracão 2026
+LOCATION:Club Versus\, Curitiba - PR
+DESCRIPTION:Festa à fantasia do Teatro Barracão EnCena com tema de contos de fadas\, para ir vestido de princesa\, bruxa\, fada ou outro personagem.\n\nhttps://agendaocuritiba.github.io/e/eb4ff5ba20956.html
+URL:https://agendaocuritiba.github.io/e/eb4ff5ba20956.html
+END:VEVENT
+END:VCALENDAR
