@@ -137,6 +137,8 @@ def load_originals(eo_raw, tc_raw, extras, today, horizon):
         o["time"] = norm_time(o.get("time"))
         if overnight(o, st, en):
             en = st; o["end"] = o["start"]
+        if en < st:  # fim antes do início (erro do site, ex.: "12/12/2026 a 12/11/2026"): vale só o início
+            en = st; o["end"] = o["start"]
         if en < today or st > horizon:
             return
         if st < today:
@@ -271,19 +273,19 @@ def cluster(origs):
 KEEP_TC = {"Feira/Exposição", "Gastronomia", "Congresso"}
 RULES = [
     ("Congresso", r"congresso|summit|simposio|seminario|conferencia|pitch day"),
-    ("Gastronomia", r"gastronom|curitipao|assado|assafest|twelve beers|food|cerveja|beer|feijoad|costelad|jantar|almoco|vinho|\bwine\b(?! down)|chef pour|mao na massa|na taca|festa das nacoes"),
-    ("Feira/Exposição", r"\bfeira\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show"),
+    ("Gastronomia", r"gastronom|curitipao|assado|assafest|twelve beers|food|cerveja|beer|feijoad|costelad|jantar|almoco|vinho|\bwine\b(?! down)|chef pour|mao na massa|na taca|pintura em tacas|festa das nacoes|\bcafes? (especia|combina)|cafe e chocolate|sirene brazil"),
+    ("Feira/Exposição", r"\bfeira\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show|natal vegan|mostra de audiovisual"),
     ("Esporte", r"hardest run|corrida(?!s? das blogueiras)|maratona|futebol|campeonato|caminhada|aulao"),
-    ("Stand-up", r"stand ?up|comedy|xaveca|piada|enterrado vivo|como nossos pais|afonso padilha|renato albani|ivangelica|indio behn|embrulha pra viagem|nada e combinado|leo lins|humor|improviso|bruna louise|diogo almeida|carol delgado|santo fole|danilo gentili|mallandro|silvetty montilla|victor sarro"),
+    ("Stand-up", r"stand ?up|comedy|xaveca|piada|enterrado vivo|como nossos pais|afonso padilha|renato albani|ivangelica|indio behn|embrulha pra viagem|nada e combinado|leo lins|humor|improviso|bruna louise|diogo almeida|carol delgado|santo fole|danilo gentili|mallandro|silvetty montilla|victor sarro|jonathan nemer|conte uma fofoca"),
     ("Palestra", r"palestra|claudio duarte|padre patrick|catia damasceno|andrea vermont|paua em seja livre|encontro de valor|adultecer|fazimentos texteis"),
     ("Infantil", r"infantil|tum pa\b|aventura congelante|bicho-?papao|conto de fadas|poke fan fest|kids|crianca|bob esponja|megabolhas|vini pirata|tum tu tubos|parque mikewood|frozen|tres porquinhos|caca aos doces|halloween encantado|spidey|gabby|clubinho|toy story|biscoitos natalinos"),
     ("Concerto", r"concerto|orquestra|symphon|sinfoni|in concert|\bcoral\b|\btrio\b|ensemble|classicos do cinema|zelda|zimmer|turandot|candlelight|catedral de luz|palacio avenida"),
-    ("Teatro", r"musical|espetaculo|\bpeca\b|teatro(?! paiol)|danca(?! de salao)|gota d.agua|arqueologias do futuro|azaleia oriental|ballet|circo|nono paciente|improvavel|tarsila|misterio buffo|matilda|clube dos canalhas|antes que termine|no me kahlo|plantonistas|despertar da fenix|christmas dream|sonho de natal|disney|misterios s/?a|grande banquete|mostra|terapia infernal|baixa sociedade|kafka|madrugueiro|cidade de jornais|historieta|bela e a fera|morte e vida|capitulo xv|dois de nos|vendedor de sonhos|flamenca|zumbi e dandara|mia cara|manual para recem falecidos|desencantados|magico de oz|entre coroas e viloes|\bo santo\b|que ano foi este|fragmentos do infinito|festival homero|misterio do cristal|reino das aguas claras|onde mora o essencial|bug do multiverso"),
-    ("Festa/Balada", r"\bdj\b|all night|techno|after hours|solomun|vintage culture|\balok\b|\bbaile\b|garota sunset|five am|who we are|tranquilo apresenta|chemical surf|curitiba folia|moustache sound|bpm|\bclub vibe\b|\+55 bar|\bczar\b|ceu curitiba|eli iwasa|james zabiela|breaking beattz|showcase|\bgabe\b|\bliu\b|\bzac\b|\bvermont\b|halloween|hallowzot|festa|reveillon|virada|party|revoada|circus|escangalha|antiquario|carnaval|micareta|rumberos|k-pop|watch party|formatura"),
+    ("Teatro", r"musical|espetaculo|\bpeca\b|teatro(?! paiol)|danca(?! de salao)|gota d.agua|arqueologias do futuro|azaleia oriental|ballet|circo|nono paciente|improvavel|tarsila|misterio buffo|matilda|clube dos canalhas|antes que termine|no me kahlo|plantonistas|despertar da fenix|christmas dream|sonho de natal|disney|misterios s/?a|grande banquete|mostra|terapia infernal|baixa sociedade|kafka|madrugueiro|cidade de jornais|historieta|bela e a fera|morte e vida|capitulo xv|dois de nos|vendedor de sonhos|flamenca|zumbi e dandara|mia cara|manual para recem falecidos|desencantados|magico de oz|entre coroas e viloes|\bo santo\b|que ano foi este|fragmentos do infinito|festival homero|misterio do cristal|reino das aguas claras|onde mora o essencial|bug do multiverso|fabrica de emocoes|abrace o mundo|digestao emocio"),
+    ("Festa/Balada", r"\bdj\b|all night|techno|after hours|solomun|vintage culture|\balok\b|\bbaile\b|garota sunset|five am|who we are|tranquilo apresenta|chemical surf|curitiba folia|moustache sound|bpm|\bclub vibe\b|\+55 bar|\bczar\b|ceu curitiba|eli iwasa|james zabiela|breaking beattz|showcase|\bgabe\b|\bliu\b|\bzac\b|\bvermont\b|halloween|hallowzot|festa|reveillon|virada|party|revoada|circus|escangalha|antiquario|carnaval|micareta|rumberos|k-pop|watch party|formatura|pink diamond|sabadao latino"),
     ("Festival", r"festival|fest\b|kemet"),
 ]
 # shows de palco vendidos em sites de balada (ex.: Shotgun): o título manda, antes da dica do site
-SHOW_RULES = [("Show", r"ze ibarra|sob ruido")]
+SHOW_RULES = [("Show", r"ze ibarra|sob ruido|ana paula da silva")]
 HINT_RULES = [("Festa/Balada", r"balada|eletr[oô]nica"), ("Stand-up", r"stand ?up|com[eé]dia")]
 
 
@@ -304,8 +306,9 @@ def classify(g):
         if re.search(rx, hints):
             return cat
     for cat, rx in RULES[5:]:
-        # o local só conta para festas (casas noturnas); "Teatro Positivo" não faz de um show uma peça
-        if re.search(rx, text) or (cat == "Festa/Balada" and re.search(rx, venues)):
+        # o local só conta para festas (casas noturnas) e para o Teatro Barracão EnCena (só peças);
+        # "Teatro Positivo" não faz de um show uma peça
+        if re.search(rx, text) or (cat == "Festa/Balada" and re.search(rx, venues)) or (cat == "Teatro" and "barracao encena" in venues):
             return cat
     return "Show"
 
