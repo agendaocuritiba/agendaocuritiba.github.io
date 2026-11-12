@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e080ec26e344b@agendao-curitiba
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T180000
+DTEND;TZID=America/Sao_Paulo:20261212T200000
+SUMMARY:Kim´s Day - Ressaca pós Show
+LOCATION:Yami Asian Food\, Curitiba - PR
+DESCRIPTION:Encontro de fãs para relembrar shows recentes\, com kit ressaca\, brincadeiras\, sorteios e lojinhas no Yami Asian Food.\n\nhttps://agendaocuritiba.github.io/e/e080ec26e344b.html
+URL:https://agendaocuritiba.github.io/e/e080ec26e344b.html
+END:VEVENT
+END:VCALENDAR

@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e92a0b692504d@agendao-curitiba
-DTSTAMP:20261110T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261111T200000
-DTEND;TZID=America/Sao_Paulo:20261111T220000
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261112T200000
+DTEND;TZID=America/Sao_Paulo:20261112T220000
 SUMMARY:Circo Rhoney: Um Natal Espetacular - Sexta 20h00
 LOCATION:Circo Rhoney Espetacular no estacionamento do shopping Boulevard\, Curitiba - PR
 DESCRIPTION:Espetáculo natalino do Circo Rhoney que conta o nascimento de Jesus com números circenses\, montado no estacionamento do Shopping Boulevard.\n\nhttps://agendaocuritiba.github.io/e/e92a0b692504d.html

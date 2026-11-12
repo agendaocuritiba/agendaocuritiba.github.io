@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e968b56ede117@agendao-curitiba
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261114T093000
+DTEND;TZID=America/Sao_Paulo:20261114T113000
+SUMMARY:Carreata da Campanha Papai Noel dos Correios
+LOCATION:Correios\, R. João Negrão\, 1251\, Curitiba - PR
+DESCRIPTION:Carreata natalina dos Correios que percorre ruas de Curitiba e convida o público a adotar cartinhas de Natal escritas por crianças.\n\nhttps://agendaocuritiba.github.io/e/e968b56ede117.html
+URL:https://agendaocuritiba.github.io/e/e968b56ede117.html
+END:VEVENT
+END:VCALENDAR

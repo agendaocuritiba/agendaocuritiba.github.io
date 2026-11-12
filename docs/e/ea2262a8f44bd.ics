@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ea2262a8f44bd@agendao-curitiba
-DTSTAMP:20261110T090000Z
+DTSTAMP:20261111T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261128T180000
 DTEND;TZID=America/Sao_Paulo:20261128T200000
-SUMMARY:Conexões - O baile de Dança de Salão
-LOCATION:Shopping Crystal\, Curitiba - PR
+SUMMARY:Conexões - o Baile de Dança de Salão
+LOCATION:Shopping Crystal\, Rua Comendador Araújo\, 731\, Curitiba - PR
 DESCRIPTION:Baile de dança de salão do Conexa Studio\, aberto a todos os níveis\, com bolero\, samba de gafieira\, salsa\, zouk e bachata.\n\nhttps://agendaocuritiba.github.io/e/ea2262a8f44bd.html
 URL:https://agendaocuritiba.github.io/e/ea2262a8f44bd.html
 END:VEVENT

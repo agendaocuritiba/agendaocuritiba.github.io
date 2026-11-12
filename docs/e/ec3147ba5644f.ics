@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec3147ba5644f@agendao-curitiba
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T230000
+DTEND;TZID=America/Sao_Paulo:20261213T010000
+SUMMARY:Summer Eletrovibe
+LOCATION:Club Vibe\, Curitiba - PR
+DESCRIPTION:Festa de verão Summer Eletrovibe no Club Vibe\, no Batel\; proibida a entrada de menores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/ec3147ba5644f.html
+URL:https://agendaocuritiba.github.io/e/ec3147ba5644f.html
+END:VEVENT
+END:VCALENDAR

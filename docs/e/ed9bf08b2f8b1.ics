@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ed9bf08b2f8b1@agendao-curitiba
-DTSTAMP:20261110T090000Z
+DTSTAMP:20261111T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261114T180000
 DTEND;TZID=America/Sao_Paulo:20261114T200000
 SUMMARY:Ladies Ensemble: Gala Lírica: La Traviata e La Bohème
-LOCATION:Auditório Regina Casillo\, Curitiba - PR
+LOCATION:Auditório Regina Casillo\, R. Lourenço Pinto 500 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:A orquestra Ladies Ensemble interpreta árias das óperas La Traviata e La Bohème em noite de gala lírica.\n\nhttps://agendaocuritiba.github.io/e/ed9bf08b2f8b1.html
 URL:https://agendaocuritiba.github.io/e/ed9bf08b2f8b1.html
 END:VEVENT

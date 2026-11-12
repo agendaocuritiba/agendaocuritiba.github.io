@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7c501d362f1d@agendao-curitiba
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T200000
+DTEND;TZID=America/Sao_Paulo:20261208T220000
+SUMMARY:6ª Mostra Arquivos Efêmeros - Mostra dos Residentes em Dança do AP da 13
+LOCATION:AP da 13\, Curitiba - PR
+DESCRIPTION:Mostra de encerramento da 6ª Residência em Dança do AP da 13\, com composições dos artistas residentes criadas a partir de pesquisas de presença e movimento.\n\nhttps://agendaocuritiba.github.io/e/e7c501d362f1d.html
+URL:https://agendaocuritiba.github.io/e/e7c501d362f1d.html
+END:VEVENT
+END:VCALENDAR

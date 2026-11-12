@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee01a2696dc9d@agendao-curitiba
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T230000
+DTEND;TZID=America/Sao_Paulo:20261206T010000
+SUMMARY:T.b.g
+LOCATION:Club Vibe\, Curitiba - PR
+DESCRIPTION:Festa no Club Vibe\, no Batel\, com T.B.G como atração da noite\; proibida a entrada de menores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/ee01a2696dc9d.html
+URL:https://agendaocuritiba.github.io/e/ee01a2696dc9d.html
+END:VEVENT
+END:VCALENDAR

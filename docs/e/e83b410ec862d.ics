@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e83b410ec862d@agendao-curitiba
+DTSTAMP:20261111T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T180000
+DTEND;TZID=America/Sao_Paulo:20261204T200000
+SUMMARY:BELEZA PURA - caetano e djavan no jardim do queroquero
+LOCATION:queroquero comida e bar\, Curitiba - PR
+DESCRIPTION:Noite com repertório de Caetano Veloso e Djavan no jardim do Queroquero Comida e Bar.\n\nhttps://agendaocuritiba.github.io/e/e83b410ec862d.html
+URL:https://agendaocuritiba.github.io/e/e83b410ec862d.html
+END:VEVENT
+END:VCALENDAR
