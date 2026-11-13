@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec5dbf42ba079@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261201T190000
+DTEND;TZID=America/Sao_Paulo:20261201T210000
+SUMMARY:Natal na Capela da Glória
+LOCATION:Av. João Gualberto\, 565\, Alto da Glória\, Curitiba - PR
+DESCRIPTION:Concerto natalino Cantate Domino\, com o Coral Gregoriano de Curitiba cantando hinos sacros e canções tradicionais em latim.\n\nhttps://agendaocuritiba.github.io/e/ec5dbf42ba079.html
+URL:https://agendaocuritiba.github.io/e/ec5dbf42ba079.html
+END:VEVENT
+END:VCALENDAR

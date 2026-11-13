@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edae85cbbed0f@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Axé Festival de Cultura Negra de Curitiba
+LOCATION:Curitiba - PR
+DESCRIPTION:Festival da Semana da Consciência Negra com shows\, oficinas\, debates\, contação de histórias e feira em espaços do Centro.\n\nhttps://agendaocuritiba.github.io/e/edae85cbbed0f.html
+URL:https://agendaocuritiba.github.io/e/edae85cbbed0f.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecce747cf06aa@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Natal da Família Capivara no Passeio Público
+LOCATION:Passeio Público\, Centro\, Curitiba - PR
+DESCRIPTION:Peça natalina com a Família Capivara no Passeio Público\, que ganha carrossel\, Casa do Papai Noel e árvore de luz de 15 metros.\n\nhttps://agendaocuritiba.github.io/e/ecce747cf06aa.html
+URL:https://agendaocuritiba.github.io/e/ecce747cf06aa.html
+END:VEVENT
+END:VCALENDAR

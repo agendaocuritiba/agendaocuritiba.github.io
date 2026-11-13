@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e59365c233e0a@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261220T200000
+DTEND;TZID=America/Sao_Paulo:20261220T220000
+SUMMARY:Não É Só uma Dupla com Will Maionese e Fernando Oliveira / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Fernando Oliveira e Will Maionese apresentam show que mistura stand-up\, imitações\, interação com a plateia e clima de rádio.\n\nhttps://agendaocuritiba.github.io/e/e59365c233e0a.html
+URL:https://agendaocuritiba.github.io/e/e59365c233e0a.html
+END:VEVENT
+END:VCALENDAR

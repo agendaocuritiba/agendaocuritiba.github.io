@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb8f462f9936d@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Feedback e Troca de Cordéis - Arrastapia
+LOCATION:Nosso Espaço (ArrastaPiá)\, Curitiba - PR
+DESCRIPTION:Fim de semana de forró do Arrastapiá\, com workshop dos professores Felipe Júlio e Letícia\, de Juiz de Fora\, e festa dançante.\n\nhttps://agendaocuritiba.github.io/e/eb8f462f9936d.html
+URL:https://agendaocuritiba.github.io/e/eb8f462f9936d.html
+END:VEVENT
+END:VCALENDAR

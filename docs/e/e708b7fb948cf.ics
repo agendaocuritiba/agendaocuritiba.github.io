@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e708b7fb948cf@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T080000
+DTEND;TZID=America/Sao_Paulo:20261128T100000
+SUMMARY:Dvr Fest Curitiba
+LOCATION:Rua Isaac Guelmann\, 4387\, Curitiba - PR
+DESCRIPTION:Dia aberto da concessionária DVR Motos para fãs de duas rodas\, com test-ride dos modelos Yamaha e apresentação das novidades.\n\nhttps://agendaocuritiba.github.io/e/e708b7fb948cf.html
+URL:https://agendaocuritiba.github.io/e/e708b7fb948cf.html
+END:VEVENT
+END:VCALENDAR

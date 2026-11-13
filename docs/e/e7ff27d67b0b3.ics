@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7ff27d67b0b3@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Veg&Tals | Feira Vegana
+LOCATION:Agrupa Cultura\, Av. Jaime Reis\, 176 - Curitiba\, Curitiba - PR
+DESCRIPTION:Feira vegana com comidas doces e salgadas\, bebidas\, cosméticos\, decoração e artesanato\, em espaço aberto a pets.\n\nhttps://agendaocuritiba.github.io/e/e7ff27d67b0b3.html
+URL:https://agendaocuritiba.github.io/e/e7ff27d67b0b3.html
+END:VEVENT
+END:VCALENDAR

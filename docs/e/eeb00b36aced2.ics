@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eeb00b36aced2@agendao-curitiba
-DTSTAMP:20261111T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261112T193000
-DTEND;TZID=America/Sao_Paulo:20261112T213000
-SUMMARY:Mão na Massa 8 - 12/11
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261116T193000
+DTEND;TZID=America/Sao_Paulo:20261116T213000
+SUMMARY:Mão na Massa 9 - 16/11
 LOCATION:Av. Ver. Toaldo Túlio\, 1202\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/eeb00b36aced2.html
 URL:https://agendaocuritiba.github.io/e/eeb00b36aced2.html

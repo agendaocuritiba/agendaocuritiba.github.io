@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e8869a4221f@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T200000
+DTEND;TZID=America/Sao_Paulo:20261127T220000
+SUMMARY:Natal em Curitiba: Uma História de Luz e Inspiração
+LOCATION:Gran Faculdade: Rua Luiz Parigot de Souza\, 961 - Portão\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino com a Orquestra do IMA\, projeção mapeada na fachada da Gran Faculdade e lasers sincronizados com a música.\n\nhttps://agendaocuritiba.github.io/e/e7e8869a4221f.html
+URL:https://agendaocuritiba.github.io/e/e7e8869a4221f.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2469f45eefc2@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:41ª edição do Festival de Dança Curitiba.
+LOCATION:Grande Auditório do Canal da Música (Rua Júlio Perneta\, 695\, Mercês)\, Curitiba - PR
+DESCRIPTION:Festival gratuito com mostras e competições de ballet\, jazz\, dança contemporânea e danças urbanas de grupos e bailarinos de Curitiba.\n\nhttps://agendaocuritiba.github.io/e/e2469f45eefc2.html
+URL:https://agendaocuritiba.github.io/e/e2469f45eefc2.html
+END:VEVENT
+END:VCALENDAR

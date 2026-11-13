@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eac8dbdace959@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261125T193000
+DTEND;TZID=America/Sao_Paulo:20261125T213000
+SUMMARY:27º Concerto Beneficente Natalino de Órgão
+LOCATION:Igreja Bom Jesus dos Perdões\, Curitiba - PR
+DESCRIPTION:Concerto natalino com organistas\, cantores\, coral e músicos\, com entrada trocada por 1 kg de alimento não perecível.\n\nhttps://agendaocuritiba.github.io/e/eac8dbdace959.html
+URL:https://agendaocuritiba.github.io/e/eac8dbdace959.html
+END:VEVENT
+END:VCALENDAR

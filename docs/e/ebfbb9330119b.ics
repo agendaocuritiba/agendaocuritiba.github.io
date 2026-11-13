@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebfbb9330119b@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Encontro de brechó Saí do armário
+LOCATION:Barão Hall Rua Dr. Claudino dos Santos\, 70 ? São Francisco\, Curitiba - PR
+DESCRIPTION:Encontro de brechós do projeto Saí do Armário\, com roupas e acessórios de segunda mão para garimpar.\n\nhttps://agendaocuritiba.github.io/e/ebfbb9330119b.html
+URL:https://agendaocuritiba.github.io/e/ebfbb9330119b.html
+END:VEVENT
+END:VCALENDAR

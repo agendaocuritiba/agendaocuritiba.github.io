@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef4592406b2b5@agendao-curitiba
+DTSTAMP:20261112T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270219T190000
+DTEND;TZID=America/Sao_Paulo:20270219T210000
+SUMMARY:Candlelight: O Senhor dos Anéis
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:Quarteto de cordas toca os temas de Howard Shore da trilogia O Senhor dos Anéis em concerto iluminado por velas.\n\nhttps://agendaocuritiba.github.io/e/ef4592406b2b5.html
+URL:https://agendaocuritiba.github.io/e/ef4592406b2b5.html
+END:VEVENT
+END:VCALENDAR
