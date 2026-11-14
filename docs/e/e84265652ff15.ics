@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e84265652ff15@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261219T220000
+DTEND;TZID=America/Sao_Paulo:20261220T000000
+SUMMARY:Jean & Julio
+LOCATION:Rodeo Curitiba\, Curitiba - PR
+DESCRIPTION:Show de Jean & Julio na Rodeo Curitiba\, com camarotes e mesas na área VIP\; proibido para menores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/e84265652ff15.html
+URL:https://agendaocuritiba.github.io/e/e84265652ff15.html
+END:VEVENT
+END:VCALENDAR

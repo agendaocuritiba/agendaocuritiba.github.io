@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ea9702b790d94@agendao-curitiba
-DTSTAMP:20261112T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261112T200000
-DTEND;TZID=America/Sao_Paulo:20261112T220000
-SUMMARY:Roxette Uk
-LOCATION:Clay Highway Bar\, BR-116\, 17253- Capão Raso\, Curitiba - PR
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T200000
+DTEND;TZID=America/Sao_Paulo:20261113T220000
+SUMMARY:Roxette Uk The Tribute Show
+LOCATION:Clay Highway Bar\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/ea9702b790d94.html
 URL:https://agendaocuritiba.github.io/e/ea9702b790d94.html
 END:VEVENT

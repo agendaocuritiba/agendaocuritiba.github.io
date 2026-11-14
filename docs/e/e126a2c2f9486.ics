@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e126a2c2f9486@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T103000
+DTEND;TZID=America/Sao_Paulo:20261121T123000
+SUMMARY:Influencia digital para gastronomia
+LOCATION:Museu Oscar Niemeyer | MON - PALCO ORIGEM\, Curitiba - PR
+DESCRIPTION:Bate-papo sobre influência digital na gastronomia\, no Palco Origem do Museu Oscar Niemeyer.\n\nhttps://agendaocuritiba.github.io/e/e126a2c2f9486.html
+URL:https://agendaocuritiba.github.io/e/e126a2c2f9486.html
+END:VEVENT
+END:VCALENDAR

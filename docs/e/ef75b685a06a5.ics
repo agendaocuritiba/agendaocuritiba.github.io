@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef75b685a06a5@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261225T210000
+DTEND;TZID=America/Sao_Paulo:20261225T230000
+SUMMARY:Tournée smart dave Curitiba
+LOCATION:PLAY MUSIC CWB\, Curitiba - PR
+DESCRIPTION:Festa de Natal com o artista Smart Dave no Play Music Club\, organizada pela Team Paswa.\n\nhttps://agendaocuritiba.github.io/e/ef75b685a06a5.html
+URL:https://agendaocuritiba.github.io/e/ef75b685a06a5.html
+END:VEVENT
+END:VCALENDAR

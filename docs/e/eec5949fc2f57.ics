@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eec5949fc2f57@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T143000
+DTEND;TZID=America/Sao_Paulo:20261122T163000
+SUMMARY:Torneio de Torra - Final e premiação
+LOCATION:Museu Oscar Niemeyer | MON - PALCO ORIGEM\, Curitiba - PR
+DESCRIPTION:Final e premiação de um torneio de torra de café\, no Palco Origem do Museu Oscar Niemeyer.\n\nhttps://agendaocuritiba.github.io/e/eec5949fc2f57.html
+URL:https://agendaocuritiba.github.io/e/eec5949fc2f57.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e031ea28dfb43@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261222T190000
+DTEND;TZID=America/Sao_Paulo:20261222T210000
+SUMMARY:Grande Concerto De Natal De Curitiba 2026
+LOCATION:Guairão\, Curitiba - PR
+DESCRIPTION:Concerto natalino com a Orquestra Sinfonia Brasil\, coro e solistas como a soprano Camila Titinger\, sob regência de Norton Morozowicz.\n\nhttps://agendaocuritiba.github.io/e/e031ea28dfb43.html
+URL:https://agendaocuritiba.github.io/e/e031ea28dfb43.html
+END:VEVENT
+END:VCALENDAR

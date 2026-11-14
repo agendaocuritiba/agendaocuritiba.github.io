@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec679004a41aa@agendao-curitiba
-DTSTAMP:20261112T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261113T200000
-DTEND;TZID=America/Sao_Paulo:20261113T220000
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261113T201500
+DTEND;TZID=America/Sao_Paulo:20261113T221500
 SUMMARY:Festa Hunter Sexta 13/11 No Deep Cwb
 LOCATION:Deep Lounge\, Curitiba - PR
 DESCRIPTION:Festa de sexta-feira 13 no Deep Lounge\, com o DJ Beto Rodrigues tocando pop\, dance\, retrô e hits na pista.\n\nhttps://agendaocuritiba.github.io/e/ec679004a41aa.html

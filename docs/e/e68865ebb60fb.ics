@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e68865ebb60fb@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T200000
+DTEND;TZID=America/Sao_Paulo:20261121T220000
+SUMMARY:"Tudo Acaba\, Nada Tem Fim" | Festival Mia Cara 11° Edição
+LOCATION:Teatro Guaíra\, Curitiba - PR
+DESCRIPTION:Monólogo de Antonio Cava\, dirigido por Mauro Zanatta\, que imagina uma entrevista com Federico Fellini\; parte do Festival Mia Cara.\n\nhttps://agendaocuritiba.github.io/e/e68865ebb60fb.html
+URL:https://agendaocuritiba.github.io/e/e68865ebb60fb.html
+END:VEVENT
+END:VCALENDAR

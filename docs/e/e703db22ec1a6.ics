@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e703db22ec1a6@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T220000
+DTEND;TZID=America/Sao_Paulo:20261122T000000
+SUMMARY:The Apocalypse Of Out Out - 3 Anos De Festa
+LOCATION:Dante Club\, Curitiba - PR
+DESCRIPTION:Festa de 3 anos da Out Out no Dante Club\, com indie pop\, indie rock e som 'tumblr' de Dona Sucos\, Gosdal\, Jo Ferreira\, Seabra e Ju The Nightmare.\n\nhttps://agendaocuritiba.github.io/e/e703db22ec1a6.html
+URL:https://agendaocuritiba.github.io/e/e703db22ec1a6.html
+END:VEVENT
+END:VCALENDAR

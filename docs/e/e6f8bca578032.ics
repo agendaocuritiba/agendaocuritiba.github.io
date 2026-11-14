@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e6f8bca578032@agendao-curitiba
-DTSTAMP:20261112T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261127T190000
-DTEND;TZID=America/Sao_Paulo:20261127T210000
+DTSTAMP:20261113T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T190000
+DTEND;TZID=America/Sao_Paulo:20261128T210000
 SUMMARY:Guenta Que Lá Vem 80
 LOCATION:QUINTAL DO ALMIRANTE\, Curitiba - PR
 DESCRIPTION:Noite de sucessos dos anos 80 tocados ao vivo pela Banda Dr. Brown no Quintal do Almirante.\n\nhttps://agendaocuritiba.github.io/e/e6f8bca578032.html

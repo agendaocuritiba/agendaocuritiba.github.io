@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e73179df1ef32@agendao-curitiba
+DTSTAMP:20261113T090000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Um dia com minha mãe
+LOCATION:Espaço Excêntrico Mauro Zanatta\, Curitiba - PR
+DESCRIPTION:Peça de teatro com temática de Natal no Espaço Excêntrico Mauro Zanatta.\n\nhttps://agendaocuritiba.github.io/e/e73179df1ef32.html
+URL:https://agendaocuritiba.github.io/e/e73179df1ef32.html
+END:VEVENT
+END:VCALENDAR
