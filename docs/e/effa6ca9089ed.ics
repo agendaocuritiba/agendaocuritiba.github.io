@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:effa6ca9089ed@agendao-curitiba
+DTSTAMP:20261114T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T110000
+DTEND;TZID=America/Sao_Paulo:20261206T130000
+SUMMARY:1ª Costelada da Casa Luz
+LOCATION:Centro Espiritualista Casa Luz\, Curitiba - PR
+DESCRIPTION:Almoço de confraternização de fim de ano do Centro Espiritualista Casa Luz\, com costela e música ao vivo\, aberto a amigos e famílias.\n\nhttps://agendaocuritiba.github.io/e/effa6ca9089ed.html
+URL:https://agendaocuritiba.github.io/e/effa6ca9089ed.html
+END:VEVENT
+END:VCALENDAR

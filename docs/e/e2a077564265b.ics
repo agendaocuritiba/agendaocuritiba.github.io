@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2a077564265b@agendao-curitiba
+DTSTAMP:20261114T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261210T203000
+DTEND;TZID=America/Sao_Paulo:20261210T223000
+SUMMARY:Quando a Vida Bate À Porta - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça do festival de alunos do Barracão EnCena: hóspedes de uma pensão prestes a ser vendida dividem lutos\, medos e recomeços. Texto e direção de Lea Albuquerque.\n\nhttps://agendaocuritiba.github.io/e/e2a077564265b.html
+URL:https://agendaocuritiba.github.io/e/e2a077564265b.html
+END:VEVENT
+END:VCALENDAR

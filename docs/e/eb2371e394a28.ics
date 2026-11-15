@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb2371e394a28@agendao-curitiba
+DTSTAMP:20261114T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T190000
+DTEND;TZID=America/Sao_Paulo:20261212T210000
+SUMMARY:Fora do Sistema - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Comédia de alunos do Barracão EnCena sobre uma empresa que adota uma inteligência artificial no atendimento e entra em conflito com os funcionários.\n\nhttps://agendaocuritiba.github.io/e/eb2371e394a28.html
+URL:https://agendaocuritiba.github.io/e/eb2371e394a28.html
+END:VEVENT
+END:VCALENDAR

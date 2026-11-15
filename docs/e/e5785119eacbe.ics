@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e5785119eacbe@agendao-curitiba
-DTSTAMP:20261113T090000Z
+DTSTAMP:20261114T090000Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
-SUMMARY:Entre Coroas E Vilões
+SUMMARY:Entre Coroas e Vilões - 31º Festival Alunos Encena
 LOCATION:Teatro Barracão EnCena\, Curitiba - PR
 DESCRIPTION:Musical em que filhos de heróis e de vilões dos contos de fadas se cruzam\, no Teatro Barracão EnCena.\n\nhttps://agendaocuritiba.github.io/e/e5785119eacbe.html
 URL:https://agendaocuritiba.github.io/e/e5785119eacbe.html

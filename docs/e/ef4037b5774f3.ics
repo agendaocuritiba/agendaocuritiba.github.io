@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef4037b5774f3@agendao-curitiba
+DTSTAMP:20261114T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T170000
+DTEND;TZID=America/Sao_Paulo:20261122T190000
+SUMMARY:Funk Até O Osso + Cwbattle
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:Festa de funk\, soul\, breakbeat e rap com os DJs Bill\, Mitay\, C-Rock e Mano Sal\, acompanhada de uma batalha de breaking.\n\nhttps://agendaocuritiba.github.io/e/ef4037b5774f3.html
+URL:https://agendaocuritiba.github.io/e/ef4037b5774f3.html
+END:VEVENT
+END:VCALENDAR

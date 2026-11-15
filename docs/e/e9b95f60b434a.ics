@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9b95f60b434a@agendao-curitiba
+DTSTAMP:20261114T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T203000
+DTEND;TZID=America/Sao_Paulo:20261211T223000
+SUMMARY:O Espelho do Riso - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Montagem de alunos do Barracão EnCena que junta três comédias de Molière\, entre elas Escola de Maridos e O Médico à Força.\n\nhttps://agendaocuritiba.github.io/e/e9b95f60b434a.html
+URL:https://agendaocuritiba.github.io/e/e9b95f60b434a.html
+END:VEVENT
+END:VCALENDAR
