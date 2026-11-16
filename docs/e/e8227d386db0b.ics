@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8227d386db0b@agendao-curitiba
+DTSTAMP:20261115T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261213T170000
+DTEND;TZID=America/Sao_Paulo:20261213T190000
+SUMMARY:O Inspetor Geral - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Comédia do Festival Alunos EnCena em que um viajante endividado é confundido com um fiscal do governo pelas autoridades corruptas de uma cidade.\n\nhttps://agendaocuritiba.github.io/e/e8227d386db0b.html
+URL:https://agendaocuritiba.github.io/e/e8227d386db0b.html
+END:VEVENT
+END:VCALENDAR

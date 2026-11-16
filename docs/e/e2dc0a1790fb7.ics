@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2dc0a1790fb7@agendao-curitiba
+DTSTAMP:20261115T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T190000
+DTEND;TZID=America/Sao_Paulo:20261209T210000
+SUMMARY:The Fairy Doll
+LOCATION:Teatro Positivo\, Curitiba - PR
+DESCRIPTION:Montagem do balé de repertório A Fada das Bonecas\, em que brinquedos ganham vida à meia-noite numa loja\, com adaptação do coreógrafo Erickson Oliveira.\n\nhttps://agendaocuritiba.github.io/e/e2dc0a1790fb7.html
+URL:https://agendaocuritiba.github.io/e/e2dc0a1790fb7.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8662cc983ab2@agendao-curitiba
+DTSTAMP:20261115T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T190000
+DTEND;TZID=America/Sao_Paulo:20261119T210000
+SUMMARY:Afterwork W/ First Pocket #002
+LOCATION:Speaker | Listening Caffé\, Curitiba - PR
+DESCRIPTION:Segunda edição do showcase intimista da First Class\, com DJs do coletivo numa jornada por diferentes vertentes da house music.\n\nhttps://agendaocuritiba.github.io/e/e8662cc983ab2.html
+URL:https://agendaocuritiba.github.io/e/e8662cc983ab2.html
+END:VEVENT
+END:VCALENDAR

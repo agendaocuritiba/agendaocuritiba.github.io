@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4c3bbe403f49@agendao-curitiba
+DTSTAMP:20261115T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T203000
+DTEND;TZID=America/Sao_Paulo:20261209T223000
+SUMMARY:1945
+LOCATION:Teatro Positivo\, Curitiba - PR
+DESCRIPTION:Espetáculo de dança de escola dirigida por Eliane Fetzer sobre a passagem da guerra para uma nova era e a efervescência cultural do pós-guerra.\n\nhttps://agendaocuritiba.github.io/e/e4c3bbe403f49.html
+URL:https://agendaocuritiba.github.io/e/e4c3bbe403f49.html
+END:VEVENT
+END:VCALENDAR
