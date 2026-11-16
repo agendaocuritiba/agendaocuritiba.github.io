@@ -5,13 +5,15 @@ Uso:  python3 newsletter.py OUT_DIR RUN_DATE
 Lê OUT_DIR/events.json e OUT_DIR/stats.json e grava:
   OUT_DIR/newsletter_subject.txt, OUT_DIR/newsletter.html, OUT_DIR/newsletter.txt
 """
-import json, sys, html
+import json, os, sys, html
 from datetime import date, timedelta
 
 DASH = "https://claude.ai/artifact/VC7u1GsWLVdSCTyoz7KwxF"
 DOW = ["seg", "ter", "qua", "qui", "sex", "sáb", "dom"]
 DOW_FULL = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
 MAX_NEW = 80
+# Resumos de uma frase por id de evento, escritos pela coleta diária (ver README)
+SUMMARIES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "state", "summaries.json")
 
 
 def br(d):
@@ -35,6 +37,10 @@ def main():
     week_end = today + timedelta(days=7)
     events = json.load(open(f"{out}/events.json"))
     stats = json.load(open(f"{out}/stats.json"))
+    try:
+        summaries = json.load(open(SUMMARIES))
+    except (OSError, ValueError):
+        summaries = {}
     n_sites = len([k for k, v in stats["bySource"].items() if v])
     horizon = date.fromisoformat(stats["horizon"])
     # A coleta roda todo dia; a newsletter é semanal, então "novos" são os que entraram nos últimos 7 dias
@@ -54,11 +60,13 @@ def main():
         if ev.get("tbd"):  # só o mês é conhecido (dedupe.py)
             when = "data a definir"
         meta = " · ".join(x for x in [when, ev.get("time", ""), ev.get("venue", ""), ", ".join(ev["sources"])] if x)
-        H.append(f'<li><a href="{esc(link(ev))}">{esc(ev["title"])}</a> <i>{esc(ev["category"])}</i><br><small>{esc(meta)}</small></li>')
-        T.append(f"- {ev['title']} [{ev['category']}] — {meta} — {link(ev)}")
+        summ = (summaries.get(ev.get("id")) or "").strip()
+        resumo = f'<br><span class="r">{esc(summ)}</span>' if summ else ""
+        H.append(f'<li><a href="{esc(link(ev))}">{esc(ev["title"])}</a> <i>{esc(ev["category"])}</i><br><small>{esc(meta)}</small>{resumo}</li>')
+        T.append(f"- {ev['title']} [{ev['category']}] — {meta} — {link(ev)}" + (f"\n  {summ}" if summ else ""))
 
     H.append('<style>ul{list-style:none;padding:0;margin:0}li{padding:5px 0;border-bottom:1px solid #eee}li a{color:#1a4fa0;font-weight:bold;text-decoration:none}'
-             'i{font-style:normal;font-size:11px;color:#fff;background:#888;border-radius:3px;padding:1px 5px}small{color:#555}'
+             'i{font-style:normal;font-size:11px;color:#fff;background:#888;border-radius:3px;padding:1px 5px}small{color:#555}.r{display:block;font-size:13px;color:#333;margin-top:2px;line-height:1.35}'
              'h2{font-size:19px;border-bottom:2px solid #1a4fa0;padding-bottom:4px;margin-top:26px}h3{font-size:15px;margin:14px 0 2px;color:#1a4fa0}</style>'
              '<div style="font-family:Arial,Helvetica,sans-serif;max-width:640px;margin:0 auto;color:#222">')
     H.append('<h1 style="margin:0 0 4px;font-size:24px">Agenda Curitiba</h1>')
