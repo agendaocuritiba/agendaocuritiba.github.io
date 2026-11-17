@@ -209,6 +209,9 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .seas { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--muted); margin-left: 4px; white-space: nowrap; }
 .rep:hover { border-color: currentColor; }
 .rep[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+/* Colapsar todos os repetidos: o mesmo botão dos cards, na linha dos toggles */
+.tgls .rep { margin-left: 0; align-self: center; }
+.rep:disabled { opacity: .4; cursor: default; border-color: transparent; }
 .desc { margin: 2px 0 0; font-size: 14px; max-width: 62ch; }
 .acts { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 6px; }
 .go { font-size: 13px; font-weight: 600; text-decoration: none; padding: 4px 10px; border-radius: 999px; background: var(--go); color: var(--go-fg); white-space: nowrap; }
@@ -522,6 +525,10 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       return b;
     };
     const tgls = el('div', 'tgls');
+    // Colapsar/expandir todos os eventos que se repetem em vários dias (o estado é acertado em draw(), que conhece as repetições)
+    const ra = el('button', 'rep'); ra.type = 'button'; ra.id = 'repAll'; ra.innerHTML = svg(UI.repeat);
+    ra.addEventListener('click', toggleAllRepeats);
+    tgls.append(ra);
     tgls.append(tg('free', 'free', UI.free, 'Só gratuitos', nFree), tg('grp', 'group', UI.group, 'Agrupar por tipo'));
     // Com o agrupamento ligado, escolhe o que vem primeiro: os dias (com os tipos dentro) ou os tipos (com os dias dentro)
     if (state.group) {
@@ -678,6 +685,13 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       .flatMap((e) => cardDays(e, w).map((d) => [d, e])).sort((a, b) => (byType ? cc(a, b) : 0) || a[0].localeCompare(b[0]) || (state.group && !byType ? cc(a, b) : 0) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
     // Quantas datas cada evento tem com os filtros atuais; colapsado, fica só a primeira
     const reps = {}; all.forEach(([, e]) => { reps[e.id] = (reps[e.id] || 0) + 1; });
+    const repIds = Object.keys(reps).filter((id) => reps[id] > 1);
+    const ra = $('repAll'), allOn = repIds.length > 0 && repIds.every((id) => collapsed.has(id));
+    ra.disabled = !repIds.length; ra.setAttribute('aria-pressed', allOn); ra.dataset.ids = repIds.join(' ');
+    ra.title = !repIds.length ? 'Nenhum evento repetido em vários dias com esses filtros'
+      : allOn ? 'Expandir todos os eventos repetidos: cada um volta a aparecer em todas as suas datas'
+      : 'Colapsar todos os eventos repetidos: cada um aparece só uma vez, na primeira data';
+    ra.setAttribute('aria-label', ra.title);
     const kept = new Set();
     const list = all.filter(([, e]) => !collapsed.has(e.id) || (!kept.has(e.id) && kept.add(e.id)));
     drawVenues();
@@ -718,6 +732,20 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     draw();
     const keep = document.querySelector('.card[data-eid="' + id + '"]');
     if (keep) { scrollBy(0, keep.getBoundingClientRect().top - top); const b = keep.querySelector('.rep'); if (b) b.focus({ preventScroll: true }); }
+  }
+
+  // Colapsa/expande todos os repetidos de uma vez, mantendo na tela o primeiro card que estava visível (sem rolar quando está no topo)
+  function toggleAllRepeats() {
+    const ra = $('repAll'), ids = (ra.dataset.ids || '').split(' ').filter(Boolean); if (!ids.length) return;
+    const lim = (narrow.matches ? mini : bar).getBoundingClientRect().bottom;
+    const anchor = [...document.querySelectorAll('#out .card')].find((c) => c.id && c.getBoundingClientRect().bottom > lim + 40);   // só a primeira data de cada evento, que nunca some
+    const id = anchor && anchor.dataset.eid, top = anchor && anchor.getBoundingClientRect().top;
+    const on = ra.getAttribute('aria-pressed') === 'true';
+    ids.forEach((x) => { on ? collapsed.delete(x) : collapsed.add(x); });
+    draw();
+    const keep = id && document.querySelector('.card[data-eid="' + id + '"]');
+    if (keep && scrollY > 0) scrollBy(0, keep.getBoundingClientRect().top - top);
+    const nb = $('repAll'); if (nb) nb.focus({ preventScroll: true });
   }
 
   function closeMenus() { document.querySelectorAll('.calmenu').forEach((m) => { m.hidden = true; m.previousSibling.setAttribute('aria-expanded', 'false'); }); }
