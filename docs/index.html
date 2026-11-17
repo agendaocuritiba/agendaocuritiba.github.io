@@ -110,13 +110,26 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .vnone { color: var(--muted); font-size: 14px; padding: 8px; }
 .lbl { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-#cats { flex: 1 1 100%; }   /* ocupa a linha toda, para o "Só gratuitos" encostar à direita mesmo com poucas categorias */
+#cats { flex: 1 1 100%; }   /* ocupa a linha toda, para os toggles encostarem à direita mesmo com poucas categorias */
 .chip { font: inherit; font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 .chip svg { width: 15px; height: 15px; }
 .chip[aria-pressed="true"] { background: var(--chip); color: var(--fg); border-color: var(--kc, var(--fg)); }
 .chip[aria-pressed="true"] svg { color: var(--kc); }
 .chip.all[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-.chip.free { --kc: var(--free); margin-left: auto; }   /* na última linha das categorias, encostado à direita */
+/* Toggles (Só gratuitos e Agrupar por tipo): na última linha das categorias, encostados à direita, com um interruptor no lugar da borda de chip */
+.tgls { display: flex; gap: 2px 10px; flex-wrap: wrap; justify-content: flex-end; margin-left: auto; }
+.tg { font: inherit; font-size: 13px; padding: 5px 2px 5px 4px; border: 0; background: none; color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.tg svg { width: 15px; height: 15px; }
+.tg .sw { position: relative; flex: none; width: 30px; height: 18px; border-radius: 999px; background: color-mix(in srgb, var(--muted) 40%, transparent); transition: background-color .15s; }
+.tg .sw::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--panel); box-shadow: 0 1px 2px rgb(0 0 0 / .25); transition: transform .15s; }
+.tg:hover { color: var(--fg); }
+.tg[aria-checked="true"] { color: var(--fg); }
+.tg[aria-checked="true"] svg { color: var(--tc); }
+.tg[aria-checked="true"] .sw { background: var(--tc); }
+.tg[aria-checked="true"] .sw::after { transform: translateX(12px); }
+.tg.free { --tc: var(--free); }
+.tg.grp { --tc: var(--accent); }
+.tg .n { font-variant-numeric: tabular-nums; opacity: .7; }
 .chip .n { font-variant-numeric: tabular-nums; opacity: .7; }
 
 /* Seletor de período */
@@ -147,6 +160,12 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .card { scroll-margin-top: calc(env(safe-area-inset-top, 0px) + var(--stick-h, 0px) + 64px); }
 .day small { font-family: var(--font-body); font-weight: 500; font-size: 13px; color: var(--muted); }
 .list { display: grid; gap: 8px; }
+/* Agrupar por tipo: dentro de cada dia, um rótulo com o ícone e a cor da categoria antes dos seus cards */
+.gh { display: flex; align-items: center; gap: 6px; margin: 6px 0 -2px; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--kc); }
+.gh:first-child { margin-top: 0; }
+.gh svg { width: 15px; height: 15px; }
+.gh .n { color: var(--muted); font-weight: 500; letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.gh::after { content: ""; flex: 1; height: 1px; background: color-mix(in srgb, var(--kc) 30%, var(--line)); }
 
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 12px; }
 .card:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -235,6 +254,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   .wk b { height: 17px; font-size: 10px; }
 }
 @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s; } }
+@media (prefers-reduced-motion: reduce) { .tg .sw, .tg .sw::after { transition: none; } }
 </style>
 </head>
 <body>
@@ -307,6 +327,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     share: '<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/>',
     pin: '<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
     repeat: '<path d="M17 2.5l3 3-3 3"/><path d="M4 11.5v-1a5 5 0 0 1 5-5h11"/><path d="M7 21.5l-3-3 3-3"/><path d="M20 12.5v1a5 5 0 0 1-5 5H4"/>',
+    group: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
     free: '<path d="M4 9.5V6.5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2.5 2.5 0 0 0 0 5v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2.5 2.5 0 0 0 0-5z"/><path d="M9 15l6-6"/>'
   };
   const ORDER = ['Show', 'Festa/Balada', 'Teatro', 'Concerto', 'Stand-up', 'Palestra', 'Infantil', 'Festival', 'Feira/Exposição', 'Gastronomia', 'Congresso', 'Esporte', 'Outros'];
@@ -369,11 +390,11 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const rangeText = (a, b) => a === b ? short(a) : short(a) + ' – ' + short(b);
 
   // Estado (guardado no navegador)
-  const DEF = { when: { mode: 'all' }, pub: { mode: 'any' }, venues: [], free: false, off: [] };
+  const DEF = { when: { mode: 'all' }, pub: { mode: 'any' }, venues: [], free: false, group: false, off: [] };
   let saved = {}; try { saved = JSON.parse(store.get('agc-filters') || '{}') || {}; } catch (e) { saved = {}; }
-  const state = { q: '', when: saved.when || DEF.when, pub: saved.pub || DEF.pub, venues: new Set(saved.venues || (saved.venue ? [saved.venue] : [])), free: !!saved.free, off: new Set(saved.off || []) };
+  const state = { q: '', when: saved.when || DEF.when, pub: saved.pub || DEF.pub, venues: new Set(saved.venues || (saved.venue ? [saved.venue] : [])), free: !!saved.free, group: !!saved.group, off: new Set(saved.off || []) };
   if (state.when.mode === 'range' && state.when.b < todayIso) state.when = { mode: 'all' };
-  const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venues: [...state.venues], free: state.free, off: [...state.off] }));
+  const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venues: [...state.venues], free: state.free, group: state.group, off: [...state.off] }));
 
   let meta = {}, events = [], shown = PAGE;
   // Eventos que se repetem em vários dias e o usuário colapsou: mostram só a primeira data que os filtros deixam visível
@@ -475,11 +496,18 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       b.addEventListener('click', () => { state.off.has(c) ? state.off.delete(c) : state.off.add(c); save(); shown = PAGE; draw(); });
       box.append(b);
     });
+    // Toggles: interruptores (role="switch") encostados à direita
     const nFree = base.filter((e) => e.g).length;
-    const fr = el('button', 'chip free'); fr.type = 'button'; fr.setAttribute('aria-pressed', state.free);
-    fr.innerHTML = svg(UI.free); fr.append(el('span', null, 'Só gratuitos'), el('span', 'n', nFree));
-    fr.addEventListener('click', () => { state.free = !state.free; save(); shown = PAGE; draw(); });
-    box.append(fr);
+    const tg = (cls, key, icon, label, n) => {
+      const b = el('button', 'tg ' + cls); b.type = 'button'; b.setAttribute('role', 'switch'); b.setAttribute('aria-checked', state[key]);
+      b.innerHTML = svg(icon); b.append(el('span', null, label)); if (n != null) b.append(el('span', 'n', n));
+      b.append(el('span', 'sw'));
+      b.addEventListener('click', () => { state[key] = !state[key]; save(); shown = PAGE; draw(); const nb = $('cats').querySelector('.tg.' + cls); if (nb) nb.focus({ preventScroll: true }); });
+      return b;
+    };
+    const tgls = el('div', 'tgls');
+    tgls.append(tg('free', 'free', UI.free, 'Só gratuitos', nFree), tg('grp', 'group', UI.group, 'Agrupar por tipo'));
+    box.append(tgls);
   }
 
   // Links de agenda: Google e Outlook abrem já preenchidos; Apple/iOS usa o .ics estático do evento
@@ -615,8 +643,10 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const base = events.filter((e) => match(e, true));
     drawCats(base);
     const w = rangeOf(state.when, WHEN_Q);
+    // Agrupado por tipo: dentro de cada dia, as categorias na ordem dos chips; sem agrupar, só por horário
+    const ci = (e) => { const i = ORDER.indexOf(e.c || 'Outros'); return i < 0 ? ORDER.length : i; };
     const all = base.filter((e) => !state.off.has(e.c || 'Outros'))
-      .flatMap((e) => cardDays(e, w).map((d) => [d, e])).sort((a, b) => a[0].localeCompare(b[0]) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
+      .flatMap((e) => cardDays(e, w).map((d) => [d, e])).sort((a, b) => a[0].localeCompare(b[0]) || (state.group ? ci(a[1]) - ci(b[1]) || (a[1].c || '').localeCompare(b[1].c || '') : 0) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
     // Quantas datas cada evento tem com os filtros atuais; colapsado, fica só a primeira
     const reps = {}; all.forEach(([, e]) => { reps[e.id] = (reps[e.id] || 0) + 1; });
     const kept = new Set();
@@ -626,9 +656,13 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     $('summary').textContent = list.length ? n + (n === 1 ? ' evento' : ' eventos') + (list.length > n ? ' em ' + list.length + ' datas' : '') : '';
     const out = $('out'); out.replaceChildren();
     if (!list.length) { out.append(el('p', 'empty', 'Nenhum evento com esses filtros. Tente ampliar o período ou marcar mais categorias.')); $('more').hidden = true; return; }
-    let cur = null, box = null; const seen = new Set();
+    let cur = null, box = null, cat = null; const seen = new Set();
+    // Contagem por dia e tipo, para o rótulo do grupo (conta todos os cards do dia, mesmo os que ficam para "Mostrar mais")
+    const gc = {}; if (state.group) list.forEach(([d, e]) => { const k = d + '|' + (e.c || 'Outros'); gc[k] = (gc[k] || 0) + 1; });
     list.slice(0, shown).forEach(([d, e]) => {
-      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
+      if (d !== cur) { cur = d; cat = null; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
+      const c = e.c || 'Outros';
+      if (state.group && c !== cat) { cat = c; const g = el('h3', 'gh'); g.style.setProperty('--kc', kc(c)); g.innerHTML = catSvg(c); g.append(el('span', null, c), el('span', 'n', gc[d + '|' + c])); box.append(g); }
       box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
     });
     $('more').hidden = list.length <= shown;
