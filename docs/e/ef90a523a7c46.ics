@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef90a523a7c46@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T193000
+DTEND;TZID=America/Sao_Paulo:20261127T213000
+SUMMARY:Desformatura e Noite de Reconhecimento - Especialistas da Alegria
+LOCATION:Auditório John Henry Newmam - PUCPR (anexo a biblioteca)\, Curitiba - PR
+DESCRIPTION:Noite de reconhecimento dos Especialistas da Alegria\, que celebra a chegada de novos integrantes e quem já faz parte do grupo.\n\nhttps://agendaocuritiba.github.io/e/ef90a523a7c46.html
+URL:https://agendaocuritiba.github.io/e/ef90a523a7c46.html
+END:VEVENT
+END:VCALENDAR

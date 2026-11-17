@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e16376101f7d8@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T220000
+DTEND;TZID=America/Sao_Paulo:20261120T000000
+SUMMARY:Quintou - Stand Up Comedy 2026 / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Noite de stand-up com line-up variado de humoristas\, reunindo diferentes estilos de comédia no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e16376101f7d8.html
+URL:https://agendaocuritiba.github.io/e/e16376101f7d8.html
+END:VEVENT
+END:VCALENDAR

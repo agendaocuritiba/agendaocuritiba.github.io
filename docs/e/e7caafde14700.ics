@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7caafde14700@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Expo Bebê & Gestante
+LOCATION:Centro de Eventos Positivo\, Parque Barigui | Curitiba/PR\, Curitiba - PR
+DESCRIPTION:Feira com produtos e marcas para gestantes e famílias com bebês\, para conhecer novidades e comparar opções.\n\nhttps://agendaocuritiba.github.io/e/e7caafde14700.html
+URL:https://agendaocuritiba.github.io/e/e7caafde14700.html
+END:VEVENT
+END:VCALENDAR

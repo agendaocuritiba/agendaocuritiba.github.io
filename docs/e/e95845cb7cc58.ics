@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e95845cb7cc58@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Feira Empreendedores da Nossa Terra ESPECIAL DE NATAL | Restaurante Dom Antônio
+LOCATION:Restaurante Dom Antônio - Salão Scalinata. Av. Manoel Ribas\, 6121 - Santa Felicidade\, Curitiba - PR
+DESCRIPTION:Feira natalina de empreendedores de Santa Felicidade\, com presentes\, artesanato e decoração para as compras de fim de ano.\n\nhttps://agendaocuritiba.github.io/e/e95845cb7cc58.html
+URL:https://agendaocuritiba.github.io/e/e95845cb7cc58.html
+END:VEVENT
+END:VCALENDAR

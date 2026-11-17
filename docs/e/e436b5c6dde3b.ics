@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e436b5c6dde3b@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T210000
+DTEND;TZID=America/Sao_Paulo:20261205T230000
+SUMMARY:Sábado\, 05 De Dezembro - 21H A Última Balada De 2026
+LOCATION:Thermas CWB\, Curitiba - PR
+DESCRIPTION:Edição de fim de ano do Baile dos Maduros – Conexão CWB\, noite de música e dança no Thermas CWB.\n\nhttps://agendaocuritiba.github.io/e/e436b5c6dde3b.html
+URL:https://agendaocuritiba.github.io/e/e436b5c6dde3b.html
+END:VEVENT
+END:VCALENDAR

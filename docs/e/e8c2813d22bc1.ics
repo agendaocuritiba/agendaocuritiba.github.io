@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8c2813d22bc1@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T190000
+DTEND;TZID=America/Sao_Paulo:20261218T210000
+SUMMARY:Candlelight: Tributo aos Oasis
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:Quarteto de cordas toca à luz de velas um tributo com os sucessos do Oasis no Teatro da FEP.\n\nhttps://agendaocuritiba.github.io/e/e8c2813d22bc1.html
+URL:https://agendaocuritiba.github.io/e/e8c2813d22bc1.html
+END:VEVENT
+END:VCALENDAR

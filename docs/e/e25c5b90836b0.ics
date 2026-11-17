@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e25c5b90836b0@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270122T210000
+DTEND;TZID=America/Sao_Paulo:20270122T230000
+SUMMARY:Candlelight: Tributo a Michael Jackson
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:Quarteto de cordas interpreta à luz de velas os grandes sucessos de Michael Jackson no Teatro da FEP.\n\nhttps://agendaocuritiba.github.io/e/e25c5b90836b0.html
+URL:https://agendaocuritiba.github.io/e/e25c5b90836b0.html
+END:VEVENT
+END:VCALENDAR

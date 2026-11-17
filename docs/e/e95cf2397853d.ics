@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e95cf2397853d@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T160000
+DTEND;TZID=America/Sao_Paulo:20261212T180000
+SUMMARY:Um café com Guimarães.
+LOCATION:Casa Kuri\, Curitiba - PR
+DESCRIPTION:Encontro na Casa Kuri sobre os 70 anos de Grande Sertão: Veredas\, para conversar sobre a obra de Guimarães Rosa.\n\nhttps://agendaocuritiba.github.io/e/e95cf2397853d.html
+URL:https://agendaocuritiba.github.io/e/e95cf2397853d.html
+END:VEVENT
+END:VCALENDAR
