@@ -129,6 +129,9 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .tg[aria-checked="true"] .sw::after { transform: translateX(12px); }
 .tg.free { --tc: var(--free); }
 .tg.grp { --tc: var(--accent); }
+.tg.rpt { --tc: var(--accent); }
+.tg:disabled { opacity: .45; cursor: default; }
+.tg:disabled:hover { color: var(--muted); }
 .tg .n { font-variant-numeric: tabular-nums; opacity: .7; }
 /* Ordem do agrupamento (só aparece com "Agrupar por tipo" ligado): Data › Tipo ou Tipo › Data */
 .ord { display: inline-flex; align-self: center; border: 1px solid var(--line); border-radius: 999px; padding: 2px; gap: 2px; }
@@ -209,8 +212,6 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .seas { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--muted); margin-left: 4px; white-space: nowrap; }
 .rep:hover { border-color: currentColor; }
 .rep[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel); }
-/* Colapsar todos os repetidos: o mesmo botão dos cards, na linha dos toggles */
-.tgls .rep { margin-left: 0; align-self: center; }
 .rep:disabled { opacity: .4; cursor: default; border-color: transparent; }
 .desc { margin: 2px 0 0; font-size: 14px; max-width: 62ch; }
 .acts { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 6px; }
@@ -525,8 +526,9 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       return b;
     };
     const tgls = el('div', 'tgls');
-    // Colapsar/expandir todos os eventos que se repetem em vários dias (o estado é acertado em draw(), que conhece as repetições)
-    const ra = el('button', 'rep'); ra.type = 'button'; ra.id = 'repAll'; ra.innerHTML = svg(UI.repeat);
+    // Colapsar/expandir todos os eventos que se repetem em vários dias (ligado/desligado e dica são acertados em draw(), que conhece as repetições)
+    const ra = el('button', 'tg rpt'); ra.type = 'button'; ra.id = 'repAll'; ra.setAttribute('role', 'switch'); ra.setAttribute('aria-checked', 'false');
+    ra.innerHTML = svg(UI.repeat); ra.append(el('span', null, 'Colapsar repetidos'), el('span', 'sw'));
     ra.addEventListener('click', toggleAllRepeats);
     tgls.append(ra);
     tgls.append(tg('free', 'free', UI.free, 'Só gratuitos', nFree), tg('grp', 'group', UI.group, 'Agrupar por tipo'));
@@ -687,11 +689,10 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const reps = {}; all.forEach(([, e]) => { reps[e.id] = (reps[e.id] || 0) + 1; });
     const repIds = Object.keys(reps).filter((id) => reps[id] > 1);
     const ra = $('repAll'), allOn = repIds.length > 0 && repIds.every((id) => collapsed.has(id));
-    ra.disabled = !repIds.length; ra.setAttribute('aria-pressed', allOn); ra.dataset.ids = repIds.join(' ');
+    ra.disabled = !repIds.length; ra.setAttribute('aria-checked', allOn); ra.dataset.ids = repIds.join(' ');
     ra.title = !repIds.length ? 'Nenhum evento repetido em vários dias com esses filtros'
-      : allOn ? 'Expandir todos os eventos repetidos: cada um volta a aparecer em todas as suas datas'
-      : 'Colapsar todos os eventos repetidos: cada um aparece só uma vez, na primeira data';
-    ra.setAttribute('aria-label', ra.title);
+      : allOn ? 'Desligue para expandir todos os eventos repetidos: cada um volta a aparecer em todas as suas datas'
+      : 'Ligue para colapsar todos os eventos repetidos: cada um aparece só uma vez, na primeira data';
     const kept = new Set();
     const list = all.filter(([, e]) => !collapsed.has(e.id) || (!kept.has(e.id) && kept.add(e.id)));
     drawVenues();
@@ -740,7 +741,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const lim = (narrow.matches ? mini : bar).getBoundingClientRect().bottom;
     const anchor = [...document.querySelectorAll('#out .card')].find((c) => c.id && c.getBoundingClientRect().bottom > lim + 40);   // só a primeira data de cada evento, que nunca some
     const id = anchor && anchor.dataset.eid, top = anchor && anchor.getBoundingClientRect().top;
-    const on = ra.getAttribute('aria-pressed') === 'true';
+    const on = ra.getAttribute('aria-checked') === 'true';
     ids.forEach((x) => { on ? collapsed.delete(x) : collapsed.add(x); });
     draw();
     const keep = id && document.querySelector('.card[data-eid="' + id + '"]');
