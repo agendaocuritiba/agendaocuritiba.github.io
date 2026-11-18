@@ -181,7 +181,9 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .dsh { display: flex; align-items: baseline; gap: 8px; margin: 8px 0 -2px; font-size: 13px; font-weight: 600; color: var(--fg); }
 .dsh:first-child { margin-top: 0; }
 .dsh small { font-weight: 500; color: var(--muted); }
-.dsh::after { content: ""; flex: 1; height: 1px; background: var(--line); align-self: center; }
+.dsh::after { content: ""; flex: 1; height: 1px; background: var(--line); align-self: center; order: 1; }
+/* No Tipo › Data, o mini calendário da semana fica à direita de cada dia, depois da linha */
+.dsh .wk { order: 2; margin-left: 2px; }
 
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 12px; }
 .card:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -709,7 +711,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       list.slice(0, shown).forEach(([d, e]) => {
         const c = e.c || 'Outros';
         if (c !== cat) { cat = c; cur = null; const hh = el('h2', 'day ty'); hh.style.setProperty('--kc', kc(c)); hh.innerHTML = catSvg(c); hh.append(el('span', null, c), el('small', null, tn[c] + (tn[c] === 1 ? ' evento' : ' eventos'))); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
-        if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const g = el('h3', 'dsh', a); if (b) g.append(el('small', null, b)); box.append(g); }
+        if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const g = el('h3', 'dsh', a); if (b) g.append(el('small', null, b)); g.append(weekCal(d)); box.append(g); }
         box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
       });
       $('more').hidden = list.length <= shown;
