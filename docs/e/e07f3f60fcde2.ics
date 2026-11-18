@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e07f3f60fcde2@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T220000
+DTEND;TZID=America/Sao_Paulo:20261213T000000
+SUMMARY:Preview Surreal 5 Years: Ratier
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:Esquenta para os 5 anos da festa Surreal no +55 Bar\, com apresentação do DJ Ratier\; entrada só para maiores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/e07f3f60fcde2.html
+URL:https://agendaocuritiba.github.io/e/e07f3f60fcde2.html
+END:VEVENT
+END:VCALENDAR

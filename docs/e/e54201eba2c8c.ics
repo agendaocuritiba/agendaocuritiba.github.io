@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e54201eba2c8c@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T143000
+DTEND;TZID=America/Sao_Paulo:20261205T163000
+SUMMARY:Entre Amigos 15 Anos Hop 20 Anos Darua
+LOCATION:Hop'n Roll\, Curitiba - PR
+DESCRIPTION:Festa que comemora os 15 anos do bar Hop'n Roll e os 20 anos do Darua.\n\nhttps://agendaocuritiba.github.io/e/e54201eba2c8c.html
+URL:https://agendaocuritiba.github.io/e/e54201eba2c8c.html
+END:VEVENT
+END:VCALENDAR

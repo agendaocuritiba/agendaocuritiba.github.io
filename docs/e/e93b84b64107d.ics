@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e93b84b64107d@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T200000
+DTEND;TZID=America/Sao_Paulo:20261204T220000
+SUMMARY:Sexta-feira\, 04 de Dezembro 5ª Edição da Festa Hunter
+LOCATION:DEEP LOUNGE\, Curitiba - PR
+DESCRIPTION:5ª edição da Festa Hunter\, noite dançante no Deep Lounge com set do DJ Beto Rodrigues\, do Rio de Janeiro.\n\nhttps://agendaocuritiba.github.io/e/e93b84b64107d.html
+URL:https://agendaocuritiba.github.io/e/e93b84b64107d.html
+END:VEVENT
+END:VCALENDAR

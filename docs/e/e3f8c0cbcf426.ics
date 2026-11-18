@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3f8c0cbcf426@agendao-curitiba
-DTSTAMP:20261116T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261125T200000
-DTEND;TZID=America/Sao_Paulo:20261125T220000
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261118T200000
+DTEND;TZID=America/Sao_Paulo:20261118T220000
 SUMMARY:Um Sonho de Natal
 LOCATION:Teatro Fernanda Montenegro\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html

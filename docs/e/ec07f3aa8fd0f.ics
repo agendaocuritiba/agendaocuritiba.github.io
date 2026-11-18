@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec07f3aa8fd0f@agendao-curitiba
-DTSTAMP:20261116T090000Z
-DTSTART;VALUE=DATE:20261116
-DTEND;VALUE=DATE:20261117
+DTSTAMP:20261117T090000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
 SUMMARY:Festival De Teatro Caa/Oab - Cortinas Do Tempo
 LOCATION:Teatro Paulo Autran\, Curitiba - PR
 DESCRIPTION:Festival de teatro promovido pela CAA/OAB\, com espetáculos no Teatro Paulo Autran.\n\nhttps://agendaocuritiba.github.io/e/ec07f3aa8fd0f.html

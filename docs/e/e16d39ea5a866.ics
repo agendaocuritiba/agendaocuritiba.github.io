@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e16d39ea5a866@agendao-curitiba
-DTSTAMP:20261116T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261122T093000
-DTEND;TZID=America/Sao_Paulo:20261122T113000
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T103000
+DTEND;TZID=America/Sao_Paulo:20261122T123000
 SUMMARY:Concerto da Orquestra Sinfônica do Paraná
-LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
+LOCATION:Teatro Guaíra\, R. Conselheiro Laurindo\, 175\, Centro\, Curitiba - PR
 DESCRIPTION:A Orquestra Sinfônica do Paraná toca Brahms\, Mozart\, Villa-Lobos e Stravinsky\, com Ricardo Castro como regente e solista ao piano.\n\nhttps://agendaocuritiba.github.io/e/e16d39ea5a866.html
 URL:https://agendaocuritiba.github.io/e/e16d39ea5a866.html
 END:VEVENT

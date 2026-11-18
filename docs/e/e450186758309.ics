@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e450186758309@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T220000
+DTEND;TZID=America/Sao_Paulo:20261212T000000
+SUMMARY:Do You Wanna Funk: Mc Davi
+LOCATION:+55 Bar\, Curitiba - PR
+DESCRIPTION:Festa de funk no +55 Bar com show do MC Davi\; entrada só para maiores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/e450186758309.html
+URL:https://agendaocuritiba.github.io/e/e450186758309.html
+END:VEVENT
+END:VCALENDAR

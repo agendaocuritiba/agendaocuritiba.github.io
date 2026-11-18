@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e73f703c3feae@agendao-curitiba
-DTSTAMP:20261116T090000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T235900
+DTEND;TZID=America/Sao_Paulo:20261122T015900
 SUMMARY:Matuê e Brandão
-LOCATION:Live Curitiba\, R. Itajubá\, 143 - Novo Mundo\, Curitiba - PR
+LOCATION:Live Curitiba - R. Itajubá\, 143 - Novo Mundo\, Curitiba - PR\, 81050-040\, R. Itajubá\, 143 - Novo Mundo\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e73f703c3feae.html
 URL:https://agendaocuritiba.github.io/e/e73f703c3feae.html
 END:VEVENT

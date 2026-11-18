@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaec7969a214b@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261207T190000
+DTEND;TZID=America/Sao_Paulo:20261207T210000
+SUMMARY:Diogo Portugal em Impróprio para Políticos / Stand Up Comedy
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:Stand-up de Diogo Portugal que transforma notícias e figuras da política brasileira em piadas\, com improviso e olhar crítico.\n\nhttps://agendaocuritiba.github.io/e/eaec7969a214b.html
+URL:https://agendaocuritiba.github.io/e/eaec7969a214b.html
+END:VEVENT
+END:VCALENDAR

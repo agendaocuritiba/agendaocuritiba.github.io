@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1c108a68d84c@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T183000
+DTEND;TZID=America/Sao_Paulo:20261205T203000
+SUMMARY:Bombshell
+LOCATION:Teatro José Maria Santos\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e1c108a68d84c.html
+URL:https://agendaocuritiba.github.io/e/e1c108a68d84c.html
+END:VEVENT
+END:VCALENDAR

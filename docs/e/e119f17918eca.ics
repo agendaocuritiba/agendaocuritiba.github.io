@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e119f17918eca@agendao-curitiba
-DTSTAMP:20261116T090000Z
+DTSTAMP:20261117T090000Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
-SUMMARY:Da Amazônia\, Do Mundo
-LOCATION:CAIXA CULTURAL CURITIBA\, Curitiba - PR
+SUMMARY:Da Amazônia\, do Mundo
+LOCATION:Caixa Cultural Curitiba\, Rua Conselheiro Laurindo nº 280\, Centro\, Curitiba - PR
 DESCRIPTION:O cantor amazonense Eduardo Du Norte apresenta repertório autoral com carimbó\, boi-bumbá e marabaixo\, com participação da cantora Zime e bate-papo no fim.\n\nhttps://agendaocuritiba.github.io/e/e119f17918eca.html
 URL:https://agendaocuritiba.github.io/e/e119f17918eca.html
 END:VEVENT

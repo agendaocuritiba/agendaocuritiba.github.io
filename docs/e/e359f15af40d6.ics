@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e359f15af40d6@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Cogumelo Plutão e Garotos da Rua
+LOCATION:Clay HighWay\, Curitiba - PR
+DESCRIPTION:Show conjunto das bandas Cogumelo Plutão e Garotos da Rua no Clay Highway.\n\nhttps://agendaocuritiba.github.io/e/e359f15af40d6.html
+URL:https://agendaocuritiba.github.io/e/e359f15af40d6.html
+END:VEVENT
+END:VCALENDAR

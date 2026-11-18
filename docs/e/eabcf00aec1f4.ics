@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eabcf00aec1f4@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261213T170000
+DTEND;TZID=America/Sao_Paulo:20261213T190000
+SUMMARY:Bolero de Luna - Baile edição especial de fim de ano
+LOCATION:Alma Latina\, Curitiba - PR
+DESCRIPTION:Edição de fim de ano do baile Bolero de Luna\, encontro de dançarinos e apaixonados por bolero no Alma Latina.\n\nhttps://agendaocuritiba.github.io/e/eabcf00aec1f4.html
+URL:https://agendaocuritiba.github.io/e/eabcf00aec1f4.html
+END:VEVENT
+END:VCALENDAR

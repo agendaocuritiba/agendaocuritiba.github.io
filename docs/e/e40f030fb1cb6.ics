@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e40f030fb1cb6@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:T.b.g
+LOCATION:Club Vibe\, Rua Desembargador Motta\, 2311- Batel\, Curitiba - PR
+DESCRIPTION:Noite de música eletrônica no Club Vibe com o DJ T.B.G\; entrada só para maiores de 18 anos.\n\nhttps://agendaocuritiba.github.io/e/e40f030fb1cb6.html
+URL:https://agendaocuritiba.github.io/e/e40f030fb1cb6.html
+END:VEVENT
+END:VCALENDAR

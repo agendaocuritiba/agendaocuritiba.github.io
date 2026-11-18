@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e714f6ee305a0@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Drift Experience | Campeonato Paranaense de Drift Virtual
+LOCATION:Park Shopping Boulevard\, Curitiba - PR
+DESCRIPTION:Campeonato paranaense de drift em simulador no Park Shopping Boulevard\, com competição\, carros e cultura automotiva por dois dias.\n\nhttps://agendaocuritiba.github.io/e/e714f6ee305a0.html
+URL:https://agendaocuritiba.github.io/e/e714f6ee305a0.html
+END:VEVENT
+END:VCALENDAR

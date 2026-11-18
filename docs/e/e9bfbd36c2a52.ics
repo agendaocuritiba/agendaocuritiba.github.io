@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e9bfbd36c2a52@agendao-curitiba
-DTSTAMP:20261116T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261121T200000
-DTEND;TZID=America/Sao_Paulo:20261121T220000
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261121T210000
+DTEND;TZID=America/Sao_Paulo:20261121T230000
 SUMMARY:Inter Alia
-LOCATION:Guairão\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
+LOCATION:Auditório Bento Munhoz da Rocha Neto (Guairão)\, Rua Conselheiro Laurindo 175 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e9bfbd36c2a52.html
 URL:https://agendaocuritiba.github.io/e/e9bfbd36c2a52.html
 END:VEVENT

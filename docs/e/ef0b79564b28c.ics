@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ef0b79564b28c@agendao-curitiba
-DTSTAMP:20261116T090000Z
+DTSTAMP:20261117T090000Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
-SUMMARY:Elza Tributo Com Sandra Sá E Caio Prado
-LOCATION:CAIXA CULTURAL CURITIBA\, Curitiba - PR
+SUMMARY:Elza Tributo com Sandra Sá e Caio Prado
+LOCATION:Caixa Cultural Curitiba\, Rua Conselheiro Laurindo nº 280\, Centro\, Curitiba - PR
 DESCRIPTION:Sandra Sá e Caio Prado cantam clássicos de Elza Soares em homenagem aos 70 anos de carreira da artista\, com repertório do álbum Elza\, Ao Vivo no Municipal.\n\nhttps://agendaocuritiba.github.io/e/ef0b79564b28c.html
 URL:https://agendaocuritiba.github.io/e/ef0b79564b28c.html
 END:VEVENT

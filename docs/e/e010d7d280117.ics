@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e010d7d280117@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T160000
+DTEND;TZID=America/Sao_Paulo:20261122T180000
+SUMMARY:Thiego César - Música e Prosa
+LOCATION:AKASA Arte e Consciência\, Curitiba - PR
+DESCRIPTION:Pocket show do músico baiano Thiego César\, que mistura canções do EP "A Terra Dá" com histórias e reflexões\, unindo brasilidades\, rock e jazz.\n\nhttps://agendaocuritiba.github.io/e/e010d7d280117.html
+URL:https://agendaocuritiba.github.io/e/e010d7d280117.html
+END:VEVENT
+END:VCALENDAR
