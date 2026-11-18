@@ -183,7 +183,21 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .dsh small { font-weight: 500; color: var(--muted); }
 .dsh::after { content: ""; flex: 1; height: 1px; background: var(--line); align-self: center; order: 1; }
 /* No Tipo › Data, o mini calendário da semana fica à direita de cada dia, depois da linha */
-.dsh .wk { order: 2; margin-left: 2px; }
+.dsh .wk { order: 2; margin-left: 2px; grid-template-columns: repeat(7, 15px); gap: 1px 2px; }
+.dsh .wk i { font-size: 8px; padding-bottom: 1px; }
+.dsh .wk b { height: 15px; font-size: 9px; border-radius: 3px; }
+/* Grupos colapsáveis: clicar no título (dia, tipo ou subgrupo) esconde ou mostra os cards dele */
+.fh { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.fold { flex: none; align-self: center; display: inline-grid; place-items: center; width: 22px; height: 22px; margin-right: -4px; padding: 0; border: 0; border-radius: 6px; background: none; color: var(--muted); cursor: pointer; }
+.fold svg { width: 16px; height: 16px; transition: transform .15s; }
+.fh.shut .fold svg { transform: rotate(-90deg); }
+.fh:hover .fold { color: var(--fg); }
+.fold:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.gh .fold, .dsh .fold { width: 18px; height: 18px; margin-right: -3px; }
+.gh .fold svg, .dsh .fold svg { width: 14px; height: 14px; }
+.gh .fold { color: inherit; }
+/* Telas largas: a seta fica pendurada à esquerda, e os títulos continuam alinhados com os cards */
+@media (min-width: 1000px) { .fold { margin-right: 0; } .day .fold { margin-left: -32px; } .day.ty .fold { margin-left: -30px; } .gh .fold { margin-left: -24px; } .dsh .fold { margin-left: -26px; } }
 
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 12px; }
 .card:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
@@ -421,6 +435,8 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   let meta = {}, events = [], shown = PAGE;
   // Eventos que se repetem em vários dias e o usuário colapsou: mostram só a primeira data que os filtros deixam visível
   const collapsed = new Set();
+  // Grupos fechados pelo usuário: 'd:<dia>', 'c:<tipo>' e os subgrupos 'd:<dia>|c:<tipo>' (Data › Tipo) ou 'c:<tipo>|d:<dia>' (Tipo › Data)
+  const folded = new Set();
   const nextDate = (e) => { const ds = (e.d || []).filter((x) => x >= todayIso); return ds[0] || (e.s < todayIso ? todayIso : e.s); };
   const occursIn = (e, a, b) => { if (e.d && e.d.length) return e.d.some((x) => x >= a && x <= b); return e.s <= b && e.e >= a; };
   const pubRange = () => rangeOf(state.pub, PUB_Q);
@@ -705,27 +721,47 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     let cur = null, box = null, cat = null; const seen = new Set();
     // Contagem por dia e tipo, para o rótulo do grupo (conta todos os cards do dia, mesmo os que ficam para "Mostrar mais")
     const gc = {}; if (state.group) list.forEach(([d, e]) => { const k = d + '|' + (e.c || 'Outros'); gc[k] = (gc[k] || 0) + 1; });
-    if (byType) {
-      // Contagem de eventos (não de datas) de cada tipo, para o título travado
-      const tn = {}; new Map(list.map(([, e]) => [e.id, e])).forEach((e) => { const c = e.c || 'Outros'; tn[c] = (tn[c] || 0) + 1; });
-      list.slice(0, shown).forEach(([d, e]) => {
-        const c = e.c || 'Outros';
-        if (c !== cat) { cat = c; cur = null; const hh = el('h2', 'day ty'); hh.style.setProperty('--kc', kc(c)); hh.innerHTML = catSvg(c); hh.append(el('span', null, c), el('small', null, tn[c] + (tn[c] === 1 ? ' evento' : ' eventos'))); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
-        if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const g = el('h3', 'dsh', a); if (b) g.append(el('small', null, b)); g.append(weekCal(d)); box.append(g); }
-        box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
-      });
-      $('more').hidden = list.length <= shown;
-      requestAnimationFrame(pinDay);
-      return;
-    }
-    list.slice(0, shown).forEach(([d, e]) => {
-      if (d !== cur) { cur = d; cat = null; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
+    // Contagem de eventos (não de datas) de cada tipo, para o título travado do Tipo › Data
+    const tn = {}; if (byType) new Map(list.map(([, e]) => [e.id, e])).forEach((e) => { const c = e.c || 'Outros'; tn[c] = (tn[c] || 0) + 1; });
+    const sect = (hh) => { box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); };
+    // Os cards de grupos fechados não contam para o "Mostrar mais"; os títulos deles continuam aparecendo
+    let nv = 0, more = false;
+    for (const [d, e] of list) {
       const c = e.c || 'Outros';
-      if (state.group && c !== cat) { cat = c; const g = el('h3', 'gh'); g.style.setProperty('--kc', kc(c)); g.innerHTML = catSvg(c); g.append(el('span', null, c), el('span', 'n', gc[d + '|' + c])); box.append(g); }
-      box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id);
-    });
-    $('more').hidden = list.length <= shown;
+      const k1 = byType ? 'c:' + c : 'd:' + d;
+      const k2 = byType ? k1 + '|d:' + d : state.group ? k1 + '|c:' + c : null;
+      const shut1 = folded.has(k1), vis = !shut1 && !(k2 && folded.has(k2));
+      if (vis && nv >= shown) { more = true; break; }
+      if (byType) {
+        if (c !== cat) { cat = c; cur = null; const hh = el('h2', 'day ty'); hh.style.setProperty('--kc', kc(c)); hh.innerHTML = catSvg(c); hh.append(el('span', null, c), el('small', null, tn[c] + (tn[c] === 1 ? ' evento' : ' eventos'))); foldHead(hh, k1, c); sect(hh); }
+        if (!shut1 && d !== cur) { cur = d; const [a, b] = dayLabel(d); const g = el('h3', 'dsh', a); if (b) g.append(el('small', null, b)); g.append(weekCal(d)); foldHead(g, k2, a); box.append(g); }
+      } else {
+        if (d !== cur) { cur = d; cat = null; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); foldHead(hh, k1, a); sect(hh); }
+        if (state.group && !shut1 && c !== cat) { cat = c; const g = el('h3', 'gh'); g.style.setProperty('--kc', kc(c)); g.innerHTML = catSvg(c); g.append(el('span', null, c), el('span', 'n', gc[d + '|' + c])); foldHead(g, k2, c); box.append(g); }
+      }
+      if (vis) { box.append(card(e, d, !seen.has(e.id), reps[e.id] > 1 ? reps[e.id] : 0)); seen.add(e.id); nv++; }
+    }
+    $('more').hidden = !more;
     requestAnimationFrame(pinDay);
+  }
+
+  // Título de grupo colapsável: botão com a seta no começo, e o título inteiro também abre e fecha
+  const CHEV = '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  function foldHead(h, key, name) {
+    const shut = folded.has(key);
+    h.classList.add('fh'); h.classList.toggle('shut', shut); h.dataset.fold = key;
+    const b = el('button', 'fold'); b.type = 'button'; b.innerHTML = CHEV;
+    b.setAttribute('aria-expanded', !shut); b.setAttribute('aria-label', (shut ? 'Mostrar ' : 'Esconder ') + name);
+    h.prepend(b);
+    h.addEventListener('click', () => toggleFold(key, h));
+  }
+  // Abre/fecha um grupo sem mover o título clicado na tela
+  function toggleFold(key, h) {
+    const top = h.getBoundingClientRect().top, kb = h.contains(document.activeElement);
+    folded.has(key) ? folded.delete(key) : folded.add(key);
+    draw();
+    const nh = [...document.querySelectorAll('#out [data-fold]')].find((x) => x.dataset.fold === key);
+    if (nh) { scrollBy(0, nh.getBoundingClientRect().top - top); if (kb) nh.querySelector('.fold').focus({ preventScroll: true }); }
   }
 
   // Colapsa/expande as datas de um evento sem mover o card clicado (ou o que sobra dele) na tela
