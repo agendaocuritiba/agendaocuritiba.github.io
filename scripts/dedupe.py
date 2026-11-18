@@ -275,7 +275,7 @@ KEEP_TC = {"Feira/Exposição", "Gastronomia", "Congresso"}
 RULES = [
     ("Congresso", r"congresso|summit|simposio|seminario|conferencia|pitch day"),
     ("Gastronomia", r"gastronom|curitipao|assado|assafest|twelve beers|food|cerveja|beer|feijoad|costelad|jantar|almoco|vinho|\bwine\b(?! down)|chef pour|mao na massa|na taca|pintura em tacas|festa das nacoes|\bcafes? (especia|combina)|cafe e chocolate|sirene brazil|torneio de torra|chas especiais|corndogada"),
-    ("Feira/Exposição", r"\bfeira\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show|natal vegan|mostra de audiovisual|dvr fest"),
+    ("Feira/Exposição", r"(?<!-)\bfeira\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show|natal vegan|mostra de audiovisual|dvr fest"),
     ("Esporte", r"hardest run|corrida(?!s? das blogueiras)|maratona|futebol|campeonato|caminhada|aulao"),
     ("Stand-up", r"stand ?up|comedy|xaveca|piada|enterrado vivo|como nossos pais|afonso padilha|renato albani|ivangelica|indio behn|embrulha pra viagem|nada e combinado|leo lins|humor|improviso|bruna louise|diogo almeida|carol delgado|santo fole|danilo gentili|mallandro|silvetty montilla|victor sarro|jonathan nemer|conte uma fofoca"),
     ("Palestra", r"palestra|claudio duarte|padre patrick|catia damasceno|andrea vermont|paua em seja livre|encontro de valor|adultecer|fazimentos texteis|vale do pinhao|cafe com guimaraes"),
