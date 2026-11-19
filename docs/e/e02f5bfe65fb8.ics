@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e02f5bfe65fb8@agendao-curitiba
-DTSTAMP:20261117T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261117T183000
-DTEND;TZID=America/Sao_Paulo:20261117T203000
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T183000
+DTEND;TZID=America/Sao_Paulo:20261208T203000
 SUMMARY:Espetáculo de Encerramento
-LOCATION:Teatro Up Experience - Tux\, Rua Prof. Pedro Viriato P. De Souza 5300 Curitiba Pr\, Curitiba - PR
+LOCATION:Teatro UP Experience - TUX\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e02f5bfe65fb8.html
 URL:https://agendaocuritiba.github.io/e/e02f5bfe65fb8.html
 END:VEVENT

@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e90ef553b0a28@agendao-curitiba
-DTSTAMP:20261117T090000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
+DTSTAMP:20261118T090000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
 SUMMARY:Manual para Recém Falecidos - 31º Festival Alunos Encena
 LOCATION:Teatro Barracão EnCena\, Curitiba - PR
 DESCRIPTION:Comédia de terror com fantasmas atrapalhados e o espírito Besouro Suco\, montada no Teatro Barracão EnCena.\n\nhttps://agendaocuritiba.github.io/e/e90ef553b0a28.html

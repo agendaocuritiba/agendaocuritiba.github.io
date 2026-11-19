@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb3fbdb7e1a6c@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T190000
+DTEND;TZID=America/Sao_Paulo:20261218T210000
+SUMMARY:Octávio Mendes apresenta "Irmã Selma" / Show de humor
+LOCATION:D House\, Curitiba - PR
+DESCRIPTION:Monólogo de humor escrito e estrelado por Octávio Mendes\, que reúne seus personagens\, como a freira humorista Irmã Selma e a apresentadora Mônica Goldstein.\n\nhttps://agendaocuritiba.github.io/e/eb3fbdb7e1a6c.html
+URL:https://agendaocuritiba.github.io/e/eb3fbdb7e1a6c.html
+END:VEVENT
+END:VCALENDAR

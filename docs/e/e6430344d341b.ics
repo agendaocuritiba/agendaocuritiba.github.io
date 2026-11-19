@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6430344d341b@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T100000
+DTEND;TZID=America/Sao_Paulo:20261128T120000
+SUMMARY:Visita guiada ao Museu Casa Alfredo Andersen
+LOCATION:Museu Casa Alfredo Andersen\, Curitiba - PR
+DESCRIPTION:Visita guiada ao Museu Casa Alfredo Andersen pela Semana Andersen\, conduzida pelos pesquisadores Amélia Siegel Corrêa e Wilson J. Andersen Ballão.\n\nhttps://agendaocuritiba.github.io/e/e6430344d341b.html
+URL:https://agendaocuritiba.github.io/e/e6430344d341b.html
+END:VEVENT
+END:VCALENDAR

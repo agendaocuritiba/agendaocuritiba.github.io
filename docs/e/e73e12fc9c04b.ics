@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e73e12fc9c04b@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Galactic Symphony
+LOCATION:Teatro Torres Botânico\, Rua Pergentina Silva Soares\, 159 - Jardim Botânico\, Curitiba - PR
+DESCRIPTION:Concerto sinfônico com repertório de temas espaciais e intergalácticos\, apresentado por orquestra no Teatro Torres Botânico.\n\nhttps://agendaocuritiba.github.io/e/e73e12fc9c04b.html
+URL:https://agendaocuritiba.github.io/e/e73e12fc9c04b.html
+END:VEVENT
+END:VCALENDAR

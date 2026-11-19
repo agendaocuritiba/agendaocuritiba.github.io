@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2389bbff6caa@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T223000
+DTEND;TZID=America/Sao_Paulo:20261219T003000
+SUMMARY:Show Solo com Felix Americano / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Especial de Natal de stand-up com o humorista Felix Americano no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e2389bbff6caa.html
+URL:https://agendaocuritiba.github.io/e/e2389bbff6caa.html
+END:VEVENT
+END:VCALENDAR

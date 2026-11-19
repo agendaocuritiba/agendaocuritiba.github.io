@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec1dd27339ea8@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T183000
+DTEND;TZID=America/Sao_Paulo:20261205T203000
+SUMMARY:Noite de glória
+LOCATION:Av. Manoel Ribas\, 5480\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ec1dd27339ea8.html
+URL:https://agendaocuritiba.github.io/e/ec1dd27339ea8.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaa28d887b140@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T120000
+DTEND;TZID=America/Sao_Paulo:20261122T140000
+SUMMARY:Domingueira - Turma da Nuu - Ambar
+LOCATION:Ambar Bar e Restaurante\, Curitiba - PR
+DESCRIPTION:Almoço de domingo no Âmbar com churrasco preparado por chefs e música sertaneja acústica ao vivo\, promovido pela Turma da Nuu.\n\nhttps://agendaocuritiba.github.io/e/eaa28d887b140.html
+URL:https://agendaocuritiba.github.io/e/eaa28d887b140.html
+END:VEVENT
+END:VCALENDAR

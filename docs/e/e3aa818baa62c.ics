@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3aa818baa62c@agendao-curitiba
-DTSTAMP:20261117T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261118T200000
-DTEND;TZID=America/Sao_Paulo:20261118T220000
-SUMMARY:18/11 - Espetáculo Capítulo XV
+DTSTAMP:20261118T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261119T200000
+DTEND;TZID=America/Sao_Paulo:20261119T220000
+SUMMARY:19/11 - Espetáculo Capítulo XV
 LOCATION:Regina Vogue\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3aa818baa62c.html
 URL:https://agendaocuritiba.github.io/e/e3aa818baa62c.html
