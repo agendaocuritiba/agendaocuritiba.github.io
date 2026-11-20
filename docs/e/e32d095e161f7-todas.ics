@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e32d095e161f7-2026-12-11@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T201500
+DTEND;TZID=America/Sao_Paulo:20261211T221500
+SUMMARY:Martinho da Vila e Mart'nália
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e32d095e161f7.html
+URL:https://agendaocuritiba.github.io/e/e32d095e161f7.html
+END:VEVENT
+BEGIN:VEVENT
+UID:e32d095e161f7-2027-04-17@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270417T201500
+DTEND;TZID=America/Sao_Paulo:20270417T221500
+SUMMARY:Martinho da Vila e Mart'nália
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e32d095e161f7.html
+URL:https://agendaocuritiba.github.io/e/e32d095e161f7.html
+END:VEVENT
+END:VCALENDAR

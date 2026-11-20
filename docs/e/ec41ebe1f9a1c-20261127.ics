@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec41ebe1f9a1c-2026-11-27@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:40º Congresso Brasileiro de Direito Administrativo (CBDA)
+LOCATION:Viasoft Experience - Prof. Pedro Viriato Parigot de Souza\, 5300\, Curitiba - PR
+DESCRIPTION:40ª edição do congresso do IBDA\, que reúne juristas\, advogados e servidores para debater licitações\, regulação\, contratos e governança pública.\n\nhttps://agendaocuritiba.github.io/e/ec41ebe1f9a1c.html
+URL:https://agendaocuritiba.github.io/e/ec41ebe1f9a1c.html
+END:VEVENT
+END:VCALENDAR

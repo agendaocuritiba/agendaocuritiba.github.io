@@ -20,6 +20,8 @@ h1 { font-family: var(--font-display); font-size: clamp(24px, 6vw, 32px); line-h
 .dates { font-size: 14px; color: var(--muted); }
 .desc { margin: 14px 0 0; }
 .lbl { margin: 20px 0 8px; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.sub { margin: 4px 0 8px; font-size: 14px; color: var(--muted); }
+.sub + .acts + .sub { margin-top: 14px; }
 .acts { display: flex; flex-wrap: wrap; gap: 8px; }
 .go { font-size: 14px; font-weight: 600; text-decoration: none; padding: 7px 14px; border-radius: 999px; background: var(--go); color: var(--go-fg); }
 .go::after { content: " ↗"; font-weight: 400; }

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9adf14707ef4-2026-12-23@agendao-curitiba
+DTSTAMP:20261023T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261223T200000
+DTEND;TZID=America/Sao_Paulo:20261223T220000
+SUMMARY:Nataleluia - A Maior História de Todas
+LOCATION:R. Bento Viana\, 1200 (Primeira Igreja Batista de Curitiba)\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e9adf14707ef4.html
+URL:https://agendaocuritiba.github.io/e/e9adf14707ef4.html
+END:VEVENT
+END:VCALENDAR

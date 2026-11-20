@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4bd98b279c69-2026-12-06@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T200000
+DTEND;TZID=America/Sao_Paulo:20261206T220000
+SUMMARY:Praça Santos Andrade - Um Grande Circuito de Natal
+LOCATION:Praça Santos Andrade\, Centro\, Curitiba - PR
+DESCRIPTION:Vila de Natal na Praça Santos Andrade\, com árvore iluminada\, Casa do Papai Noel\, trenzinho\, feiras de artesanato e gastronomia e espetáculos noturnos.\n\nhttps://agendaocuritiba.github.io/e/e4bd98b279c69.html
+URL:https://agendaocuritiba.github.io/e/e4bd98b279c69.html
+END:VEVENT
+END:VCALENDAR

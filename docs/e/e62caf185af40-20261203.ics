@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e62caf185af40-2026-12-03@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261203T190000
+DTEND;TZID=America/Sao_Paulo:20261203T210000
+SUMMARY:Fantástica Fábrica do Papai Noel | 5ª edição
+LOCATION:UniEnsino - Centro Universitário\, Campus Hauer\, Curitiba - PR
+DESCRIPTION:Celebração natalina para famílias\, com cultura\, inclusão e solidariedade\, incluindo uma noite dedicada ao público com TEA.\n\nhttps://agendaocuritiba.github.io/e/e62caf185af40.html
+URL:https://agendaocuritiba.github.io/e/e62caf185af40.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ead7c3d9072bb-todas@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+RRULE:FREQ=DAILY;COUNT=15
+SUMMARY:Candlelight: Clássicos de Natal
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ead7c3d9072bb.html
+URL:https://agendaocuritiba.github.io/e/ead7c3d9072bb.html
+END:VEVENT
+END:VCALENDAR

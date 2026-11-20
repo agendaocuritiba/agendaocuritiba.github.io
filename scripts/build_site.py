@@ -137,6 +137,10 @@ def short(iso):
     return f"{d.day} {MON[d.month - 1]}"
 
 
+def when_day(iso):
+    return f"{DOW[date.fromisoformat(iso).weekday()]}, {short(iso)}"
+
+
 def when_text(d, run):
     """Texto de data para a prévia: 'sáb, 25 out', '25 out a 2 nov', 'até 2 nov', 'data a definir (maio de 2027)'."""
     if d.get("x"):
@@ -161,9 +165,9 @@ def next_date(d, run):
     return nxt[0] if nxt else max(d["s"], run)
 
 
-def cal_times(d, run):
-    """Início e fim (2h) no horário de Curitiba, ou None quando não há horário."""
-    day = next_date(d, run)
+def cal_times(d, run, day=None):
+    """Início e fim (2h) no horário de Curitiba, ou None quando não há horário. Sem `day`, a próxima data."""
+    day = day or next_date(d, run)
     m = re.match(r"(\d{1,2})h(\d{2})?", d.get("h") or "")
     if not m or int(m.group(1)) > 23:
         return day, None, None
@@ -171,23 +175,62 @@ def cal_times(d, run):
     return day, st, st + timedelta(hours=2)
 
 
-def ics(d, run):
-    day, st, en = cal_times(d, run)
+def future_dates(d, run):
+    """Datas futuras de um evento com lista de dias (vazio para os demais)."""
+    return [x for x in d.get("d") or [] if x >= run]
+
+
+BYDAY = ["MO", "TU", "WE", "TH", "FR", "SA", "SU"]
+
+
+def rrule(ds):
+    """RRULE exata para a lista de datas, quando ela é diária ou semanal sem falhas; senão None."""
+    dd = [date.fromisoformat(x) for x in ds]
+    if all((b - a).days == 1 for a, b in zip(dd, dd[1:])):
+        return f"FREQ=DAILY;COUNT={len(dd)}"
+    wd = sorted({x.weekday() for x in dd})
+    full = [dd[0] + timedelta(days=i) for i in range((dd[-1] - dd[0]).days + 1)]
+    if [x for x in full if x.weekday() in wd] == dd:
+        return f"FREQ=WEEKLY;BYDAY={','.join(BYDAY[i] for i in wd)};COUNT={len(dd)}"
+    return None
+
+
+def ics(d, run, day=None, series=False):
+    """Arquivo .ics: a próxima data (padrão), uma data específica (`day`) ou todas as datas futuras (`series`).
+    Na série, uma regra de repetição quando as datas seguem um padrão; senão, um evento por data."""
     esc = lambda s: re.sub(r"([\\,;])", r"\\\1", str(s or "")).replace("\n", "\\n")
     url = f"{SITE_URL}e/{d['id']}.html"
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Agendao Curitiba//PT", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
-             "BEGIN:VEVENT", f"UID:{d['id']}@agendao-curitiba", f"DTSTAMP:{run.replace('-', '')}T090000Z"]
-    if st:
-        lines += [f"DTSTART;TZID=America/Sao_Paulo:{st:%Y%m%dT%H%M%S}", f"DTEND;TZID=America/Sao_Paulo:{en:%Y%m%dT%H%M%S}"]
-    else:
-        nd = date.fromisoformat(day) + timedelta(days=1)
-        lines += [f"DTSTART;VALUE=DATE:{day.replace('-', '')}", f"DTEND;VALUE=DATE:{nd:%Y%m%d}"]
-    lines += ["SUMMARY:" + esc(d["t"]), "LOCATION:" + esc(", ".join(x for x in [d["v"], d.get("a"), "Curitiba - PR"] if x)),
-              "DESCRIPTION:" + esc(((d.get("r") or "") + "\n\n" + url).strip()), "URL:" + url, "END:VEVENT", "END:VCALENDAR"]
+    # Data fixa (a primeira vez que o evento apareceu) nos arquivos de data e da série, para não mudarem todo dia
+    stamp = (d.get("f") or run).replace("-", "") if (day or series) else run.replace("-", "")
+    ds = future_dates(d, run) if series else [day or next_date(d, run)]
+    rule = rrule(ds) if series else None
+    if rule:
+        ds = ds[:1]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Agendao Curitiba//PT", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"]
+    for x in ds:
+        _, st, en = cal_times(d, run, x)
+        uid = d["id"] + ("-todas" if rule else f"-{x}" if (day or series) else "")
+        lines += ["BEGIN:VEVENT", f"UID:{uid}@agendao-curitiba", f"DTSTAMP:{stamp}T090000Z"]
+        if st:
+            lines += [f"DTSTART;TZID=America/Sao_Paulo:{st:%Y%m%dT%H%M%S}", f"DTEND;TZID=America/Sao_Paulo:{en:%Y%m%dT%H%M%S}"]
+        else:
+            nd = date.fromisoformat(x) + timedelta(days=1)
+            lines += [f"DTSTART;VALUE=DATE:{x.replace('-', '')}", f"DTEND;VALUE=DATE:{nd:%Y%m%d}"]
+        if rule:
+            lines.append("RRULE:" + rule)
+        lines += ["SUMMARY:" + esc(d["t"]), "LOCATION:" + esc(", ".join(x for x in [d["v"], d.get("a"), "Curitiba - PR"] if x)),
+                  "DESCRIPTION:" + esc(((d.get("r") or "") + "\n\n" + url).strip()), "URL:" + url, "END:VEVENT"]
+    lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
 
 
-def cal_links(d, run):
+def ics_name(d, day=None, series=False):
+    return f"{d['id']}-todas.ics" if series else f"{d['id']}-{day.replace('-', '')}.ics" if day else f"{d['id']}.ics"
+
+
+def cal_links(d, run, series=False):
+    """Links da próxima data ou, com `series`, de todas as datas futuras (Google com regra de repetição quando
+    as datas seguem um padrão; Apple e Outlook pelo .ics da série, porque o Outlook na web não repete)."""
     day, st, en = cal_times(d, run)
     loc = ", ".join(x for x in [d["v"], d.get("a"), "Curitiba - PR"] if x)
     details = ((d.get("r") or "") + "\n\n" + f"{SITE_URL}e/{d['id']}.html").strip()
@@ -196,10 +239,14 @@ def cal_links(d, run):
     else:
         nd = (date.fromisoformat(day) + timedelta(days=1)).isoformat()
         gd, os_, oe, allday = day.replace("-", "") + "/" + nd.replace("-", ""), day, nd, "true"
-    g = urlencode({"action": "TEMPLATE", "text": d["t"], "details": details, "location": loc, "ctz": "America/Sao_Paulo", "dates": gd})
+    gq = {"action": "TEMPLATE", "text": d["t"], "details": details, "location": loc, "ctz": "America/Sao_Paulo", "dates": gd}
+    if series:
+        rule = rrule(future_dates(d, run))
+        out = [("Google Agenda", "https://calendar.google.com/calendar/render?" + urlencode({**gq, "recur": "RRULE:" + rule}))] if rule else []
+        return out + [("Apple / iPhone", ics_name(d, series=True)), ("Outlook (arquivo .ics)", ics_name(d, series=True))]
     o = urlencode({"path": "/calendar/action/compose", "rru": "addevent", "subject": d["t"], "body": details, "location": loc,
                    "startdt": os_, "enddt": oe, "allday": allday})
-    return [("Google Agenda", "https://calendar.google.com/calendar/render?" + g), ("Apple / iPhone", f"{d['id']}.ics"),
+    return [("Google Agenda", "https://calendar.google.com/calendar/render?" + urlencode(gq)), ("Apple / iPhone", ics_name(d)),
             ("Outlook", "https://outlook.live.com/calendar/0/deeplink/compose?" + o)]
 
 
@@ -218,7 +265,13 @@ def event_page(d, img, run):
     if d["v"] and not re.match(r"(?i)^local a definir$", d["v"]):
         q = ", ".join(x for x in [d["v"], d.get("a"), "Curitiba PR"] if x)
         maps = f' · <a href="https://www.google.com/maps/search/?api=1&amp;query={esc(quote(q))}" target="_blank" rel="noopener">ver no mapa</a>'
-    cal = "\n".join(f'      <a class="ca" href="{esc(u)}"' + ('' if u.endswith('.ics') else ' target="_blank" rel="noopener"') + f'>{esc(n)}</a>' for n, u in cal_links(d, run))
+    calrow = lambda ls: "\n".join(f'      <a class="ca" href="{esc(u)}"' + ('' if u.endswith('.ics') else ' target="_blank" rel="noopener"') + f'>{esc(n)}</a>' for n, u in ls)
+    cal = '    <div class="acts">\n' + calrow(cal_links(d, run)) + "\n    </div>"
+    # Eventos com várias datas: a próxima data ou a série inteira
+    fut = future_dates(d, run)
+    if len(fut) > 1:
+        cal = (f'    <p class="sub">Só a próxima data ({esc(when_day(fut[0]))})</p>\n' + cal + f'\n    <p class="sub">Todas as {len(fut)} datas</p>\n'
+               '    <div class="acts">\n' + calrow(cal_links(d, run, series=True)) + "\n    </div>")
     dates = ""
     if d.get("d"):
         nxt = [x for x in d["d"] if x >= run]
@@ -276,9 +329,7 @@ def event_page(d, img, run):
 {links}
     </div>
     <p class="lbl">Adicionar à agenda</p>
-    <div class="acts">
 {cal}
-    </div>
     <p class="back"><a href="../#{esc(d['id'])}">Ver na agenda completa</a></p>
   </article>
   <footer>
@@ -328,6 +379,14 @@ def main():
             f.write(event_page(d, e.get("image"), run))
         with open(f"{site}/e/{d['id']}.ics", "w", newline="") as f:
             f.write(ics(d, run))
+        # Várias datas: um .ics por data (o card de cada dia oferece só aquela data) e um da série inteira
+        fut = future_dates(d, run)
+        if len(fut) > 1:
+            for x in fut:
+                with open(f"{site}/e/{ics_name(d, x)}", "w", newline="") as f:
+                    f.write(ics(d, run, day=x))
+            with open(f"{site}/e/{ics_name(d, series=True)}", "w", newline="") as f:
+                f.write(ics(d, run, series=True))
     with open(f"{site}/sitemap.xml", "w") as f:
         f.write(sitemap(run, [d["id"] for d in slims]))
     print(len(events), "eventos;", os.path.getsize(f"{site}/data/events.json"), "bytes;", len(slims), "páginas")

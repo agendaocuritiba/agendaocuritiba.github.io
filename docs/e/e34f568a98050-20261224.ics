@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e34f568a98050-2026-12-24@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261224T190000
+DTEND;TZID=America/Sao_Paulo:20261224T210000
+SUMMARY:Jantar de Natal - Grand Mercure Curitiba Rayon
+LOCATION:Hotel Grand Mercura Curitiba Rayon\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e34f568a98050.html
+URL:https://agendaocuritiba.github.io/e/e34f568a98050.html
+END:VEVENT
+END:VCALENDAR
