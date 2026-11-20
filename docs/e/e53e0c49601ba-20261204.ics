@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e53e0c49601ba-2026-12-04@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:O Quebra-Nozes nas Ruínas de São Francisco
+LOCATION:Ruínas de São Francisco\, São Francisco\, Curitiba - PR
+DESCRIPTION:Balé O Quebra-Nozes\, de Tchaikovsky\, pela Curitiba Cia. de Dança nas Ruínas de São Francisco\, com participação especial da bailarina Ana Botafogo.\n\nhttps://agendaocuritiba.github.io/e/e53e0c49601ba.html
+URL:https://agendaocuritiba.github.io/e/e53e0c49601ba.html
+END:VEVENT
+END:VCALENDAR

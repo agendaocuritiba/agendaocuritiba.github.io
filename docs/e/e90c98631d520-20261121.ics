@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e90c98631d520-2026-11-21@agendao-curitiba
+DTSTAMP:20261023T090000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Origem Curitiba - Festival do Café Especial
+LOCATION:Museu Oscar Niemeyer - MON\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e90c98631d520.html
+URL:https://agendaocuritiba.github.io/e/e90c98631d520.html
+END:VEVENT
+END:VCALENDAR

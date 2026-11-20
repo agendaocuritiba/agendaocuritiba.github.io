@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0aa222acabb3-2026-12-06@agendao-curitiba
+DTSTAMP:20261117T090000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Noite Na Broadway
+LOCATION:Teatro José Maria Santos\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e0aa222acabb3.html
+URL:https://agendaocuritiba.github.io/e/e0aa222acabb3.html
+END:VEVENT
+END:VCALENDAR

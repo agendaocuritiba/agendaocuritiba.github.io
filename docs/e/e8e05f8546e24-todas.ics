@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8e05f8546e24-todas@agendao-curitiba
+DTSTAMP:20261116T090000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+RRULE:FREQ=DAILY;COUNT=6
+SUMMARY:Nada de Novo em Oz - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça de alunos do Festival EnCena que imagina como seria Oz se Dorothy nunca tivesse chegado por lá.\n\nhttps://agendaocuritiba.github.io/e/e8e05f8546e24.html
+URL:https://agendaocuritiba.github.io/e/e8e05f8546e24.html
+END:VEVENT
+END:VCALENDAR

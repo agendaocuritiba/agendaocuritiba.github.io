@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e98981c255838-2026-12-16@agendao-curitiba
+DTSTAMP:20261109T090000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Natal do Palácio Avenida
+LOCATION:O tradicional espetáculo de Natal do Palácio Avenida\, no Centro de Curitiba chega a 36ª edição\, com o tema Encantares. Neste ano serão seis apresentações que reúnem música\, iluminação natalina e um co\, Curitiba - PR
+DESCRIPTION:Camarote da Meirelles Joias para assistir ao tradicional espetáculo do Natal do Palácio Avenida\, com o valor do ingresso revertido em compras na loja.\n\nhttps://agendaocuritiba.github.io/e/e98981c255838.html
+URL:https://agendaocuritiba.github.io/e/e98981c255838.html
+END:VEVENT
+END:VCALENDAR

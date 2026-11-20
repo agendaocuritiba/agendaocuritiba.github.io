@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee2f62c72fbd1-todas@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270130T193000
+DTEND;TZID=America/Sao_Paulo:20270130T213000
+RRULE:FREQ=DAILY;COUNT=2
+SUMMARY:"embrulha Pra Viagem" ao Vivo
+LOCATION:Teatro Guaíra - Guairinha\, R. XV de Novembro\, 971 - Centro\, Curitiba - PR\, 80060-000\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/ee2f62c72fbd1.html
+URL:https://agendaocuritiba.github.io/e/ee2f62c72fbd1.html
+END:VEVENT
+END:VCALENDAR

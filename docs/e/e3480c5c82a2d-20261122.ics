@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3480c5c82a2d-2026-11-22@agendao-curitiba
+DTSTAMP:20261029T090000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:OFF Bienal - 4ª edição
+LOCATION:Gran Faculdade\, Rua Luiz Parigot de Souza\, 961- Portão\, Curitiba - PR
+DESCRIPTION:A autora Karol S. Paiva participa da Off Bienal Curitiba\, encontro literário independente entre autores\, influenciadores e leitores.\n\nhttps://agendaocuritiba.github.io/e/e3480c5c82a2d.html
+URL:https://agendaocuritiba.github.io/e/e3480c5c82a2d.html
+END:VEVENT
+END:VCALENDAR

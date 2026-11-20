@@ -259,6 +259,11 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .calmenu { position: absolute; top: calc(100% + 4px); left: 0; z-index: 20; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 6px; display: grid; min-width: 180px; box-shadow: 0 10px 30px rgb(0 0 0 / .18); }
 .calmenu a { padding: 8px 10px; border-radius: 8px; text-decoration: none; font-size: 14px; color: var(--fg); }
 .calmenu a:hover { background: var(--sel); }
+/* Eventos com várias datas: escolha entre só a data do card e todas as datas, acima dos links */
+.calseg { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; padding: 2px; margin-bottom: 4px; border-radius: 9px; background: var(--sel); }
+.calseg button { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; border-radius: 7px; padding: 6px 8px; cursor: pointer; white-space: nowrap; }
+.calseg button[aria-pressed="true"] { background: var(--panel); color: var(--fg); font-weight: 600; box-shadow: 0 1px 3px rgb(0 0 0 / .15); }
+.calnote { margin: 4px 10px 4px; font-size: 12px; color: var(--muted); max-width: 230px; }
 
 .fig { color: var(--kc); display: grid; justify-items: center; align-content: center; gap: 4px; text-align: center; }
 .fig .ic { width: 56px; height: 56px; border-radius: 13px; display: grid; place-items: center; background: color-mix(in srgb, var(--kc) 14%, transparent); }
@@ -604,15 +609,52 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const st = new Date(day + 'T' + String(m[1]).padStart(2, '0') + ':' + (m[2] || '00') + ':00Z'), en = new Date(st.getTime() + 2 * 36e5);
     return { day, allDay: false, st: st.toISOString().slice(0, 19), en: en.toISOString().slice(0, 19) };
   }
-  function calLinks(e, day) {
+  // Datas de um evento com lista de dias: as que o site gerou (com .ics por data e da série) e as que ainda não passaram
+  const builtDates = (e) => (e.d || []).filter((x) => x >= meta.updated);
+  const futDates = (e) => (e.d || []).filter((x) => x >= todayIso);
+  const isSeries = (e) => builtDates(e).length > 1 && futDates(e).length > 1;
+  // Regra de repetição exata quando as datas são diárias ou semanais sem falhas (igual ao build_site.py); senão, null
+  const BYDAY = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+  function rrule(ds) {
+    if (ds.every((x, i) => !i || addDays(ds[i - 1], 1) === x)) return 'FREQ=DAILY;COUNT=' + ds.length;
+    const wd = [...new Set(ds.map((x) => dObj(x).getUTCDay()))].sort((a, b) => ((a + 6) % 7) - ((b + 6) % 7)), full = [];
+    for (let x = ds[0]; x <= ds[ds.length - 1]; x = addDays(x, 1)) if (wd.includes(dObj(x).getUTCDay())) full.push(x);
+    return full.join() === ds.join() ? 'FREQ=WEEKLY;BYDAY=' + wd.map((i) => BYDAY[i]).join(',') + ';COUNT=' + ds.length : null;
+  }
+  // Só esta data, ou (all) todas as datas futuras: Google com a regra de repetição quando há padrão;
+  // Apple e Outlook pelo .ics da série, porque o Outlook na web não cria eventos repetidos
+  function calLinks(e, day, all) {
+    if (all) day = futDates(e)[0];
     const t = calTimes(e, day), loc = [e.v, e.a, 'Curitiba - PR'].filter(Boolean).join(', '), link = eventLink(e);
     const details = (e.r ? e.r + '\n\n' : '') + link, compact = (x) => x.replace(/[-:]/g, '');
     const g = new URLSearchParams({ action: 'TEMPLATE', text: e.t, details, location: loc, ctz: 'America/Sao_Paulo',
       dates: t.allDay ? compact(t.day) + '/' + compact(addDays(t.day, 1)) : compact(t.st) + '/' + compact(t.en) });
+    if (all) {
+      const r = rrule(futDates(e)), f = 'e/' + e.id + '-todas.ics';
+      if (r) g.set('recur', 'RRULE:' + r);
+      return [...(r ? [['Google Agenda', 'https://calendar.google.com/calendar/render?' + g]] : []), ['Apple / iPhone', f], ['Outlook (arquivo .ics)', f]];
+    }
     const o = new URLSearchParams({ path: '/calendar/action/compose', rru: 'addevent', subject: e.t, body: details, location: loc,
       startdt: t.allDay ? t.day : t.st, enddt: t.allDay ? addDays(t.day, 1) : t.en, allday: String(t.allDay) });
-    return [['Google Agenda', 'https://calendar.google.com/calendar/render?' + g], ['Apple / iPhone', 'e/' + e.id + '.ics'],
+    const ics = isSeries(e) && builtDates(e).includes(day) ? e.id + '-' + compact(day) : e.id;
+    return [['Google Agenda', 'https://calendar.google.com/calendar/render?' + g], ['Apple / iPhone', 'e/' + ics + '.ics'],
       ['Outlook', 'https://outlook.live.com/calendar/0/deeplink/compose?' + o]];
+  }
+  // Menu de agenda: nos eventos com várias datas, escolhe entre só a data do card e todas as datas
+  function fillCalMenu(cm, e, day, all) {
+    const kids = [];
+    if (isSeries(e)) {
+      const seg = el('div', 'calseg'); seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', 'Quais datas adicionar');
+      [[false, 'Só ' + short(day)], [true, 'Todas as ' + futDates(e).length + ' datas']].forEach(([v, n]) => {
+        const b = el('button', null, n); b.type = 'button'; b.setAttribute('aria-pressed', v === all);
+        b.addEventListener('click', (ev) => { ev.stopPropagation(); if (v !== all) { fillCalMenu(cm, e, day, v); cm.querySelector('.calseg [aria-pressed="true"]').focus(); } });
+        seg.append(b);
+      });
+      kids.push(seg);
+    }
+    calLinks(e, day, all).forEach(([n, u]) => { const a = el('a', null, n); a.href = u; if (!u.endsWith('.ics')) { a.target = '_blank'; a.rel = 'noopener'; } kids.push(a); });
+    if (all) kids.push(el('p', 'calnote', rrule(futDates(e)) ? 'Entra como um evento que se repete.' : 'As datas não seguem um padrão: o arquivo .ics traz um evento por data (o Google Agenda importa o arquivo em Configurações › Importar).'));
+    cm.replaceChildren(...kids);
   }
   const eventLink = (e) => meta.siteUrl ? meta.siteUrl + 'e/' + e.id + '.html' : location.href.split('#')[0] + '#' + e.id;
 
@@ -710,7 +752,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     const cm = el('div', 'calmenu'); cm.hidden = true;
     cal.addEventListener('click', (ev) => {
       ev.stopPropagation(); const open = cm.hidden; closeMenus();
-      if (open) { cm.replaceChildren(...calLinks(e, day).map(([n, u]) => { const a = el('a', null, n); a.href = u; if (!u.endsWith('.ics')) { a.target = '_blank'; a.rel = 'noopener'; } return a; })); cm.hidden = false; cal.setAttribute('aria-expanded', 'true'); }
+      if (open) { fillCalMenu(cm, e, day, false); cm.hidden = false; cal.setAttribute('aria-expanded', 'true'); }
     });
     cw.append(cal, cm);
     const sh = el('button', 'ib'); sh.type = 'button'; sh.title = 'Compartilhar'; sh.innerHTML = svg(UI.share); sh.append(el('span', null, 'Compartilhar'));

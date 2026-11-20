@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e007ea1aa78cf-2026-12-05@agendao-curitiba
+DTSTAMP:20261118T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Natal no Picadeiro - O Encanto do Circo no Natal de Curitiba 2026
+LOCATION:Estacionamento do Shopping Boulevard\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino do circo Rhoney com 12 artistas: números tradicionais\, palhaços\, atrações aéreas e interação com o público\, para todas as idades.\n\nhttps://agendaocuritiba.github.io/e/e007ea1aa78cf.html
+URL:https://agendaocuritiba.github.io/e/e007ea1aa78cf.html
+END:VEVENT
+END:VCALENDAR
