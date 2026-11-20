@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e73a6b79f395c@agendao-curitiba
+DTSTAMP:20261119T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T200000
+DTEND;TZID=America/Sao_Paulo:20261206T220000
+SUMMARY:Tô Quase Estourando com Guilherme Zikert / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Show solo de stand-up do humorista Guilherme Zikert no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e73a6b79f395c.html
+URL:https://agendaocuritiba.github.io/e/e73a6b79f395c.html
+END:VEVENT
+END:VCALENDAR

@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ee7ce491022cd@agendao-curitiba
-DTSTAMP:20261118T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261215T170000
-DTEND;TZID=America/Sao_Paulo:20261215T190000
+DTSTAMP:20261119T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261210T170000
+DTEND;TZID=America/Sao_Paulo:20261210T190000
 SUMMARY:Festa de Fim de Ano Mindhub
 LOCATION:Av. Visc. de Guarapuava\, 3263\, Curitiba - PR
 DESCRIPTION:Confraternização de fim de ano da comunidade Mindhub\, com clima natalino e sugestão de pijama ou roupas verdes e vermelhas.\n\nhttps://agendaocuritiba.github.io/e/ee7ce491022cd.html
