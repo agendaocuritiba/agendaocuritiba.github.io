@@ -39,6 +39,7 @@
   --free: #11704a;
   --chip: #ece8f4;
   --go: #f5c84c; --go-fg: #1b1626;
+  --star: #d99a00;        /* favorito: estrela amarela (claro: mais escura para aparecer no branco) */
   --hero: color-mix(in srgb, var(--accent) 9%, var(--bg));   /* badge do anúncio original: amarelo nos dois temas */
   --sel: color-mix(in srgb, var(--accent) 16%, transparent);
   --k0:#2f6fb2; --k1:#9b3fb5; --k2:#b2433a; --k3:#7a5a1e; --k4:#c06a12; --k5:#3f6b52;
@@ -49,11 +50,11 @@
   --logo: var(--accent);   /* claro: contorno roxo; escuro: amarelo */
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --hol:#f0625e; --hol-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36; --hero:#1d1630;
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --hol:#f0625e; --hol-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --star:#f5c84c; --free:#7fd8a6; --chip:#271f36; --hero:#1d1630;
   --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
   color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --hol:#f0625e; --hol-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --free:#7fd8a6; --chip:#271f36; --hero:#1d1630;
+  --bg:#131019; --panel:#1c1726; --fg:#ece8f5; --muted:#a59fb6; --line:#302940; --accent:#b79cff; --accent-fg:#16111f; --hol:#f0625e; --hol-fg:#16111f; --accent2:#f5c84c; --logo:#f5c84c; --star:#f5c84c; --free:#7fd8a6; --chip:#271f36; --hero:#1d1630;
   --k0:#7fb2ea; --k1:#d39be6; --k2:#f0948b; --k3:#d7b878; --k4:#f2a75a; --k5:#8fc4a5; --k6:#f08bb8; --k7:#aaa2f5; --k8:#6fd2c9; --k9:#eaa16e; --k10:#a8b5c6; --k11:#86d48f; --k12:#b4b0bc;
   color-scheme: dark; }
 html { -webkit-text-size-adjust: 100%; }
@@ -83,6 +84,19 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .theme svg { width: 20px; height: 20px; }
 .theme:hover { border-color: var(--logo); color: var(--logo); }
 
+/* Abas Agenda / Favoritos: encostadas na borda de baixo da faixa do cabeçalho */
+.hero .wrap:has(.tabs) { padding-bottom: 0; }
+.tabs { display: flex; justify-content: center; gap: 4px; margin: 26px 0 -1px; }
+.tab { font: inherit; font-size: 15px; font-weight: 600; display: inline-flex; align-items: center; gap: 7px; padding: 10px 16px 11px; border: 1px solid transparent; border-bottom: 0; border-radius: 12px 12px 0 0; background: none; color: var(--muted); cursor: pointer; }
+.tab svg { width: 17px; height: 17px; }
+.tab:hover { color: var(--fg); }
+.tab[aria-selected="true"] { background: var(--bg); color: var(--fg); border-color: var(--line); }
+.tab[aria-selected="true"] svg { color: var(--accent); }
+.tab.fv[aria-selected="true"] svg { color: var(--star); fill: var(--star); }
+.tab .n { font-size: 12px; font-variant-numeric: tabular-nums; min-width: 20px; padding: 1px 6px; border-radius: 999px; background: var(--chip); color: var(--muted); text-align: center; }
+.tab .n:empty { display: none; }
+.favnote { color: var(--muted); font-size: 14px; padding-block: 12px 0; }
+.favnote b { color: var(--fg); font-weight: 600; }
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .row + .row { margin-top: 8px; }
@@ -237,6 +251,11 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .ib { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 4px 2px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
 .ib svg { width: 16px; height: 16px; }
 .ib:hover { color: var(--fg); }
+/* Favoritar: estrela vazia; marcada, fica cheia em amarelo (tom escurecido no tema claro) */
+.ib.fav[aria-pressed="true"] { color: var(--fg); }
+.ib.fav[aria-pressed="true"] svg { color: var(--star); fill: var(--star); }
+@media (prefers-reduced-motion: no-preference) { .ib.fav.pop1 svg { animation: favpop .3s ease-out; } }
+@keyframes favpop { 40% { transform: scale(1.35); } }
 .calmenu { position: absolute; top: calc(100% + 4px); left: 0; z-index: 20; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 6px; display: grid; min-width: 180px; box-shadow: 0 10px 30px rgb(0 0 0 / .18); }
 .calmenu a { padding: 8px 10px; border-radius: 8px; text-decoration: none; font-size: 14px; color: var(--fg); }
 .calmenu a:hover { background: var(--sel); }
@@ -304,6 +323,10 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       <p class="intro">Mega agregador dos eventos anunciados em Curitiba nos próximos seis meses. Escolha o período de realização dos eventos e, se quiser, filtre pela data de publicação para ver só o que entrou na agenda desde a sua última visita.</p>
       <p id="stat">Carregando a agenda…</p>
     </div>
+    <div class="tabs" role="tablist" aria-label="Ver">
+      <button class="tab" id="tabAll" type="button" role="tab" aria-selected="true" aria-controls="lista"></button>
+      <button class="tab fv" id="tabFav" type="button" role="tab" aria-selected="false" aria-controls="lista"></button>
+    </div>
   </div>
 </header>
 
@@ -320,7 +343,7 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   </div>
 </div>
 
-<main class="wrap">
+<main class="wrap" id="lista" role="tabpanel">
   <div class="summary" id="summary"></div>
   <div id="out"></div>
   <button class="more" id="more" type="button" hidden>Mostrar mais eventos</button>
@@ -364,6 +387,8 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     pin: '<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
     repeat: '<path d="M17 2.5l3 3-3 3"/><path d="M4 11.5v-1a5 5 0 0 1 5-5h11"/><path d="M7 21.5l-3-3 3-3"/><path d="M20 12.5v1a5 5 0 0 1-5 5H4"/>',
     group: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>',
+    star: '<path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6-5.38-2.83-5.38 2.83 1.03-6L3.3 9.6l6-.9z"/>',
+    list: '<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.5" cy="6.5" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="17.5" r="1"/>',
     free: '<path d="M4 9.5V6.5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2.5 2.5 0 0 0 0 5v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3a2.5 2.5 0 0 0 0-5z"/><path d="M9 15l6-6"/>'
   };
   const ORDER = ['Show', 'Festa/Balada', 'Teatro', 'Concerto', 'Stand-up', 'Palestra', 'Infantil', 'Festival', 'Feira/Exposição', 'Gastronomia', 'Congresso', 'Esporte', 'Outros'];
@@ -431,6 +456,15 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   const state = { q: '', when: saved.when || DEF.when, pub: saved.pub || DEF.pub, venues: new Set(saved.venues || (saved.venue ? [saved.venue] : [])), free: !!saved.free, group: !!saved.group, gord: saved.gord === 'type' ? 'type' : 'date', off: new Set(saved.off || []) };
   if (state.when.mode === 'range' && state.when.b < todayIso) state.when = { mode: 'all' };
   const save = () => store.set('agc-filters', JSON.stringify({ when: state.when, pub: state.pub, venues: [...state.venues], free: state.free, group: state.group, gord: state.gord, off: [...state.off] }));
+
+  // Favoritos (guardados só neste navegador): id -> último dia do evento, para limpar os que já passaram
+  // mesmo que o evento some dos dados; a aba Favoritos ignora os filtros e lista os marcados por data
+  let favs = {}; try { favs = JSON.parse(store.get('agc-favs') || '{}') || {}; } catch (e) { favs = {}; }
+  if (typeof favs !== 'object' || Array.isArray(favs)) favs = {};
+  Object.keys(favs).forEach((id) => { if (typeof favs[id] !== 'string' || favs[id] < todayIso) delete favs[id]; });
+  const saveFavs = () => store.set('agc-favs', JSON.stringify(favs));
+  saveFavs();
+  let tab = location.hash === '#favoritos' ? 'fav' : 'all';
 
   let meta = {}, events = [], shown = PAGE;
   // Eventos que se repetem em vários dias e o usuário colapsou: mostram só a primeira data que os filtros deixam visível
@@ -685,14 +719,18 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       if (navigator.share) { navigator.share({ title: e.t, url: link }).catch(() => {}); return; }
       try { navigator.clipboard.writeText(link).then(() => toast('Link copiado'), () => toast(link)); } catch (err) { toast(link); }
     });
-    acts.append(cw, sh); main.append(acts);
+    const fv = el('button', 'ib fav'); fv.type = 'button';
+    fv.innerHTML = svg(UI.star); fv.append(el('span')); favState(fv, !!favs[e.id]);
+    fv.addEventListener('click', () => toggleFav(e, art));
+    acts.append(fv, cw, sh); main.append(acts);
     const fig = el('div', 'fig'); const ic = el('div', 'ic'); ic.innerHTML = catSvg(c); fig.append(ic, el('span', null, c.replace('/', '/​')));
     art.append(main, fig);
     return art;
   }
 
   function draw() {
-    drawStat();
+    drawStat(); drawTabs();
+    if (tab === 'fav') { drawFavs(); return; }
     const base = events.filter((e) => match(e, true));
     drawCats(base);
     const w = rangeOf(state.when, WHEN_Q);
@@ -743,6 +781,72 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
     }
     $('more').hidden = !more;
     requestAnimationFrame(pinDay);
+  }
+
+  // Abas: Agenda (com os filtros) e Favoritos (só os marcados, sem filtros)
+  const favList = () => events.filter((e) => favs[e.id] && e.e >= todayIso);
+  function drawTabs() {
+    const ta = $('tabAll'), tf = $('tabFav'), n = favList().length;
+    ta.innerHTML = svg(UI.list); ta.append(el('span', null, 'Agenda'));
+    tf.innerHTML = svg(UI.star); tf.append(el('span', null, 'Favoritos'), el('span', 'n', n || ''));
+    tf.setAttribute('aria-label', 'Favoritos' + (n ? ', ' + n + (n === 1 ? ' evento' : ' eventos') : ''));
+    ta.setAttribute('aria-selected', tab === 'all'); tf.setAttribute('aria-selected', tab === 'fav');
+    ta.tabIndex = tab === 'all' ? 0 : -1; tf.tabIndex = tab === 'fav' ? 0 : -1;
+    bar.hidden = tab === 'fav';
+  }
+  function setTab(t) {
+    if (t === tab) return;
+    tab = t; shown = PAGE;
+    try { history.replaceState(null, '', t === 'fav' ? '#favoritos' : location.pathname + location.search); } catch (err) {}
+    const tabsTop = $('tabAll').parentNode.getBoundingClientRect().top;
+    draw(); measureStick();
+    // Se a pessoa já tinha rolado a lista, volta para o começo dela (logo abaixo das abas)
+    if (tabsTop < 0) scrollBy(0, $('tabAll').parentNode.getBoundingClientRect().top);
+    $(t === 'fav' ? 'tabFav' : 'tabAll').focus({ preventScroll: true });
+  }
+  $('tabAll').addEventListener('click', () => setTab('all'));
+  $('tabFav').addEventListener('click', () => setTab('fav'));
+  $('tabAll').parentNode.addEventListener('keydown', (ev) => { if (ev.key === 'ArrowLeft' || ev.key === 'ArrowRight') { ev.preventDefault(); setTab(tab === 'all' ? 'fav' : 'all'); } });
+
+  // Cada favorito aparece uma vez, no próximo dia em que acontece, com os dias agrupados como na agenda
+  function drawFavs() {
+    const list = favList().map((e) => [nextDate(e), e]).sort((a, b) => a[0].localeCompare(b[0]) || (a[1].h || '99').localeCompare(b[1].h || '99') || a[1].t.localeCompare(b[1].t));
+    $('summary').textContent = '';
+    const out = $('out'); out.replaceChildren(); out.classList.remove('grp'); $('more').hidden = true;
+    const note = el('p', 'favnote');
+    if (!list.length) {
+      const em = el('p', 'empty favnote'); out.append(em);
+      em.append('Você ainda não tem favoritos. Na aba ', el('b', null, 'Agenda'), ', toque em ', el('b', null, '☆ Favoritar'), ' num evento para guardá-lo aqui.');
+      return;
+    }
+    note.append(el('b', null, list.length + (list.length === 1 ? ' evento favorito' : ' eventos favoritos')), ', do mais próximo ao mais distante. Ficam guardados só neste navegador e saem da lista quando acontecem.');
+    out.append(note);
+    let cur = null, box = null;
+    for (const [d, e] of list) {
+      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
+      box.append(card(e, d, true, 0));
+    }
+    requestAnimationFrame(pinDay);
+  }
+  function favState(b, on) { b.setAttribute('aria-pressed', on); b.title = on ? 'Tirar dos favoritos' : 'Guardar nos favoritos'; b.lastChild.textContent = on ? 'Favorito' : 'Favoritar'; }
+  // Marca/desmarca; na aba Favoritos, desmarcar tira o card da lista sem pular a tela
+  function toggleFav(e, art) {
+    const on = !favs[e.id];
+    if (on) favs[e.id] = e.e; else delete favs[e.id];
+    saveFavs();
+    if (tab === 'fav' && !on) {
+      const top = art.getBoundingClientRect().top; draw();
+      const next = [...document.querySelectorAll('#out .card')].find((c) => c.getBoundingClientRect().top >= top - 1);
+      if (next) next.querySelector('.ib.fav').focus({ preventScroll: true });
+      toast('Tirado dos favoritos');
+      return;
+    }
+    // Na agenda, o mesmo evento pode aparecer em vários dias: atualiza todos os botões dele
+    document.querySelectorAll('.card[data-eid="' + e.id + '"] .ib.fav').forEach((b) => {
+      favState(b, on); b.classList.remove('pop1'); if (on) { void b.offsetWidth; b.classList.add('pop1'); }
+    });
+    drawTabs();
+    toast(on ? 'Guardado nos favoritos' : 'Tirado dos favoritos');
   }
 
   // Título de grupo colapsável: botão com a seta no começo, e o título inteiro também abre e fecha
@@ -859,13 +963,14 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
   $('vclr').addEventListener('click', () => { state.venues.clear(); save(); shown = PAGE; draw(); });
   $('more').addEventListener('click', () => { shown += PAGE; draw(); });
 
+  drawTabs();
   fetch(DATA_URL).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((j) => {
     meta = j.meta || {}; events = (j.events || []).filter((e) => e.e >= todayIso);
     const vc = {}; events.forEach((e) => { if (e.v) vc[e.v] = (vc[e.v] || 0) + 1; });
     buildVenues(Object.keys(vc).filter((v) => vc[v] > 1).sort((a, b) => a.localeCompare(b, 'pt')));
     [...state.venues].forEach((v) => { if (!(vc[v] > 1)) state.venues.delete(v); });
     const h = location.hash.slice(1);
-    if (h && events.some((e) => e.id === h)) shown = Infinity;
+    if (h && events.some((e) => e.id === h)) { shown = Infinity; tab = 'all'; }
     draw();
     if (h) { const t = document.getElementById(h); if (t) t.scrollIntoView({ block: 'center' }); }
   }).catch(() => { $('stat').textContent = 'Não foi possível carregar a agenda. Recarregue a página em alguns minutos.'; });
