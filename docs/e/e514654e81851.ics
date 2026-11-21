@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e514654e81851@agendao-curitiba
+DTSTAMP:20261120T090000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Espetáculo La Fiaca
+LOCATION:Espaço Excêntrico\, Curitiba - PR
+DESCRIPTION:Comédia inspirada em Ricardo Talesnik sobre Nestor\, que um dia decide não ir trabalhar por pura preguiça\; montagem em arena com três atores no papel.\n\nhttps://agendaocuritiba.github.io/e/e514654e81851.html
+URL:https://agendaocuritiba.github.io/e/e514654e81851.html
+END:VEVENT
+END:VCALENDAR

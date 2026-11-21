@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e43cbc3ddcf94@agendao-curitiba
+DTSTAMP:20261120T090000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:ATO BRANCO Uma viagem à era do Ballet Romântico
+LOCATION:Teatro José Maria Santos\, Curitiba - PR
+DESCRIPTION:Espetáculo de balé que propõe uma viagem ao repertório da era do Ballet Romântico\, no Teatro José Maria Santos.\n\nhttps://agendaocuritiba.github.io/e/e43cbc3ddcf94.html
+URL:https://agendaocuritiba.github.io/e/e43cbc3ddcf94.html
+END:VEVENT
+END:VCALENDAR

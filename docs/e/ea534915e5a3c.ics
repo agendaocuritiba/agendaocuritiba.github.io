@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea534915e5a3c@agendao-curitiba
+DTSTAMP:20261120T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T220000
+DTEND;TZID=America/Sao_Paulo:20261129T000000
+SUMMARY:Kona 28.11
+LOCATION:Dante Club\, Curitiba - PR
+DESCRIPTION:Noite de discoteca queer da Kona no Dante Club\, com divas da disco\, show de drag e hits dos anos 80 a 2000\; DJs Educastelo\, Vaza\, Afrodt e Pedro Grego.\n\nhttps://agendaocuritiba.github.io/e/ea534915e5a3c.html
+URL:https://agendaocuritiba.github.io/e/ea534915e5a3c.html
+END:VEVENT
+END:VCALENDAR

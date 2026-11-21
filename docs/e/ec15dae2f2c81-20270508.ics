@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec15dae2f2c81-2027-05-08@agendao-curitiba
 DTSTAMP:20261119T090000Z
-DTSTART;TZID=America/Sao_Paulo:20270508T183000
-DTEND;TZID=America/Sao_Paulo:20270508T203000
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
 SUMMARY:Peça Psicóloga Segundo Meu Psiquiatra - com Humberto Martins e Aline Müller
 LOCATION:Teatro Fernanda Montenegro\, Curitiba - PR
 DESCRIPTION:Peça de teatro estrelada pelos atores Humberto Martins e Aline Müller.\n\nhttps://agendaocuritiba.github.io/e/ec15dae2f2c81.html

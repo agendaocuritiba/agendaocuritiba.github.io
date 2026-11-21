@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb78ceb383c2b@agendao-curitiba
+DTSTAMP:20261120T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T200000
+DTEND;TZID=America/Sao_Paulo:20261128T220000
+SUMMARY:Espanca Funk Pupletech
+LOCATION:Hera Bar\, Curitiba - PR
+DESCRIPTION:Edição especial que junta as festas Espanca Funk e Fogo no Parquinho no Hera Bar\, com oito DJs divididos entre house e funk.\n\nhttps://agendaocuritiba.github.io/e/eb78ceb383c2b.html
+URL:https://agendaocuritiba.github.io/e/eb78ceb383c2b.html
+END:VEVENT
+END:VCALENDAR

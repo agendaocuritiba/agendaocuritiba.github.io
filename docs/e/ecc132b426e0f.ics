@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ecc132b426e0f@agendao-curitiba
-DTSTAMP:20261119T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261212T190000
-DTEND;TZID=America/Sao_Paulo:20261212T210000
+DTSTAMP:20261120T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T203000
+DTEND;TZID=America/Sao_Paulo:20261212T223000
 SUMMARY:Ao Pé do Ouvido com Charlotte Algar - Lua Azul
 LOCATION:Casa Bambuê\, Curitiba - PR
 DESCRIPTION:Show intimista da cantora e violonista inglesa Charlotte Algar\, com obras de Guinga\, Gismonti e Baden Powell e participação de Ana Paula da Silva.\n\nhttps://agendaocuritiba.github.io/e/ecc132b426e0f.html

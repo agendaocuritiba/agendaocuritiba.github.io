@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e581eaeb29346@agendao-curitiba
+DTSTAMP:20261120T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T200000
+DTEND;TZID=America/Sao_Paulo:20261127T220000
+SUMMARY:Fader E Banho & Tosa
+LOCATION:Hera Bar\, Curitiba - PR
+DESCRIPTION:Festa no Hera Bar que abre a temporada de fim de ano com seis DJs no line-up: saadori\, sophia allen\, art is gone\, .rarO\, Kitty e Tui.\n\nhttps://agendaocuritiba.github.io/e/e581eaeb29346.html
+URL:https://agendaocuritiba.github.io/e/e581eaeb29346.html
+END:VEVENT
+END:VCALENDAR

@@ -6,9 +6,9 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e9a180d2f4dcc-todas@agendao-curitiba
 DTSTAMP:20261028T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261119T203000
-DTEND;TZID=America/Sao_Paulo:20261119T223000
-RRULE:FREQ=DAILY;COUNT=18
+DTSTART;TZID=America/Sao_Paulo:20261120T203000
+DTEND;TZID=America/Sao_Paulo:20261120T223000
+RRULE:FREQ=DAILY;COUNT=17
 SUMMARY:Muito Barulho por Nada
 LOCATION:Guairinha - Salvador de Ferrante\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e9a180d2f4dcc.html

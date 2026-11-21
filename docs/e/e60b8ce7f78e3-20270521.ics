@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e60b8ce7f78e3-2027-05-21@agendao-curitiba
+DTSTAMP:20261120T090000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:ElixirConf BR
+LOCATION:Museu Oscar Niemeyer | MON\, Curitiba - PR
+DESCRIPTION:Primeira edição brasileira da conferência da comunidade Elixir e Erlang\, com palestras para todos os níveis e programadores do Brasil e de fora.\n\nhttps://agendaocuritiba.github.io/e/e60b8ce7f78e3.html
+URL:https://agendaocuritiba.github.io/e/e60b8ce7f78e3.html
+END:VEVENT
+END:VCALENDAR
