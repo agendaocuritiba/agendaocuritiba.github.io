@@ -273,7 +273,7 @@ def cluster(origs):
 # Classificação própria: o Turismo Curitiba usa "Lazer"/"Geral" para quase tudo.
 KEEP_TC = {"Feira/Exposição", "Gastronomia", "Congresso"}
 RULES = [
-    ("Congresso", r"congresso|summit|simposio|seminario|conferencia|pitch day"),
+    ("Congresso", r"congresso|summit|simposio|seminario|conferencia|pitch day|elixirconf"),
     ("Gastronomia", r"gastronom|curitipao|assado|assafest|twelve beers|food|cerveja|beer|feijoad|costelad|jantar|almoco|vinho|\bwine\b(?! down)|chef pour|mao na massa|na taca|pintura em tacas|festa das nacoes|\bcafes? (especia|combina)|cafe e chocolate|sirene brazil|torneio de torra|chas especiais|corndogada|domingueira|matcha"),
     ("Feira/Exposição", r"(?<!-)\bfeira\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show|natal vegan|mostra de audiovisual|dvr fest|visita guiada"),
     ("Esporte", r"hardest run|corrida(?!s? das blogueiras)|maratona|futebol|campeonato|caminhada|aulao"),
