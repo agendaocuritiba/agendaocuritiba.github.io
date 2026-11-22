@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1b3d275fe9f2@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T110000
+DTEND;TZID=America/Sao_Paulo:20261129T130000
+SUMMARY:O Circo da Fabulosa Família FunFarra
+LOCATION:Espaço Fantástico das Artes\, Curitiba - PR
+DESCRIPTION:Espetáculo circense da Cia dos Palhaços sobre uma família de artistas\, com música ao vivo\, mágica\, malabares\, acrobacias e palhaçaria para todas as idades.\n\nhttps://agendaocuritiba.github.io/e/e1b3d275fe9f2.html
+URL:https://agendaocuritiba.github.io/e/e1b3d275fe9f2.html
+END:VEVENT
+END:VCALENDAR

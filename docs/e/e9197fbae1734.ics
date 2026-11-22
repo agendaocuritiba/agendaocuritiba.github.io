@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9197fbae1734@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T210000
+DTEND;TZID=America/Sao_Paulo:20261205T230000
+SUMMARY:Gaudium 2026 Closing Party
+LOCATION:Hera Bar\, Curitiba - PR
+DESCRIPTION:Última edição do ano da festa Gaudium no Hera Bar\, com sets de house e tech house de KV\, Remake\, Saldan e Diogo Minoso b2b Zaket.\n\nhttps://agendaocuritiba.github.io/e/e9197fbae1734.html
+URL:https://agendaocuritiba.github.io/e/e9197fbae1734.html
+END:VEVENT
+END:VCALENDAR

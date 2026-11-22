@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e74ebf2fe728d@agendao-curitiba
-DTSTAMP:20261120T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261121T200000
-DTEND;TZID=America/Sao_Paulo:20261121T220000
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T180000
+DTEND;TZID=America/Sao_Paulo:20261129T200000
 SUMMARY:Cartografia da Memória | Balé Teatro Guaíra em Cascavel
 LOCATION:Teatro Guaíra - Auditório Teatro\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e74ebf2fe728d.html

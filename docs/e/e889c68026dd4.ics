@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e889c68026dd4@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270522T140000
+DTEND;TZID=America/Sao_Paulo:20270522T160000
+SUMMARY:Xxxperience 2027
+LOCATION:Em Breve\, Curitiba - PR
+DESCRIPTION:Edição "Back to Essence" do festival de música eletrônica\, com Vini Vici\, Neelix\, Liquid Soul\, Freedom Fighters e outros nomes\; local ainda a definir.\n\nhttps://agendaocuritiba.github.io/e/e889c68026dd4.html
+URL:https://agendaocuritiba.github.io/e/e889c68026dd4.html
+END:VEVENT
+END:VCALENDAR

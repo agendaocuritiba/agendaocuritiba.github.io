@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ea3a41bb406ac@agendao-curitiba
-DTSTAMP:20261120T090000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTAMP:20261122T090000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
 SUMMARY:Tricôs\, Monstros e Arrepios - 31º Festival Alunos Encena
 LOCATION:Teatro Barracão EnCena\, Curitiba - PR
 DESCRIPTION:Peça infantojuvenil em que três senhorinhas abrem um livro antigo e libertam monstros famosos nada assustadores\, entre sustos\, músicas e trapalhadas.\n\nhttps://agendaocuritiba.github.io/e/ea3a41bb406ac.html

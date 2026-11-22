@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e7e8869a4221f-2026-12-20@agendao-curitiba
 DTSTAMP:20261112T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261220T200000
-DTEND;TZID=America/Sao_Paulo:20261220T220000
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
 SUMMARY:Feira Especial de Natal | XV de Novembro
 LOCATION:Calçadão da Rua XV de Novembro\, entre a Rua Riachuelo e a Praça Santos Andrade\, e Rua João Negrão\, entre a XV de Novembro e a Marechal Deodoro\, Curitiba - PR
 DESCRIPTION:Espetáculo natalino com a Orquestra do IMA\, projeção mapeada na fachada da Gran Faculdade e lasers sincronizados com a música.\n\nhttps://agendaocuritiba.github.io/e/e7e8869a4221f.html

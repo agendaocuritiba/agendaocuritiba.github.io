@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e7c1aab0b4366@agendao-curitiba
-DTSTAMP:20261120T090000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTAMP:20261122T090000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
 SUMMARY:Onde Mora o Essencial - 31º Festival Alunos Encena
 LOCATION:Teatro Barracão EnCena\, Curitiba - PR
 DESCRIPTION:Peça sobre uma turma de pequenos aventureiros que viaja pelo universo das emoções para descobrir o que realmente importa levar na vida.\n\nhttps://agendaocuritiba.github.io/e/e7c1aab0b4366.html

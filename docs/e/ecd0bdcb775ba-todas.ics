@@ -6,9 +6,9 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ecd0bdcb775ba-todas@agendao-curitiba
 DTSTAMP:20261107T090000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-RRULE:FREQ=DAILY;COUNT=41
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+RRULE:FREQ=DAILY;COUNT=40
 SUMMARY:Experiencia Música e Natureza
 LOCATION:Parque Jaime Lerner\, Curitiba - PR
 DESCRIPTION:Programação ligada à música e à natureza no Parque Jaime Lerner\, vendida pela Disk Ingressos.\n\nhttps://agendaocuritiba.github.io/e/ecd0bdcb775ba.html

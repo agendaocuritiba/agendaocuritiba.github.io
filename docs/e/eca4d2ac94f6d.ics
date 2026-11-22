@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eca4d2ac94f6d@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T210000
+DTEND;TZID=America/Sao_Paulo:20261204T230000
+SUMMARY:Strv Cheirosa 04/12
+LOCATION:Rua Saldanha Marinho\, 202 - Centro Curitiba\, Curitiba - PR\, 80410-150\, Brasil\, Curitiba - PR
+DESCRIPTION:Edição da festa Estorvo com ambientação perfumada\, Vogue Night ligada à cultura ballroom\, DJs residentes e convidadas e performances de artistas locais.\n\nhttps://agendaocuritiba.github.io/e/eca4d2ac94f6d.html
+URL:https://agendaocuritiba.github.io/e/eca4d2ac94f6d.html
+END:VEVENT
+END:VCALENDAR

@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3b94bd3805ca@agendao-curitiba
-DTSTAMP:20261120T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261121T140000
-DTEND;TZID=America/Sao_Paulo:20261121T160000
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261122T140000
+DTEND;TZID=America/Sao_Paulo:20261122T160000
 SUMMARY:Samba da Feira Vol. 1 Aniversário de 1 Ano do Na Feira Bar
 LOCATION:Concept Hall Espaço de Eventos\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3b94bd3805ca.html
