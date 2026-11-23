@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eefcedc3cad54@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T220000
+DTEND;TZID=America/Sao_Paulo:20261213T000000
+SUMMARY:The Dolls Club
+LOCATION:Rua Presidente Carlos Cavalcanti\, 1122 - São Francisco\, Curitiba - PR\, 80510-040\, Brazil\, Curitiba - PR
+DESCRIPTION:Segunda edição da The Dolls Club\, festa com música e foco na cena feminina de Curitiba\, pensada como espaço de expressão e representatividade.\n\nhttps://agendaocuritiba.github.io/e/eefcedc3cad54.html
+URL:https://agendaocuritiba.github.io/e/eefcedc3cad54.html
+END:VEVENT
+END:VCALENDAR

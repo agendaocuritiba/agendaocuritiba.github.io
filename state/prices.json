@@ -1,5 +1,4 @@
 {
- "e010d7d280117": "R$ 45 a R$ 90",
  "e031ea28dfb43": "A partir de R$ 30",
  "e07911fd11649": "R$ 60 a R$ 120",
  "e080ec26e344b": "R$ 45",
@@ -31,7 +30,6 @@
  "e5213ad113b36": "Gratuito",
  "e53e0c49601ba": "Gratuito",
  "e54201eba2c8c": "Gratuito",
- "e5785119eacbe": "R$ 30",
  "e5aa914f9a0b2": "R$ 55 a R$ 110",
  "e62caf185af40": "Gratuito",
  "e6430344d341b": "Gratuito",
@@ -54,7 +52,6 @@
  "e84f473e81529": "R$ 30",
  "e8c2813d22bc1": "R$ 63",
  "e903486e5e246": "R$ 80",
- "e90ef553b0a28": "R$ 30",
  "e93b84b64107d": "R$ 25 a R$ 35",
  "e946ac146553a": "R$ 290 a R$ 450",
  "e96beba8cda6f": "R$ 120 a R$ 200",
@@ -62,9 +59,7 @@
  "e9b95f60b434a": "R$ 30",
  "e9ec23565c287": "Gratuito",
  "ea2262a8f44bd": "R$ 25 a R$ 35",
- "ea3a41bb406ac": "R$ 30",
  "ea63218a77fbb": "Gratuito",
- "eaa28d887b140": "R$ 30",
  "eac8dbdace959": "Entrada solidária (1 kg de alimento)",
  "eaec7969a214b": "R$ 30",
  "eaecb865b246a": "R$ 30",
@@ -81,7 +76,6 @@
  "ed453e191a11d": "R$ 30 a R$ 100",
  "ed603a15744da": "R$ 10 a R$ 20",
  "ed72cf41a321f": "R$ 30",
- "ed80fcaf33f13": "R$ 60 a R$ 140",
  "ed84385784019": "R$ 30",
  "ee02f12769a76": "R$ 50 a R$ 3.500",
  "ee323f2344bc1": "R$ 65 a R$ 130",
@@ -106,5 +100,9 @@
  "e24ab14e12b8d": "A partir de R$ 15",
  "e59b247848a9b": "R$ 40 a R$ 80",
  "e95845cb7cc58": "Gratuito",
- "ec5dbf42ba079": "Gratuito"
+ "ec5dbf42ba079": "Gratuito",
+ "e1f0db38d1ed1": "R$ 20 a R$ 45",
+ "eb34fc0d6dc64": "R$ 25",
+ "eb5efa8f952a8": "R$ 35 a R$ 40",
+ "eefcedc3cad54": "R$ 20"
 }

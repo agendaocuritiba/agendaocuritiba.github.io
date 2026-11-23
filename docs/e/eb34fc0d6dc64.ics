@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb34fc0d6dc64@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T170000
+DTEND;TZID=America/Sao_Paulo:20261206T190000
+SUMMARY:Baile Rap X Tulinho
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:Baile Rap recebe o rapper paulista Tulinho\, com Barraco de Bairro e Beiso e Jaguar\, discotecagem de Kozmica e Lado B e apresentação da Poeta Gabriela.\n\nhttps://agendaocuritiba.github.io/e/eb34fc0d6dc64.html
+URL:https://agendaocuritiba.github.io/e/eb34fc0d6dc64.html
+END:VEVENT
+END:VCALENDAR

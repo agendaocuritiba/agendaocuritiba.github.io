@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb5efa8f952a8@agendao-curitiba
+DTSTAMP:20261122T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261210T190000
+DTEND;TZID=America/Sao_Paulo:20261210T210000
+SUMMARY:Desgraça
+LOCATION:Janaíno Vegan Bar - Largo da Ordem\, Curitiba - PR
+DESCRIPTION:Show da Desgraça\, banda de funk punk metal com Vitor Brauer\, Rodolfo Lima e Felipe Soares\, tocando músicas de todos os discos em cerca de duas horas.\n\nhttps://agendaocuritiba.github.io/e/eb5efa8f952a8.html
+URL:https://agendaocuritiba.github.io/e/eb5efa8f952a8.html
+END:VEVENT
+END:VCALENDAR
