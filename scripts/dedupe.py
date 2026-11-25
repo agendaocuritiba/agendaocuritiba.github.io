@@ -5,8 +5,10 @@ Uso:
   python3 dedupe.py RAW_EVENTOON RAW_TURISMO RAW_EXTRAS PREV_EVENTS RUN_DATE OUT_DIR
 
 - RAW_EVENTOON: [[dd/mm/aaaa, título, local, endereço, slug, imagem], ...]
-- RAW_TURISMO:  [[slug/id, título, "dd/mm/aaaa[ a dd/mm/aaaa]", horário, local,
-                  ingresso, site, "img&tipo=N", categoria], ...]
+- RAW_TURISMO:  [[slug/id, título, "dd/mm/aaaa[ a dd/mm/aaaa]", horário, "local|endereço",
+                  ingresso, site, url da imagem, categoria], ...]  — Guia da Prefeitura de Curitiba
+                  (guia.curitiba.pr.gov.br, scripts/coleta/guia.js), que substituiu a agenda do
+                  Turismo Curitiba em 11/2026; o arquivo e o argumento mantêm o nome antigo
 - RAW_EXTRAS:   {"<código>": [[id, título, início aaaa-mm-dd, fim, horário, local,
                   caminho_url, dica_categoria], ...], ...}  — códigos em SOURCES abaixo
 - PREV_EVENTS:  lista de eventos da coleta anterior (ou [])
@@ -17,8 +19,10 @@ import json, re, sys, hashlib, unicodedata
 from datetime import date, timedelta
 
 EO_BASE = "https://www.eventoon.com.br/evento/"
-TC_BASE = "https://turismo.curitiba.pr.gov.br/evento/"
-TC_IMG = "https://turismo.curitiba.pr.gov.br/include/handler/imagem.ashx?img={}&x=600&y=400"
+TC = "Prefeitura de Curitiba"  # fonte oficial (antes "Turismo Curitiba")
+TC_BASE = "https://guia.curitiba.pr.gov.br/evento/"
+# categorias do guia que valem como estão; as outras passam pelas regras de classify()
+TC_CATS = {"Congressos e palestras": "Congresso", "Exposições": "Feira/Exposição"}
 
 # código → (nome exibido, prefixo da URL)
 SOURCES = {
@@ -33,7 +37,7 @@ SOURCES = {
     "sg": ("Shotgun", "https://shotgun.live/pt-br/events/"),
     "tg": ("Teatro Guaíra", "https://www.teatroguaira.pr.gov.br/"),
 }
-SOURCE_ORDER = ["Turismo Curitiba", "Evento ON", "Disk Ingressos", "Sympla", "Blueticket",
+SOURCE_ORDER = [TC, "Evento ON", "Disk Ingressos", "Sympla", "Blueticket",
                 "Bilheteria Digital", "Ticketmaster", "Ingresse", "Fever", "Ingresso.com", "Shotgun", "Teatro Guaíra"]
 
 STOP = set("""a o as os e de da do das dos em no na nos nas com para por ao the and of in
@@ -161,10 +165,10 @@ def load_originals(eo_raw, tc_raw, extras, today, horizon):
         except Exception:
             continue
         venue, addr = (loc.split("|", 1) + [""])[:2] if "|" in loc else (loc, "")
-        add({"oid": "tc:" + slug.split("/")[-1], "source": "Turismo Curitiba", "title": t.strip(),
+        add({"oid": "gc:" + slug.split("/")[-1], "source": TC, "title": t.strip(),
              "url": TC_BASE + slug, "start": st.isoformat(), "end": en.isoformat(),
              "time": hr.strip(), "venue": venue.strip().rstrip("."), "address": addr.strip().rstrip("."),
-             "image": TC_IMG.format(img) if img else "", "category": cat, "price": ing.strip().rstrip("."),
+             "image": img, "category": TC_CATS.get(cat, cat), "price": ing.strip().rstrip("."),
              "site": site.strip()})
     for code, rows in (extras or {}).items():
         if code not in SOURCES:
@@ -270,17 +274,17 @@ def cluster(origs):
     return merged
 
 
-# Classificação própria: o Turismo Curitiba usa "Lazer"/"Geral" para quase tudo.
+# Classificação própria: o guia da Prefeitura usa "Natal de Curitiba", "Festas e shows" etc.
 KEEP_TC = {"Feira/Exposição", "Gastronomia", "Congresso"}
 RULES = [
     ("Congresso", r"congresso|summit|simposio|seminario|conferencia|pitch day|elixirconf"),
     ("Gastronomia", r"gastronom|curitipao|assado|assafest|twelve beers|food|cerveja|beer|feijoad|costelad|jantar|almoco|vinho|\bwine\b(?! down)|chef pour|mao na massa|na taca|pintura em tacas|festa das nacoes|\bcafes? (especia|combina)|cafe e chocolate|sirene brazil|torneio de torra|chas especiais|corndogada|domingueira|matcha|dinner party"),
-    ("Feira/Exposição", r"(?<!-)\bfeira\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show|natal vegan|mostra de audiovisual|dvr fest|visita guiada|tour curitiba sombria|torneio brasil de robotica"),
+    ("Feira/Exposição", r"(?<!-)\bfeiras?\b|\bexpo|exposi|old & low car|old low car|esoteric|dinos alive|invasao alien|charm show|natal vegan|mostra de audiovisual|dvr fest|visita guiada|tour curitiba sombria|torneio brasil de robotica"),
     ("Esporte", r"hardest run|corrida(?!s? das blogueiras)|maratona|futebol|campeonato|caminhada|aulao"),
     ("Stand-up", r"stand ?up|comedy|xaveca|piada|enterrado vivo|como nossos pais|afonso padilha|renato albani|ivangelica|indio behn|embrulha pra viagem|nada e combinado|leo lins|humor|improviso|bruna louise|diogo almeida|carol delgado|santo fole|danilo gentili|mallandro|silvetty montilla|victor sarro|jonathan nemer|conte uma fofoca"),
-    ("Palestra", r"palestra|claudio duarte|padre patrick|catia damasceno|andrea vermont|paua em seja livre|encontro de valor|adultecer|fazimentos texteis|vale do pinhao|cafe com guimaraes"),
+    ("Palestra", r"palestra|lancamento do livro|claudio duarte|padre patrick|catia damasceno|andrea vermont|paua em seja livre|encontro de valor|adultecer|fazimentos texteis|vale do pinhao|cafe com guimaraes"),
     ("Infantil", r"infantil|tum pa\b|aventura congelante|bicho-?papao|conto de fadas|poke fan fest|kids|crianca|bob esponja|megabolhas|vini pirata|tum tu tubos|parque mikewood|frozen|tres porquinhos|caca aos doces|halloween encantado|spidey|gabby|clubinho|toy story|biscoitos natalinos|papai noel dos correios|fabrica do papai noel"),
-    ("Concerto", r"concerto|orquestra|symphon|sinfoni|in concert|\bcoral\b|\btrio\b|ensemble|classicos do cinema|zelda|zimmer|turandot|candlelight|catedral de luz|palacio avenida|capela da gloria|historia de luz e inspiracao|cantata"),
+    ("Concerto", r"concerto|orquestra|camerata|symphon|sinfoni|in concert|\bcoral\b|\btrio\b|ensemble|classicos do cinema|zelda|zimmer|turandot|candlelight|catedral de luz|palacio avenida|capela da gloria|historia de luz e inspiracao|cantata"),
     ("Teatro", r"musical|espetaculo|\bpeca\b|teatro(?! paiol)|danca(?! de salao)|gota d.agua|arqueologias do futuro|azaleia oriental|ballet|circo|nono paciente|improvavel|tarsila|misterio buffo|matilda|clube dos canalhas|antes que termine|no me kahlo|plantonistas|despertar da fenix|christmas dream|sonho de natal|disney|misterios s/?a|grande banquete|mostra|terapia infernal|baixa sociedade|kafka|madrugueiro|cidade de jornais|historieta|bela e a fera|morte e vida|capitulo xv|dois de nos|vendedor de sonhos|flamenca|zumbi e dandara|mia cara|manual para recem falecidos|desencantados|magico de oz|entre coroas e viloes|\bo santo\b|que ano foi este|fragmentos do infinito|festival homero|misterio do cristal|reino das aguas claras|onde mora o essencial|bug do multiverso|fabrica de emocoes|abrace o mundo|digestao emocio|familia capivara|um dia com minha mae|fairy doll|\b1945\b|quebra-?nozes|natal no paco|diatribe de amor|broadway|bombshell|marcas do tempo"),
     ("Festa/Balada", r"\bdj\b|all night|techno|after hours|solomun|vintage culture|\balok\b|\bbaile\b|garota sunset|five am|who we are|tranquilo apresenta|chemical surf|curitiba folia|moustache sound|bpm|\bclub vibe\b|\+55 bar|\bczar\b|ceu curitiba|eli iwasa|james zabiela|breaking beattz|showcase|\bgabe\b|\bliu\b|\bzac\b|\bvermont\b|halloween|hallowzot|festa|reveillon|virada|party|revoada|circus|escangalha|antiquario|carnaval|micareta|rumberos|k-pop|watch party|formatura|pink diamond|sabadao latino|ressaca pos show|arrastapia|ultima balada"),
     ("Festival", r"festival|fest\b|kemet|xxxperience"),
@@ -291,12 +295,12 @@ HINT_RULES = [("Festa/Balada", r"balada|eletr[oô]nica"), ("Stand-up", r"stand ?
 
 
 def classify(g):
-    tc_cat = next((o["category"] for o in g if o["source"] == "Turismo Curitiba" and o.get("category")), "")
+    tc_cat = next((o["category"] for o in g if o["source"] == TC and o.get("category")), "")
     if tc_cat in KEEP_TC:
         return tc_cat
     text = strip_acc(" ".join(o["title"] for o in g).lower())
     venues = strip_acc(" ".join(o["venue"] for o in g).lower())
-    hints = strip_acc(" ".join(o["category"] for o in g if o["source"] != "Turismo Curitiba").lower())
+    hints = strip_acc(" ".join(o["category"] for o in g if o["source"] != TC).lower())
     for cat, rx in RULES[:5]:  # congresso, gastronomia, feira, esporte, stand-up: o título manda
         if re.search(rx, text):
             return cat
@@ -311,12 +315,13 @@ def classify(g):
         # "Teatro Positivo" não faz de um show uma peça
         if re.search(rx, text) or (cat == "Festa/Balada" and re.search(rx, venues)) or (cat == "Teatro" and "barracao encena" in venues):
             return cat
-    return "Show"
+    # sem pista no título, vale a categoria do guia da Prefeitura para peças e dança
+    return "Teatro" if tc_cat in ("Teatro e espetáculos", "Dança") else "Show"
 
 
 def build_event(g):
     g = sorted(g, key=lambda o: (SOURCE_ORDER.index(o["source"]) if o["source"] in SOURCE_ORDER else 99, o["start"]))
-    tc = [o for o in g if o["source"] == "Turismo Curitiba"]
+    tc = [o for o in g if o["source"] == TC]
     named = [o for o in g if not schedule_only(o["title"])]
     tc = [o for o in tc if o in named]
     title = tc[0]["title"] if tc else min((clean_title(o["title"]) for o in named or g), key=len)
@@ -391,7 +396,7 @@ def main():
         "merged": sum(1 for e in events if len(e["sources"]) > 1),
         "new": sum(1 for e in events if e["firstSeen"] == run) if prev else 0,
         "removed": sum(1 for p in prev if p["id"] not in ids), "bySource": by_src,
-        "eventoon": by_src.get("Evento ON", 0), "turismo": by_src.get("Turismo Curitiba", 0),
+        "eventoon": by_src.get("Evento ON", 0), "turismo": by_src.get(TC, 0),
     }
     json.dump(events, open(f"{out}/events.json", "w"), ensure_ascii=False, indent=1)
     json.dump(stats, open(f"{out}/stats.json", "w"), ensure_ascii=False, indent=1)
