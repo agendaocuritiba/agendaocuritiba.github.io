@@ -11,7 +11,7 @@ from urllib.parse import quote, urlencode
 
 SITE_URL = "https://agendaocuritiba.github.io/"
 ISSUES_URL = "https://github.com/agendaocuritiba/agendaocuritiba.github.io/issues"
-PUBLISHERS = {"Turismo Curitiba", "Evento ON", "Teatro Guaíra"}
+PUBLISHERS = {"Prefeitura de Curitiba", "Evento ON", "Teatro Guaíra"}
 
 
 SMALL = {"a","o","as","os","e","de","da","do","das","dos","em","no","na","com","para","por","ao","um","uma"}
@@ -85,8 +85,8 @@ def is_free(e, pt):
     """Gratuito só com afirmação explícita e nenhum sinal de cobrança.
 
     O preço lido na página do evento (state/prices.json) manda; sem ele, valem o campo
-    "Ingresso" do Turismo Curitiba e o título, mas um vendedor de ingressos entre as fontes,
-    ou um link de compra no Turismo, desmente o "Gratuito"."""
+    "Ingresso" do guia da Prefeitura e o título, mas um vendedor de ingressos entre as fontes,
+    ou um link de compra no guia, desmente o "Gratuito"."""
     if e["id"] in PAID_IDS:
         return False
     ok = lambda t: bool(FREE.search(t)) and not PARTIAL.search(t) and not PAID.search(t)

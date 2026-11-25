@@ -2,10 +2,10 @@
 
 Cada arquivo `.js` desta pasta é rodado, inteiro, com a ferramenta de JavaScript do navegador do app, com a página indicada aberta. O resultado é uma string JSON: copie exatamente o que voltar. Se um site falhar, siga com os outros e anote qual falhou.
 
-Evento ON e Turismo Curitiba vão cada um para o seu arquivo. Os outros devolvem linhas no formato [id, título, início aaaa-mm-dd, fim, horário, local, caminho_url, dica_categoria] e vão todos juntos para work/raw/raw_extras.json, como {"dk":[...],"sy":[...],"bt":[...],"bd":[...],"ig":[...],"tm":[...],"fv":[...],"ic":[...],"sg":[...],"tg":[...]}.
+Evento ON e o guia da Prefeitura vão cada um para o seu arquivo. Os outros devolvem linhas no formato [id, título, início aaaa-mm-dd, fim, horário, local, caminho_url, dica_categoria] e vão todos juntos para work/raw/raw_extras.json, como {"dk":[...],"sy":[...],"bt":[...],"bd":[...],"ig":[...],"tm":[...],"fv":[...],"ic":[...],"sg":[...],"tg":[...]}.
 
 - `eventoon.js`: Evento ON → https://www.eventoon.com.br/cidade/curitiba-pr → salve em work/raw/raw_eventoon.json
-- `turismo.js`: Turismo Curitiba → https://turismo.curitiba.pr.gov.br/eventos/ → salve em work/raw/raw_turismo.json (antes de rodar, troque DD-MM-AAAA no script pela data de hoje)
+- `guia.js`: Guia da Prefeitura de Curitiba → https://guia.curitiba.pr.gov.br/evento/listar/ → salve em work/raw/raw_turismo.json (o arquivo mantém o nome da fonte antiga: a agenda do Turismo Curitiba, turismo.curitiba.pr.gov.br/eventos, saiu do ar em 11/2026 e foi para este guia). Lê a lista toda pela API do site (`/Evento/VerMais`) e abre a página de cada evento que entra; leva uns 30 s, e se a ferramenta expirar, rode de novo. Só entram eventos com data: cinema, cursos e oficinas, leilões, parques, esportes, saúde, museus, artesanato, atrações permanentes, programação contínua de meses e a rotina das Casas da Leitura (contação de histórias, rodas de leitura) ficam de fora.
 - `dk.js`: Disk Ingressos → https://www.diskingressos.com.br/
 - `sy.js`: Sympla → https://www.sympla.com.br/eventos/curitiba-pr (usa a API do próprio site, `/api/discovery-bff/search/category-type`, com as coleções 17 Festas e shows, 10 Arte/cinema/lazer, 1 Gastronomia e 12 Games/geek; costuma levar uns 10 s; se a ferramenta expirar, espere e leia window.__sy)
 - `bt.js`: Blueticket → https://www.blueticket.com.br/
