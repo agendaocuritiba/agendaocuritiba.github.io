@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e45360e9b8489@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T140000
+DTEND;TZID=America/Sao_Paulo:20261212T160000
+SUMMARY:Festival Desperta
+LOCATION:Hard Rock Cafe Curitiba\, Curitiba - PR
+DESCRIPTION:Mostra de pole dance com tema Baile de Máscaras\, reunindo alunas de vários studios no Hard Rock Cafe.\n\nhttps://agendaocuritiba.github.io/e/e45360e9b8489.html
+URL:https://agendaocuritiba.github.io/e/e45360e9b8489.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eac659124081b-2026-12-09@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Suassuna - um Gênio da Raça Humana - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça de alunos do Festival EnCena que homenageia Ariano Suassuna com personagens como João Grilo e Chicó.\n\nhttps://agendaocuritiba.github.io/e/eac659124081b.html
+URL:https://agendaocuritiba.github.io/e/eac659124081b.html
+END:VEVENT
+END:VCALENDAR

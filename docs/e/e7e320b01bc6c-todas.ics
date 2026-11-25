@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e320b01bc6c-todas@agendao-curitiba
+DTSTAMP:20261114T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T210000
+DTEND;TZID=America/Sao_Paulo:20261212T230000
+RRULE:FREQ=DAILY;COUNT=2
+SUMMARY:Nem É Meme - 31º Festival Alunos Encena
+LOCATION:Teatro Barracão EnCena\, Curitiba - PR
+DESCRIPTION:Peça de alunos do Barracão EnCena sobre Lena\, que volta ao condomínio da infância para recolher as histórias guardadas em objetos esquecidos.\n\nhttps://agendaocuritiba.github.io/e/e7e320b01bc6c.html
+URL:https://agendaocuritiba.github.io/e/e7e320b01bc6c.html
+END:VEVENT
+END:VCALENDAR

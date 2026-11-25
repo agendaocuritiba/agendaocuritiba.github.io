@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e13f9709c2fd4@agendao-curitiba
-DTSTAMP:20261122T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261128T220000
-DTEND;TZID=America/Sao_Paulo:20261129T000000
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
 SUMMARY:Os Garotin
-LOCATION:Cine Lido\, Rua Desembargador Ermelino de Leão\, 160 - Centro\, Curitiba - PR
+LOCATION:Cine Lido\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e13f9709c2fd4.html
 URL:https://agendaocuritiba.github.io/e/e13f9709c2fd4.html
 END:VEVENT

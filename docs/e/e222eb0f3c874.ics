@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e222eb0f3c874@agendao-curitiba
-DTSTAMP:20261122T090000Z
+DTSTAMP:20261125T090000Z
 DTSTART;TZID=America/Sao_Paulo:20270306T201500
 DTEND;TZID=America/Sao_Paulo:20270306T221500
 SUMMARY:Raça Negra
-LOCATION:Teatro Positivo\, Curitiba - PR
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
 DESCRIPTION:Turnê Me Leva Junto com Você\, em que o Raça Negra\, liderado por Luiz Carlos\, revisita os grandes sucessos do grupo de samba.\n\nhttps://agendaocuritiba.github.io/e/e222eb0f3c874.html
 URL:https://agendaocuritiba.github.io/e/e222eb0f3c874.html
 END:VEVENT

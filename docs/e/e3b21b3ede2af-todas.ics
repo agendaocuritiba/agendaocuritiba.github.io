@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3b21b3ede2af-todas@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+RRULE:FREQ=DAILY;COUNT=3
+SUMMARY:Final Etapa Nacional 2026 - Torneio Brasil de Robótica
+LOCATION:Colégio Marista Paranaense\, Curitiba - PR
+DESCRIPTION:Final nacional do Torneio Brasil de Robótica\, com equipes de estudantes resolvendo desafios de robótica educacional.\n\nhttps://agendaocuritiba.github.io/e/e3b21b3ede2af.html
+URL:https://agendaocuritiba.github.io/e/e3b21b3ede2af.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e445cab265635@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261201T193000
+DTEND;TZID=America/Sao_Paulo:20261201T213000
+SUMMARY:Viva A Experiência Ítalo Com Don Melchor
+LOCATION:Ítalo Supermercados - Curitiba Barigui\, Curitiba - PR
+DESCRIPTION:Degustação do vinho chileno Don Melchor conduzida pelo Brand Manager da Concha y Toro no Ítalo Supermercados.\n\nhttps://agendaocuritiba.github.io/e/e445cab265635.html
+URL:https://agendaocuritiba.github.io/e/e445cab265635.html
+END:VEVENT
+END:VCALENDAR

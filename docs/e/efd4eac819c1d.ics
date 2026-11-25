@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efd4eac819c1d@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261203T213000
+DTEND;TZID=America/Sao_Paulo:20261203T233000
+SUMMARY:Entre Linhas com Mateus Caniceiro\, Raphael Bulk e Ph Saraiva / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Stand-up tradicional\, só com piadas escritas\, com PH Saraiva\, Mateus Caniceiro e Raphael Bulk.\n\nhttps://agendaocuritiba.github.io/e/efd4eac819c1d.html
+URL:https://agendaocuritiba.github.io/e/efd4eac819c1d.html
+END:VEVENT
+END:VCALENDAR

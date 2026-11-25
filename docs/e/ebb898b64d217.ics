@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebb898b64d217@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Europe 2027 | Curitiba
+LOCATION:TEATRO GUAÍRA\, Curitiba - PR
+DESCRIPTION:Show da banda sueca de hard rock Europe no Teatro Guaíra.\n\nhttps://agendaocuritiba.github.io/e/ebb898b64d217.html
+URL:https://agendaocuritiba.github.io/e/ebb898b64d217.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9c11f1c72820-2026-12-04@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T223000
+DTEND;TZID=America/Sao_Paulo:20261205T003000
+SUMMARY:Enquanto o Casamento Não Separe com Marco Zenni / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Stand-up de Marco Zenni sobre as situações cômicas da vida a dois e do casamento.\n\nhttps://agendaocuritiba.github.io/e/e9c11f1c72820.html
+URL:https://agendaocuritiba.github.io/e/e9c11f1c72820.html
+END:VEVENT
+BEGIN:VEVENT
+UID:e9c11f1c72820-2026-12-12@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T223000
+DTEND;TZID=America/Sao_Paulo:20261213T003000
+SUMMARY:Enquanto o Casamento Não Separe com Marco Zenni / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Stand-up de Marco Zenni sobre as situações cômicas da vida a dois e do casamento.\n\nhttps://agendaocuritiba.github.io/e/e9c11f1c72820.html
+URL:https://agendaocuritiba.github.io/e/e9c11f1c72820.html
+END:VEVENT
+BEGIN:VEVENT
+UID:e9c11f1c72820-2026-12-19@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261219T223000
+DTEND;TZID=America/Sao_Paulo:20261220T003000
+SUMMARY:Enquanto o Casamento Não Separe com Marco Zenni / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Stand-up de Marco Zenni sobre as situações cômicas da vida a dois e do casamento.\n\nhttps://agendaocuritiba.github.io/e/e9c11f1c72820.html
+URL:https://agendaocuritiba.github.io/e/e9c11f1c72820.html
+END:VEVENT
+BEGIN:VEVENT
+UID:e9c11f1c72820-2026-12-26@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261226T223000
+DTEND;TZID=America/Sao_Paulo:20261227T003000
+SUMMARY:Enquanto o Casamento Não Separe com Marco Zenni / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Stand-up de Marco Zenni sobre as situações cômicas da vida a dois e do casamento.\n\nhttps://agendaocuritiba.github.io/e/e9c11f1c72820.html
+URL:https://agendaocuritiba.github.io/e/e9c11f1c72820.html
+END:VEVENT
+END:VCALENDAR

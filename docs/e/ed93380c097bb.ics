@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed93380c097bb@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270220T150000
+DTEND;TZID=America/Sao_Paulo:20270220T170000
+SUMMARY:Etéreo Festival #3\, Curitiba!
+LOCATION:Camaleão Cultural\, Curitiba - PR
+DESCRIPTION:Terceira edição do Etéreo Festival\, de metal\, com cinco atrações\, pela primeira vez em Curitiba.\n\nhttps://agendaocuritiba.github.io/e/ed93380c097bb.html
+URL:https://agendaocuritiba.github.io/e/ed93380c097bb.html
+END:VEVENT
+END:VCALENDAR

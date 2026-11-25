@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1c8e5c0abca4@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T200000
+DTEND;TZID=America/Sao_Paulo:20261127T220000
+SUMMARY:Baile Do Raíz
+LOCATION:Tangie Under Club\, Curitiba - PR
+DESCRIPTION:Festa de rap\, afrobeat e dancehall com Dow Raíz\, Baqueta\, Medusa e Mitay no Tangie Under Club.\n\nhttps://agendaocuritiba.github.io/e/e1c8e5c0abca4.html
+URL:https://agendaocuritiba.github.io/e/e1c8e5c0abca4.html
+END:VEVENT
+END:VCALENDAR

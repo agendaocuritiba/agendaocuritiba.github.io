@@ -6,9 +6,9 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e14c1d45372a1-todas@agendao-curitiba
 DTSTAMP:20261104T090000Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
-RRULE:FREQ=DAILY;COUNT=7
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+RRULE:FREQ=DAILY;COUNT=25
 SUMMARY:Feijoadíssima Mabu
 LOCATION:Hotel Mabu Business - XV de Novembro\, Curitiba - PR
 DESCRIPTION:Temporada de feijoada no restaurante do Hotel Mabu Business\, na Rua XV de Novembro\, no Centro.\n\nhttps://agendaocuritiba.github.io/e/e14c1d45372a1.html

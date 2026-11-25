@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e31879d378727-todas@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270116T153000
+DTEND;TZID=America/Sao_Paulo:20270116T173000
+RRULE:FREQ=DAILY;COUNT=2
+SUMMARY:Horizonte
+LOCATION:92 Graus Underground Pub\, Curitiba - PR
+DESCRIPTION:Encontro de arte com feira de artes visuais\, sets de DJs e shows de bandas no 92 Graus.\n\nhttps://agendaocuritiba.github.io/e/e31879d378727.html
+URL:https://agendaocuritiba.github.io/e/e31879d378727.html
+END:VEVENT
+END:VCALENDAR

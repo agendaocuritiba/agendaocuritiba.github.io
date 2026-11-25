@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edcc248311977@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T190000
+DTEND;TZID=America/Sao_Paulo:20261204T210000
+SUMMARY:Dinner Party Asiática
+LOCATION:Casa Desavinados\, Curitiba - PR
+DESCRIPTION:Jantar asiático servido à mesa pelos chefs Felipe Machoski e Vitor Verona\, com vinhos naturais da Valparaiso.\n\nhttps://agendaocuritiba.github.io/e/edcc248311977.html
+URL:https://agendaocuritiba.github.io/e/edcc248311977.html
+END:VEVENT
+END:VCALENDAR

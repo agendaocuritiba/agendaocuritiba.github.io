@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e74d7dfd93141@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270423T210000
+DTEND;TZID=America/Sao_Paulo:20270423T230000
+SUMMARY:Criolo
+LOCATION:Cine Lido\, Curitiba - PR
+DESCRIPTION:Show do rapper Criolo no Cine Lido.\n\nhttps://agendaocuritiba.github.io/e/e74d7dfd93141.html
+URL:https://agendaocuritiba.github.io/e/e74d7dfd93141.html
+END:VEVENT
+END:VCALENDAR

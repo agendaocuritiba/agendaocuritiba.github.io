@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e9b87700245a3@agendao-curitiba
-DTSTAMP:20261122T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261201T180000
-DTEND;TZID=America/Sao_Paulo:20261201T200000
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261201T183000
+DTEND;TZID=America/Sao_Paulo:20261201T203000
 SUMMARY:Conexões Vale do Pinhão 2026
-LOCATION:Teatro Guaíra - Auditório Bento\, Curitiba - PR
+LOCATION:Teatro Guaíra - Guairão\, Curitiba - PR
 DESCRIPTION:Evento institucional de inovação e empreendedorismo no Guairão\, com atração musical e três palestras.\n\nhttps://agendaocuritiba.github.io/e/e9b87700245a3.html
 URL:https://agendaocuritiba.github.io/e/e9b87700245a3.html
 END:VEVENT

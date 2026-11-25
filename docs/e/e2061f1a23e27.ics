@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2061f1a23e27@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T200000
+DTEND;TZID=America/Sao_Paulo:20261126T220000
+SUMMARY:Quintou - Stand Up Comedy 2026 / Stand Up Comedy
+LOCATION:Gaslight Comedy Club\, Curitiba - PR
+DESCRIPTION:Noite de stand-up com line-up variado de comediantes\, entre eles Raphael Bulk e JT Fontoura\, no Gaslight Comedy Club.\n\nhttps://agendaocuritiba.github.io/e/e2061f1a23e27.html
+URL:https://agendaocuritiba.github.io/e/e2061f1a23e27.html
+END:VEVENT
+END:VCALENDAR

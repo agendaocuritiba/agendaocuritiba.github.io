@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0fd81e129b02@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T191500
+DTEND;TZID=America/Sao_Paulo:20261204T211500
+SUMMARY:Farofa Musical ! Música de qualidade!
+LOCATION:Bravíssimo Café\, Curitiba - PR
+DESCRIPTION:Show Farofa Musical com música ao vivo em clima familiar no Bravíssimo Café.\n\nhttps://agendaocuritiba.github.io/e/e0fd81e129b02.html
+URL:https://agendaocuritiba.github.io/e/e0fd81e129b02.html
+END:VEVENT
+END:VCALENDAR

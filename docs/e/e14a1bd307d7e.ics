@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14a1bd307d7e@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270523T180000
+DTEND;TZID=America/Sao_Paulo:20270523T200000
+SUMMARY:Abba Experience Extreme In Concert
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:Tributo ao ABBA com cantores\, balé\, coral e orquestra no palco.\n\nhttps://agendaocuritiba.github.io/e/e14a1bd307d7e.html
+URL:https://agendaocuritiba.github.io/e/e14a1bd307d7e.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2db533e970c6-2026-11-26@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T183000
+DTEND;TZID=America/Sao_Paulo:20261126T203000
+SUMMARY:Circuito POCAR - Curitiba / 25 de novembro
+LOCATION:Teatro Paulo Autran\, Curitiba - PR
+DESCRIPTION:Circuito POCAR traz artistas capixabas e paranaenses com programação de teatro\, música e cultura popular no Teatro Paulo Autran.\n\nhttps://agendaocuritiba.github.io/e/e2db533e970c6.html
+URL:https://agendaocuritiba.github.io/e/e2db533e970c6.html
+END:VEVENT
+END:VCALENDAR

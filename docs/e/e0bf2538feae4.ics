@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0bf2538feae4@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:Totoro o Musical
+LOCATION:Teatro Torres Botânico\, Rua Pergentina Silva Soares\, 159 - Jardim Botânico\, Curitiba - PR
+DESCRIPTION:Musical inspirado no universo de Totoro\, no Teatro Torres Botânico.\n\nhttps://agendaocuritiba.github.io/e/e0bf2538feae4.html
+URL:https://agendaocuritiba.github.io/e/e0bf2538feae4.html
+END:VEVENT
+END:VCALENDAR

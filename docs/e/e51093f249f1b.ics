@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e51093f249f1b@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Mortification
+LOCATION:Basement Cultural\, Rua Des. Benvindo Valente\, 260 - São Francisco\, Curitiba - PR
+DESCRIPTION:Retorno da banda australiana de death/thrash metal Mortification\, em turnê latino-americana com nova formação.\n\nhttps://agendaocuritiba.github.io/e/e51093f249f1b.html
+URL:https://agendaocuritiba.github.io/e/e51093f249f1b.html
+END:VEVENT
+END:VCALENDAR

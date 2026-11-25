@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee05902b082fb-todas@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+RRULE:FREQ=WEEKLY;BYDAY=FR,SU;COUNT=2
+SUMMARY:Architects
+LOCATION:Tork N' Roll em Curitiba\, Vibra São Paulo em São Paulo\, Curitiba - PR
+DESCRIPTION:Show da banda britânica de metalcore Architects\, com abertura dos Novelists\, no Tork N Roll.\n\nhttps://agendaocuritiba.github.io/e/ee05902b082fb.html
+URL:https://agendaocuritiba.github.io/e/ee05902b082fb.html
+END:VEVENT
+END:VCALENDAR

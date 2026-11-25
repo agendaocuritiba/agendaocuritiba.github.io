@@ -5,11 +5,11 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e00022005ebd6@agendao-curitiba
-DTSTAMP:20261122T090000Z
+DTSTAMP:20261125T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261212T140000
 DTEND;TZID=America/Sao_Paulo:20261212T160000
-SUMMARY:Curitiba Folia 2026 | 5ª Edição
-LOCATION:Pedreira Paulo Leminski\, R. João Gava\, 970\, Curitiba - PR
+SUMMARY:Curitiba Folia 2026 - 5ª Edição
+LOCATION:Pedreira Paulo Leminski\, Parque das Pedreiras - R. João Gava\, 970 - Abranches\, \nCuritiba - PR\, 82130-010\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e00022005ebd6.html
 URL:https://agendaocuritiba.github.io/e/e00022005ebd6.html
 END:VEVENT

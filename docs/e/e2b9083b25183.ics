@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2b9083b25183@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T190000
+DTEND;TZID=America/Sao_Paulo:20261206T210000
+SUMMARY:Forró de Domingo: Areia Branca e Trio Sabiá
+LOCATION:Sociedade Operária Beneficente 13 de Maio\, Curitiba - PR
+DESCRIPTION:Forró de Domingo com a banda Areia Branca recebendo o Trio Sabiá\, pioneiro do forró universitário.\n\nhttps://agendaocuritiba.github.io/e/e2b9083b25183.html
+URL:https://agendaocuritiba.github.io/e/e2b9083b25183.html
+END:VEVENT
+END:VCALENDAR

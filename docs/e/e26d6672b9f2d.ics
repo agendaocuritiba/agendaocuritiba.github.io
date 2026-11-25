@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e26d6672b9f2d@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270523T140000
+DTEND;TZID=America/Sao_Paulo:20270523T160000
+SUMMARY:A Bela e a Fera Symphonic - o Musical
+LOCATION:Teatro Positivo\, Pedro Viriato Parigot De Souza 5300 Curitiba Pr\, Curitiba - PR
+DESCRIPTION:Versão sinfônica do musical A Bela e a Fera\, com cerca de 50 artistas entre atores\, balé\, orquestra e coral.\n\nhttps://agendaocuritiba.github.io/e/e26d6672b9f2d.html
+URL:https://agendaocuritiba.github.io/e/e26d6672b9f2d.html
+END:VEVENT
+END:VCALENDAR

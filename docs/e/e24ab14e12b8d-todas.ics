@@ -9,8 +9,8 @@ DTSTAMP:20261122T090000Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 RRULE:FREQ=DAILY;COUNT=4
-SUMMARY:Diatribe De Amor
-LOCATION:CAIXA CULTURAL CURITIBA\, Curitiba - PR
+SUMMARY:Diatribe de Amor
+LOCATION:Caixa Cultural Curitiba\, Rua Conselheiro Laurindo nº 280\, Centro\, Curitiba - PR
 DESCRIPTION:Monólogo baseado na única peça de Gabriel García Márquez\, com Juliana Zancanaro como uma mulher que acerta contas com o passado às vésperas das bodas de prata.\n\nhttps://agendaocuritiba.github.io/e/e24ab14e12b8d.html
 URL:https://agendaocuritiba.github.io/e/e24ab14e12b8d.html
 END:VEVENT

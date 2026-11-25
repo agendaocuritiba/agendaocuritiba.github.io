@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5bffaf194776@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T080000
+DTEND;TZID=America/Sao_Paulo:20261129T100000
+SUMMARY:Malha Konosko Apr. After Oficial 4x4 B2b Goma Room
+LOCATION:Rua Inácio Lustosa\, 457 - São Francisco\, Curitiba - PR\, 80510-000\, Brasil\, Curitiba - PR
+DESCRIPTION:After dos coletivos Malha e Konosko com sets b2b de Baziatrix\, 8n9\, Donnie\, Lara Cana\, Duda\, Notjamy e Pezuti.\n\nhttps://agendaocuritiba.github.io/e/e5bffaf194776.html
+URL:https://agendaocuritiba.github.io/e/e5bffaf194776.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1da18bdde610@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261127T200000
+DTEND;TZID=America/Sao_Paulo:20261127T220000
+SUMMARY:Brasilidades e Vozes do Parque
+LOCATION:Centro Estadual de Capacitação em Artes Guido Viaro\, Curitiba - PR
+DESCRIPTION:Apresentação de música\, percussão e canto coral dos projetos do Parque da Ciência Newton Freire Maia com a comunidade.\n\nhttps://agendaocuritiba.github.io/e/e1da18bdde610.html
+URL:https://agendaocuritiba.github.io/e/e1da18bdde610.html
+END:VEVENT
+END:VCALENDAR

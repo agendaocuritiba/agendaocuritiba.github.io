@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec5ee21c2ebe4@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Tour Curitiba Sombria
+LOCATION:SAIDAS: PRAÇA JOÃO CÂNDIDO\, Curitiba - PR
+DESCRIPTION:Passeio guiado pelo lado sombrio da história de Curitiba\, com saída da Praça João Cândido.\n\nhttps://agendaocuritiba.github.io/e/ec5ee21c2ebe4.html
+URL:https://agendaocuritiba.github.io/e/ec5ee21c2ebe4.html
+END:VEVENT
+END:VCALENDAR

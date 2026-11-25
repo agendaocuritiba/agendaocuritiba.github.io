@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e22c8705f9ffe@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Rhapsody Final Shows - Curitiba
+LOCATION:Tork N Roll\, Av. Mal. Floriano Peixoto\, 1695 - Rebouças\, Curitiba - PR
+DESCRIPTION:Show da turnê Final Shows da banda Rhapsody no Tork N Roll.\n\nhttps://agendaocuritiba.github.io/e/e22c8705f9ffe.html
+URL:https://agendaocuritiba.github.io/e/e22c8705f9ffe.html
+END:VEVENT
+END:VCALENDAR

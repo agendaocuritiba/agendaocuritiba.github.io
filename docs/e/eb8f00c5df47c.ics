@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb8f00c5df47c@agendao-curitiba
+DTSTAMP:20261125T090000Z
+DTSTART;TZID=America/Sao_Paulo:20270123T210000
+DTEND;TZID=America/Sao_Paulo:20270123T230000
+SUMMARY:Candlelight: Tributo a Phil Collins
+LOCATION:Teatro da FEP\, Curitiba - PR
+DESCRIPTION:Concerto à luz de velas da série Candlelight com músicas de Phil Collins.\n\nhttps://agendaocuritiba.github.io/e/eb8f00c5df47c.html
+URL:https://agendaocuritiba.github.io/e/eb8f00c5df47c.html
+END:VEVENT
+END:VCALENDAR
