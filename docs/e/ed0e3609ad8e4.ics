@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed0e3609ad8e4@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T190000
+DTEND;TZID=America/Sao_Paulo:20261205T210000
+SUMMARY:25º Encontro de Corais Ucranianos
+LOCATION:Arquicatedral Católica Ucraniana de São João Batista\, Avenida Presidente Kennedy\, 3000\, Curitiba - PR
+DESCRIPTION:Encontro de corais na Arquicatedral Ucraniana com canções natalinas da tradição ucraniana\, reunindo corais de paróquias e grupos folclóricos.\n\nhttps://agendaocuritiba.github.io/e/ed0e3609ad8e4.html
+URL:https://agendaocuritiba.github.io/e/ed0e3609ad8e4.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecbde7470787f-2026-12-08@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T183000
+DTEND;TZID=America/Sao_Paulo:20261208T203000
+SUMMARY:Cortejinho na XV
+LOCATION:Rua XV de Novembro\, Rua XV de Novembro\, 621\, Curitiba - PR
+DESCRIPTION:Desfile do Papai Noel pelo calçadão da Rua XV em veículo próprio\, acompanhado de palhaços\, atores e uma fanfara com sopros e batucada.\n\nhttps://agendaocuritiba.github.io/e/ecbde7470787f.html
+URL:https://agendaocuritiba.github.io/e/ecbde7470787f.html
+END:VEVENT
+END:VCALENDAR

@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e9b6707eb3c88@agendao-curitiba
-DTSTAMP:20261125T090000Z
+DTSTAMP:20261126T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261127T203000
 DTEND;TZID=America/Sao_Paulo:20261127T223000
-SUMMARY:Circo Las Vegas
+SUMMARY:Sexta 20h30 black friday
 LOCATION:No estacionamento do Toscana Restaurante show\, Curitiba - PR
 DESCRIPTION:Espetáculo do Circo Las Vegas\, com princesas da Disney e as guerreiras do K-Pop\, montado no estacionamento do Toscana em Santa Felicidade.\n\nhttps://agendaocuritiba.github.io/e/e9b6707eb3c88.html
 URL:https://agendaocuritiba.github.io/e/e9b6707eb3c88.html

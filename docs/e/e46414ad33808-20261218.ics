@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e46414ad33808-2026-12-18@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T200000
+DTEND;TZID=America/Sao_Paulo:20261218T220000
+SUMMARY:Abrace o Mundo - Escadarias UFPR
+LOCATION:Praça Santos Andrade\, Praça Santos Andrade\, 41\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino da Fundação Cultural de Curitiba em grande palco montado nas escadarias do prédio histórico da UFPR\, na Praça Santos Andrade.\n\nhttps://agendaocuritiba.github.io/e/e46414ad33808.html
+URL:https://agendaocuritiba.github.io/e/e46414ad33808.html
+END:VEVENT
+END:VCALENDAR

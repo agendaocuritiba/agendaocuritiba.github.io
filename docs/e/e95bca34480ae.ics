@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e95bca34480ae@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T100000
+DTEND;TZID=America/Sao_Paulo:20261128T120000
+SUMMARY:Natal da Família Capivara no Passeio Público
+LOCATION:Passeio Público\, Parque Passeio Público\, 335\, Curitiba - PR
+DESCRIPTION:Natal no Passeio Público com carrossel\, Casa do Papai Noel\, decoração de luzes e a peça da Família Capivara\, produção da Fundação Cultural de Curitiba.\n\nhttps://agendaocuritiba.github.io/e/e95bca34480ae.html
+URL:https://agendaocuritiba.github.io/e/e95bca34480ae.html
+END:VEVENT
+END:VCALENDAR

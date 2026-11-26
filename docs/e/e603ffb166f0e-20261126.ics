@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e603ffb166f0e-2026-11-26@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T190000
+DTEND;TZID=America/Sao_Paulo:20261126T210000
+SUMMARY:Visita Guiada Noturna ao Cemitério Municipal
+LOCATION:Cemitério Municipal São Francisco de Paula\, PÇ. PE. JOÃO SOTTO-MAIOR\, 50\, Curitiba - PR
+DESCRIPTION:Visita noturna ao Cemitério Municipal São Francisco de Paula conduzida pela pesquisadora Clarissa Grassi\, com foco em história e patrimônio do lugar.\n\nhttps://agendaocuritiba.github.io/e/e603ffb166f0e.html
+URL:https://agendaocuritiba.github.io/e/e603ffb166f0e.html
+END:VEVENT
+END:VCALENDAR

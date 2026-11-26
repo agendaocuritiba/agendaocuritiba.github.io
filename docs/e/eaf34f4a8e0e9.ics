@@ -5,10 +5,10 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:eaf34f4a8e0e9@agendao-curitiba
-DTSTAMP:20261125T090000Z
+DTSTAMP:20261126T090000Z
 DTSTART;TZID=America/Sao_Paulo:20261129T203000
 DTEND;TZID=America/Sao_Paulo:20261129T223000
-SUMMARY:Circo Las Vegas
+SUMMARY:Domingo| 16h - 18h ou 20h30 último dia
 LOCATION:No estacionamento do Toscana Restaurante show\, Curitiba - PR
 DESCRIPTION:Espetáculo do Circo Las Vegas\, com princesas da Disney e as guerreiras do K-Pop\, montado no estacionamento do Toscana em Santa Felicidade.\n\nhttps://agendaocuritiba.github.io/e/eaf34f4a8e0e9.html
 URL:https://agendaocuritiba.github.io/e/eaf34f4a8e0e9.html

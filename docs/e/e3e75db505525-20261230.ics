@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3e75db505525-2026-12-30@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261230T200000
+DTEND;TZID=America/Sao_Paulo:20261230T220000
+SUMMARY:Praça Santos Andrade - Um Grande Circuito de Natal
+LOCATION:Praça Santos Andrade\, Praça Santos Andrade\, 0\, Curitiba - PR
+DESCRIPTION:Circuito natalino que une a Praça Santos Andrade\, o Teatro Guaíra e as escadarias da UFPR\, com decoração\, espetáculos e atrações ao longo da temporada.\n\nhttps://agendaocuritiba.github.io/e/e3e75db505525.html
+URL:https://agendaocuritiba.github.io/e/e3e75db505525.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e249f009ccb23@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T170000
+DTEND;TZID=America/Sao_Paulo:20261212T190000
+SUMMARY:SUNSET BEATS - IZA GASTRONOMIA com DJ Igor Mattar\, residente do Café del Mar Malta e com DJ Santiago
+LOCATION:IZA GASTRONOMIA\, Curitiba - PR
+DESCRIPTION:Fim de tarde no Iza Gastronomia com os DJs Santiago\, de flashbacks dos anos 70 a 2000 e house\, e Igor Mattar\, do Café del Mar Malta\, com chill out e deep house.\n\nhttps://agendaocuritiba.github.io/e/e249f009ccb23.html
+URL:https://agendaocuritiba.github.io/e/e249f009ccb23.html
+END:VEVENT
+END:VCALENDAR

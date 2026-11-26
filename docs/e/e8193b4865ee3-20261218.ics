@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8193b4865ee3-2026-12-18@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261218T200000
+DTEND;TZID=America/Sao_Paulo:20261218T220000
+SUMMARY:Ópera João e Maria
+LOCATION:Auditório Regina Casillo\, Rua Lourenço Pinto\, 500\, Curitiba - PR
+DESCRIPTION:Ópera João e Maria pela Ladies Ensemble\, primeira orquestra só de mulheres do Brasil\, com direção cênica de Fabiola Bach Akel\, no Solar do Rosário.\n\nhttps://agendaocuritiba.github.io/e/e8193b4865ee3.html
+URL:https://agendaocuritiba.github.io/e/e8193b4865ee3.html
+END:VEVENT
+END:VCALENDAR

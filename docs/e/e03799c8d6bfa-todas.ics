@@ -6,11 +6,11 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e03799c8d6bfa-todas@agendao-curitiba
 DTSTAMP:20261125T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261209T183000
-DTEND;TZID=America/Sao_Paulo:20261209T203000
-RRULE:FREQ=DAILY;COUNT=5
-SUMMARY:Marcas do Tempo\, Memórias do Natal
-LOCATION:Teatro Guaíra\, Curitiba - PR
+DTSTART;TZID=America/Sao_Paulo:20261207T200000
+DTEND;TZID=America/Sao_Paulo:20261207T220000
+RRULE:FREQ=DAILY;COUNT=7
+SUMMARY:Marcas do Tempo\, Memórias do Natal - Natal 60+
+LOCATION:Teatro José Maria Santos\, Rua Treze de Maio\, 655\, Curitiba - PR
 DESCRIPTION:Espetáculo de teatro natalino no Teatro José Maria Santos\, com sessões gratuitas para todas as idades.\n\nhttps://agendaocuritiba.github.io/e/e03799c8d6bfa.html
 URL:https://agendaocuritiba.github.io/e/e03799c8d6bfa.html
 END:VEVENT

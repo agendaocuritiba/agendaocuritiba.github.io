@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1f4c8fbaa86a-2026-12-12@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T201500
+DTEND;TZID=America/Sao_Paulo:20261212T221500
+SUMMARY:Natal Bradesco Palácio Avenida - Encantares
+LOCATION:Palácio Avenida – Rua XV de Novembro\, Avenida Luiz Xavier\, 11\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino nas janelas do Palácio Avenida\, no calçadão da XV\, com coral de 90 crianças e adolescentes\, música e iluminação\; tema Encantares.\n\nhttps://agendaocuritiba.github.io/e/e1f4c8fbaa86a.html
+URL:https://agendaocuritiba.github.io/e/e1f4c8fbaa86a.html
+END:VEVENT
+END:VCALENDAR

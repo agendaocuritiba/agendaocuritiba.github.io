@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e76cfde45f6e7@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261217T200000
+DTEND;TZID=America/Sao_Paulo:20261217T220000
+SUMMARY:Camerata Antiqua de Curitiba e Daniel Boaventura
+LOCATION:Teatro Guaíra\, Rua Conselheiro Laurindo\, 175\, Curitiba - PR
+DESCRIPTION:A Camerata Antiqua de Curitiba divide o palco do Guaíra com o cantor Daniel Boaventura\, com participação dos corais Musicar e Nosso Canto.\n\nhttps://agendaocuritiba.github.io/e/e76cfde45f6e7.html
+URL:https://agendaocuritiba.github.io/e/e76cfde45f6e7.html
+END:VEVENT
+END:VCALENDAR

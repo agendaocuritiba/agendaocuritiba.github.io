@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4f6b8e4f2327@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T200000
+DTEND;TZID=America/Sao_Paulo:20261211T220000
+SUMMARY:Camerata Antiqua de Curitiba - O Messiah de Händel
+LOCATION:Espaço Cultural Capela Santa Maria\, Auditório Capela Santa Maria|R. CONS. LAURINDO\, 273\, Curitiba - PR
+DESCRIPTION:A Camerata Antiqua de Curitiba apresenta o Messiah de Händel sob regência do belga Bart Naessens\, com solistas convidados\, na Capela Santa Maria.\n\nhttps://agendaocuritiba.github.io/e/e4f6b8e4f2327.html
+URL:https://agendaocuritiba.github.io/e/e4f6b8e4f2327.html
+END:VEVENT
+END:VCALENDAR

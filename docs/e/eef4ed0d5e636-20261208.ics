@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eef4ed0d5e636-2026-12-08@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T100000
+DTEND;TZID=America/Sao_Paulo:20261208T120000
+SUMMARY:Feiras Especiais de Natal da XV e Santos Andrade
+LOCATION:Rua XV de Novembro\, Praça Santos Andrade\, 50\, Curitiba - PR
+DESCRIPTION:Feiras de Natal na Praça Santos Andrade\, no calçadão da XV e na Rua João Negrão\, com bancas de artesanato e comidas para quem busca presentes.\n\nhttps://agendaocuritiba.github.io/e/eef4ed0d5e636.html
+URL:https://agendaocuritiba.github.io/e/eef4ed0d5e636.html
+END:VEVENT
+END:VCALENDAR

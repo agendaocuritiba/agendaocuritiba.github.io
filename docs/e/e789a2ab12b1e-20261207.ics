@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e789a2ab12b1e-2026-12-07@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261207T210000
+DTEND;TZID=America/Sao_Paulo:20261207T230000
+SUMMARY:A Inesquecível Fábrica de Emoções - Teatro Guaíra
+LOCATION:Praça Santos Andrade\, Praça Santos Andrade\, 41\, Curitiba - PR
+DESCRIPTION:Musical natalino em palco aberto diante do Teatro Guaíra\, da Labirinto Produções\, sobre um Papai Noel que sai em viagem para recuperar a inspiração.\n\nhttps://agendaocuritiba.github.io/e/e789a2ab12b1e.html
+URL:https://agendaocuritiba.github.io/e/e789a2ab12b1e.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5f0abaef9b4e@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T120000
+DTEND;TZID=America/Sao_Paulo:20261129T140000
+SUMMARY:Domingueira AMBAR
+LOCATION:Ambar Bar e Restaurante\, Curitiba - PR
+DESCRIPTION:Almoço de domingo no Âmbar com churrasco e show sertanejo acústico de Lucas Bacon\, Ana Moscato e convidados.\n\nhttps://agendaocuritiba.github.io/e/e5f0abaef9b4e.html
+URL:https://agendaocuritiba.github.io/e/e5f0abaef9b4e.html
+END:VEVENT
+END:VCALENDAR

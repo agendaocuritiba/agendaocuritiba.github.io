@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea0db7921d565@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T110000
+DTEND;TZID=America/Sao_Paulo:20261212T130000
+SUMMARY:Natal EUNIC
+LOCATION:Instituto Cervantes - Curitiba\, Rua Ubaldino do Amaral\, 923\, Curitiba - PR
+DESCRIPTION:Feirinha de Natal no Instituto Cervantes\, organizada pelos institutos culturais europeus\, com gastronomia\, atividades e artesanato.\n\nhttps://agendaocuritiba.github.io/e/ea0db7921d565.html
+URL:https://agendaocuritiba.github.io/e/ea0db7921d565.html
+END:VEVENT
+END:VCALENDAR

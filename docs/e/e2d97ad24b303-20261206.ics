@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2d97ad24b303-2026-12-06@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Tchê Garotos no Santa Marta Bar
+LOCATION:Santa Marta Bar\, Curitiba - PR
+DESCRIPTION:Show do Tchê Garotos\, banda de música gaúcha\, na noite de quinta do Santa Marta Bar\, no Batel.\n\nhttps://agendaocuritiba.github.io/e/e2d97ad24b303.html
+URL:https://agendaocuritiba.github.io/e/e2d97ad24b303.html
+END:VEVENT
+END:VCALENDAR

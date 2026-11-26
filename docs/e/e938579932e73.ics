@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e938579932e73@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261130T110000
+DTEND;TZID=America/Sao_Paulo:20261130T130000
+SUMMARY:Ensaio Aberto da OJMB Orquestra Jovem de Música Brasileira
+LOCATION:Conservatório de Música Popular Brasileira de Curitiba\, R. MATEUS LEME\, 66\, Curitiba - PR
+DESCRIPTION:Ensaio aberto da Orquestra Jovem de Música Brasileira\, formada por músicos de 11 a 24 anos com bandolim\, cavaquinho\, viola caipira\, acordeom e percussão.\n\nhttps://agendaocuritiba.github.io/e/e938579932e73.html
+URL:https://agendaocuritiba.github.io/e/e938579932e73.html
+END:VEVENT
+END:VCALENDAR

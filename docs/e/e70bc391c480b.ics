@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e70bc391c480b@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T083000
+DTEND;TZID=America/Sao_Paulo:20261126T103000
+SUMMARY:Exposição de obras: Por Onde Passam os Olhos: Cartografia Sensível do Bosque
+LOCATION:Casa da Leitura Nair de Macedo\, Rua da Capitania\, 57\, Curitiba - PR
+DESCRIPTION:Exposição de ilustrações feitas por alunos em oficinas no bosque da Casa da Leitura Nair de Macedo\, com a natureza do espaço como inspiração.\n\nhttps://agendaocuritiba.github.io/e/e70bc391c480b.html
+URL:https://agendaocuritiba.github.io/e/e70bc391c480b.html
+END:VEVENT
+END:VCALENDAR

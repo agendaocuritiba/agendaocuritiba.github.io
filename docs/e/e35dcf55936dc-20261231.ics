@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e35dcf55936dc-2026-12-31@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261231T190000
+DTEND;TZID=America/Sao_Paulo:20261231T210000
+SUMMARY:Natal no Sesc da Esquina 2026
+LOCATION:Sesc da Esquina\, Rua Visconde do Rio Branco\, 969\, Curitiba - PR
+DESCRIPTION:Sesc da Esquina com fachada iluminada\, ambientes decorados e atrações natalinas abertas ao público\, entre elas um espetáculo de Natal.\n\nhttps://agendaocuritiba.github.io/e/e35dcf55936dc.html
+URL:https://agendaocuritiba.github.io/e/e35dcf55936dc.html
+END:VEVENT
+END:VCALENDAR

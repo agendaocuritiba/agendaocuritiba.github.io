@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5dcf08aaad6c-2026-12-09@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T200000
+DTEND;TZID=America/Sao_Paulo:20261209T220000
+SUMMARY:Natal Outra Vez na Ópera de Arame
+LOCATION:Ópera de Arame\, Rua João Gava\, 920\, Curitiba - PR
+DESCRIPTION:Musical natalino da Cia de Dança Believe na Ópera de Arame\, que mistura dança\, teatro e acrobacias numa história sobre amor\, esperança e memória.\n\nhttps://agendaocuritiba.github.io/e/e5dcf08aaad6c.html
+URL:https://agendaocuritiba.github.io/e/e5dcf08aaad6c.html
+END:VEVENT
+END:VCALENDAR

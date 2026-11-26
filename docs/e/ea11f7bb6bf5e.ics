@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea11f7bb6bf5e@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T190000
+DTEND;TZID=America/Sao_Paulo:20261212T210000
+SUMMARY:Rainha do gelo espetáculo de dança 2026
+LOCATION:80530-010\, Curitiba - PR
+DESCRIPTION:Espetáculo de dança Rainha do Gelo\, realizado pela escola Beca Arte & Movimento.\n\nhttps://agendaocuritiba.github.io/e/ea11f7bb6bf5e.html
+URL:https://agendaocuritiba.github.io/e/ea11f7bb6bf5e.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e33f479b8d5a6-2026-12-02@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261202T160000
+DTEND;TZID=America/Sao_Paulo:20261202T180000
+SUMMARY:Natal O Boticário na Rua XV de Novembro
+LOCATION:Rua XV de Novembro\, Avenida Luiz Xavier\, 103\, Curitiba - PR
+DESCRIPTION:Roda-gigante no calçadão da Rua XV com a Casa do Natal O Boticário\, circuito em que o público cria um cartão-postal e entrega ao Carteiro Natalino.\n\nhttps://agendaocuritiba.github.io/e/e33f479b8d5a6.html
+URL:https://agendaocuritiba.github.io/e/e33f479b8d5a6.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9aa008f62b48@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T193000
+DTEND;TZID=America/Sao_Paulo:20261212T213000
+SUMMARY:Lanternefest
+LOCATION:Bosque Alemão\, Rua Schubert\, 175\, Curitiba - PR
+DESCRIPTION:Festa das Lanternas no Bosque Alemão\, celebração germânica a São Martinho com procissão iluminada conduzida pelo santo em seu cavalo branco.\n\nhttps://agendaocuritiba.github.io/e/e9aa008f62b48.html
+URL:https://agendaocuritiba.github.io/e/e9aa008f62b48.html
+END:VEVENT
+END:VCALENDAR

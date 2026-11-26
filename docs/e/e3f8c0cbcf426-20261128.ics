@@ -6,10 +6,10 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:e3f8c0cbcf426-2026-11-28@agendao-curitiba
 DTSTAMP:20261017T090000Z
-DTSTART;TZID=America/Sao_Paulo:20261128T200000
-DTEND;TZID=America/Sao_Paulo:20261128T220000
-SUMMARY:Um Sonho de Natal
-LOCATION:Teatro Fernanda Montenegro\, Rua Coronel Dulcidio 517 Curitiba Pr\, Curitiba - PR
+DTSTART;TZID=America/Sao_Paulo:20261128T130000
+DTEND;TZID=America/Sao_Paulo:20261128T150000
+SUMMARY:NATAL 60+ (Programação do Natal da Cidade 2026)
+LOCATION:Teatro Novelas Curitibanas - Claudete Pereira Jorge\, R. PRES. CARLOS CAVALCANTI\, 1222\, Curitiba - PR
 DESCRIPTION:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html
 URL:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html
 END:VEVENT

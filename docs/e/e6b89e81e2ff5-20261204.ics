@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6b89e81e2ff5-2026-12-04@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T190000
+DTEND;TZID=America/Sao_Paulo:20261204T210000
+SUMMARY:Estações de Luz
+LOCATION:Estações-Tubo\, Rua Presidente Faria\, 37\, Curitiba - PR
+DESCRIPTION:Vinte estações-tubo de Curitiba ganham pontos de luz que destacam o desenho circular das estruturas durante a temporada de Natal.\n\nhttps://agendaocuritiba.github.io/e/e6b89e81e2ff5.html
+URL:https://agendaocuritiba.github.io/e/e6b89e81e2ff5.html
+END:VEVENT
+END:VCALENDAR

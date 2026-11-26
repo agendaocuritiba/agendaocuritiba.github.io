@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef4c3936219e1@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261209T200000
+DTEND;TZID=America/Sao_Paulo:20261209T220000
+SUMMARY:Cantata do Cajuru
+LOCATION:Rua da Cidadania do Cajuru\, Avenida Prefeito Maurício Fruet\, 2150\, Curitiba - PR
+DESCRIPTION:Cantata de Natal na Rua da Cidadania do Cajuru\, que leva o coro de alunos da rede municipal e a estrutura de luz e música para a região leste.\n\nhttps://agendaocuritiba.github.io/e/ef4c3936219e1.html
+URL:https://agendaocuritiba.github.io/e/ef4c3936219e1.html
+END:VEVENT
+END:VCALENDAR

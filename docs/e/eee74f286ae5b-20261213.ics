@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eee74f286ae5b-2026-12-13@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Concurso de Vitrinismo
+LOCATION:Estabelecimentos Participantes\, Rua XV de Novembro\, 621\, Curitiba - PR
+DESCRIPTION:Concurso da Associação Comercial do Paraná que premia as vitrines e fachadas natalinas mais criativas do Centro\, com votação popular.\n\nhttps://agendaocuritiba.github.io/e/eee74f286ae5b.html
+URL:https://agendaocuritiba.github.io/e/eee74f286ae5b.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e52ec0ae0b2b6@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T220000
+DTEND;TZID=America/Sao_Paulo:20261213T000000
+SUMMARY:Corpo e Alma no Atenas Palace - Curitiba
+LOCATION:81130-000\, Curitiba - PR
+DESCRIPTION:Noite de baile com a banda Corpo e Alma no Atenas Palace\, com a nova formação nos vocais e o lançamento da cumbia Malandra.\n\nhttps://agendaocuritiba.github.io/e/e52ec0ae0b2b6.html
+URL:https://agendaocuritiba.github.io/e/e52ec0ae0b2b6.html
+END:VEVENT
+END:VCALENDAR

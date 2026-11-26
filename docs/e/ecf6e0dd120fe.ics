@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ecf6e0dd120fe@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T150000
+DTEND;TZID=America/Sao_Paulo:20261206T170000
+SUMMARY:A Chegada de São Nicolau
+LOCATION:Memorial Ucraniano — Parque Tingui\, Avenida Fredolin Wolf\, 1870\, Curitiba - PR
+DESCRIPTION:Celebração da chegada de São Nicolau no Memorial Ucraniano do Parque Tingui\, inspirada nas tradições natalinas ucranianas e voltada às crianças.\n\nhttps://agendaocuritiba.github.io/e/ecf6e0dd120fe.html
+URL:https://agendaocuritiba.github.io/e/ecf6e0dd120fe.html
+END:VEVENT
+END:VCALENDAR

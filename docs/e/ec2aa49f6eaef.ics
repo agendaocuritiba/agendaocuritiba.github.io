@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec2aa49f6eaef@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T183000
+DTEND;TZID=America/Sao_Paulo:20261205T203000
+SUMMARY:Orquestra de Câmara de Curitiba - Psicose Concepção
+LOCATION:Espaço Cultural Capela Santa Maria\, R. CONS. LAURINDO\, 273\, Curitiba - PR
+DESCRIPTION:Cine-concerto da Orquestra de Câmara de Curitiba com a trilha de Psicose\, concepção de Anselmo Mancini e regência de Rossini Parucci.\n\nhttps://agendaocuritiba.github.io/e/ec2aa49f6eaef.html
+URL:https://agendaocuritiba.github.io/e/ec2aa49f6eaef.html
+END:VEVENT
+END:VCALENDAR

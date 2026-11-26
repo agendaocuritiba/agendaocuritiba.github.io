@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4f9ce5c0d6b2@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261204T200000
+DTEND;TZID=America/Sao_Paulo:20261204T220000
+SUMMARY:Cantata do Bairro Novo
+LOCATION:Rua da Cidadania do Bairro Novo\, Rua Tijucas do Sul\, 1700\, Curitiba - PR
+DESCRIPTION:Cantata de Natal no Sítio Cercado com coro de mil vozes formado por alunos da rede municipal de ensino\, promovida pela Fundação Cultural de Curitiba.\n\nhttps://agendaocuritiba.github.io/e/e4f9ce5c0d6b2.html
+URL:https://agendaocuritiba.github.io/e/e4f9ce5c0d6b2.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1fb6740b60e1@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261215T193000
+DTEND;TZID=America/Sao_Paulo:20261215T213000
+SUMMARY:Concerto no Memorial Paranista
+LOCATION:Memorial Paranista\, Rua Mateus Leme\, 4700\, Curitiba - PR
+DESCRIPTION:Concerto de Natal no Memorial Paranista com o coral Ottava Bassa\, de mais de 60 vozes\, e orquestra ao vivo em clássicos como Noite Feliz e Hallelujah.\n\nhttps://agendaocuritiba.github.io/e/e1fb6740b60e1.html
+URL:https://agendaocuritiba.github.io/e/e1fb6740b60e1.html
+END:VEVENT
+END:VCALENDAR

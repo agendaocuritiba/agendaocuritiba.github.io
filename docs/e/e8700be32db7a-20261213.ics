@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8700be32db7a-2026-12-13@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261213T090000
+DTEND;TZID=America/Sao_Paulo:20261213T110000
+SUMMARY:Entre Vitrines\, Cartas para o Futuro
+LOCATION:Estabelecimentos Participantes\, Rua Saldanha Marinho\, 1487\, Curitiba - PR
+DESCRIPTION:Roteiro a pé por 29 vitrines e fachadas de lojas que viram instalações natalinas sobre o tema Cartas para o Futuro\, aberto a quem passa na rua.\n\nhttps://agendaocuritiba.github.io/e/e8700be32db7a.html
+URL:https://agendaocuritiba.github.io/e/e8700be32db7a.html
+END:VEVENT
+END:VCALENDAR

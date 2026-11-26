@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4db24387648e-2026-11-28@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:E AÍ\, MANAS? | Jogos\, Vinhos e Bingo
+LOCATION:Miltes Bar e Gastronomia\, Curitiba - PR
+DESCRIPTION:Encontro do clube de mulheres E aí\, Manas? com jogos\, bingo\, brindes e uma taça de vinho incluída\, para conhecer gente nova.\n\nhttps://agendaocuritiba.github.io/e/e4db24387648e.html
+URL:https://agendaocuritiba.github.io/e/e4db24387648e.html
+END:VEVENT
+END:VCALENDAR

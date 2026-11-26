@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ec5ee21c2ebe4@agendao-curitiba
-DTSTAMP:20261125T090000Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T183000
+DTEND;TZID=America/Sao_Paulo:20261205T203000
 SUMMARY:Tour Curitiba Sombria
 LOCATION:SAIDAS: PRAÇA JOÃO CÂNDIDO\, Curitiba - PR
 DESCRIPTION:Passeio guiado pelo lado sombrio da história de Curitiba\, com saída da Praça João Cândido.\n\nhttps://agendaocuritiba.github.io/e/ec5ee21c2ebe4.html

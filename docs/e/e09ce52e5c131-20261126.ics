@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e09ce52e5c131-2026-11-26@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T080000
+DTEND;TZID=America/Sao_Paulo:20261126T100000
+SUMMARY:Visita Guiada na Fazenda Urbana Cajuru
+LOCATION:Fazenda Urbana Cajuru\, AV. PREF. MAURÍCIO FRUET\, 1880\, Curitiba - PR
+DESCRIPTION:Visita guiada à Fazenda Urbana do Cajuru\, com técnico da prefeitura explicando o ciclo do alimento\, os cultivos de hortaliças\, frutas\, chás e as PANCs.\n\nhttps://agendaocuritiba.github.io/e/e09ce52e5c131.html
+URL:https://agendaocuritiba.github.io/e/e09ce52e5c131.html
+END:VEVENT
+END:VCALENDAR

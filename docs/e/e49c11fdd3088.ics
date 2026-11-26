@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e49c11fdd3088@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T143000
+DTEND;TZID=America/Sao_Paulo:20261126T163000
+SUMMARY:Visita Guiada à Pirâmide Solar de Curitiba - Parque Fotovoltaico da Caximba
+LOCATION:Portaria do Aterro Sanitário de Curitiba (acesso pela rua Dirceu Machado)\, Rua Dirceu Machado\, 254\, Curitiba - PR
+DESCRIPTION:Visita guiada à Pirâmide Solar da Caximba\, primeira usina solar sobre aterro sanitário da América Latina\, instalada onde funcionava o antigo aterro da cidade.\n\nhttps://agendaocuritiba.github.io/e/e49c11fdd3088.html
+URL:https://agendaocuritiba.github.io/e/e49c11fdd3088.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e21f1bd1b3d80-2026-12-06@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T190000
+DTEND;TZID=America/Sao_Paulo:20261206T210000
+SUMMARY:Ave-Marias Cantadas na Capela do Asilo São Vicente
+LOCATION:Asilo São Vicente de Paulo\, Rua São Vicente\, 100\, Curitiba - PR
+DESCRIPTION:Concerto de música sacra na capela do Asilo São Vicente\, com cantores líricos interpretando dez versões da Ave-Maria\, de Schubert a peças atuais.\n\nhttps://agendaocuritiba.github.io/e/e21f1bd1b3d80.html
+URL:https://agendaocuritiba.github.io/e/e21f1bd1b3d80.html
+END:VEVENT
+END:VCALENDAR

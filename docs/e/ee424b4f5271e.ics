@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee424b4f5271e@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261224T170000
+DTEND;TZID=America/Sao_Paulo:20261224T190000
+SUMMARY:Missa das Carmelitas
+LOCATION:Carmelo Nossa Senhora Da Assunção e São José\, Rua Doutor Joaquim Ignácio Silveira da Motta\, 540\, Curitiba - PR
+DESCRIPTION:Missa de abertura do Natal de Curitiba no Carmelo do Guabirotuba\, com coro e orquestra da Camerata Antiqua interpretando música sacra.\n\nhttps://agendaocuritiba.github.io/e/ee424b4f5271e.html
+URL:https://agendaocuritiba.github.io/e/ee424b4f5271e.html
+END:VEVENT
+END:VCALENDAR

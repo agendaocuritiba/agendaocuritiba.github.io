@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef9915f828af3@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T170000
+DTEND;TZID=America/Sao_Paulo:20261206T190000
+SUMMARY:Corrida do Natal de Curitiba
+LOCATION:Praça Afonso Botelho\, Rua Buenos Aires\, 1270\, Curitiba - PR
+DESCRIPTION:Primeira corrida de rua do calendário natalino de Curitiba\, com prova de 6 km\, caminhada de 3 km e corrida kids na região da Praça Afonso Botelho.\n\nhttps://agendaocuritiba.github.io/e/ef9915f828af3.html
+URL:https://agendaocuritiba.github.io/e/ef9915f828af3.html
+END:VEVENT
+END:VCALENDAR

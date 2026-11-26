@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3f8c0cbcf426-2026-12-13@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261213T130000
+DTEND;TZID=America/Sao_Paulo:20261213T150000
+SUMMARY:NATAL 60+ (Programação do Natal da Cidade 2026)
+LOCATION:Teatro Novelas Curitibanas - Claudete Pereira Jorge\, R. PRES. CARLOS CAVALCANTI\, 1222\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html
+URL:https://agendaocuritiba.github.io/e/e3f8c0cbcf426.html
+END:VEVENT
+END:VCALENDAR

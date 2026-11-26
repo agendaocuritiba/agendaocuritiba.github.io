@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeeee9f42fb78-2026-12-07@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261207T180000
+DTEND;TZID=America/Sao_Paulo:20261207T200000
+SUMMARY:AFINA-SE – Apresentações de Alunos do Conservatório de MPB – 2º semestre 2026
+LOCATION:Conservatório de Música Popular Brasileira de Curitiba\, R. MATEUS LEME\, 66\, Curitiba - PR
+DESCRIPTION:Série de apresentações dos alunos do Conservatório de MPB de Curitiba\, com turmas de canto\, violão\, prática de conjunto e outros cursos do semestre.\n\nhttps://agendaocuritiba.github.io/e/eeeee9f42fb78.html
+URL:https://agendaocuritiba.github.io/e/eeeee9f42fb78.html
+END:VEVENT
+END:VCALENDAR

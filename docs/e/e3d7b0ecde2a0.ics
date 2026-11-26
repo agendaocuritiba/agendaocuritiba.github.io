@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3d7b0ecde2a0@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261206T191500
+DTEND;TZID=America/Sao_Paulo:20261206T211500
+SUMMARY:Maria Fumaça - Rumo ao Natal
+LOCATION:Praça Soroptimismo\, Praça Soroptimismo Internacional\, 0\, Curitiba - PR
+DESCRIPTION:Maria Fumaça iluminada da Rumo circula por bairros de Curitiba\, com um espetáculo especial na Praça do Soroptimismo\, no Hugo Lange.\n\nhttps://agendaocuritiba.github.io/e/e3d7b0ecde2a0.html
+URL:https://agendaocuritiba.github.io/e/e3d7b0ecde2a0.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e90b57f585d7c-2026-12-17@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261217T193000
+DTEND;TZID=America/Sao_Paulo:20261217T213000
+SUMMARY:Natal da Família Moletta no Umbará
+LOCATION:Rua Iluminada Família Moletta\, Rua Nicola Pellanda\, 5962\, Curitiba - PR
+DESCRIPTION:Decoração natalina da Família Moletta no Umbará\, com castelo ampliado\, novas torres e iluminação de luzes coloridas para visitação durante a temporada.\n\nhttps://agendaocuritiba.github.io/e/e90b57f585d7c.html
+URL:https://agendaocuritiba.github.io/e/e90b57f585d7c.html
+END:VEVENT
+END:VCALENDAR

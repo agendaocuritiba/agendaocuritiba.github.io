@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efd50439ea966-2026-12-05@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:O Grande Natal Baviera 2026
+LOCATION:Restaurante Baviera e Palacete by Baviera\, Alameda Augusto Stellfeld\, 26\, Curitiba - PR
+DESCRIPTION:Temporada de Natal do Restaurante Baviera\, com decoração temática\, gastronomia\, personagens natalinos\, música ao vivo e a Vila Secreta do Papai Noel.\n\nhttps://agendaocuritiba.github.io/e/efd50439ea966.html
+URL:https://agendaocuritiba.github.io/e/efd50439ea966.html
+END:VEVENT
+END:VCALENDAR

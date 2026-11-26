@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e34180c5a8038-2026-12-08@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261208T193000
+DTEND;TZID=America/Sao_Paulo:20261208T213000
+SUMMARY:O Espírito do Natal no Largo da Ordem
+LOCATION:Largo da Ordem\, Rua Mateus Leme\, 1\, Curitiba - PR
+DESCRIPTION:Espetáculo natalino da Fundação Cultural de Curitiba em palco no centro do Largo da Ordem\, com música e dança vistas de todos os lados.\n\nhttps://agendaocuritiba.github.io/e/e34180c5a8038.html
+URL:https://agendaocuritiba.github.io/e/e34180c5a8038.html
+END:VEVENT
+END:VCALENDAR

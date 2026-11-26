@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e46b27c226bbb-2026-12-11@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261211T190000
+DTEND;TZID=America/Sao_Paulo:20261211T210000
+SUMMARY:Estrelas da Patinação na Praça Oswaldo Cruz
+LOCATION:Praça Oswaldo Cruz\, Praça Oswaldo Cruz\, 2333\, Curitiba - PR
+DESCRIPTION:Espetáculo de patinação artística da Footwork Patinação e Dança no ginásio da Praça Oswaldo Cruz\, com atletas de várias idades e tema natalino.\n\nhttps://agendaocuritiba.github.io/e/e46b27c226bbb.html
+URL:https://agendaocuritiba.github.io/e/e46b27c226bbb.html
+END:VEVENT
+END:VCALENDAR

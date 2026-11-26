@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1c41b5e3ae04@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261129T100000
+DTEND;TZID=America/Sao_Paulo:20261129T120000
+SUMMARY:Lançamento do livro: Luiz Forte Netto: cheio de sonho
+LOCATION:Museu Paranaense - MUPA\, Rua Kellers\, 289\, Curitiba - PR
+DESCRIPTION:Lançamento no Museu Paranaense do livro de memórias do arquiteto Luiz Forte Netto\, que revisita mais de seis décadas de arquitetura e urbanismo.\n\nhttps://agendaocuritiba.github.io/e/e1c41b5e3ae04.html
+URL:https://agendaocuritiba.github.io/e/e1c41b5e3ae04.html
+END:VEVENT
+END:VCALENDAR

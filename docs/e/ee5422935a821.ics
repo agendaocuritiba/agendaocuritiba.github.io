@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ee5422935a821@agendao-curitiba
-DTSTAMP:20261125T090000Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
+DTSTAMP:20261126T090000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
 SUMMARY:Canto da Terra - O Show
 LOCATION:Teatro da Vila - CIC\, Curitiba - PR
 DESCRIPTION:Show de lançamento do álbum Canto da Terra\, do Coletivo Puxirum\, que mistura canções em português e Guarani com sonoridades contemporâneas.\n\nhttps://agendaocuritiba.github.io/e/ee5422935a821.html

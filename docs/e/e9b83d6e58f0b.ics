@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9b83d6e58f0b@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261219T200000
+DTEND;TZID=America/Sao_Paulo:20261219T220000
+SUMMARY:Natal Santuário São José
+LOCATION:Santuário São José - Capão Raso\, Largo Padre Albino Vico\, 32\, Curitiba - PR
+DESCRIPTION:Sétima edição do espetáculo Acordes de Luz no Santuário São José\, com música sacra ao vivo\, cenas teatrais e iluminação cênica na fachada.\n\nhttps://agendaocuritiba.github.io/e/e9b83d6e58f0b.html
+URL:https://agendaocuritiba.github.io/e/e9b83d6e58f0b.html
+END:VEVENT
+END:VCALENDAR

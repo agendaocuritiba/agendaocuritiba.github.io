@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8c19b317dd6b-2026-12-17@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261217T190000
+DTEND;TZID=America/Sao_Paulo:20261217T210000
+SUMMARY:Praça do Expedicionário
+LOCATION:Praça do Expedicionário\, Rua Comendador Macedo\, 655\, Curitiba - PR
+DESCRIPTION:Iluminação de Natal no Museu do Expedicionário\, no Alto da XV\, com o avião e o tanque da Segunda Guerra contornados por luzes.\n\nhttps://agendaocuritiba.github.io/e/e8c19b317dd6b.html
+URL:https://agendaocuritiba.github.io/e/e8c19b317dd6b.html
+END:VEVENT
+END:VCALENDAR

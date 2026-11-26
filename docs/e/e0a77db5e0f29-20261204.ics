@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a77db5e0f29-2026-12-04@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Os Mamutes - Cia Geralda Alternativa apresenta peça de Jô Bilac
+LOCATION:Auditório Bento Mussurunga - Colégio Estadual do Paraná\, Curitiba - PR
+DESCRIPTION:Comédia absurda de Jô Bilac montada pela Cia. Geralda Alternativa\, com direção de Silvia Contursi\, no Auditório Bento Mossurunga.\n\nhttps://agendaocuritiba.github.io/e/e0a77db5e0f29.html
+URL:https://agendaocuritiba.github.io/e/e0a77db5e0f29.html
+END:VEVENT
+END:VCALENDAR

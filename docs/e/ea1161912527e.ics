@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea1161912527e@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261126T090000
+DTEND;TZID=America/Sao_Paulo:20261126T110000
+SUMMARY:Romeu Paulo da Costa - O olhar construído
+LOCATION:Casa Romário Martins\, Largo Coronel Enéas\, 40\, Curitiba - PR
+DESCRIPTION:Exposição de fotos de Romeu Paulo da Costa\, arquiteto-engenheiro curitibano\, com registros da cidade\, do cotidiano e da vida familiar entre 1940 e 2000.\n\nhttps://agendaocuritiba.github.io/e/ea1161912527e.html
+URL:https://agendaocuritiba.github.io/e/ea1161912527e.html
+END:VEVENT
+END:VCALENDAR

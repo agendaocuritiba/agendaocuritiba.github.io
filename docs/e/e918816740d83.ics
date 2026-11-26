@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e918816740d83@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T090000
+DTEND;TZID=America/Sao_Paulo:20261128T110000
+SUMMARY:Dsgncwb Summit '26
+LOCATION:Pinhão Hub\, Rua Engenheiros Rebouças\, 1732\, Curitiba - PR
+DESCRIPTION:Encontro de design com palestras\, mesas de conversa e apresentações de projetos sobre inovação\, inclusão\, acessibilidade e sustentabilidade.\n\nhttps://agendaocuritiba.github.io/e/e918816740d83.html
+URL:https://agendaocuritiba.github.io/e/e918816740d83.html
+END:VEVENT
+END:VCALENDAR
