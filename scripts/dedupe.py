@@ -184,6 +184,24 @@ def load_originals(eo_raw, tc_raw, extras, today, horizon):
     return origs
 
 
+# Muitos sites (o guia da Prefeitura, a Sympla...) tiram o evento da lista assim que passa a
+# primeira data, mesmo quando ele segue em cartaz. Registro da coleta anterior que já tinha
+# começado e ainda não terminou continua valendo até a última data, mesmo sumindo da lista.
+# Registro que nem tinha começado e sumiu foi cancelado ou tirado do ar: esse sai.
+def carry_over(origs, prev, today):
+    have = {o["oid"] for o in origs}
+    kept = []
+    for p in prev:
+        for o in p.get("originals", []):
+            if o["oid"] in have or o.get("tbd") or not (o["start"] < today.isoformat() <= o["end"]):
+                continue
+            o = dict(o, start=today.isoformat(), carried=True)
+            o.pop("firstSeen", None)
+            have.add(o["oid"])
+            kept.append(o)
+    return kept
+
+
 def span(g):
     return (min(date.fromisoformat(o["start"]) for o in g), max(date.fromisoformat(o.get("until") or o["end"]) for o in g))
 
@@ -365,6 +383,8 @@ def main():
     load = lambda p, d: json.load(open(p)) if p and p != "-" else d
     origs = load_originals(load(eo_p, []), load(tc_p, []), load(ex_p, {}), today, horizon)
     prev = load(prev_p, [])
+    carried = carry_over(origs, prev, today)
+    origs += carried
     prev_by_oid = {o["oid"]: p for p in prev for o in p.get("originals", [])}
     prev_orig = {o["oid"]: o for p in prev for o in p.get("originals", [])}
 
@@ -392,7 +412,7 @@ def main():
     for o in origs:
         by_src[o["source"]] = by_src.get(o["source"], 0) + 1
     stats = {
-        "run": run, "horizon": horizon.isoformat(), "events": len(events), "originals": len(origs),
+        "run": run, "horizon": horizon.isoformat(), "events": len(events), "originals": len(origs), "carried": len(carried),
         "merged": sum(1 for e in events if len(e["sources"]) > 1),
         "new": sum(1 for e in events if e["firstSeen"] == run) if prev else 0,
         "removed": sum(1 for p in prev if p["id"] not in ids), "bySource": by_src,

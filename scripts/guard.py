@@ -8,7 +8,9 @@ import json, sys
 
 out, prev_p, run = sys.argv[1:4]
 limit = float(sys.argv[4]) if len(sys.argv) > 4 else 0.7
-cur = [e for e in json.load(open(f"{out}/events.json")) if e["end"] >= run]
+# eventos mantidos só porque já tinham começado (dedupe.py, carry_over) não contam: não vieram desta coleta
+cur = [e for e in json.load(open(f"{out}/events.json"))
+       if e["end"] >= run and not all(o.get("carried") for o in e.get("originals", []))]
 prev = [e for e in json.load(open(prev_p)) if e["end"] >= run]
 cur_src, prev_src = {}, {}
 for lst, acc in ((cur, cur_src), (prev, prev_src)):
