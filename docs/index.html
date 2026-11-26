@@ -97,6 +97,40 @@ svg.i { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: rou
 .tab .n:empty { display: none; }
 .favnote { color: var(--muted); font-size: 14px; padding-block: 12px 0; }
 .favnote b { color: var(--fg); font-weight: 600; }
+/* Calendário dos favoritos (topo da aba Favoritos): três meses lado a lado, a partir do mês atual, rolando de lado até o mês
+   do último favorito; as datas com favoritos ficam em amarelo e levam até o dia na lista */
+.fcal { margin-top: 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 10px 12px 12px; }
+.fch { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; font-size: 13px; color: var(--muted); }
+.fch svg { width: 15px; height: 15px; color: var(--star); fill: var(--star); vertical-align: -2px; margin-right: 5px; }
+.fnav { display: flex; gap: 4px; }
+.fnav button { font: inherit; font-size: 15px; line-height: 1; background: none; border: 1px solid var(--line); border-radius: 8px; width: 30px; height: 26px; color: var(--fg); cursor: pointer; }
+.fnav button:disabled { color: var(--line); cursor: default; }
+.fms { --gap: 18px; display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 2 * var(--gap)) / 3); gap: var(--gap);
+  overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: none; }
+.fms::-webkit-scrollbar { display: none; }
+.fm { scroll-snap-align: start; min-width: 0; }
+.fm h3 { margin: 0 0 4px; font-size: 13px; font-weight: 600; text-align: center; text-transform: capitalize; }
+.fg { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; text-align: center; font-variant-numeric: tabular-nums; line-height: 1; }
+.fg i { font-style: normal; font-size: 10px; font-weight: 600; color: var(--muted); padding-block: 2px 3px; }
+.fg span, .fg button { font: inherit; font-size: 13px; height: 30px; padding: 0; border: 0; border-radius: 7px; display: grid; place-items: center; background: none; color: var(--fg); }
+.fg .past { color: var(--muted); opacity: .55; }
+.fg .hol { color: var(--hol); }
+.fg .today { box-shadow: inset 0 0 0 1.5px var(--accent); }
+.fg button { background: var(--star); color: var(--go-fg); font-weight: 700; cursor: pointer; }
+.fg button.today { box-shadow: 0 0 0 1.5px var(--bg), 0 0 0 3px var(--accent); }
+.fg button:hover { filter: brightness(1.1); }
+.fg button.hol { color: var(--go-fg); }
+.dg { scroll-margin-top: env(safe-area-inset-top, 0px); }
+@media (prefers-reduced-motion: no-preference) { .card.flash { animation: flash 1.6s ease-out; } }
+@keyframes flash { 0%, 40% { border-color: var(--star); box-shadow: 0 0 0 2px var(--star); } }
+@media (max-width: 520px) {
+  .fcal { padding: 8px 8px 10px; }
+  .fms { --gap: 8px; }
+  .fm h3 { font-size: 12px; }
+  .fg { gap: 1px; }
+  .fg i { font-size: 8.5px; }
+  .fg span, .fg button { font-size: 10px; height: 19px; border-radius: 4px; }
+}
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .row + .row { margin-top: 8px; }
@@ -862,13 +896,63 @@ footer p { max-width: 68ch; margin: 0 0 10px; }
       return;
     }
     note.append(el('b', null, list.length + (list.length === 1 ? ' evento favorito' : ' eventos favoritos')), ', do mais próximo ao mais distante. Ficam guardados só neste navegador e saem da lista quando acontecem.');
-    out.append(note);
+    out.append(favCal(list), note);
     let cur = null, box = null;
     for (const [d, e] of list) {
-      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.append(hh, box); out.append(sec); }
+      if (d !== cur) { cur = d; const [a, b] = dayLabel(d); const hh = el('h2', 'day', a); if (b) hh.append(el('small', null, b)); hh.append(weekCal(d)); box = el('div', 'list'); const sec = el('section', 'dg'); sec.dataset.day = d; sec.append(hh, box); out.append(sec); }
       box.append(card(e, d, true, 0));
     }
     requestAnimationFrame(pinDay);
+  }
+  // Calendário dos favoritos: do mês atual até o mês do último favorito (no mínimo três meses, que é o que cabe na tela);
+  // a rolagem de lado é guardada para não voltar ao começo quando a lista é redesenhada
+  let favCalX = 0;
+  function favCal(list) {
+    const per = {}; list.forEach(([d]) => { per[d] = (per[d] || 0) + 1; });
+    const mAdd = (ym, n) => { const [y, m] = ym.split('-').map(Number); return new Date(Date.UTC(y, m - 1 + n, 1)).toISOString().slice(0, 7); };
+    const first = todayIso.slice(0, 7), lastFav = list[list.length - 1][0].slice(0, 7), min3 = mAdd(first, 2);
+    const last = lastFav > min3 ? lastFav : min3;
+    const box = el('div', 'fcal'); box.setAttribute('role', 'group'); box.setAttribute('aria-label', 'Calendário dos favoritos');
+    const head = el('div', 'fch'), cap = el('span'); cap.innerHTML = svg(UI.star); cap.append('Toque numa data para ver o evento');
+    const nav = el('div', 'fnav'), prev = el('button', null, '‹'), next = el('button', null, '›');
+    prev.type = next.type = 'button'; prev.setAttribute('aria-label', 'Meses anteriores'); next.setAttribute('aria-label', 'Próximos meses');
+    nav.append(prev, next); head.append(cap, nav);
+    const ms = el('div', 'fms');
+    for (let ym = first; ym <= last; ym = mAdd(ym, 1)) {
+      const [y, mo] = ym.split('-').map(Number);
+      const m = el('div', 'fm'); m.append(el('h3', null, MONL[mo - 1] + (y !== +todayIso.slice(0, 4) || mo === 1 ? ' ' + y : '')));
+      const g = el('div', 'fg'); WKD.forEach((w) => g.append(el('i', null, w)));
+      const days = new Date(Date.UTC(y, mo, 0)).getUTCDate();
+      for (let i = 0; i < dObj(ym + '-01').getUTCDay(); i++) g.append(el('span'));
+      for (let d = 1; d <= days; d++) {
+        const iso = ym + '-' + String(d).padStart(2, '0'), n = per[iso], hn = holiday(iso);
+        const c = el(n ? 'button' : 'span', null, d);
+        if (iso < todayIso) c.classList.add('past'); if (iso === todayIso) c.classList.add('today'); if (hn) c.classList.add('hol');
+        if (n) {
+          c.type = 'button'; const [a, b] = dayLabel(iso);
+          c.title = (b ? a + ', ' + b : a) + ': ' + n + (n === 1 ? ' favorito' : ' favoritos') + (hn ? ' (' + hn + ')' : '');
+          c.setAttribute('aria-label', c.title);
+          c.addEventListener('click', () => goFavDay(iso));
+        } else if (hn) c.title = hn;
+        g.append(c);
+      }
+      m.append(g); ms.append(m);
+    }
+    const sync = () => { favCalX = ms.scrollLeft; prev.disabled = ms.scrollLeft < 2; next.disabled = ms.scrollLeft > ms.scrollWidth - ms.clientWidth - 2; };
+    const step = (k) => { const w = ms.firstChild.getBoundingClientRect().width + parseFloat(getComputedStyle(ms).columnGap || 0);
+      ms.scrollBy({ left: k * w, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); };
+    prev.addEventListener('click', () => step(-1)); next.addEventListener('click', () => step(1));
+    ms.addEventListener('scroll', sync, { passive: true });
+    box.append(head, ms);
+    requestAnimationFrame(() => { ms.scrollLeft = favCalX; sync(); nav.hidden = ms.scrollWidth <= ms.clientWidth + 2; });
+    return box;
+  }
+  // Leva até o dia na lista e acende por um instante os cards dele
+  function goFavDay(iso) {
+    const sec = [...document.querySelectorAll('#out .dg')].find((s) => s.dataset.day === iso); if (!sec) return;
+    sec.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    sec.querySelectorAll('.card').forEach((c) => { c.classList.remove('flash'); void c.offsetWidth; c.classList.add('flash'); });
+    const h = sec.querySelector('.day'); h.tabIndex = -1; h.focus({ preventScroll: true });
   }
   function favState(b, on) { b.setAttribute('aria-pressed', on); b.title = on ? 'Tirar dos favoritos' : 'Guardar nos favoritos'; b.lastChild.textContent = on ? 'Favorito' : 'Favoritar'; }
   // Marca/desmarca; na aba Favoritos, desmarcar tira o card da lista sem pular a tela
