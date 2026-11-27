@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6b40e6d28c0e@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261205T220000
+DTEND;TZID=America/Sao_Paulo:20261206T000000
+SUMMARY:Aüra Sessions
+LOCATION:R. Comendador Araújo\, 534 - Centro\, Curitiba - PR\, 80420-000\, Brazil\, Curitiba - PR
+DESCRIPTION:Noite de música eletrônica da produtora Speaker no Centro\, com sets de Scure\, Aüra e da dupla Roman & Jimenez.\n\nhttps://agendaocuritiba.github.io/e/e6b40e6d28c0e.html
+URL:https://agendaocuritiba.github.io/e/e6b40e6d28c0e.html
+END:VEVENT
+END:VCALENDAR

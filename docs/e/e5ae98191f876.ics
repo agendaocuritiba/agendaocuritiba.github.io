@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5ae98191f876@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261212T170000
+DTEND;TZID=America/Sao_Paulo:20261212T190000
+SUMMARY:O Caminho - Especial de Natal 2026
+LOCATION:Alcance Curitiba\, Avenida República Argentina\, 4917\, Curitiba - PR
+DESCRIPTION:Apresentação teatral de Natal que conduz o público por uma jornada de descobertas e esperança em torno do nascimento de Jesus.\n\nhttps://agendaocuritiba.github.io/e/e5ae98191f876.html
+URL:https://agendaocuritiba.github.io/e/e5ae98191f876.html
+END:VEVENT
+END:VCALENDAR

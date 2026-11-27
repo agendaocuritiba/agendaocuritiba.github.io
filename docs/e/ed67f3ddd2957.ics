@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed67f3ddd2957@agendao-curitiba
+DTSTAMP:20261126T090000Z
+DTSTART;TZID=America/Sao_Paulo:20261128T100000
+DTEND;TZID=America/Sao_Paulo:20261128T120000
+SUMMARY:Feira de Design Autoral
+LOCATION:Praça da Espanha\, Rua Coronel Dulcídio\, 0\, Curitiba - PR
+DESCRIPTION:Feira na Praça da Espanha com 14 expositores de design autoral curitibano\, com curadoria de Meroly Felizardo\, da Emporium Handmade.\n\nhttps://agendaocuritiba.github.io/e/ed67f3ddd2957.html
+URL:https://agendaocuritiba.github.io/e/ed67f3ddd2957.html
+END:VEVENT
+END:VCALENDAR

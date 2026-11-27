@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agendao Curitiba//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3b59ed810cf7-2026-12-04@agendao-curitiba
+DTSTAMP:20261017T090000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Parque Mikewood
+LOCATION:Parque Mikewood\, Curitiba - PR
+DESCRIPTION:https://agendaocuritiba.github.io/e/e3b59ed810cf7.html
+URL:https://agendaocuritiba.github.io/e/e3b59ed810cf7.html
+END:VEVENT
+END:VCALENDAR
