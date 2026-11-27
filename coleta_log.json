@@ -1,0 +1,66 @@
+{
+ "started": "2026-11-27T13:20:24.603253+00:00",
+ "sites": {
+  "eventoon": {
+   "n": 106,
+   "secs": 26,
+   "error": null
+  },
+  "guia": {
+   "n": 72,
+   "secs": 11,
+   "error": null
+  },
+  "dk": {
+   "n": 78,
+   "secs": 13,
+   "error": null
+  },
+  "sy": {
+   "n": 173,
+   "secs": 23,
+   "error": null
+  },
+  "bt": {
+   "n": 25,
+   "secs": 5,
+   "error": null
+  },
+  "bd": {
+   "n": 15,
+   "secs": 142,
+   "error": null
+  },
+  "ig": {
+   "n": 7,
+   "secs": 15,
+   "error": null
+  },
+  "tm": {
+   "n": 6,
+   "secs": 48,
+   "error": null
+  },
+  "fv": {
+   "n": 11,
+   "secs": 41,
+   "error": null
+  },
+  "ic": {
+   "n": 0,
+   "secs": 17,
+   "error": null
+  },
+  "sg": {
+   "n": 13,
+   "secs": 14,
+   "error": null
+  },
+  "tg": {
+   "n": 15,
+   "secs": 8,
+   "error": null
+  }
+ },
+ "finished": "2026-11-27T13:26:30.539212+00:00"
+}
