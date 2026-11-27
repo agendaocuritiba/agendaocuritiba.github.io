@@ -18,3 +18,7 @@ Evento ON e o guia da Prefeitura vão cada um para o seu arquivo. Os outros devo
 - `tg.js`: Teatro Guaíra → https://www.teatroguaira.pr.gov.br/calendario-eventos (site novo nesta rotina: se voltar vazio, olhe a página, ajuste o script na hora e descreva o ajuste na resposta final)
 
 Se precisar ajustar um script durante a coleta (um site mudou), use o ajuste na hora e descreva-o na resposta final, para que ele seja levado para cá.
+
+## Coleta automática no PC (sem Claude)
+Desde 11/2026 a coleta diária não usa o navegador do app: `run_local.py` abre cada site num Chromium (Playwright, com janela, porque o guia da Prefeitura recusa o modo sem janela) e roda os mesmos `.js` com semântica de REPL. `coleta_local.ps1` atualiza o clone, roda a coleta e envia os brutos para o branch `coleta-bruta` (um commit só, refeito a cada noite). `instalar_tarefa.ps1` cria a tarefa "Agendao coleta 21h" no Agendador do Windows. A rotina na nuvem (`rotina/prompt-nuvem.md`) processa e publica às 6h.
+Instalação no PC: clone o repositório, `python -m venv .venv`, `.venv\Scripts\python -m pip install playwright==1.58.0`, `.venv\Scripts\python -m playwright install chromium` e rode `instalar_tarefa.ps1`.
